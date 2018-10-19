@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,600|Work+Sans');
+@import 'bootstrap-overrides';
+@import '~bootstrap/scss/bootstrap';
+
+//variables
+$border-radius: 0.3rem;
+
+$white: #fff;
+$tesc-blue: #004E74;
+
+$tesc-red: #FF6E74;
+
+$header-color: #5A5A5A;
+
+$default-shadow-color: rgba(12, 42, 51, 0.3);
+$default-shadow: 0 2px 16px $default-shadow-color;
+$extended-shadow: 0 2px 22px $default-shadow-color;
+
+$contact-gradient: linear-gradient(to right bottom, $tesc-blue 33%, white);

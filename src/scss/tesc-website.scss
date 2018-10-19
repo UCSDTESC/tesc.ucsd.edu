@@ -1,0 +1,30 @@
+@import 'base';
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  background: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: $header-color;
+}
+
+#app {
+  height: 100%;
+}
+
+#main {
+  height: 100%;
+}
+
+@import 'components/all';

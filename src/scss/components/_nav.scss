@@ -1,0 +1,57 @@
+.nav {
+    height: 80px;
+    width: 100%;
+    z-index: 8;
+    color: $tesc-blue;
+    transition: background-color 0.2s linear;
+  
+    &__white {
+      box-shadow: $default-shadow; 
+      background-color: white;
+    }
+  
+    &__toggler {
+      position: absolute;
+      right: 0;
+      top: 20px;
+    }
+
+    &__logo {
+        max-width: 95px;
+    }
+
+    &__toggle {
+      background: $tesc-blue;
+      color: white !important;
+      border: solid 2px $tesc-blue;
+
+      &:hover {
+        background: transparent;
+        color: $tesc-blue !important;
+      }
+
+      &-active {
+        border: solid 2px $tesc-blue;
+        background: transparent;
+        color: $tesc-blue !important;   
+        
+        &:hover {
+          border: solid 2px $tesc-blue;
+          background: $tesc-blue;
+          color: white !important;
+        }
+      }
+    }
+
+
+  
+    &__items {
+      width: 80%;
+      margin-left: 10%;
+      padding-left: 0;
+    }
+  
+    &__item {
+      margin: 0 0.5rem;
+    }
+  }
