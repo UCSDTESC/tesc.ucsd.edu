@@ -8,7 +8,7 @@ import $ from 'jquery';
 window.jQuery = window.$ = $;
 
 ReactDOM.render((
-    <BrowserRouter>
+    <BrowserRouter basename="/staging/">
         <Routes />
     </BrowserRouter>
 ), document.getElementById('app'));
