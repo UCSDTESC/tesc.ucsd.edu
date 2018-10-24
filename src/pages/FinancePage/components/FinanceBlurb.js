@@ -2,6 +2,11 @@ import React from 'react';
 
 class FinanceBlurb extends React.Component {
 
+
+    showRequirements() {
+        
+    }
+
     render() {
         return (
             <section className="about">
@@ -13,13 +18,7 @@ class FinanceBlurb extends React.Component {
                 </div>
                 <section className="req pt-1">
                     <div className="container">
-                        <div className="row">
-                            <div className="req__item">
-                                <div className="req__item-header">
-                                    Organization Eligibility to Apply for TESC Funds
-                                </div>
-                            </div>
-                        </div>
+                        {this.showRequirements()}
                     </div>
                 </section>  
             </section>
