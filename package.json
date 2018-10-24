@@ -14,7 +14,7 @@
   "devDependencies": {
     "react-scripts": "2.0.5"
   },
-  "homepage": "http://tesc.ucsd.edu/staging/index",
+  "homepage": "http://tesc.ucsd.edu/staging/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
