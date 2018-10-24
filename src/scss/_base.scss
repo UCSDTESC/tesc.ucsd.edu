@@ -16,4 +16,4 @@ $default-shadow-color: rgba(12, 42, 51, 0.3);
 $default-shadow: 0 2px 16px $default-shadow-color;
 $extended-shadow: 0 2px 22px $default-shadow-color;
 
-$contact-gradient: linear-gradient(to right bottom, $tesc-blue 33%, white);
+$contact-gradient: linear-gradient(to right bottom, $tesc-blue 33%, lighten($tesc-blue, 5%));

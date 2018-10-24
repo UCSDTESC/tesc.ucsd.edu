@@ -1,10 +1,7 @@
 import React from 'react';
-import $ from 'jquery'; 
+import hero from '../../../hero.svg';
 
 class OrgHero extends React.Component {
-
-    componentDidMount() {
-    }
 
     render() {
         return (
@@ -20,7 +17,7 @@ class OrgHero extends React.Component {
                     </div>
                     </div>
                     <div className="col-md-6 p-0 d-flex">
-                    <img src="/hero.svg" className="hero__graphic w-100 align-self-center" />
+                    <img src={hero} className="hero__graphic w-100 align-self-center" />
                     </div>
                 </div>
                 </div>

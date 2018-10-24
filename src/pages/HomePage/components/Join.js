@@ -10,6 +10,7 @@ class Hero extends React.Component {
                 </div>
                 <div className="join__container mt-5">
                 <div className="text-center">
+                    
                 </div>
                 <div className="join__btns row">
                     <div className="col-md text-center">

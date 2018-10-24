@@ -1,0 +1,19 @@
+.req {
+    color: $tesc-blue;
+
+    &__header {
+        font-size: 2.5rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    &__item {
+        width: 100%;
+        font-weight: bold;
+
+        &-header {
+            color: $tesc-red;
+            font-size: 2rem;
+        }
+    }
+}

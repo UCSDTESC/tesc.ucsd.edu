@@ -1,8 +1,8 @@
 .hero {
     width: 90%;
     margin-left: 10%;
-    height: 100%;
     display: block;
+    margin-top: 4rem;
 
     @include media-breakpoint-down(sm) {
         margin-left: 0;

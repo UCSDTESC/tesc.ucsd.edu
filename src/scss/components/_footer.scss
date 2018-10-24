@@ -1,4 +1,33 @@
 .footer {
-
+    margin: 3rem 0 3rem;
+    color: $tesc-blue;
   
-}
+    &__links {
+      list-style: none;
+      padding: 0;
+    }
+  
+    &__link {
+      color: $tesc-blue;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  
+    &__link-item {
+      font-size: 1.75rem;
+  
+      &:not(:first-child) {
+        margin-top: 1rem;
+  
+        @include media-breakpoint-up(md) {
+          margin-top: 0;
+        }
+      }
+      &--logo {
+        img {
+          width: 7rem;
+        }
+      }
+    }
+  }

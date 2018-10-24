@@ -6,23 +6,20 @@ class Nav extends React.Component {
     everyoneLinks() {
         return (
             <ul className="navbar-nav ml-auto">
-                <li className="nav-item nav__item text-center" style={{margin: '0 0.5rem'}}>
-                <a className="nav-link" href="/">HOME</a>
+                <li className="nav-item nav__item text-center">
+                    <NavLink className="nav-link" to="/about">ABOUT</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                <a className="nav-link" href="/about">ABOUT</a>
+                    <NavLink className="nav-link" to="/#events">EVENTS</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                <a className="nav-link" href="/#events">EVENTS</a>
+                    <NavLink className="nav-link" to="/#join">JOIN</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                <a className="nav-link" href="/#join">JOIN</a>
-                </li>
-                <li className="nav-item nav__item text-center">
-                <a className="nav-link" href="/#contact">CONTACT</a>
+                    <NavLink className="nav-link" to="/#contact">CONTACT</NavLink>
                 </li>
                 <li className="nav-item text-center">
-                <NavLink className="nav-link btn nav__toggle" to="/orgs">For TESC Orgs</NavLink>
+                    <NavLink className="nav-link btn nav__toggle" to="/orgs">For TESC Orgs</NavLink>
                 </li>
             </ul>
         );
@@ -31,26 +28,23 @@ class Nav extends React.Component {
     orgLinks() {
         return (
             <ul className="navbar-nav ml-auto">
-                <li className="nav-item nav__item text-center" style={{margin: '0 0.5rem'}}>
-                <a className="nav-link" href="/">HOME</a>
+                <li className="nav-item nav__item text-center">
+                    <NavLink className="nav-link" to="/orgs/membership">MEMBERSHIP</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                <NavLink className="nav-link" to="/orgs/membership">MEMBERSHIP</NavLink>
+                    <NavLink className="nav-link" to="/orgs/finance">FINANCE</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                <a className="nav-link" href="/orgs/finance.html">FINANCE</a>
-                </li>
-                <li className="nav-item nav__item text-center">
-                <a className="nav-link" href="/orgs/spaces.html">PROJECT SPACES</a>
+                    <NavLink className="nav-link" to="/orgs/spaces">PROJECT SPACES</NavLink>
                 </li>
                 {/*<li class="nav-item nav__item text-center">
                         <a class="nav-link" href="">BRANDING</a>
                         </li>*/}
                 <li className="nav-item nav__item text-center">
-                <a className="nav-link" href="/#contact">CONTACT</a>
+                    <NavLink className="nav-link" to="/#contact">CONTACT</NavLink>
                 </li>
                 <li className="nav-item text-center">
-                <NavLink className="nav-link btn nav__toggle-active" to="/">FOR EVERYONE</NavLink>
+                    <NavLink className="nav-link btn nav__toggle-active" to="/">FOR EVERYONE</NavLink>
                 </li>
             </ul>
         )
@@ -63,9 +57,9 @@ class Nav extends React.Component {
 
         return (
             <header>
-                <div className="nav" id="top-nav">
+                <div className="pt-3" id="top-nav">
                     <nav className="navbar navbar-expand-lg navbar-light nav__items">
-                        <img className="ml-auto mr-auto nav__logo" href="#" src="/tesc-logo.png" />
+                        <NavLink to="/"><img className="ml-auto mr-auto nav__logo" href="#" src="/tesc-logo.png" /></NavLink>
                         <button className="navbar-toggler nav__toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                         </button>

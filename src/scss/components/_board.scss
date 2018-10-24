@@ -27,12 +27,14 @@
     }
 
     &__member {
-        border: 6px solid white;
-        margin: 6px;
-        border-radius: 50%;
-        width: 11.6rem;
-        height: 11.6rem;
-        background: white;
+        padding: 0.5rem;
+        &-img {
+            border: 6px solid white;
+            margin: 6px;
+            border-radius: 50%;
+            width: 90%;
+            background: white;
+        }
         
         &-title {
             font-size: 1rem

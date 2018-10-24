@@ -1,9 +1,15 @@
 import {Switch, Route} from 'react-router-dom';
 import React from 'react';
 import {withRouter} from 'react-router-dom';
+
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import OrgPage from './pages/HomePage/OrgPage';
+import AboutPage from './pages/AboutPage';
+import MembershipPage from './pages/MembershipPage';
+import SpacesPage from './pages/SpacesPage';
+import FinancePage from './pages/FinancePage';
 
 class Routes extends React.Component {
 
@@ -14,6 +20,7 @@ class Routes extends React.Component {
                 <div id="main">
                     <Child />
                 </div>
+                <Footer />
             </React.Fragment>);
     }
 
@@ -22,7 +29,10 @@ class Routes extends React.Component {
             <Switch>
                 <Route exact path="/" component={this.withLayout(HomePage)}/>
                 <Route exact path="/orgs" component={this.withLayout(OrgPage, true)}/>
-                <Route exact path="/orgs/membership" component={this.withLayout(OrgPage, true)}/>
+                <Route exact path="/about" component={this.withLayout(AboutPage)} />
+                <Route exact path="/orgs/membership" component={this.withLayout(MembershipPage, true)}/>
+                <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
+                <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>
             </Switch>
         )
     }
