@@ -1,10 +1,14 @@
 import React from 'react';
+import FinanceReq from './FinanceReq';
+import reqs from '../../../data/FinanceReqs';
 
 class FinanceBlurb extends React.Component {
 
 
     showRequirements() {
-        
+        return reqs.map(r => {
+            return <FinanceReq data={r}/>
+        })
     }
 
     render() {

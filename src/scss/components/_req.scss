@@ -12,10 +12,17 @@
         font-weight: bold;
         background: $tesc-blue;
         border-radius: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
 
         &-header {
             background: white;
             font-size: 2rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.2rem;
+            }
+
             color: $tesc-blue;
             border: 3px solid $tesc-blue;
             border-radius: 5pc;
@@ -31,6 +38,14 @@
             color: white;
             padding-top: 2rem;
             font-size: 1.5rem; 
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.2rem;
+            }
+
+            a {
+                color: $tesc-red;
+            }
         }
     }
 }
