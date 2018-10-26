@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
 import Routes from './Routes';
 import './scss/tesc-website.scss';
-
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-
+import './globals';
+import './fullcalendar.min.css';
+import './gcal';
 ReactDOM.render((
     <BrowserRouter basename="/staging/">
         <Routes />

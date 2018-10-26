@@ -1,7 +1,28 @@
 import React from 'react';
 import hero from '../../../hero.svg';
+import $ from 'jquery';
 
 class OrgHero extends React.Component {
+
+    componentDidMount() {
+        $('#calendar').fullCalendar({
+            googleCalendarApiKey: 'AIzaSyBFA-QZSbpnCJ_qcC82PHtlv_qaltzybr8',
+            header: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'month,listWeek'
+            },
+            events: {
+              googleCalendarId: 'tesc.ucsd.edu_l62l0g9gertfd7rel7ksgrgq6k@group.calendar.google.com'
+            },
+            eventClick: function(event) {
+              // opens events in a popup window
+              window.open(event.url, '_blank', 'width=700,height=600');
+              return false;
+            },
+            defaultView: 'listWeek'  
+        });
+    }
 
     render() {
         return (
