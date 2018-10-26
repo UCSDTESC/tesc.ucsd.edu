@@ -41,7 +41,7 @@ class Nav extends React.Component {
                         <a class="nav-link" href="">BRANDING</a>
                         </li>*/}
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link" to="/#contact">CONTACT</NavLink>
+                    <NavLink className="nav-link" to="#contact">CONTACT</NavLink>
                 </li>
                 <li className="nav-item text-center">
                     <NavLink className="nav-link btn nav__toggle-active" to="/">FOR EVERYONE</NavLink>
@@ -59,7 +59,7 @@ class Nav extends React.Component {
             <header>
                 <div className="pt-3" id="top-nav">
                     <nav className="navbar navbar-expand-lg navbar-light nav__items">
-                        <NavLink to="/"><img className="ml-auto mr-auto nav__logo" href="#" src="/tesc-logo.png" /></NavLink>
+                        <NavLink to="/"><img className="nav__logo" href="#" src="/tesc-logo.png" /></NavLink>
                         <button className="navbar-toggler nav__toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                         </button>

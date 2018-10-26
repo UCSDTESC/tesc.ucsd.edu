@@ -6,6 +6,7 @@ import './scss/tesc-website.scss';
 import './globals';
 import './fullcalendar.min.css';
 import './gcal';
+
 ReactDOM.render((
     <BrowserRouter>
         <Routes />

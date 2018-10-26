@@ -14,7 +14,7 @@ class Hero extends React.Component {
                                 We empower engineers.
                             </div>
                             <div className="hero__cta">
-                                <a className="btn hero__cta-btn" href="http://eepurl.com/cEDIcb" target="_blank"> Subscribe <i className="fa fa-envelope" /> </a>
+                                <a className="btn hero__cta-btn text-white" href="http://eepurl.com/cEDIcb" target="_blank"> Subscribe <i className="fa fa-envelope" /> </a>
                             </div>
                             </div>
                         </div>
