@@ -7,7 +7,7 @@ import './globals';
 import './fullcalendar.min.css';
 import './gcal';
 ReactDOM.render((
-    <BrowserRouter basename="/staging/">
+    <BrowserRouter>
         <Routes />
     </BrowserRouter>
 ), document.getElementById('app'));
