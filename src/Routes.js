@@ -33,7 +33,7 @@ class Routes extends React.Component {
                 <Route exact path="/orgs/membership" component={this.withLayout(MembershipPage, true)}/>
                 <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
                 <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>
-                <Route component={NotFoundPage} />
+                <Route component={this.withLayout(NotFoundPage)} />
             </Switch>
         )
     }
