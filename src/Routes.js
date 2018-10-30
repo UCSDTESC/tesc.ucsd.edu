@@ -1,6 +1,5 @@
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, withRouter} from 'react-router-dom';
 import React from 'react';
-import {withRouter} from 'react-router-dom';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -10,6 +9,7 @@ import AboutPage from './pages/AboutPage';
 import MembershipPage from './pages/MembershipPage';
 import SpacesPage from './pages/SpacesPage';
 import FinancePage from './pages/FinancePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 class Routes extends React.Component {
 
@@ -33,6 +33,7 @@ class Routes extends React.Component {
                 <Route exact path="/orgs/membership" component={this.withLayout(MembershipPage, true)}/>
                 <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
                 <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>
+                <Route component={NotFoundPage} />
             </Switch>
         )
     }
