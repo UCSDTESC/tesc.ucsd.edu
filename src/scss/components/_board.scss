@@ -62,14 +62,13 @@
 
     a {
         color: white !important;
-
-        &:hover {
-            color: $tesc-red !important;
-        }
     }
 
     &:hover {
         background: transparent;
 
+        a {
+            color: $tesc-red !important;
+        }
     }
 }

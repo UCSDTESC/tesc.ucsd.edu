@@ -17,8 +17,8 @@ class MembershipBlurb extends React.Component {
                 </p>
                 </div>
                 <div className="row" style={{marginTop: '6rem'}}>
-                <div className="col-md text-center">
-                    <a className="btn btn-cta" href="https://tesc.typeform.com/to/GeFYtC">Join TESC</a>
+                <div className="col-md text-center btn-cta">
+                    <a className="" href="https://tesc.typeform.com/to/GeFYtC">Join TESC</a>
                 </div>
                 </div>
             </section>
