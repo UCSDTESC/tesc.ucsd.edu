@@ -54,13 +54,21 @@
 .btn-cta {
     background: $tesc-red;
     box-shadow: 0px 5px 10px rgba(255, 110, 116, 0.5);
-    color: white;
     border: solid 2px $tesc-red;
     border-radius: 19px;
     font-size: 1.4rem;
+    padding: 0.1rem;
+    margin-bottom: 1rem;
+
+    a {
+        color: white !important;
+
+        &:hover {
+            color: $tesc-red !important;
+        }
+    }
 
     &:hover {
-        color: $tesc-red;
         background: transparent;
 
     }
