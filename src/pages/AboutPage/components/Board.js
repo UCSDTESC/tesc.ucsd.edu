@@ -11,7 +11,7 @@ class Board extends React.Component {
         return chunks.map(chunk => {
             return (
                 <div className="row board__row">
-                    {chunk.map(m => <BoardMember data={m} />)}
+                    {chunk.map((m, i) => <BoardMember data={m} idx={i}/>)}
                 </div>
             );
         })

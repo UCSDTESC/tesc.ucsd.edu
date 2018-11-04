@@ -27,21 +27,41 @@
     }
 
     &__member {
-        padding: 1rem;
         border-radius: 1rem;
-        transition: background-color 0.09s linear;
+        transition: background-color 0.05s linear;
+        width: 100%;
+
         &:hover {
             background: white;
             color: $tesc-light-blue;
             cursor: pointer;
-
-            /*& .board__member-img {
-                border-color: $tesc-light-blue;
-            }*/
+            border-radius: 1rem;
+            color: $tesc-light-blue;
 
             box-shadow: $extended-shadow;
             
         }
+
+        @for $i from 0 through 4 {
+            &-full-#{$i} {
+                background: white;
+                color: $tesc-light-blue;
+                display: none;
+                box-shadow: inset 0 0 10px $tesc-blue;
+
+                padding: 1rem;
+                
+                width: 400%;
+                position: relative;
+                margin-left: -100% * $i;
+
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+
         &-img {
 
             $dim: 12rem;
@@ -102,5 +122,28 @@
         a {
             color: $tesc-red !important;
         }
+    }
+}
+
+.full {
+    &__title {
+        color: $tesc-red;
+        font-size: 1.4rem;
+    }
+
+    &__name {
+        color: $tesc-light-blue;
+        font-size: 2.05rem;
+    }
+
+    &__bio {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    &__connect {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+
     }
 }
