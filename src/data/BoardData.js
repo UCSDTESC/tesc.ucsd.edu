@@ -8,7 +8,7 @@ const board = [
     {
         name: 'Caitlyn Liu',
         role: 'VP External',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-external.jpeg',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-external.jpg',
         email: 'caitlyn@tesc.ucsd.edu'
     },
     {
@@ -20,7 +20,7 @@ const board = [
     {
         name: 'Callie Boskin',
         role: 'VP Finance',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-finance.jpeg',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-finance.jpg',
         email: 'callie@tesc.ucsd.edu'
     },
     {
@@ -32,7 +32,7 @@ const board = [
     {
         name: 'David Ding',
         role: 'Sponsorship Lead',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/sponsorship-lead.png',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/sponsorship-lead.jpg',
         link: 'https://www.linkedin.com/in/david-ding-65514712a/',
         email: 'david@tesc.ucsd.edu'
     },
@@ -45,7 +45,7 @@ const board = [
     {
         name: 'Bilguun Bulgan',
         role: 'HackXX Director',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/hackxx-director-2.jpeg',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/hackxx-director-2.jpg',
         email: 'bilguun@tesc.ucsd.edu'
     },
     {
