@@ -14,7 +14,7 @@
     }
 
     &__body {
-        background: $tesc-blue;
+        background: $tesc-light-blue;
         color: white;
 
         &-small {
@@ -27,7 +27,21 @@
     }
 
     &__member {
-        padding: 0.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        transition: background-color 0.09s linear;
+        &:hover {
+            background: white;
+            color: $tesc-light-blue;
+            cursor: pointer;
+
+            /*& .board__member-img {
+                border-color: $tesc-light-blue;
+            }*/
+
+            box-shadow: $extended-shadow;
+            
+        }
         &-img {
 
             $dim: 12rem;
@@ -40,6 +54,7 @@
             height: 1.1 * $dim;
             display: block;
             margin: 0 auto;
+            border: 5px solid white;
 
             @include media-breakpoint-down(md) {
                 width: $dim-md;
