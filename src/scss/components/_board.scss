@@ -29,11 +29,28 @@
     &__member {
         padding: 0.5rem;
         &-img {
-            border: 6px solid white;
-            margin: 6px;
+
+            $dim: 12rem;
+            $dim-md: 10rem;
+
             border-radius: 50%;
-            width: 90%;
-            background: white;
+            background-size:cover;
+            background-repeat:no-repeat;
+            width: 1.1 * $dim;
+            height: 1.1 * $dim;
+            display: block;
+            margin: 0 auto;
+
+            @include media-breakpoint-down(md) {
+                width: $dim-md;
+                height: $dim-md;
+            }
+
+            @include media-breakpoint-down(sm) {
+                width: 1.3 * $dim;
+                height: 1.3 * $dim;
+            }
+
         }
         
         &-title {
