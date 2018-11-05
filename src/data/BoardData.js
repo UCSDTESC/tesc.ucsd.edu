@@ -16,7 +16,8 @@ const board = [
         name: 'Nick Thomson',
         role: 'VP Internal',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-internal.jpg',
-        email: 'nick.thomson@tesc.ucsd.edu'
+        email: 'nick.thomson@tesc.ucsd.edu',
+        bio: 'I am a 4th year Mathematics-Computer Science major graduating in spring quarter. As VP Internal my role is to ensure that TESC has the resources it needs for each of the board members to operate efficiently. I always try to maintain a portfolio of side projects to stay in touch with emerging technologies. In my spare time I skate and play pool.'
     },
     {
         name: 'Callie Boskin',
@@ -42,7 +43,13 @@ const board = [
         name: 'Sergio Villazon',
         role: 'ProDev Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/prodev-lead.jpg',
-        email: 'sergio@tesc.ucsd.edu'
+        email: 'sergio@tesc.ucsd.edu',
+        bio: `
+        My name is Sergio Villazon I’m a third year computer science major from Bolivia.
+        
+        My interests are generally focused on back-development and data analysis. I really enjoy working with statistics and Python. Although lately I’ve been expanding more into front-end and visual design but I’ve got some ways to go in terms of artistic skill.\n
+        
+        Outside of school, I enjoy watching fantasy and Sci-Fi movies, reading, and playing board games`
     },
     {
         name: 'Bilguun Bulgan',
@@ -83,7 +90,8 @@ const board = [
         name: 'Catherine Xia',
         role: 'Social Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/social-lead.jpg',
-        email: 'catherine@tesc.ucsd.edu'
+        email: 'catherine@tesc.ucsd.edu',
+        bio: "I am a second-year computer engineering major. As the Social Lead of TESC, I would like to bring more students into our engineering community and let them enjoy connecting with people having the same passion. Also, I like constantly challenging myself, aiming for a better self every day. In my free time, I enjoy TV shows, food hunting and travelling."
     },
     {
         name: 'Cameron Wilkinson',
@@ -96,7 +104,7 @@ const board = [
         role: 'Marketing Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/marketing-lead.jpg',
         email: 'evon@tesc.ucsd.edu',
-        bio: ``
+        bio: `I’m a fourth-year communication major, double minor in business and design, who loves to connect people with people, and people with opportunities. I craft and share stories, and lead campaigns that reach thousands. You can find me in conversations with new people, taste-testing ramen joints, and adventuring all around San Diego.`
     },
     {
         name: 'Joshua Hedgpeth',
@@ -109,8 +117,9 @@ const board = [
     {
         name: 'Nick Lin',
         role: 'Data Analyst',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/placeholder.png',
-        email: 'nick.lin@tesc.ucsd.edu'
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/data-analyst.jpg',
+        email: 'nick.lin@tesc.ucsd.edu',
+        bio: "I'm Nick Lin, TESC's Data Analyst. This is my second year in data science even though I’m a third year student. I was one of those working kids that you see in Chinese restaurants. Currently I’m mostly busy helping researchers, and doing my own projects. I’m a big fan of old Hong Kong movies and stand up."
     }
 ]
 
