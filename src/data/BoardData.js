@@ -4,7 +4,7 @@ const board = [
         role: 'President',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/president.jpg',
         email: 'colin@tesc.ucsd.edu',
-        bio: `I’m a fourth year chemical engineering major currently researching soft lithography techniques for antifouling coatings. I also hope to develop better feedback in VR through simulating the sensation of touch. When I can take time away from research and school, I can make a pie that will give your grandma a run for her money.`
+        bio: `As President, I oversee all of TESC in our mission to serve the engineering student body of the Jacobs School. I strive daily to find new opportunities to connect my peers with opportunities to propel them into engineering careers.  I’m a fourth year chemical engineering major currently researching soft lithography techniques for antifouling coatings. I also hope to develop better environmental interactions in VR through simulating the sensation of touch. When I can take time away from research and school, I can make a pie that will give your grandma a run for her money.`
     },
     {
         name: 'Caitlyn Liu',
