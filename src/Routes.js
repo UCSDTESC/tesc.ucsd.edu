@@ -29,7 +29,7 @@ class Routes extends React.Component {
             <Switch>
                 <Route exact path="/" component={this.withLayout(HomePage)}/>
                 <Route exact path="/orgs" component={this.withLayout(OrgPage, true)}/>
-                <Route exact path="/about" component={this.withLayout(AboutPage)} />
+                <Route exact path="/about" component={AboutPage} />
                 <Route exact path="/orgs/membership" component={this.withLayout(MembershipPage, true)}/>
                 <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
                 <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>

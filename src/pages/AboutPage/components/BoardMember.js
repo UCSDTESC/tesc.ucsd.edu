@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import {findDOMNode} from 'react-dom';
-class Board extends React.Component {
+class BoardMember extends React.Component {
 
     constructor(props) {
         super(props);
@@ -9,31 +9,46 @@ class Board extends React.Component {
             showFull: false
         }
 
-        this.show = this.show.bind(this);
+        this.click = this.click.bind(this);
+    }
+
+    hide() {
+        const curr = $(findDOMNode(this)).find('.board__member-full').eq(0);
+        curr.hide();
+        this.setState({showFull: false})
+    }
+
+    componentDidUpdate() {
+        if((!this.props.isActive && this.state.showFull)) {
+            this.hide();
+        }
+        if (this.props.isActive && !this.state.showFull) {
+            this.show()
+        }
     }
 
     show() {
         const curr = $(findDOMNode(this)).find('.board__member-full').eq(0);
-        const id = this.props.data.role.toLowerCase().replace(/ /g, '');
-        $('.board__member-full').each((i, e) => {
-            const parentId = e.parentNode.getAttribute('id');
-            if (parentId !== id) {
-                $(e).slideUp()
-            }
-        }).promise().done(() => {
-            setTimeout(curr.slideToggle(), 50);
-        })
-        this.setState({showFull: !this.state.showFull});
+        curr.slideDown();
+        this.setState({showFull: true})
+    }
+
+    click() {
+        if (this.state.showFull) {
+            return this.props.onActive(-1);
+        }
+        this.props.onActive(this.props.val);
     }
 
     render() {
         const {data, idx} = this.props
         const id = data.role.toLowerCase().replace(/ /g, '');
         const firstName = data.name.split(' ')[0];
+        const {showFull} = this.state;
         return (
             <>
                 <div className="col-md-3 m-0 px-1 py-1" id={id}>
-                    <div className="board__member" onClick={this.show}>
+                    <div className={((showFull) ? `board__member-active-${idx}` : 'board__member')} onClick={this.click}>
                         <div src={data.img} className="board__member-img" style={{backgroundImage: `url(${data.img})`}}> </div>
                         <div className="text-center board__member-name">
                             {data.name}
@@ -68,4 +83,4 @@ class Board extends React.Component {
     }
 }
 
-export default Board;
+export default BoardMember;
