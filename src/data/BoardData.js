@@ -9,7 +9,8 @@ const board = [
         name: 'Caitlyn Liu',
         role: 'VP External',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-external.jpg',
-        email: 'caitlyn@tesc.ucsd.edu'
+        email: 'caitlyn@tesc.ucsd.edu',
+        bio: 'I am a Junior studying Math - Computer Science at UCSD. I enjoy problem solving and love probability and statistics in particular. When I’m not busy sending emails for TESC, I can be found in the CSE Building on duty as a tutor or curled up in bed reading TechCrunch.'
     },
     {
         name: 'Nick Thomson',
@@ -34,7 +35,8 @@ const board = [
         role: 'Sponsorship Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/sponsorship-lead.jpg',
         link: 'https://www.linkedin.com/in/david-ding-65514712a/',
-        email: 'david@tesc.ucsd.edu'
+        email: 'david@tesc.ucsd.edu',
+        bio: 'Hi my name is David Ding, and I currently serve as the Sponsorship Lead for TESC. My most previous role was director of SD Hacks 2018, which took place Oct 12th-14th this year. I am a third year electrical engineering student focusing on devices and materials. Besides TESC, I also do research in the neuroelectronics group and perform tasks such as microfabrication, animal experiments, and paper writing.'
     },
     {
         name: 'Sergio Villazon',
@@ -74,7 +76,7 @@ const board = [
         name: 'Andy Li',
         role: 'Outreach Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/outreach-lead.jpg',
-        bio: 'I am a 3rd year computer engineering major and the Outreach Lead for TESC. I am in charge of making sure annual outreach events such as Enspire and Splash run smoothly and efficiently. It is important to me that students from local middle schools and high schools from all socioeconomic backgrounds have a chance to pursue higher education in a field of study that interests them. At school, I really enjoy learning new things and understanding the complicated logic of how complicated systems like computers work. In my spare time, I watch sports, mainly basketball and baseball, and browse the internet looking for something to make me laugh.',
+        bio: 'I am a 3rd year computer engineering major and the Outreach Lead for TESC. At school, I really enjoy learning new things and understanding the complicated logic of how complicated systems like computers work. In my spare time, I watch sports, mainly basketball and baseball, and browse the internet looking for something to make me laugh.',
         email: 'andy@tesc.ucsd.edu'
     },
     {
@@ -86,20 +88,23 @@ const board = [
     {
         name: 'Cameron Wilkinson',
         role: 'Council Relations Lead',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/council-lead.JPG',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/council-lead.jpg',
         email: 'cameron@tesc.ucsd.edu'
     },
     {
         name: 'Evon Hung',
         role: 'Marketing Lead',
-        img: 'https://ca.slack-edge.com/T1598AR7T-UC7DM47CM-55803746ac59-1024',
-        email: 'evon@tesc.ucsd.edu'
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/marketing-lead.jpg',
+        email: 'evon@tesc.ucsd.edu',
+        bio: ``
     },
     {
         name: 'Joshua Hedgpeth',
         role: 'Project Spaces Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/projectspaces-lead.jpeg',
-        email: 'evon@tesc.ucsd.edu'
+        email: 'joshua@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/joshua-hedgpeth',
+        bio: "I am an Aerospace Engineering major in my second year at UCSD. I have been involved with the Triton Engineering Student Council on the Project Spaces committee since Fall 2017, and in Spring 2018 became the Project Spaces Lead. I am also a Lead Structures Engineer in Rocket Propulsion Laboratory at UCSD, an aerospace club on campus and one of TESC's many member organizations. I am from Sierra Madre, CA, and outside of school I like to play intramural basketball and practice the guitar in my free time."
     },
     {
         name: 'Nick Lin',
