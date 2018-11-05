@@ -70,9 +70,9 @@ class BoardMember extends React.Component {
                             {data.bio}
                         </p>
                     
-                        <div className="full__connect">
+                        {data.link && <div className="full__connect">
                             Connect with {firstName} on <a target="_blank" href={data.link}> LinkedIn <i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                        </div>}
                         <div className="full__connect">
                             Email {firstName} at <a target="_blank" href={'mailto:' + data.email}> {data.email} <i class="far fa-envelope"></i></a>
                         </div>

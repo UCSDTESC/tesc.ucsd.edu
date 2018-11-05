@@ -46,6 +46,7 @@
 
         @for $i from 0 through 4 {
             &-full-#{$i} {
+                z-index: 1000;
                 background: white;
                 color: $tesc-light-blue;
                 display: none;
@@ -175,5 +176,14 @@
         font-size: 1.3rem;
         margin-top: 1rem;
         font-weight: bold;
+
+        a {
+            color: $tesc-blue;
+            text-decoration: underline;
+            overflow: hidden;
+            &:hover {
+                color: $tesc-red;
+            }
+        }
     }
 }

@@ -3,7 +3,8 @@ const board = [
         name: 'Colin Feeney',
         role: 'President',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/president.jpg',
-        email: 'colin@tesc.ucsd.edu'
+        email: 'colin@tesc.ucsd.edu',
+        bio: `I’m a fourth year chemical engineering major currently researching soft lithography techniques for antifouling coatings. I also hope to develop better feedback in VR through simulating the sensation of touch. When I can take time away from research and school, I can make a pie that will give your grandma a run for her money.`
     },
     {
         name: 'Caitlyn Liu',
@@ -26,7 +27,9 @@ const board = [
         role: 'VP Finance',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-finance.jpg',
         email: 'callie@tesc.ucsd.edu',
-        link: 'https://www.linkedin.com/in/callie-boskin-a50b47132/'
+        link: 'https://www.linkedin.com/in/callie-boskin-a50b47132/',
+        bio: `I am a second year bioengineering: bioinformatics major. I have previously served as Finacial Analyst for TESC where I helped engineering organizations on campus fund their projects, workshops, competitions, and more. Outside of TESC, I am also a Warren College Resident Assistant.
+        I enjoy reading, biking, and going to the beach!`
     },
     {
         name: 'Jonathan Luck',
@@ -117,7 +120,7 @@ const board = [
         role: 'Marketing Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/marketing-lead.jpg',
         email: 'evon@tesc.ucsd.edu',
-        link: 'linkedin.com/in/evonhung',
+        link: 'https://linkedin.com/in/evonhung',
         bio: `I’m a fourth-year communication major, double minor in business and design, who loves to connect people with people, and people with opportunities. I craft and share stories, and lead campaigns that reach thousands. You can find me in conversations with new people, taste-testing ramen joints, and adventuring all around San Diego.`
     },
     {
