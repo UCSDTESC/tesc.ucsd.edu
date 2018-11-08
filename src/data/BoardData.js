@@ -64,7 +64,7 @@ const board = [
         role: 'HackXX Director',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/hackxx-director-2.jpg',
         email: 'bilguun@tesc.ucsd.edu',
-        bio: 'I’m a 3rd year computer science student who loves building software and teaching. I’ve been a tutor for the CS department for 10 classes now and counting. When I’m not programming, tutoring or doing TESC related things, I’m usually found sketching.',
+        bio: `I’m a 3rd year computer science student who loves building software and teaching. I’ve been a tutor for the CS department for 10 classes now and counting. I also have the opportunity to direct HackXX this year along with Alice! When I’m not programming, tutoring or doing TESC related things, I’m usually found sketching.`,
         link: "https://www.linkedin.com/in/bilguun-bulgan/"
     },
     {
@@ -138,6 +138,14 @@ const board = [
         link: 'https://www.linkedin.com/in/nick-lin-2771a4139/',
         email: 'nick.lin@tesc.ucsd.edu',
         bio: "I'm Nick Lin, TESC's Data Analyst. This is my second year in data science even though I’m a third year student. I was one of those working kids that you see in Chinese restaurants. Currently I’m mostly busy helping researchers, and doing my own projects. I’m a big fan of old Hong Kong movies and stand up."
+    },
+    {
+        name: 'Jeffrey Yang',
+        role: 'Financial Analyst',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/financial-analyst.jpg',
+        link: 'https://www.linkedin.com/in/jeffrey-yang-405061171',
+        email: 'jeffrey@tesc.ucsd.edu',
+        bio: "I am a first-year computer engineering major currently serving as the Financial Analyst for TESC. I enjoy programming and learning about almost everything computer related. In my free time, you can usually find me playing video games or watching movies."
     }
 ]
 
