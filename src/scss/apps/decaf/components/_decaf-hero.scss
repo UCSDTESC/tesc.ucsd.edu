@@ -39,7 +39,12 @@
         width: 85%;
         height: 85%;
         display: block;
-        margin: auto;
+        margin-left: auto;
+        margin-top: 1rem;
+
+        @include media-breakpoint-down(sm) {
+            margin: 2rem auto;
+        }
     }
 
     &__logo {
