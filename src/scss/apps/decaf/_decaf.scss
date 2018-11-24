@@ -1,0 +1,13 @@
+$decaf-light-blue: #3399FF;
+$decaf-dark-blue: #2F5F8E;
+
+
+#decaf-main {
+    height: 100%;
+}
+
+.decaf-gradient-bg {
+    background: linear-gradient(-45deg, $decaf-light-blue, $decaf-dark-blue);
+}
+
+@import 'components/all';

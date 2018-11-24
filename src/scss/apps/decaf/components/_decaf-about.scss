@@ -1,0 +1,37 @@
+.decaf-about {
+    width: 100%;
+    background: white;
+
+    &__head {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 4.5rem;
+
+        b {
+            font-weight: 900;
+        }
+    }
+
+    &__graphic {
+        max-width: 40rem;
+        width: 100%;
+    }
+
+    &__container {
+        width: 80%;
+        margin-left: 10%;
+
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-top: 3rem;
+
+            b {
+                font-weight: 900;
+            }
+        }
+    }
+}
