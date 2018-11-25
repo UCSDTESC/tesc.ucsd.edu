@@ -14,7 +14,7 @@ class Hero extends React.Component {
                                 <div className="w-100">
                                     <img className="decaf-hero__logo" src="/decaf-logo.svg"/>
                                     <div className="decaf-hero__title pb-2">
-                                        Disciplines in Engineering Career Fair 
+                                       <b> Disciplines in Engineering Career Fair </b>
                                     </div>
                                     <div className="decaf-hero__detail">
                                         PC Ballrooms, UC San Diego
