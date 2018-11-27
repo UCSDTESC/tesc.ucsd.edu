@@ -24,7 +24,7 @@ class Footer extends React.Component {
                     </h1>
                 </div>
                 </section>
-                <footer className="footer" id="footer">
+                <footer className="footer px-5" id="footer">
                 <div className="container-fluid">
                     <ul className="footer__links flex-column ml-md-auto d-flex flex-md-row justify-content-between text-center text-md-left">
                     <li className="footer__link-item">
@@ -42,7 +42,7 @@ class Footer extends React.Component {
                         </a>
                     </li>
                     <li className="footer__link-item">
-                        <a className="footer__link" href="/weeeeee" target="_blank">Register</a>
+                        <a className="footer__link" href="http://tinyurl.com/decaf2019" target="_blank">Register</a>
                     </li>
                     <li className="footer__link-item">
                         <NavLink className="footer__link" to="/decaf#faq">FAQ</NavLink>

@@ -22,7 +22,7 @@ class Hero extends React.Component {
                                     <div className="decaf-hero__detail">
                                         January 18, 2018 // 10AM - 3PM
                                     </div>
-                                    <a className="btn decaf-hero__cta">
+                                    <a className="btn decaf-hero__cta" target="_blank" href="http://tinyurl.com/decaf2019">
                                         Register your company 💼
                                     </a>
                                 </div>
