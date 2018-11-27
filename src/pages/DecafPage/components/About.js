@@ -4,7 +4,7 @@ class About extends React.Component {
 
     render() {
         return (
-            <div className="decaf-about">
+            <div className="decaf-about" id="about">
                 <div className="decaf-about__head">
                     What's <b>Decaf</b> ☕?
                 </div>

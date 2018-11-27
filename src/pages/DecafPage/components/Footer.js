@@ -1,7 +1,18 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
+import $ from 'jquery';
 
 class Footer extends React.Component {
+
+    componentDidMount() {
+        const {hash} = this.props.location;
+
+        if (hash) {
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 450);
+        }
+    }
 
     render() {
         return (
@@ -20,7 +31,7 @@ class Footer extends React.Component {
                         <NavLink className="footer__link" to="/decaf">Home</NavLink>
                     </li>
                     <li className="footer__link-item">
-                        <NavLink className="footer__link" to="/decaf">About</NavLink>
+                        <NavLink className="footer__link" to="/decaf#about">About</NavLink>
                     </li>
                     <li className="footer__link-item footer__link-item--logo">
                         Made with ❤️ by <a className="footer__link" href="http://tesc.ucsd.edu" target="_new">
@@ -31,10 +42,10 @@ class Footer extends React.Component {
                         </a>
                     </li>
                     <li className="footer__link-item">
-                        <NavLink className="footer__link" to="/decaf">Register</NavLink>
+                        <a className="footer__link" href="/weeeeee" target="_blank">Register</a>
                     </li>
                     <li className="footer__link-item">
-                        <NavLink className="footer__link" to="/decaf">FAQ</NavLink>
+                        <NavLink className="footer__link" to="/decaf#faq">FAQ</NavLink>
                     </li>
                     </ul>
                 </div>
@@ -44,4 +55,4 @@ class Footer extends React.Component {
     }
 }
 
-export default Footer;
+export default withRouter(Footer);

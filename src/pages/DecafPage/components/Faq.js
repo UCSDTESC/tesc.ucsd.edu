@@ -6,7 +6,7 @@ class Faq extends React.Component {
 
     render() {
         return (
-            <div className="decaf-faq">
+            <div className="decaf-faq" id="faq">
                 <div className="decaf-faq__head">
                     Frequently Asked Questions
                 </div>

@@ -1,7 +1,19 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
+import $ from 'jquery';
 
 class DecafNav extends React.Component {
+
+
+    componentDidMount() {
+        const {hash} = this.props.location;
+
+        if (hash) {
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 450);
+        }
+    }
 
     everyoneLinks() {
         return (
@@ -32,19 +44,16 @@ class DecafNav extends React.Component {
                     <NavLink className="nav-link text-white" to="/decaf">HOME</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf">ABOUT</NavLink>
+                    <NavLink className="nav-link text-white" to="/decaf#about">ABOUT</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf">REGISTER</NavLink>
-                </li>
-                {/*<li class="nav-item nav__item text-center">
-                        <a class="nav-link" href="">BRANDING</a>
-                        </li>*/}
-                <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf">CONTACT</NavLink>
+                    <a className="nav-link text-white" href="" target="_blank">REGISTER</a>
                 </li>
                 <li className="nav-item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf">FAQ</NavLink>
+                    <NavLink className="nav-link text-white" to="/decaf#faq">FAQ</NavLink>
+                </li>
+                <li className="nav-item nav__item text-center">
+                    <NavLink className="nav-link text-white" to="/decaf#contact">CONTACT</NavLink>
                 </li>
             </ul>
         )
@@ -59,7 +68,7 @@ class DecafNav extends React.Component {
             <header>
                 <div className="pt-3" id="top-nav">
                     <nav className="navbar navbar-expand-lg navbar-light nav__items">
-                        <NavLink to="/"><img className="nav__logo w-50" href="#" src="/decaf-icon.svg" /></NavLink>
+                        <NavLink to="/decaf"><img className="nav__logo w-50" href="#" src="/decaf-icon.svg" /></NavLink>
                         <button className="navbar-toggler nav__toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                         </button>
@@ -73,4 +82,4 @@ class DecafNav extends React.Component {
     }
 }   
 
-export default DecafNav;
+export default withRouter(DecafNav);
