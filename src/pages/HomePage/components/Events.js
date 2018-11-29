@@ -1,6 +1,27 @@
 import React from 'react';
+import currEvents from '../../../data/CurrentEvents';
 
-class Hero extends React.Component {
+function Event(props) {
+    return (
+        <div class="col-md events__card">
+            {props.name}
+        </div>
+    );
+}
+
+class Events extends React.Component {
+
+    renderEvents() {
+        if (currEvents.length == 0) {
+            return (
+                <div className="events__none">
+                    Nothing Yet, Stay Tuned For More
+                </div>
+            )
+        }
+        return currEvents.map(c => <Event {...c} />);
+
+    }
 
     render() {
         return (
@@ -13,13 +34,7 @@ class Hero extends React.Component {
                 </div>
                 <div className="container events__container">
                 <div className="row h-100 justify-content-center flex-row events__cards">
-                    {/*<div class="col-md events__card">
-                        SD Hacks
-                    </div>
-                    </div>*/}
-                    <div className="events__none">
-                    Nothing Yet, Stay Tuned For More
-                    </div>
+                    {this.renderEvents()}
                 </div>
                 </div>
             </section>
@@ -27,4 +42,4 @@ class Hero extends React.Component {
     }
 }
 
-export default Hero;
+export default Events;
