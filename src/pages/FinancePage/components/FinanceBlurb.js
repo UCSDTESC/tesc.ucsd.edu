@@ -108,11 +108,11 @@ class FinanceBlurb extends React.Component {
                     <div className="text-center pb-5">
                         <span className={`finance__pill finance__pill-l ${leftActive ? 'finance__pill-active' : ''}`}
                             onClick={() => this.togglePill(true)}>
-                                Old Requirements
+                                Funding Requirements
                         </span>
                         <span className={`finance__pill finance__pill-r ${!leftActive ? 'finance__pill-active' : ''}`}
                             onClick={() => this.togglePill(false)}>
-                                New Requirements
+                                Funding Cycle
                         </span>
                     </div>
                     <div>
