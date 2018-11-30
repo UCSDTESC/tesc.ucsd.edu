@@ -8,7 +8,7 @@ class FinanceBlurb extends React.Component {
         super(props);
 
         this.state = {
-            leftActive: false
+            leftActive: true
         }
 
         this.togglePill = this.togglePill.bind(this);
