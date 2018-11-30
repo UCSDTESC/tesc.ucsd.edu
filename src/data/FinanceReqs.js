@@ -1,6 +1,6 @@
 import React from 'react';
 
-const reqs = [
+const oldReqs = [
     {
         title: 'Organization Eligibility to Apply for TESC Funds',
         content: [
@@ -35,4 +35,28 @@ const reqs = [
     }
 ]
 
-export default reqs;
+const newReqs = {
+    title: 'What’s Required',
+    content: [
+        <div>A budget with all of your (planned) expenses from Fall 2018 to the end of Summer 2019. It doesn’t need to be completely exhaustive for future expenses, but it should have all money spent so far (in fall quarter 2018). Please provide as many details as you can, but we understand this budget is a prediction - ideally yours will be based off of previous years’ expenses.</div>,
+        <div>A member list. Please provide a roster of the active UCSD students in your org. You will also need their UCSD email address.</div>,
+        <div>
+            An outreach event schedule. Outreach events are those where your primary goal is to interact with students or individuals OUTSIDE of your organization. For an outreach event to count, it must be on the <a className="finance__em" href="http://tesc.ucsd.edu/orgs">TESC PROGRAM AND EVENTS CALENDAR</a> three weeks before the event happens. The calendar post needs to have the location, hosting organization, and someone to contact.
+            <ol type='a'>
+
+                <li>
+                    An example may be tabling at HackXX, or putting on an event bringing high school students to UCSD for an event.     
+                </li>    
+                <li>
+                    General Body Meetings <b className="finance__em">will not</b> be considered as outreach events, nor are workshops where your target audience is your own organization.
+                </li>
+                <li>
+                If you don’t plan on running any outreach events, then do not submit a schedule. 
+                </li>
+            </ol>
+        </div>,
+
+    ]
+}
+
+export {oldReqs, newReqs};
