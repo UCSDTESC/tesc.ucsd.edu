@@ -55,7 +55,7 @@ class Events extends React.Component {
                     Upcoming Events
                 </div>
                 <div className="container events__container">
-                <div className="row h-100 justify-content-center flex-row events__cards">
+                <div className="row justify-content-center flex-row events__cards">
                     {this.renderEvents()}
                 </div>
                 </div>
