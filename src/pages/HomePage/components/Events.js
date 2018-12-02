@@ -1,10 +1,32 @@
 import React from 'react';
 import currEvents from '../../../data/CurrentEvents';
-
+import {Link} from 'react-router-dom';
+ 
 function Event(props) {
-    return (
+
+    let withWrapper = null
+    if (props.isInternalLink) {
+        withWrapper = (jsx) => {
+            return (
+                <Link to={props.link}>
+                    {jsx}
+                </Link>
+            )
+        }
+    }
+    else {
+        withWrapper = (jsx) => {
+            return (
+                <a href={props.link} target="_blank">
+                    {jsx}
+                </a>
+            )
+        }
+    }
+
+    return withWrapper(
         <div class="col-md events__card">
-            {props.name}
+            <img className="w-100 h-100" src={props.img}/>
         </div>
     );
 }
