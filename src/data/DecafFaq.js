@@ -15,11 +15,7 @@ const faq = [
     },
     {
         question: "Can I reserve private interview rooms?",
-        answer: "We will provide private interview rooms for all the Corporate Sponsors, we will send out a form closer to the date for you to request them. In addition all companies can request private interview rooms by contacting UCSD Career Services Center and filling in the form on Port Triton."
-    },
-    {
-        question: "What kind of students would be attending?",
-        answer: "All Jacobs School of Engineering Students (including Mechanical Engineering, Computer Science, Chemical Engineering… etc) at both the undergraduate and graduate level"
+        answer: "We will provide private interview rooms for all the Corporate Sponsors, we will send out a form closer to the date for you to request them."
     }
 ]
 

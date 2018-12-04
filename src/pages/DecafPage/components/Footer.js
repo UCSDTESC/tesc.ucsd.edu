@@ -20,7 +20,7 @@ class Footer extends React.Component {
                 <section className="contact decaf-gradient-bg" id="contact">
                 <div className="container-fluid d-flex align-items-center h-100">
                     <h1 className="contact__header m-auto">
-                    Talk to us at <a className="contact__link" href="mailto:hello@tesc.ucsd.edu">hello@tesc.ucsd.edu</a> if you have any questions.
+                    Talk to us at <a className="contact__link" href="mailto:hello@tesc.ucsd.edu">sponsor@tesc.ucsd.edu</a> if you have any questions.
                     </h1>
                 </div>
                 </section>
