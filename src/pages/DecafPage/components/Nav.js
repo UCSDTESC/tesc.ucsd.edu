@@ -41,7 +41,7 @@ class DecafNav extends React.Component {
         return (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf">HOME</NavLink>
+                    <NavLink className="nav-link text-white" to="/">HOME</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#about">ABOUT</NavLink>
