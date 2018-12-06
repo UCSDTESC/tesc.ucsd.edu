@@ -7,7 +7,7 @@ const currEvents = [
     },
     {
         name: 'Engineers On The Green 2019',
-        link: 'https://www.facebook.com/ucsd.tesc/',
+        link: 'https://www.facebook.com/events/342196413243975/',
         isInternalLink: false,
         img: '/eotg-event.svg'
     }
