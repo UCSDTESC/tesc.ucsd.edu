@@ -7,7 +7,8 @@ class DecafNav extends React.Component {
 
     componentDidMount() {
         const {hash} = this.props.location;
-
+        window.scrollTo(0,0);
+        console.log(hash)
         if (hash) {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
