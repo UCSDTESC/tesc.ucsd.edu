@@ -2,16 +2,16 @@ import {Switch, Route, withRouter} from 'react-router-dom';
 import React from 'react';
 
 import Layout from './layouts/Layout';
-import DecafLayout from './layouts/DecafLayout';
 
 import DecafRoutes from './pages/DecafPage/Routes';
+import EnspireRoutes from './pages/EnspirePage/Routes'
+
 import HomePage from './pages/HomePage';
 import OrgPage from './pages/HomePage/OrgPage';
 import AboutPage from './pages/AboutPage';
 import MembershipPage from './pages/MembershipPage';
 import SpacesPage from './pages/SpacesPage';
 import FinancePage from './pages/FinancePage';
-import DecafPage from './pages/DecafPage'
 import NotFoundPage from './pages/NotFoundPage';
 
 class Routes extends React.Component {
@@ -32,7 +32,10 @@ class Routes extends React.Component {
                 <Route exact path="/orgs/membership" component={this.withLayout(MembershipPage, true)}/>
                 <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
                 <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>
-                <DecafRoutes />
+
+                {/*<DecafRoutes />*/}
+                <EnspireRoutes />
+
                 <Route component={this.withLayout(NotFoundPage)} />
             </Switch>
         )

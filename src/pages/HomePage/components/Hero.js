@@ -4,6 +4,7 @@ import hero from '../../../hero.svg';
 class Hero extends React.Component {
 
     render() {
+
         return (
             <section className="hero">
                 <div className="container-fluid p-0 h-100 mx-0">

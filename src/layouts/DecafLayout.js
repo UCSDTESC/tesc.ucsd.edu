@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Nav from '../pages/DecafPage/components/Nav';
 import Footer from '../pages/DecafPage/components/Footer';
 
 class DecafLayout extends React.Component {
