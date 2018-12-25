@@ -25,7 +25,7 @@ function Event(props) {
     }
 
     return withWrapper(
-        <div class="col-md events__card">
+        <div className="col-md events__card">
             <img className="w-100 h-100" src={props.img}/>
         </div>
     );
@@ -44,7 +44,7 @@ class Events extends React.Component {
                 </div>
             )
         }
-        return currEvents.map(c => <Event {...c} />);
+        return currEvents.map((c, i) => <Event {...c} key={i} />);
 
     }
 

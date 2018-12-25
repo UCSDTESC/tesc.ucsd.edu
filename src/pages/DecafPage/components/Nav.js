@@ -69,7 +69,7 @@ class DecafNav extends React.Component {
     render() {
 
         const {isCompany} = this.props;
-        console.log(this.props, isCompany)
+
         return (
             <header>
                 <div className="pt-3" id="top-nav">
