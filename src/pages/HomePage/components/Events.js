@@ -1,5 +1,5 @@
 import React from 'react';
-import currEvents from '../../../data/CurrentEvents';
+import events from '../../../data/CurrentEvents';
 import {Link} from 'react-router-dom';
  
 function Event(props) {
@@ -34,6 +34,9 @@ function Event(props) {
 class Events extends React.Component {
 
     renderEvents() {
+
+        let currEvents = events.filter(({date}) => Date.now() < new Date(date));
+
         if (currEvents.length == 0) {
             return (
                 <div className="events__none">
