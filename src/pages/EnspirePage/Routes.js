@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import EnspireLayout from '../../layouts/EnspireLayout';
 import EnspirePage from './index';
 class DecafRoutes extends React.Component {
@@ -13,9 +13,9 @@ class DecafRoutes extends React.Component {
 
     render() {
         return (
-            <>
+            <Switch>
                 <Route path="/enspire/" exact component={this.withEnspireLayout(EnspirePage)}/>
-            </>
+            </Switch>
         )
     }
 }

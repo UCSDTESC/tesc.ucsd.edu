@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import DecafLayout from '../../layouts/DecafLayout';
 import DecafPage from './index';
@@ -15,10 +15,10 @@ class DecafRoutes extends React.Component {
 
     render() {
         return (
-            <>
+            <Switch>
                 <Route path="/decaf/" exact component={this.withDecafLayout(DecafPage, false)}/>
                 <Route path="/decaf/companies" exact component={this.withDecafLayout(DecafPage, true)}/>
-            </>
+            </Switch>
         )
     }
 }

@@ -33,8 +33,8 @@ class Routes extends React.Component {
                 <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
                 <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>
 
-                {/*<DecafRoutes />*/}
-                <EnspireRoutes />
+                <Route path='/decaf' component={DecafRoutes} />
+                <Route path='/enspire' component={EnspireRoutes} />
 
                 <Route component={this.withLayout(NotFoundPage)} />
             </Switch>

@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Pictures from './components/Pictures';
+import Register from './components/Register';
 
 class EnspirePage extends Component {
 
@@ -11,6 +12,7 @@ class EnspirePage extends Component {
             <>
                 <Hero />
                 <About />
+                <Register />
                 <Pictures />
             </>
         )
