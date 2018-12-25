@@ -31,7 +31,7 @@ class Nav extends React.Component {
                     <NavLink className="nav-link" to="/#contact">CONTACT</NavLink>
                 </li>
                 <li className="nav-item text-center">
-                    <NavLink className="nav-link btn nav__toggle" to="/orgs">For TESC Orgs</NavLink>
+                    <NavLink className="nav-link btn nav__toggle" to="/orgs">FOR TESC ORGS</NavLink>
                 </li>
             </ul>
         );
