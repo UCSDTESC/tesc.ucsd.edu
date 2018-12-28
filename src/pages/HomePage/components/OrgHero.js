@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as HeroGraphic} from '../../../hero.svg';
+import {ReactComponent as HeroGraphic} from '../../../svg/hero.svg';
 import $ from 'jquery';
 
 class OrgHero extends React.Component {

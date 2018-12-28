@@ -1,10 +1,16 @@
 import React from 'react';
-import {ReactComponent as HeroGraphic} from '../../../hero.svg';
+import {ReactComponent as HeroGraphic} from '../../../svg/hero.svg';
+import {TimelineLite} from 'gsap';
 
 class Hero extends React.Component {
 
-    render() {
+    componentDidMount() {
+        /*let tl = new TimelineMax();
+        tl.staggerFrom('#laptop_text_copy_2 > g > g path', 0.1, {scaleX: 0}, 0.1)
+            .from('#XMLID_123_', 1, {scaleY: 0, transformOrigin: "50% 50%", ease: Power2.easeOut});*/
+    }
 
+    render() {
         return (
             <section className="hero">
                 <div className="container-fluid p-0 h-100 mx-0">

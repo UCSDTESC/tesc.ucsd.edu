@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../hero.svg';
+import hero from '../svg/hero.svg';
 
 class NotFoundPage extends React.Component {
     render() {
