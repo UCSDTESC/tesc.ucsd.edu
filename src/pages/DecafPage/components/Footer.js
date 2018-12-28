@@ -15,9 +15,12 @@ class Footer extends React.Component {
     }
 
     render() {
+
+        const isCompany = this.props.match.path === "/decaf/companies"
+        const bg = isCompany ? "decaf-green-gradient" : "decaf-gradient-bg"
         return (
             <div id="footer">
-                <section className="contact decaf-gradient-bg" id="contact">
+                <section className={`contact ${bg}`} id="contact">
                 <div className="container-fluid d-flex align-items-center h-100">
                     <h1 className="contact__header m-auto">
                     Talk to us at <a className="contact__link" href="mailto:hello@tesc.ucsd.edu">sponsor@tesc.ucsd.edu</a> if you have any questions.

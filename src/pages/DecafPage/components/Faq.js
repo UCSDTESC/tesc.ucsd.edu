@@ -5,8 +5,11 @@ import FaqItem from './FaqItem';
 class Faq extends React.Component {
 
     render() {
+        console.log(this.props)
+        const bg = this.props.isCompany ? 'decaf-green-bg' : ''
+
         return (
-            <div className="decaf-faq" id="faq">
+            <div className={`decaf-faq ${bg}`} id="faq">
                 <div className="decaf-faq__head">
                     Frequently Asked Questions
                 </div>

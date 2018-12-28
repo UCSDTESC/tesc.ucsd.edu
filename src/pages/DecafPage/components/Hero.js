@@ -17,7 +17,7 @@ class Hero extends React.Component {
 
         if (isCompany) {
             return (
-                <a className="btn decaf-hero__cta" target="_blank" href="http://tinyurl.com/decaf2019" id="hero-cta">
+                <a className="btn decaf-hero__cta decaf-green-text" target="_blank" href="http://tinyurl.com/decaf2019" id="hero-cta">
                     Register your company 💼
                 </a>
             );

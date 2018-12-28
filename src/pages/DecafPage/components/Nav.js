@@ -34,7 +34,7 @@ class DecafNav extends React.Component {
                     <NavLink className="nav-link text-white" to="/decaf#contact">CONTACT</NavLink>
                 </li>
                 <li className="nav-item text-center">
-                    <NavLink className="nav-link btn nav__toggle" to="/decaf/companies">FOR COMPANIES</NavLink>
+                    <NavLink className="nav-link btn nav__toggle decaf-toggle" to="/decaf/companies">FOR COMPANIES</NavLink>
                 </li>
             </ul>
         );
@@ -59,7 +59,7 @@ class DecafNav extends React.Component {
                     <NavLink className="nav-link text-white" to="/decaf#contact">CONTACT</NavLink>
                 </li>
                 <li className="nav-item text-center">
-                    <NavLink className="nav-link btn nav__toggle" to="/decaf">FOR STUDENTS</NavLink>
+                    <NavLink className="nav-link btn nav__toggle decaf-toggle decaf-green-text" to="/decaf">FOR STUDENTS</NavLink>
                 </li>
             </ul>
         )
