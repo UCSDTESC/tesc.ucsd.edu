@@ -17,15 +17,15 @@ class Hero extends React.Component {
 
         if (isCompany) {
             return (
-                <a className="btn decaf-hero__cta" target="_blank" href="http://tinyurl.com/decaf2019">
+                <a className="btn decaf-hero__cta" target="_blank" href="http://tinyurl.com/decaf2019" id="hero-cta">
                     Register your company 💼
                 </a>
             );
         }
         else {
             return (
-                <a className="btn decaf-hero__cta" target="_blank" href="http://tinyurl.com/decaf2019">
-                    Submit Resume Here
+                <a className="btn decaf-hero__cta" target="_blank" href="http://tinyurl.com/decaf2019" id="hero-cta">
+                   <span>Submit Resume Here</span> 
                 </a>
             );
         }
@@ -79,6 +79,7 @@ class Hero extends React.Component {
             TweenMax
                 .to(Anims.Spanner.elem, Anims.Spanner.duration, {rotation: Anims.Spanner.degree, delay: 1, ease:Linear.easeInOut, repeat: -1, repeatDelay: 2, transformOrigin: "50% 50%"})
 
+            //Window
             new TimelineLite().staggerFrom(Anims.Window.elem, 1, {
 				repeatDelay: 1, 
 				y: "-100%", 
@@ -87,6 +88,7 @@ class Hero extends React.Component {
                 repeat: -1
             }, 0.5)
             
+            //Background
             new TimelineLite().staggerFrom(Anims.Beams.elem, 0.1, {
 				y: "-100%", 
 				opacity: 0, 

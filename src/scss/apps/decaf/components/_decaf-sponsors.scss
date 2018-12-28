@@ -1,6 +1,8 @@
 .decaf-sponsors {
 
     &__left {
+        background-image: url(/decaf-sponsors-left.svg);
+        background-position: right;
     }
 
     &__content {
@@ -15,6 +17,7 @@
     }
 
     &__right {
-
+        background-image: url(/decaf-sponsors-right.svg);
+        background-position: left;
     }
 }
