@@ -1,6 +1,7 @@
 import React from 'react';
 import FinanceReq from './FinanceReq';
 import {oldReqs, newReqs} from '../../../data/FinanceReqs';
+import {withRouter} from 'react-router-dom';
 
 class FinanceBlurb extends React.Component {
 
@@ -127,4 +128,4 @@ class FinanceBlurb extends React.Component {
     }
 }
 
-export default FinanceBlurb;
+export default withRouter(FinanceBlurb);

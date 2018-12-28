@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../../../hero.svg';
+import {ReactComponent as HeroGraphic} from '../../../hero.svg';
 
 class Hero extends React.Component {
 
@@ -20,7 +20,9 @@ class Hero extends React.Component {
                             </div>
                         </div>
                         <div className="col-md-6 p-0 d-flex">
-                            <img src={hero} className="hero__graphic w-100 align-self-center" />
+                            <div className="hero__graphic w-100">
+                                <HeroGraphic className="w-100"/>
+                            </div>
                         </div>
                     </div>
                 </div>
