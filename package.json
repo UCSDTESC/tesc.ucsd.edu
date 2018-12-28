@@ -10,7 +10,6 @@
     "moment": "^2.22.2",
     "node-sass": "^4.9.4",
     "react": "^16.5.2",
-    "react-accessible-accordion": "^2.4.5",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1"
   },
