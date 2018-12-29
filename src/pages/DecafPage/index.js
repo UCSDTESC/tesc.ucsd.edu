@@ -20,8 +20,8 @@ class DecafPage extends React.Component {
         return (
             <>
                 <Hero isCompany={this.props.isCompany} />
-                <About />
-                <Faq isCompany={this.props.isCompany}/>
+                <About isCompany={this.props.isCompany} />
+                <Faq isCompany={this.props.isCompany} />
                 <Sponsors />
             </>
         )

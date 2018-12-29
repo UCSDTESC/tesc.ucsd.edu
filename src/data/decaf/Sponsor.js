@@ -12,7 +12,7 @@ const sponsors = [
         link: 'https://ibm.com'
     },
     {
-        img: '/sponsors/ga.jpg',
+        img: '/sponsors/ga.svg',
         name: 'General Atomics',
         link: 'http://www.ga.com/'
     },
@@ -45,6 +45,11 @@ const sponsors = [
         img: '/sponsors/synopsys_color.svg',
         name: 'Synopsys',
         link: 'https://www.synopsys.com/'
+    },
+    {
+        img: '/sponsors/yahoo.svg',
+        name: 'Yahoo',
+        link: 'https://yahoo.com'
     }
 ]
 

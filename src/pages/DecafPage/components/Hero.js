@@ -43,13 +43,15 @@ class Hero extends React.Component {
                     rotationDuration: 4
                 },
                 Beaker: {
-                    elem: "#XMLID_12_ g",
+                    elem: "#flask",
                     duration: 0.5,
                     degree: 6
                 },
                 BeakerBubbles: {
-                    elem: "#XMLID_12_ circle",
-                    duration: 100
+                    elem: "#bubbles circle",
+                    duration: 4,
+                    yStart: 0,
+                    yEnd: -30
                 },
                 Spanner: {
                     elem: "#XMLID_6_ g",
@@ -57,10 +59,13 @@ class Hero extends React.Component {
                     degree: 360
                 },
                 Window: {
-                    elem: ".num"
+                    elem: "#Layer_23"
                 },
                 Beams: {
                     elem: '#HERO rect'
+                },
+                Coffee: {
+                    elem: '#coffee g'
                 }
             }
 
@@ -75,6 +80,9 @@ class Hero extends React.Component {
             TweenMax
                 .to(Anims.Beaker.elem, Anims.Beaker.duration, {rotation: Anims.Beaker.degree, ease:Linear.easeNone, repeat: -1, yoyo: true, transformOrigin: "100% 50%"})
             
+            new TimelineMax({repeat: -1})
+                .fromTo(Anims.BeakerBubbles.elem, Anims.BeakerBubbles.duration, {y: Anims.BeakerBubbles.yStart}, {y: Anims.BeakerBubbles.yEnd, ease:Linear.easeInOut, opacity: 0})
+
             //Spanner
             TweenMax
                 .to(Anims.Spanner.elem, Anims.Spanner.duration, {rotation: Anims.Spanner.degree, delay: 1, ease:Linear.easeInOut, repeat: -1, repeatDelay: 2, transformOrigin: "50% 50%"})
@@ -93,7 +101,14 @@ class Hero extends React.Component {
 				y: "-100%", 
 				opacity: 0, 
                 ease: Elastic.easeOut.config(1, 0.5),
-			}, 0.1)
+            }, 0.1)
+            
+            //Coffee
+            /*new TimelineLite().staggerFrom(Anims.Coffee.elem, 0.03, {
+				y: "-100%", 
+				opacity: 0, 
+                ease: Elastic.easeOut.config(1, 0.5),
+            }, 0.03)*/
         }
     }
 
