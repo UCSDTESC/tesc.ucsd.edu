@@ -24,10 +24,10 @@ class Hero extends React.Component {
         }
         else {
             return (
-                <a className="btn decaf-hero__cta" target="_blank" href="http://tinyurl.com/decaf2019" id="hero-cta">
+                <a className="btn decaf-hero__cta" target="_blank" href="https://tesc.typeform.com/to/AvDtNV" id="hero-cta">
                    <span>Submit Resume Here 📝</span> 
                 </a>
-            );
+            )
         }
     }
 
