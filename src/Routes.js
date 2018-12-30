@@ -1,18 +1,19 @@
 import {Switch, Route, withRouter} from 'react-router-dom';
 import React from 'react';
+import asyncComponent from './asyncComponent'
 
 import Layout from './layouts/Layout';
 
 import DecafRoutes from './pages/DecafPage/Routes';
 import EnspireRoutes from './pages/EnspirePage/Routes'
 
-import HomePage from './pages/HomePage';
-import OrgPage from './pages/HomePage/OrgPage';
-import AboutPage from './pages/AboutPage';
-import MembershipPage from './pages/MembershipPage';
-import SpacesPage from './pages/SpacesPage';
-import FinancePage from './pages/FinancePage';
-import NotFoundPage from './pages/NotFoundPage';
+const HomePage = asyncComponent(() => import('./pages/HomePage'));
+const OrgPage = asyncComponent(() => import('./pages/HomePage/OrgPage'));
+const AboutPage = asyncComponent(() => import('./pages/AboutPage'));
+const MembershipPage = asyncComponent(() => import('./pages/MembershipPage'));
+const SpacesPage = asyncComponent(() => import('./pages/SpacesPage'));
+const FinancePage = asyncComponent(() => import('./pages/FinancePage'));
+const NotFoundPage = asyncComponent(() => import('./pages/NotFoundPage'));
 
 class Routes extends React.Component {
 
