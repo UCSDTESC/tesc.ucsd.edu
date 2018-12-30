@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Faq from './components/Faq';
 import Sponsors from './components/Sponsors';
+import FLO from './components/FLO';
+
 import $ from 'jquery';
 
 class DecafPage extends React.Component {
@@ -21,6 +23,7 @@ class DecafPage extends React.Component {
             <>
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
+                {!this.props.isCompany && <FLO/>}
                 <Faq isCompany={this.props.isCompany} />
                 <Sponsors />
             </>

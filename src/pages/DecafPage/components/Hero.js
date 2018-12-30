@@ -25,7 +25,7 @@ class Hero extends React.Component {
         else {
             return (
                 <a className="btn decaf-hero__cta" target="_blank" href="http://tinyurl.com/decaf2019" id="hero-cta">
-                   <span>Submit Resume Here</span> 
+                   <span>Submit Resume Here 📝</span> 
                 </a>
             );
         }
