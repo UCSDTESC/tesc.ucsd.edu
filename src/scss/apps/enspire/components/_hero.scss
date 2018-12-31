@@ -1,3 +1,46 @@
 .enspire-hero {
-    background: yellow;
+    
+    background-image: url(/Enspire-hero-bg.png);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.85);
+        // will fix this white overlay later
+    }
+
+    .enspire-contents {
+        z-index: 1;
+    }
+
+    p {
+        color: $tesc-blue;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .btn-space-right {
+        margin-right: 1rem;
+    }
+
+    .btn-space-left {
+        margin-left: 1rem;
+    }
+
+    .btn-custom-large {
+        color: $enspire-yellow;
+        border-color: $enspire-yellow;
+        font-weight: 1000;
+        border: 2px solid $enspire-yellow;
+        font-size: 1.8rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        border-radius: 1.2rem;
+    }
+
 }
