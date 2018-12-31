@@ -9,7 +9,7 @@ class DecafLayout extends React.Component {
             <>
                 <div id="decaf-main">
                     {React.cloneElement(this.props.children, {...this.props})}
-                    <Footer />
+                    <Footer {...this.props}/>
                 </div>
 
             </>

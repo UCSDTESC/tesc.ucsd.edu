@@ -45,7 +45,10 @@ class Footer extends React.Component {
                         </a>
                     </li>
                     <li className="footer__link-item">
-                        <a className="footer__link" href="http://tinyurl.com/decaf2019" target="_blank">Register</a>
+                        {this.props.isCompany ?
+                            <a className="footer__link" href="http://tinyurl.com/decaf2019" target="_blank">Register</a> :
+                            <a className="footer__link" href="https://goo.gl/forms/EC6CpTcFhfhNEFwD2" target="_blank">Volunteer</a>
+                        }
                     </li>
                     <li className="footer__link-item">
                         <NavLink className="footer__link" to="/decaf#faq">FAQ</NavLink>
