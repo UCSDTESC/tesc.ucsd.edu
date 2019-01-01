@@ -14,8 +14,12 @@ class DecafPage extends React.Component {
         document.title = "Decaf 2019 | UCSD TESC";
 
         //TODO: remove jQuery here
-        $("link[rel='shortcut icon']").attr("href", "decaf-icon.svg");
+        $("link[rel='shortcut icon']").attr("href", "/decaf-icon.svg");
 
+    }
+
+    componentWillUnmount() {
+        document.title = 'UCSD TESC | 2019'
     }
 
     render() {
