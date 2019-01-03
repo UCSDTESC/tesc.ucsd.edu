@@ -4,10 +4,9 @@ import $ from 'jquery';
 
 class Hero extends Component {
 
-
     // change #about later - i liked 800 ms over 450
     scrollAnimation() {
-        window.scrollTo(0,0)
+        // window.scrollTo(0,0)
         $('html, body').animate({
             scrollTop: $('#about').offset().top
         }, 800);

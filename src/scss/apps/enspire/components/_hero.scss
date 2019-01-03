@@ -51,6 +51,11 @@
         border-radius: 1.2rem;
     }
 
+    .btn-custom-large:hover {
+        color: white;
+        background-color: $enspire-yellow;
+    }
+
     .btn.btn-custom-chevron {
         color: $enspire-yellow;
         border-color: transparent;
