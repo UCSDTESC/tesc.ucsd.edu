@@ -1,6 +1,7 @@
 .enspire-hero {
     
     background-image: url(/Enspire-hero-bg.png);
+    background-size: cover;
     position: relative;
 
     &::after {
@@ -10,12 +11,15 @@
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba(255, 255, 255, 0.85);
-        // will fix this white overlay later
+        background: $transparent-white;
     }
 
-    .enspire-contents {
+    .enspire-contents, #navbar {
         z-index: 1;
+    }
+
+    img {
+        background-size: cover;
     }
 
     p {
