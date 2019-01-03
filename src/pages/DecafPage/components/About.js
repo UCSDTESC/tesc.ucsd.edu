@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as AboutGraphic} from '../../../svg/decaf-about.svg';
+import {ReactComponent as AboutGraphic} from '../svg/decaf-about.svg';
 
 function CompanyCopy(props) {
     return (

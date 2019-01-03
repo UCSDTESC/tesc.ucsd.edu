@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './Nav';
-import {ReactComponent as DecafHero} from '../../../svg/decaf-hero.svg';
+import {ReactComponent as DecafHero} from '../svg/decaf-hero.svg';
+
 import {
     Elastic,
     TimelineMax,
