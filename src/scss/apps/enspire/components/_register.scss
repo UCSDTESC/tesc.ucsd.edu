@@ -1,3 +1,49 @@
 .enspire-register {
-    background: blue;
+    width: 100%;
+    // Need to replace with enspire yellow
+    //background: $enspire-yellow;
+    background: yellow;
+
+    &__head {
+        text-align: center;
+        font-size: 2.8rem;
+        padding-top: 3rem;
+        //margin-top: 4.5rem;
+    }
+
+    &__left {
+        padding-top: 1.5rem;
+        text-align: left;
+
+        &-participants, &-volunteers {
+            padding-top: 1.5rem;
+        }
+
+        p {
+            font-size: 1.28rem;
+            font-weight: 500;
+            //margin-top: 0rem;
+
+            b {
+                font-weight: 900;
+            }
+        }
+
+        li, ul {
+            margin: 0em;
+            line-height: 1em;
+            //padding: 0.2em;
+        }
+    }
+
+    &__note {
+        padding-top: 1.5rem;
+        color: red;
+        font-size: 4rem;
+        font-weight: 900;
+    }
+
+    &__right {
+        margin-top: 2rem;
+    }
 }
