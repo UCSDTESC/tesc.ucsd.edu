@@ -3,4 +3,7 @@
     height: 100%;
 }
 
+$transparent-white: rgba(255, 255, 255, 0.85);
+$border-radius: 0.3rem;
+
 @import './components/all'
