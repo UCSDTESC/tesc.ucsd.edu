@@ -7,6 +7,8 @@ class Register extends Component {
         //write your css in src/scss/apps/enspire/components/_register.scss
         return(
             <div className="w-100 h-100 enspire-register">
+
+                {/* Title */}
                 <div className="enspire-register__head">
                     <b>Register for Enspire!</b>
                 </div>
@@ -17,25 +19,14 @@ class Register extends Component {
                         {/* For the words on the left */}
                         <div class="col">
                             <div className="enspire-register__left">
-                                <p class="text-left">Enspire is a free event and all students that come will be provided lunch and a t-shirt!</p>
+                                <p>Enspire is a free event and all students that come will be provided lunch and a t-shirt!</p>
                                 
                                 <div className="enspire-register__left-participants">
                                     <ul class="list-unstyled">
-                                        <li>
-                                            <p><b>Participants,</b> please complete the following:</p>
-                                        </li>
+                                        <li><p><b>Participants,</b> please complete the following:</p></li>
                                         <ul>
-                                            <li>
-                                                <p>
-                                                    <a href="https://www.google.com" target="_blank">liability waiver form</a> (one per student)
-                                                </p>
-                                                
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <a href="https://www.google.com" target="_blank">photo release form</a> (one per student)
-                                                </p>
-                                            </li>
+                                            <li><p><a href="https://www.google.com" target="_blank">liability waiver form</a> (one per student)</p></li>
+                                            <li><p><a href="https://www.google.com" target="_blank">photo release form</a> (one per student)</p></li>
                                         </ul>
                                     </ul>
                                 </div>
@@ -44,24 +35,20 @@ class Register extends Component {
                                 
                                 <div className="enspire-register__left-volunteers">
                                     <ul class="list-unstyled">
-                                        <li>
-                                            <p><b>Volunteers,</b> please complete the following:</p>
-                                        </li>
+                                        <li><p><b>Volunteers,</b> please complete the following:</p></li>
                                         <ul>
-                                            <li>
-                                                <p>
-                                                    Fill out the <a href="https://www.google.com" target="_blank">volunteer registration form</a>
-                                                </p>
-                                            </li>
+                                            <li><p>Fill out the <a href="https://www.google.com" target="_blank">volunteer registration form</a></p></li>
                                         </ul>
                                     </ul>
                                 </div>
+                                
                             </div>
                         </div>
 
+                        {/* Picture on the right */}
                         <div class="col">
                             <div className="enspire-register__right">
-                                <img src="enspire-register-photo" class="float-right" alt="PLACEHOLDER"></img>
+                                <img src="/Enspire-register-image.png" class="float-right"></img>
                             </div>
                         </div>
 
