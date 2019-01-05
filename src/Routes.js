@@ -7,7 +7,8 @@ import Layout from './layouts/Layout';
 import DecafRoutes from './pages/DecafPage/Routes';
 import EnspireRoutes from './pages/EnspirePage/Routes'
 
-const HomePage = asyncComponent(() => import('./pages/HomePage'));
+import HomePage from './pages/HomePage';
+
 const OrgPage = asyncComponent(() => import('./pages/HomePage/OrgPage'));
 const AboutPage = asyncComponent(() => import('./pages/AboutPage'));
 const MembershipPage = asyncComponent(() => import('./pages/MembershipPage'));

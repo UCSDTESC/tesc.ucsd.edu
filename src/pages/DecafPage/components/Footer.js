@@ -4,16 +4,6 @@ import $ from 'jquery';
 
 class Footer extends React.Component {
 
-    componentDidMount() {
-        const {hash} = this.props.location;
-
-        if (hash) {
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 450);
-        }
-    }
-
     render() {
 
         const isCompany = this.props.match.path === "/decaf/companies"

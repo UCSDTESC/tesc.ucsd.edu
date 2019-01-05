@@ -1,7 +1,11 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 import EnspireLayout from '../../layouts/EnspireLayout';
-import EnspirePage from './index';
+
+import asyncComponent from '../../asyncComponent';
+
+const EnspirePage = asyncComponent(() => import('./index'));
+
 class DecafRoutes extends React.Component {
 
     withEnspireLayout(Child) {
