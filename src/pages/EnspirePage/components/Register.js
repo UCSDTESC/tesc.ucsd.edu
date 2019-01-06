@@ -17,7 +17,7 @@ class Register extends Component {
                 <div class="container">
                     <div class="row">
                         {/* For the words on the left */}
-                        <div class="col">
+                        <div class="col-md-6">
                             <div className="enspire-register__left">
                                 <p>Enspire is a free event and all students that come will be provided lunch and a t-shirt!</p>
                                 
@@ -46,7 +46,7 @@ class Register extends Component {
                         </div>
 
                         {/* Picture on the right */}
-                        <div class="col">
+                        <div class="col-md-6">
                             <div className="enspire-register__right">
                                 <img src="/Enspire-register-image.png" class="float-right"></img>
                             </div>
