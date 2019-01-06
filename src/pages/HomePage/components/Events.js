@@ -24,9 +24,9 @@ function Event(props) {
         }
     }
 
-    return withWrapper(
+    return (
         <div className="col-md events__card">
-            <img className="w-100 h-100" src={props.img}/>
+            {withWrapper(<img className="w-100 h-100" src={props.img}/>)}
         </div>
     );
 }

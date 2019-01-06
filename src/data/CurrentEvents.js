@@ -12,6 +12,13 @@ const currEvents = [
         isInternalLink: false,
         img: '/eotg-event.svg',
         date: "2019-01-07T00:00:00.000Z"
+    },
+    {
+        name: 'Enspire 2019',
+        link: 'https://goo.gl/forms/yiP92qPBcoNVjsIM2',
+        isInternalLink: false,
+        img: '/enspire-event.svg',
+        date: "2019-01-29T00:00:00.000Z"
     }
 ]
 

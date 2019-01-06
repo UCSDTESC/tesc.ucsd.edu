@@ -4,17 +4,6 @@ import $ from 'jquery';
 
 class DecafNav extends React.Component {
 
-    componentDidMount() {
-        const {hash} = this.props.location;
-        window.scrollTo(0,0);
-
-        if (hash) {
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 450);
-        }
-    }
-
     everyoneLinks() {
         return (
             <ul className="navbar-nav ml-auto">
