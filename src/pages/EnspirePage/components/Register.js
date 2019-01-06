@@ -6,7 +6,7 @@ class Register extends Component {
 
         //write your css in src/scss/apps/enspire/components/_register.scss
         return(
-            <div className="w-100 h-100 enspire-register">
+            <div className="w-100 enspire-register">
 
                 {/* Title */}
                 <div className="enspire-register__head">
@@ -25,8 +25,8 @@ class Register extends Component {
                                     <ul class="list-unstyled">
                                         <li><p><b>Participants,</b> please complete the following:</p></li>
                                         <ul>
-                                            <li><p><a href="https://www.google.com" target="_blank">liability waiver form</a> (one per student)</p></li>
-                                            <li><p><a href="https://www.google.com" target="_blank">photo release form</a> (one per student)</p></li>
+                                            <li><p><a href="https://www.google.com" target="_blank">Liability Waiver Form</a> (one per student)</p></li>
+                                            <li><p><a href="https://www.google.com" target="_blank">Photo Release Form</a> (one per student)</p></li>
                                         </ul>
                                     </ul>
                                 </div>
@@ -37,7 +37,7 @@ class Register extends Component {
                                     <ul class="list-unstyled">
                                         <li><p><b>Volunteers,</b> please complete the following:</p></li>
                                         <ul>
-                                            <li><p>Fill out the <a href="https://www.google.com" target="_blank">volunteer registration form</a></p></li>
+                                            <li><p>Fill out the <a href="https://goo.gl/forms/yiP92qPBcoNVjsIM2" target="_blank">Volunteer Registration Form</a></p></li>
                                         </ul>
                                     </ul>
                                 </div>
