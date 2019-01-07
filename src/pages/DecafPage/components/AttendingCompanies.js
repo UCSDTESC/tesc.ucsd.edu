@@ -5,8 +5,35 @@ import {
 } from 'reactstrap';
 
 import Company from './Company';
+import updatedDECAForders from '../../../data/updatedDECAForders.json'
 
 class AttendingCompanies extends React.Component {
+  constructor(props) {
+    super(props);
+  
+    // Parse in the json date and filter it accordingly and add to the state then
+    let companies = updatedDECAForders.companies
+
+    // TODO: Wrap this in a function
+    // REVIEW: Make this method efficient for bigger data
+    const possibleWA = ['U.S. Citizen', 'U.S. Permanent Resident' ,'DACA/Other', 'International Student Visa']
+    for (let company of companies) {
+      let waString = company['Work Authorizations']
+      let waArray = []
+
+      for (const wa of possibleWA) {
+        if (waString.search(wa) !== -1) {
+          waArray.push(wa);
+        }
+      }
+    
+      company['Work Authorizations'] = waArray;
+    }
+
+    this.state = {
+      companies: companies
+    }
+  }
 
   render() {
     return (
@@ -22,54 +49,6 @@ class AttendingCompanies extends React.Component {
                      nationalities={["US Citizen", "International"]}
                      description="Info about the cool company"
             />
-            <Card className="decaf-company">
-              <CardBody>
-                <CardTitle className="decaf-company__name">Astranis</CardTitle>
-                <CardSubtitle className="decaf-compay__position">Full-Time, Internship</CardSubtitle>
-                <div className="decaf-company__fields">
-                  <Badge className="decaf-company__field" color="info">Mechanical</Badge>
-                  <Badge className="decaf-company__field" color="info">Aerospace</Badge>
-                  <Badge className="decaf-company__field" color="info">Aerospace</Badge> 
-                </div>
-                <div className="decaf-company__nationalities">
-                  <Badge className="decaf-company__nationality" color="secondary">US Citizen</Badge>
-                  <Badge className="decaf-company__nationality" color="secondary">International</Badge>
-                </div>
-                <CardText cla>This is some text about the company</CardText>
-              </CardBody>
-            </Card>
-            <Card className="decaf-company">
-              <CardBody>
-                <CardTitle className="decaf-company__name">Astranis</CardTitle>
-                <CardSubtitle className="decaf-compay__position">Full-Time, Internship</CardSubtitle>
-                <div className="decaf-company__fields">
-                  <Badge className="decaf-company__field" color="info">Mechanical</Badge>
-                  <Badge className="decaf-company__field" color="info">Aerospace</Badge>
-                  <Badge className="decaf-company__field" color="info">Aerospace</Badge> 
-                </div>
-                <div className="decaf-company__nationalities">
-                  <Badge className="decaf-company__nationality" color="secondary">US Citizen</Badge>
-                  <Badge className="decaf-company__nationality" color="secondary">International</Badge>
-                </div>
-                <CardText cla>This is some text about the company</CardText>
-              </CardBody>
-            </Card>
-            <Card className="decaf-company">
-              <CardBody>
-                <CardTitle className="decaf-company__name">Astranis</CardTitle>
-                <CardSubtitle className="decaf-compay__position">Full-Time, Internship</CardSubtitle>
-                <div className="decaf-company__fields">
-                  <Badge className="decaf-company__field" color="info">Mechanical</Badge>
-                  <Badge className="decaf-company__field" color="info">Aerospace</Badge>
-                  <Badge className="decaf-company__field" color="info">Aerospace</Badge> 
-                </div>
-                <div className="decaf-company__nationalities">
-                  <Badge className="decaf-company__nationality" color="secondary">US Citizen</Badge>
-                  <Badge className="decaf-company__nationality" color="secondary">International</Badge>
-                </div>
-                <CardText cla>This is some text about the company</CardText>
-              </CardBody>
-            </Card>
             
           </CardDeck>
         </div>
