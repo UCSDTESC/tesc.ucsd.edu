@@ -1,0 +1,32 @@
+.decaf-company {
+    &__name {
+
+    }
+
+    &__positions {
+
+    }
+    
+    &__fields {
+      margin-top: 20px;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    &__nationalities {
+      margin-top: 10px;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    &__nationality {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+
+
+    &__field {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+}

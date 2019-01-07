@@ -1,0 +1,35 @@
+.decaf-companies {
+    width: 100%;
+    background: white;
+
+    &__head {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 4.5rem;
+
+        b {
+            font-weight: 900;
+        }
+    }
+
+    &__container {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-top: 2rem;
+
+            b {
+                font-weight: 900;
+            }
+        }
+    }
+}
+
