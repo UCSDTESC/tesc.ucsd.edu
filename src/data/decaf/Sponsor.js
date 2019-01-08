@@ -52,7 +52,7 @@ const sponsors = [
         link: 'https://yahoo.com'
     },
     {
-        img: '/sponsors/mitchell.gif',
+        img: 'https://s19525.pcdn.co/wp-content/uploads/2016/05/mitchell-logo.jpg',
         name: 'Mitchell International',
         link: 'https://www.mitchell.com/'
     }
