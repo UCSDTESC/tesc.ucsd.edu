@@ -17,6 +17,9 @@ class DecafNav extends React.Component {
                     <a className="nav-link text-white" href="https://goo.gl/forms/EC6CpTcFhfhNEFwD2" target="_blank">VOLUNTEER</a>
                 </li>
                 <li className="nav-item text-center">
+                    <NavLink className="nav-link text-white" to="/decaf#flo">FLO</NavLink>
+                </li>
+                <li className="nav-item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#faq">FAQ</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">

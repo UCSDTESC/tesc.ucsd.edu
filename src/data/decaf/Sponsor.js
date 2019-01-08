@@ -50,6 +50,11 @@ const sponsors = [
         img: '/sponsors/yahoo.svg',
         name: 'Yahoo',
         link: 'https://yahoo.com'
+    },
+    {
+        img: '/sponsors/mitchell.gif',
+        name: 'Mitchell International',
+        link: 'https://www.mitchell.com/'
     }
 ]
 

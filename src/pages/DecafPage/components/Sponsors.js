@@ -24,10 +24,10 @@ class Sponsors extends React.Component {
                         </div>
                         <div className="col-md-8 decaf-sponsors__content col-sm-12">
                             <div className="text-center mt-5 decaf-sponsors__content-head-sm">
-                                Thank you to our
+                                Thank you to some of our
                             </div>
                             <div className="text-center decaf-sponsors__content-head">
-                                Corporate Sponsors
+                                Sponsors
                             </div>
                             <div className="row mt-5">
                                 {this.renderCompanies()}
