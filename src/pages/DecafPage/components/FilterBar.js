@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col, Container, Input } from 'reactstrap';
 import CreatableSelect from 'react-select/lib/Creatable';
 
 class FilterBar extends Component {
@@ -18,38 +18,35 @@ class FilterBar extends Component {
     }));
   }
 
-  handleFieldChange = (newValue, actionMeta) => {
-    console.log('Value changed: ', newValue);
-  }
-
   render() {
     return (
-      <Container>
-        <Row>
-          <Col></Col>
+        <Row className="decaf-companies__filter">
+          <Col>
+          <Input name="company" placeholder="Company" />
+          </Col>
           <Col>
             <CreatableSelect
               isMulti
               options={this.props.data.fields}
-              onChange={this.handleFieldChange}
+              onChange={this.props.handleFieldChange}
             />
           </Col>
           <Col>
             <CreatableSelect
               isMulti
               options={this.props.data.positions}
-              onChange={this.handleFieldChange}
+              onChange={this.props.handlePositionChange}
             />
           </Col>
           <Col>
             <CreatableSelect
               isMulti
               options={this.props.data.workAuths}
-              onChange={this.handleFieldChange}
+              onChange={this.props.handleWorkAuthChange}
             />
           </Col>
         </Row>
-      </Container>
+
     );
   }
 }
