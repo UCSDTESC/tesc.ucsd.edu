@@ -29,4 +29,15 @@
       margin-right: 5px;
       margin-bottom: 5px;
     }
+
+    &__footer {
+      background-color: white !important;
+      display: flex; 
+      justify-content: flex-end;
+    }
+
+    &__avatar {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
 }
