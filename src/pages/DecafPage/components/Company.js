@@ -13,7 +13,6 @@ const Avatar = (props) => {
   }
 
   const [short, style] = styles[name]
-  const id = `${company.replace(/\s/g, '')}-${short}`
   return (
     <>
       <span className={`decaf-company__avatar ${style} text-center`}>
@@ -47,4 +46,4 @@ const Company = (props) => (
   </Card>
 )
 
-export default Company;
+export {Company, Avatar};

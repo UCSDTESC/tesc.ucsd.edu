@@ -1,10 +1,12 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import {
   Button, Badge, Card, CardImg, CardTitle, CardText, CardDeck,
   CardSubtitle, CardBody
 } from 'reactstrap';
 
-import Company from './Company';
+import {Company, Avatar} from './Company';
 import updatedDECAForders from '../../../data/updatedDECAForders.json'
 import FilterBar from './FilterBar';
 
@@ -249,6 +251,20 @@ class AttendingCompanies extends React.Component {
     return company['Organization'].toLowerCase().indexOf(text) === 0;
   });
 
+  renderKey() {
+    const auths = ['U.S. Citizen','U.S. Permanent Resident','DACA/Other', 'International Student Visa'];
+
+    return (
+      <>
+        {auths.map(x => (
+            <div className="col-md-3 d-flex align-items-center justify-content-center">
+              {x} : <Avatar name={x} />
+            </div>
+        ))}
+      </>
+    )
+  }
+
   render() {
     // Use the filters stored in the state to filter out the companies
     // Apply a total of 4 filter() methods
@@ -276,7 +292,11 @@ class AttendingCompanies extends React.Component {
         <div className="decaf-companies__head">
           Attending Companies
         </div>
+
         <div className="decaf-companies__filterbar">
+          <div className="row mb-4">
+            {this.renderKey()}
+          </div>
           <FilterBar 
           data={this.state.dropdownValues}   
           handleFieldChange={this.handleFieldChange}
@@ -286,9 +306,8 @@ class AttendingCompanies extends React.Component {
           searchValue={this.state.filters.search}
           />
         </div>
-        {
-          this.createCompanyRows(filteredCompanies, displayRows)
-        }
+
+        {this.createCompanyRows(filteredCompanies, displayRows)}
       </div>
     )
   }
