@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Col, Container, Input } from 'reactstrap';
-import CreatableSelect from 'react-select/lib/Creatable';
+import Select from 'react-select/';
 
 class FilterBar extends Component {
   constructor(props) {
@@ -21,28 +21,31 @@ class FilterBar extends Component {
   render() {
     return (
         <Row className="decaf-companies__filter">
-          <Col>
+          <Col md="3" className="my-2">
           <Input name="company" placeholder="Company" value={this.props.searchValue} onChange={this.props.handleSearchChange}/>
           </Col>
-          <Col>
-            <CreatableSelect
+          <Col md="3" className="my-2">
+            <Select
               isMulti
               options={this.props.data.fields}
               onChange={this.props.handleFieldChange}
+              placeholder="Industry"
             />
           </Col>
-          <Col>
-            <CreatableSelect
+          <Col md="3" className="my-2">
+            <Select
               isMulti
               options={this.props.data.positions}
               onChange={this.props.handlePositionChange}
+              placeholder="Work Type"
             />
           </Col>
-          <Col>
-            <CreatableSelect
+          <Col md="3" className="my-2">
+            <Select
               isMulti
               options={this.props.data.workAuths}
               onChange={this.props.handleWorkAuthChange}
+              placeholder="Work Auth"
             />
           </Col>
         </Row>

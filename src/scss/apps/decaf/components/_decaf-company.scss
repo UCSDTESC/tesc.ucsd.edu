@@ -39,5 +39,23 @@
     &__avatar {
       margin-left: 5px;
       margin-right: 5px;
+      color: white;
+      width: 2rem;
+      height: 2rem;
+      padding-top: 0.3rem;
+      border-radius: 50%;
+
+      $colors: (
+        blue: blue,
+        green: green,
+        yellow: yellow,
+        purple: purple
+      );
+
+      @each $name, $hex in $colors {
+        &-#{$name} {
+          background: $hex;
+        }
+      }
     }
 }

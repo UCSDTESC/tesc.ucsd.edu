@@ -21,36 +21,40 @@ class AttendingCompanies extends React.Component {
     // Parse in the json date and filter it accordingly and add to the state then
     let companies = updatedDECAForders.companies
 
-    // Filter out the industries and the possibleWA's 
-    const dropdownValues = this.filterDropdowns(companies);
-
     // TODO: Wrap this in a function
     // REVIEW: Make this method efficient for bigger data
     const possibleWA = ['U.S. Citizen', 'U.S. Permanent Resident' ,'DACA/Other', 'International Student Visa'];
     const possiblePositions = ['Part-Time', 'Full-Time', 'Internship'];
 
     for (let company of companies) {
+      console.log(company);
       let waString = company['Work Authorizations'];
       let position = company['Position Types'];
+      let fieldStr = company['Industry Field'];
 
       let waArray = []
       let posArray = []
 
       for (const wa of possibleWA) {
-        if (waString.search(wa) !== -1) {
+        if (waString.indexOf(wa) !== -1) {
           waArray.push(wa);
         }
       }
 
       for (const pos of possiblePositions) {
-        if (position.search(pos) !== -1) {
+        if (position.indexOf(pos) !== -1) {
           posArray.push(pos);
         }
       }
     
       company['Work Authorizations'] = waArray;
       company['Position Types'] = posArray;
+      if (typeof company['Industry Field'] === 'string') company['Industry Field'] = new Set(fieldStr.split(',').map(x => x.trim()));
+
     }
+
+      // Filter out the industries and the possibleWA's 
+      const dropdownValues = this.filterDropdowns(companies);
 
     this.state = {
       companies: companies,
@@ -86,31 +90,34 @@ class AttendingCompanies extends React.Component {
     }
     
     for (let company of companies) {
-      let field = company['Industry Field'];
+      let fieldSet = company['Industry Field'];
       let wa = company['Work Authorizations'];
       let position = company['Position Types'];
 
-      // Create field dictionary
-      if (fields[field] === undefined) {
-        fields[field] = {
-          value: field,
-          label: field[0].toUpperCase() + field.substr(1),
-          count: 1
-        };
-      } else {
-        fields[field]['count'] += 1;
+      for (let field of fieldSet) {
+        // Create field dictionary
+        field = field.trim();
+        if (fields[field] === undefined) {
+          fields[field] = {
+            value: field,
+            label: field[0].toUpperCase() + field.substr(1),
+            count: 1
+          };
+        } else {
+          fields[field]['count'] += 1;
+        }
       }
       
       // Update the count of the workAuths
       for (let check of possibleWA) {
-        if (wa.search(check) !== -1) {
+        if (wa.indexOf(check) !== -1) {
           workAuths[check]['count'] += 1;
         }
       }
 
       // update the counts in the positions
       for (let pcheck of possiblePositions) {
-        if (position.search(pcheck) !== -1) {
+        if (position.indexOf(pcheck) !== -1) {
           positions[pcheck]['count'] += 1;  
         }
       } 
@@ -133,9 +140,12 @@ class AttendingCompanies extends React.Component {
     //   workAuths: fieldFilters,
     // }
 
-    // this.setState({
-    //   filters: filterState
-    // });
+    this.setState({
+       filters: {
+         ...this.state.filters,
+         fields: fieldFilters
+       }
+     });
   }
 
   handleSearchChange(event) {
@@ -189,18 +199,20 @@ class AttendingCompanies extends React.Component {
     while (rowCounter < displayRows) {
       const rowView = 
       <div className="decaf-companies__container">
-        <CardDeck>
-          {
-            displayCompanies.slice(arraySliceCounter, arraySliceCounter + 4).map(company =>
-            <Company 
-              name={company["Organization"]}
-              positions={company["Position Types"]}
-              field={company["Industry Field"]}
-              nationalities={company["Work Authorizations"]}
-              description=""
-            />)
-          }
-        </CardDeck>
+        <div className="card-deck-wrapper">
+          <CardDeck>
+            {
+              displayCompanies.slice(arraySliceCounter, arraySliceCounter + 4).map(company =>
+              <Company 
+                name={company["Organization"]}
+                positions={company["Position Types"]}
+                field={[...company["Industry Field"]]}
+                nationalities={company["Work Authorizations"]}
+                description=""
+              />)
+            }
+          </CardDeck>
+        </div>
       </div>
       
       companyRows.push(rowView);
@@ -212,13 +224,20 @@ class AttendingCompanies extends React.Component {
   }
 
   filterCompaniesByKeys = (companies, keys, keyName) => companies.filter((company) => {    // Filter on all the companies everytime
+      
       for (let filter of keys) {
+        filter = filter.trim();
         if (keyName === 'Work Authorizations') {
           if (company['Work Authorizations'].includes(filter) === false) {
             return false;
           }
         } else if (keyName === 'Position Types') {
           if (company['Position Types'].includes(filter) === false) {
+            return false;
+          }
+        } else if (keyName == 'Industry Field') {
+          console.log(company, filter)
+          if (!company['Industry Field'].has(filter)) {
             return false;
           }
         }
@@ -247,6 +266,9 @@ class AttendingCompanies extends React.Component {
     
     // filter by the input text too
     filteredCompanies = this.filterCompaniesBySearchText(filteredCompanies, filters.search);
+
+    //filter by industry
+    filteredCompanies = this.filterCompaniesByKeys(filteredCompanies, filters.fields, 'Industry Field')
 
     let displayRows = Math.ceil(filteredCompanies.length / 4);
     return (
