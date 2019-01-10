@@ -4,23 +4,16 @@ import $ from 'jquery';
 
 class Footer extends React.Component {
 
-    componentDidMount() {
-        const {hash} = this.props.location;
-
-        if (hash) {
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 450);
-        }
-    }
-
     render() {
+
+        const isCompany = this.props.match.path === "/decaf/companies"
+        const bg = isCompany ? "decaf-green-gradient" : "decaf-gradient-bg"
         return (
             <div id="footer">
-                <section className="contact decaf-gradient-bg" id="contact">
+                <section className={`contact ${bg}`} id="contact">
                 <div className="container-fluid d-flex align-items-center h-100">
                     <h1 className="contact__header m-auto">
-                    Talk to us at <a className="contact__link" href="mailto:hello@tesc.ucsd.edu">sponsor@tesc.ucsd.edu</a> if you have any questions.
+                    Talk to us at <a className="contact__link" href="mailto:hello@tesc.ucsd.edu">sergio@tesc.ucsd.edu</a> if you have any questions.
                     </h1>
                 </div>
                 </section>
@@ -42,7 +35,10 @@ class Footer extends React.Component {
                         </a>
                     </li>
                     <li className="footer__link-item">
-                        <a className="footer__link" href="http://tinyurl.com/decaf2019" target="_blank">Register</a>
+                        {this.props.isCompany ?
+                            <a className="footer__link" href="http://tinyurl.com/decaf2019" target="_blank">Register</a> :
+                            <a className="footer__link" href="https://goo.gl/forms/EC6CpTcFhfhNEFwD2" target="_blank">Volunteer</a>
+                        }
                     </li>
                     <li className="footer__link-item">
                         <NavLink className="footer__link" to="/decaf#faq">FAQ</NavLink>

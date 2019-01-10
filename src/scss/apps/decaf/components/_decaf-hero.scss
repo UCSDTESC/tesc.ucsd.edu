@@ -2,6 +2,10 @@
 
     background: linear-gradient(-45deg, $decaf-light-blue, $decaf-dark-blue);
     color: white;
+
+    &__green {
+        background: linear-gradient(49.53deg, $decaf-dark-green 12.76%, $decaf-light-green 97.14%);
+    }
     
     &__container {
         width: 80%;

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardText, Badge, CardSubtitle, CardFooter } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText, Badge, CardSubtitle, CardFooter, UncontrolledTooltip } from 'reactstrap';
 
 const Avatar = (props) => {
 
-  const {name} = props;
+  const {name, company} = props;
 
   const styles = {
     'U.S. Citizen': ['US', 'decaf-company__avatar-blue'],
@@ -13,11 +13,13 @@ const Avatar = (props) => {
   }
 
   const [short, style] = styles[name]
-
+  const id = `${company.replace(/\s/g, '')}-${short}`
   return (
-    <span className={`decaf-company__avatar ${style} text-center`}>
-      {short}
-    </span>
+    <>
+      <span className={`decaf-company__avatar ${style} text-center`}>
+        {short}
+      </span>
+    </>
   )
 }
 
@@ -39,7 +41,7 @@ const Company = (props) => (
     </CardBody>
     <CardFooter className="decaf-company__footer">
         {
-          props.nationalities.map(position => <Avatar name={position} size={25} round={true} textSizeRatio="2.00" className="decaf-company__avatar" />)
+          props.nationalities.map(position => <Avatar name={position} company={props.name} className="decaf-company__avatar" />)
         }
     </CardFooter>
   </Card>

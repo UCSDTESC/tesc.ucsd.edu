@@ -15,9 +15,9 @@ class FinanceReq extends React.Component {
                 </div>
                 <div className="req__item-content px-5 py-3">
                     <ol>
-                        {data.content.map(c => {
+                        {data.content.map((c,i) => {
                             return (
-                                <li>
+                                <li key={i}>
                                     {c}
                                 </li>
                             );

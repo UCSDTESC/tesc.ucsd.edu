@@ -4,35 +4,29 @@ import $ from 'jquery';
 
 class DecafNav extends React.Component {
 
-
-    componentDidMount() {
-        const {hash} = this.props.location;
-        window.scrollTo(0,0);
-        console.log(hash)
-        if (hash) {
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 450);
-        }
-    }
-
     everyoneLinks() {
         return (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link" to="/about">ABOUT</NavLink>
+                    <NavLink className="nav-link text-white" to="/">HOME</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link" to="/#events">EVENTS</NavLink>
+                    <NavLink className="nav-link text-white" to="/decaf#about">ABOUT</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link" to="/#join">JOIN</NavLink>
-                </li>
-                <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link" to="/#contact">CONTACT</NavLink>
+                    <a className="nav-link text-white" href="https://goo.gl/forms/EC6CpTcFhfhNEFwD2" target="_blank">VOLUNTEER</a>
                 </li>
                 <li className="nav-item text-center">
-                    <NavLink className="nav-link btn nav__toggle" to="/orgs">For TESC Orgs</NavLink>
+                    <NavLink className="nav-link text-white" to="/decaf#flo">FLO</NavLink>
+                </li>
+                <li className="nav-item text-center">
+                    <NavLink className="nav-link text-white" to="/decaf#faq">FAQ</NavLink>
+                </li>
+                <li className="nav-item nav__item text-center">
+                    <NavLink className="nav-link text-white" to="/decaf#contact">CONTACT</NavLink>
+                </li>
+                <li className="nav-item text-center">
+                    <NavLink className="nav-link btn nav__toggle decaf-toggle" to="/decaf/companies">FOR COMPANIES</NavLink>
                 </li>
             </ul>
         );
@@ -55,6 +49,9 @@ class DecafNav extends React.Component {
                 </li>
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#contact">CONTACT</NavLink>
+                </li>
+                <li className="nav-item text-center">
+                    <NavLink className="nav-link btn nav__toggle decaf-toggle decaf-green-text" to="/decaf">FOR STUDENTS</NavLink>
                 </li>
             </ul>
         )

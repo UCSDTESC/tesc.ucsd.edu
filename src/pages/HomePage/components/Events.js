@@ -1,5 +1,5 @@
 import React from 'react';
-import currEvents from '../../../data/CurrentEvents';
+import events from '../../../data/CurrentEvents';
 import {Link} from 'react-router-dom';
  
 function Event(props) {
@@ -24,9 +24,9 @@ function Event(props) {
         }
     }
 
-    return withWrapper(
-        <div class="col-md events__card">
-            <img className="w-100 h-100" src={props.img}/>
+    return (
+        <div className="col-md events__card">
+            {withWrapper(<img className="w-100 h-100" src={props.img}/>)}
         </div>
     );
 }
@@ -34,6 +34,9 @@ function Event(props) {
 class Events extends React.Component {
 
     renderEvents() {
+
+        let currEvents = events.filter(({date}) => Date.now() < new Date(date));
+
         if (currEvents.length == 0) {
             return (
                 <div className="events__none">
@@ -41,7 +44,7 @@ class Events extends React.Component {
                 </div>
             )
         }
-        return currEvents.map(c => <Event {...c} />);
+        return currEvents.map((c, i) => <Event {...c} key={i} />);
 
     }
 
