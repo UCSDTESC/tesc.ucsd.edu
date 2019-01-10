@@ -8,7 +8,7 @@ import FLO from './components/FLO';
 
 import $ from 'jquery';
 
-import AttendingCompanies from './components/AttendingCompanies';
+import Attending from './components/Attending';
 import {withRouter} from 'react-router-dom';
 
 class DecafPage extends React.Component {
@@ -39,7 +39,7 @@ class DecafPage extends React.Component {
             <>
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
-                <AttendingCompanies />
+                <Attending />
                 {!this.props.isCompany && <FLO/>}
                 <Faq isCompany={this.props.isCompany} />
                 <Sponsors />
