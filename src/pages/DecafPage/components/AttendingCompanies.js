@@ -16,6 +16,7 @@ class AttendingCompanies extends React.Component {
     this.handleFieldChange = this.handleFieldChange.bind(this);
     this.handlePositionChange = this.handlePositionChange.bind(this);
     this.handleWorkAuthChange = this.handleWorkAuthChange.bind(this);
+    this.handleSearchChange = this.handleSearchChange.bind(this);
 
     // Parse in the json date and filter it accordingly and add to the state then
     let companies = updatedDECAForders.companies
@@ -25,26 +26,37 @@ class AttendingCompanies extends React.Component {
 
     // TODO: Wrap this in a function
     // REVIEW: Make this method efficient for bigger data
-    const possibleWA = ['U.S. Citizen', 'U.S. Permanent Resident' ,'DACA/Other', 'International Student Visa']
+    const possibleWA = ['U.S. Citizen', 'U.S. Permanent Resident' ,'DACA/Other', 'International Student Visa'];
+    const possiblePositions = ['Part-Time', 'Full-Time', 'Internship'];
+
     for (let company of companies) {
-      let waString = company['Work Authorizations']
+      let waString = company['Work Authorizations'];
+      let position = company['Position Types'];
+
       let waArray = []
+      let posArray = []
 
       for (const wa of possibleWA) {
         if (waString.search(wa) !== -1) {
           waArray.push(wa);
         }
       }
+
+      for (const pos of possiblePositions) {
+        if (position.search(pos) !== -1) {
+          posArray.push(pos);
+        }
+      }
     
       company['Work Authorizations'] = waArray;
+      company['Position Types'] = posArray;
     }
 
     this.state = {
       companies: companies,
-      displayCompanies: companies,                // State that handles the filtered companies
       rows: Math.ceil(companies.length / 4),      // subtract 1 to suit array indices that start with 1
-      displayRows: Math.ceil(companies.length / 4), // Filtered company rows
-      dropdownValues: dropdownValues
+      dropdownValues: dropdownValues,
+      filters: {positions: [], fields: [], workAuths: [], search: ''} // Default: Filters are empty
     }
   }
 
@@ -112,45 +124,74 @@ class AttendingCompanies extends React.Component {
 
   // Dropdown event listeners
   handleFieldChange(newValue, metaAction) {
-    console.log('Field changed: ', newValue);
+    const fieldFilters = newValue.map((objFilter) => objFilter.value);
+    
+    console.log('Position filters: ', fieldFilters);
+
+    // let filterState = {
+    //   ...this.state.filters,
+    //   workAuths: fieldFilters,
+    // }
+
+    // this.setState({
+    //   filters: filterState
+    // });
+  }
+
+  handleSearchChange(event) {
+    let searchFilter = {
+      ...this.state.filters,
+      search: event.target.value.toLowerCase()
+    }
+
+    this.setState({
+      filters: searchFilter
+    })
   }
 
   handlePositionChange(newValue, metaAction) {
-    console.log('Position changed: ', newValue);
+    const positionFilter = newValue.map((objFilter) => objFilter.value);
+    
+    console.log('Position filters: ', positionFilter);
+
+    let filterState = {
+      ...this.state.filters,
+      positions: positionFilter,
+    }
+
+    this.setState({
+      filters: filterState
+    });
+  
   }
 
   handleWorkAuthChange(newValue, metaAction) {
-    const filters = newValue.map((objFilter) => objFilter.value);
+    const waFilter = newValue.map((objFilter) => objFilter.value);
     
-    console.log('Work auth filters: ', filters);
+    console.log('Work auth filters: ', waFilter);
 
-    // Update the displayed companies 
-    console.log('Companies: ', this.state.displayCompanies);
-    const filteredCompanies = this.state.displayCompanies.filter((company) => {
-      let toDisplay = true;
-      for (let filter of filters) {
-        toDisplay = company['Work Authorizations'].includes(filter);
-      }
-      return toDisplay;
-    });
+    let filterState = {
+      ...this.state.filters,
+      workAuths: waFilter,
+    }
 
     this.setState({
-      displayCompanies: filteredCompanies,
-      displayRows: Math.ceil(filteredCompanies.length / 4), 
+      filters: filterState
     });
+
   }
 
-  createCompanyRows = () => {
+  createCompanyRows = (displayCompanies, displayRows) => {
     let rowCounter = 0;
     let arraySliceCounter = 0;
     let companyRows = [];           // JSX prints array, so store in the companies as components in this
 
-    while (rowCounter < this.state.displayRows) {
+    while (rowCounter < displayRows) {
       const rowView = 
       <div className="decaf-companies__container">
         <CardDeck>
           {
-            this.state.displayCompanies.slice(arraySliceCounter, arraySliceCounter + 4).map(company =>
+            displayCompanies.slice(arraySliceCounter, arraySliceCounter + 4).map(company =>
             <Company 
               name={company["Organization"]}
               positions={company["Position Types"]}
@@ -170,7 +211,44 @@ class AttendingCompanies extends React.Component {
     return companyRows;
   }
 
+  filterCompaniesByKeys = (companies, keys, keyName) => companies.filter((company) => {    // Filter on all the companies everytime
+      for (let filter of keys) {
+        if (keyName === 'Work Authorizations') {
+          if (company['Work Authorizations'].includes(filter) === false) {
+            return false;
+          }
+        } else if (keyName === 'Position Types') {
+          if (company['Position Types'].includes(filter) === false) {
+            return false;
+          }
+        }
+      }
+      return true;
+    });
+
+  filterCompaniesBySearchText = (companies, text) => companies.filter((company) => {
+    return company['Organization'].toLowerCase().indexOf(text) === 0;
+  });
+
   render() {
+    // Use the filters stored in the state to filter out the companies
+    // Apply a total of 4 filter() methods
+
+    const { companies, filters } = this.state;
+    let filteredCompanies;
+
+    // filtered wa
+    filteredCompanies = this.filterCompaniesByKeys(companies, filters.workAuths, 'Work Authorizations');
+    console.log('Filter by wa: ', filteredCompanies, filters.workAuths);
+    
+    // filtered positions
+    filteredCompanies = this.filterCompaniesByKeys(filteredCompanies, filters.positions, 'Position Types');
+    console.log('Filter by position: ', filteredCompanies, filters.positions);
+    
+    // filter by the input text too
+    filteredCompanies = this.filterCompaniesBySearchText(filteredCompanies, filters.search);
+
+    let displayRows = Math.ceil(filteredCompanies.length / 4);
     return (
       <div className="decaf-companies" id="about">
         <div className="decaf-companies__head">
@@ -182,10 +260,12 @@ class AttendingCompanies extends React.Component {
           handleFieldChange={this.handleFieldChange}
           handlePositionChange={this.handlePositionChange}
           handleWorkAuthChange={this.handleWorkAuthChange}
+          handleSearchChange={this.handleSearchChange}
+          searchValue={this.state.filters.search}
           />
         </div>
         {
-          this.createCompanyRows()
+          this.createCompanyRows(filteredCompanies, displayRows)
         }
       </div>
     )

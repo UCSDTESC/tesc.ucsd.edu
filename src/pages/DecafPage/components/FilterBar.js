@@ -22,7 +22,7 @@ class FilterBar extends Component {
     return (
         <Row className="decaf-companies__filter">
           <Col>
-          <Input name="company" placeholder="Company" />
+          <Input name="company" placeholder="Company" value={this.props.searchValue} onChange={this.props.handleSearchChange}/>
           </Col>
           <Col>
             <CreatableSelect

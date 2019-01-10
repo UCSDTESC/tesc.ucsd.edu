@@ -5,7 +5,7 @@ const Company = (props) => (
   <Card className="decaf-company">
     <CardBody>
       <CardTitle className="decaf-company__name">{ props.name }</CardTitle>
-      <CardSubtitle className="decaf-company__positions">{ props.positions.split(/[ ,]+/).join(', ') }</CardSubtitle>
+      <CardSubtitle className="decaf-company__positions">{ props.positions.toString().replace(/, /g, ",").replace(/,/g, ", ") }</CardSubtitle>
       <div className="decaf-company__fields">
           <Badge className="decaf-company__field" color="info">{props.field}</Badge>
       </div>
