@@ -19,6 +19,7 @@ class FilterBar extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
         <Row className="decaf-companies__filter">
           <Col md="3" className="my-2">

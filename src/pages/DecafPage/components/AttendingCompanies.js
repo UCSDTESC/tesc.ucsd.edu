@@ -29,7 +29,6 @@ class AttendingCompanies extends React.Component {
     const possiblePositions = ['Part-Time', 'Full-Time', 'Internship'];
 
     for (let company of companies) {
-      console.log(company);
       let waString = company['Work Authorizations'];
       let position = company['Position Types'];
       let fieldStr = company['Industry Field'];
@@ -124,8 +123,7 @@ class AttendingCompanies extends React.Component {
         }
       } 
     }
-
-    return { fields: Object.values(fields), 
+    return { fields: Object.values(fields).sort((a, b) => a.label < b.label ? -1 : 1), 
              positions: Object.values(positions), 
              workAuths: Object.values(workAuths)
            };
@@ -134,9 +132,7 @@ class AttendingCompanies extends React.Component {
   // Dropdown event listeners
   handleFieldChange(newValue, metaAction) {
     const fieldFilters = newValue.map((objFilter) => objFilter.value);
-    
-    console.log('Position filters: ', fieldFilters);
-
+  
     // let filterState = {
     //   ...this.state.filters,
     //   workAuths: fieldFilters,
@@ -164,8 +160,6 @@ class AttendingCompanies extends React.Component {
   handlePositionChange(newValue, metaAction) {
     const positionFilter = newValue.map((objFilter) => objFilter.value);
     
-    console.log('Position filters: ', positionFilter);
-
     let filterState = {
       ...this.state.filters,
       positions: positionFilter,
@@ -179,9 +173,7 @@ class AttendingCompanies extends React.Component {
 
   handleWorkAuthChange(newValue, metaAction) {
     const waFilter = newValue.map((objFilter) => objFilter.value);
-    
-    console.log('Work auth filters: ', waFilter);
-
+  
     let filterState = {
       ...this.state.filters,
       workAuths: waFilter,
@@ -238,7 +230,6 @@ class AttendingCompanies extends React.Component {
             return false;
           }
         } else if (keyName == 'Industry Field') {
-          console.log(company, filter)
           if (!company['Industry Field'].has(filter)) {
             return false;
           }
@@ -274,11 +265,9 @@ class AttendingCompanies extends React.Component {
 
     // filtered wa
     filteredCompanies = this.filterCompaniesByKeys(companies, filters.workAuths, 'Work Authorizations');
-    console.log('Filter by wa: ', filteredCompanies, filters.workAuths);
     
     // filtered positions
     filteredCompanies = this.filterCompaniesByKeys(filteredCompanies, filters.positions, 'Position Types');
-    console.log('Filter by position: ', filteredCompanies, filters.positions);
     
     // filter by the input text too
     filteredCompanies = this.filterCompaniesBySearchText(filteredCompanies, filters.search);

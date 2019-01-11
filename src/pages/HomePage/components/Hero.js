@@ -26,9 +26,10 @@ class Hero extends React.Component {
                             </div>
                         </div>
                         <div className="col-md-6 p-0 d-flex">
-                            <div className="hero__graphic w-100">
+                            {/*<div className="hero__graphic w-100">
                                 <HeroGraphic className="w-100"/>
-                            </div>
+                            </div>*/}
+                            <img className="hero__graphic" src="/hero.svg"/>
                         </div>
                     </div>
                 </div>

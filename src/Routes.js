@@ -26,6 +26,12 @@ class Routes extends React.Component {
     }
 
     render() {
+        console.log('%c Interested in building awesome web projects? Email us at hello@tesc.ucsd.edu! ', `
+            background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); 
+            color: black; 
+            font-size: 2rem; 
+            text-align: center`
+        );
         return  (
             <Switch>
                 <Route exact path="/" component={this.withLayout(HomePage)}/>
