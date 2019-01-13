@@ -2,8 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import {
-  Button, Badge, Card, CardImg, CardTitle, CardText, CardDeck,
-  CardSubtitle, CardBody
+  CardDeck,
 } from 'reactstrap';
 
 import {Company, Avatar} from './Company';
@@ -249,11 +248,15 @@ class AttendingCompanies extends React.Component {
       <>
         {auths.map(x => (
             <div className="col-md-3 d-flex align-items-center justify-content-center">
-              {x} : <Avatar name={x} />
+              <span className="decaf-company__keyname">{x}&nbsp;</span><Avatar name={x} />
             </div>
         ))}
       </>
     )
+  }
+
+  componentDidMount() {
+    window.scroll(0, 0);
   }
 
   render() {
@@ -275,11 +278,13 @@ class AttendingCompanies extends React.Component {
     //filter by industry
     filteredCompanies = this.filterCompaniesByKeys(filteredCompanies, filters.fields, 'Industry Field')
 
+    filteredCompanies = filteredCompanies.sort((a, b) => a.Organization.toLowerCase() < b.Organization.toLowerCase() ? -1 : 1);
+
     let displayRows = Math.ceil(filteredCompanies.length / 4);
     return (
       <div className="decaf-companies" id="about">
         <div className="decaf-companies__head">
-          Attending Companies
+          Companies Attending <Link to="/decaf">Decaf 2019</Link>
         </div>
 
         <div className="decaf-companies__filterbar">

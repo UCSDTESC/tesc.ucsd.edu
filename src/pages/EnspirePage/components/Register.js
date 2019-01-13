@@ -48,7 +48,7 @@ class Register extends Component {
                         {/* Picture on the right */}
                         <div class="col-md-6">
                             <div className="enspire-register__right">
-                                <img src="/Enspire-register-image.png" class="float-right"></img>
+                                <img src="/Enspire-register-image.png" class="mb-5"></img>
                             </div>
                         </div>
 

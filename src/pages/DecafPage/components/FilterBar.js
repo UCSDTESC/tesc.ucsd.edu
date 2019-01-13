@@ -19,7 +19,6 @@ class FilterBar extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
         <Row className="decaf-companies__filter">
           <Col md="3" className="my-2">
@@ -31,6 +30,7 @@ class FilterBar extends Component {
               options={this.props.data.fields}
               onChange={this.props.handleFieldChange}
               placeholder="Industry"
+
             />
           </Col>
           <Col md="3" className="my-2">
