@@ -10,6 +10,8 @@ import {
     TimelineLite
 } from 'gsap';
 
+import {Link} from 'react-router-dom'
+
 const PLAY_ANIM = true
 class Hero extends React.Component {
 
@@ -29,9 +31,9 @@ class Hero extends React.Component {
                     <a className="btn decaf-hero__cta mr-3" target="_blank" href="https://tesc.typeform.com/to/AvDtNV" id="hero-cta">
                         <span>Submit Resume 📝</span> 
                     </a>
-                    <a className="btn decaf-hero__cta" target="_blank" href="https://goo.gl/forms/EC6CpTcFhfhNEFwD2" id="hero-cta">
+                    <Link className="btn decaf-hero__cta" target="_blank" to="/decaf/companies" id="hero-cta">
                         <span> Companies</span>
-                    </a>
+                    </Link>
                 </>
             )
         }
