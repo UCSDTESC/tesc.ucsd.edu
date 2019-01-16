@@ -27,10 +27,10 @@ class Hero extends React.Component {
             return (
                 <>
                     <a className="btn decaf-hero__cta mr-3" target="_blank" href="https://tesc.typeform.com/to/AvDtNV" id="hero-cta">
-                        <span>Submit Resume Here 📝</span> 
+                        <span>Submit Resume 📝</span> 
                     </a>
                     <a className="btn decaf-hero__cta" target="_blank" href="https://goo.gl/forms/EC6CpTcFhfhNEFwD2" id="hero-cta">
-                        <span> Volunteer</span>
+                        <span> Companies</span>
                     </a>
                 </>
             )
