@@ -23,6 +23,8 @@ class DecafPage extends React.Component {
         const {hash} = this.props.location;
         window.scrollTo(0,0);
 
+
+        if (!$(hash).offset()) return;
         if (hash) {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top

@@ -42,9 +42,16 @@
     }
 
     
-    &__filter {
-        //line-height: 0.5;
-
+    &__map {
+        background: $decaf-dark-blue;
+        border: 2px solid $decaf-dark-blue;
+        p {
+            padding: 1rem;
+            margin-bottom: 0;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
     }
 }
 

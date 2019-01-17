@@ -282,7 +282,7 @@ class AttendingCompanies extends React.Component {
 
     let displayRows = Math.ceil(filteredCompanies.length / 4);
     return (
-      <div className="decaf-companies" id="about">
+      <div className="decaf-companies">
         <div className="decaf-companies__head">
           Companies Attending <Link to="/decaf">Decaf 2019</Link>
         </div>
