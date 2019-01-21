@@ -1,13 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-snapshot';
 import { BrowserRouter } from 'react-router-dom'
 import Routes from './Routes';
+
 import './scss/tesc-website.scss';
 import './globals';
 import './fullcalendar.min.css';
 import './gcal';
 
-ReactDOM.render((
+render((
     <BrowserRouter>
         <Routes />
     </BrowserRouter>
