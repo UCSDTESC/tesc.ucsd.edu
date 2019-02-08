@@ -22,6 +22,7 @@
   },
   "homepage": "http://tesc.ucsd.edu/",
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
