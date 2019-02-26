@@ -33,7 +33,7 @@ function Event(props) {
 
 class Events extends React.Component {
 
-    renderEvents() {
+    renderCurrEvents() {
 
         let currEvents = events.filter(({date}) => Date.now() < new Date(date));
 
@@ -48,6 +48,19 @@ class Events extends React.Component {
 
     }
 
+    renderPastEvents() {
+        let pastEvents = events.filter(({date}) => Date.now() > new Date(date));
+
+        if (pastEvents.length == 0) {
+            return (
+                <div className="events__none">
+                    Nothing Yet, Stay Tuned For More
+                </div>
+            )
+        }
+        return pastEvents.map((c, i) => <Event {...c} key={i} />);
+    }
+
     render() {
         return (
             <section className="events mb-5" id="events">
@@ -59,7 +72,13 @@ class Events extends React.Component {
                 </div>
                 <div className="container events__container">
                 <div className="row justify-content-center flex-row events__cards">
-                    {this.renderEvents()}
+                    {this.renderCurrEvents()}
+                </div>
+                <div className="text-center events__header">
+                    Past Events
+                </div>
+                <div className="row justify-content-center flex-row events__cards">
+                    {this.renderPastEvents()}
                 </div>
                 </div>
             </section>
