@@ -71,15 +71,15 @@ class Events extends React.Component {
                     Upcoming Events
                 </div>
                 <div className="container events__container">
-                <div className="row justify-content-center flex-row events__cards">
-                    {this.renderCurrEvents()}
-                </div>
-                <div className="text-center events__header">
-                    Past Events
-                </div>
-                <div className="row justify-content-center flex-row events__cards">
-                    {this.renderPastEvents()}
-                </div>
+                    <div className="row justify-content-center flex-row events__section events__cards">
+                        {this.renderCurrEvents()}
+                    </div>
+                    <div className="text-center events__header">
+                        Past Events
+                    </div>
+                    <div className="row justify-content-center flex-row events__section events__cards">
+                        {this.renderPastEvents()}
+                    </div>
                 </div>
             </section>
         );
