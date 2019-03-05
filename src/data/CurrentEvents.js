@@ -28,6 +28,13 @@ const currEvents = [
         date: "2019-04-16T00:00:00.000Z"
     },
     {
+        name: 'TESC\'s Got Talent 2019',
+        link: 'https://ucsd.learningu.org',
+        isInternalLink: false,
+        img: '/tescs-got-talent-event.svg',
+        date: "2019-04-19T08:00:00.000Z"
+    },
+    {
         name: 'Splash 2019',
         link: 'https://ucsd.learningu.org',
         isInternalLink: false,
