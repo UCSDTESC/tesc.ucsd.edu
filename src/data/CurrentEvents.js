@@ -26,6 +26,13 @@ const currEvents = [
         isInternalLink: false,
         img: '/hackxx-event.svg',
         date: "2019-04-16T00:00:00.000Z"
+    },
+    {
+        name: 'Splash 2019',
+        link: 'https://ucsd.learningu.org',
+        isInternalLink: false,
+        img: '/splash-event.svg',
+        date: "2019-04-21T08:00:00.000Z"
     }
 ]
 
