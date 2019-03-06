@@ -29,7 +29,7 @@ const currEvents = [
     },
     {
         name: 'TESC\'s Got Talent 2019',
-        link: 'https://ucsd.learningu.org',
+        link: 'https://www.facebook.com/events/423672735070702/',
         isInternalLink: false,
         img: '/tescs-got-talent-event.svg',
         date: "2019-04-19T08:00:00.000Z"
