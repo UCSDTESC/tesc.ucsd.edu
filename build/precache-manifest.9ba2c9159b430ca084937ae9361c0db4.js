@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/js/0.59417581.chunk.js"
   },
   {
-    "revision": "88a9736346727249fc27",
+    "revision": "33446654f8960b4de243",
     "url": "/static/css/main.b3155452.chunk.css"
   },
   {
-    "revision": "88a9736346727249fc27",
-    "url": "/static/js/main.88a97363.chunk.js"
+    "revision": "33446654f8960b4de243",
+    "url": "/static/js/main.33446654.chunk.js"
   },
   {
     "revision": "f8babba9dc0cd2a2386f",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/decaf-about.5463faf7.svg"
   },
   {
-    "revision": "a3fe300f0cec9665294dc8b89aac6b9d",
+    "revision": "5c49606d9f21ea6f4ef218491f389e27",
     "url": "/index.html"
   }
 ];
