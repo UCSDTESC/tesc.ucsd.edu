@@ -1,152 +1,131 @@
 const board = [
     {
-        name: 'Colin Feeney',
+        name: 'Jonathan Luck',
         role: 'President',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/president.jpg',
-        email: 'colin@tesc.ucsd.edu',
-        bio: `As President, I oversee all of TESC in our mission to serve the engineering student body of the Jacobs School. I strive daily to find new opportunities to connect my peers with opportunities to propel them into engineering careers.  I’m a fourth year chemical engineering major currently researching soft lithography techniques for antifouling coatings. I also hope to develop better environmental interactions in VR through simulating the sensation of touch. When I can take time away from research and school, I can make a pie that will give your grandma a run for her money.`
-    },
-    {
-        name: 'Caitlyn Liu',
-        role: 'VP External',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-external.jpg',
-        email: 'caitlyn@tesc.ucsd.edu',
-        bio: 'I am a Junior studying Math - Computer Science at UCSD. I enjoy problem solving and love probability and statistics in particular. When I’m not busy sending emails for TESC, I can be found in the CSE Building on duty as a tutor or curled up in bed reading TechCrunch.',
-        link: 'https://www.linkedin.com/in/caitlynmliu/'
-    },
-    {
-        name: 'Nick Thomson',
-        role: 'VP Internal',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-internal.jpg',
-        email: 'nick.thomson@tesc.ucsd.edu',
-        bio: 'I am a 4th year Mathematics-Computer Science major graduating in spring quarter. As VP Internal my role is to ensure that TESC has the resources it needs for each of the board members to operate efficiently. I always try to maintain a portfolio of side projects to stay in touch with emerging technologies. In my spare time I skate and play pool.',
-
-    },
-    {
-        name: 'Callie Boskin',
-        role: 'VP Finance',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-finance.jpg',
-        email: 'callie@tesc.ucsd.edu',
-        link: 'https://www.linkedin.com/in/callie-boskin-a50b47132/',
-        bio: `I am a second year bioengineering: bioinformatics major. I have previously served as Finacial Analyst for TESC where I helped engineering organizations on campus fund their projects, workshops, competitions, and more. Outside of TESC, I am also a Warren College Resident Assistant.
-        I enjoy reading, biking, and going to the beach!`
-    },
-    {
-        name: 'Jonathan Luck',
-        role: 'VP Events',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-events.jpg',
         email: 'jonathan@tesc.ucsd.edu',
-        bio: 'I am a fourth-year computer science major and VP Events for TESC. Outside of engineering, I love reading, quizbowl, and event planning. I am interested in the intersection of cyber, intelligence, and national security.'
+        bio: "I am a fifth-year computer science major. As President for TESC, I strongly believe in supporting the engineering community at UCSD. Outside of engineering, I love reading, cooking, quizbowl, and event planning. I am interested in the intersection of cyber, intelligence, and national security."
     },
     {
-        name: 'David Ding',
-        role: 'Sponsorship Lead',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/sponsorship-lead.jpg',
-        link: 'https://www.linkedin.com/in/david-ding-65514712a/',
-        email: 'david@tesc.ucsd.edu',
-        bio: 'Hi my name is David Ding, and I currently serve as the Sponsorship Lead for TESC. My most previous role was director of SD Hacks 2018, which took place Oct 12th-14th this year. I am a third year electrical engineering student focusing on devices and materials. Besides TESC, I also do research in the neuroelectronics group and perform tasks such as microfabrication, animal experiments, and paper writing.'
-    },
-    {
-        name: 'Sergio Villazon',
-        role: 'ProDev Lead',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/prodev-lead.jpg',
-        email: 'sergio@tesc.ucsd.edu',
-        bio: `
-        My name is Sergio Villazon I’m a third year computer science major from Bolivia.
-        
-        My interests are generally focused on back-development and data analysis. I really enjoy working with statistics and Python. Although lately I’ve been expanding more into front-end and visual design but I’ve got some ways to go in terms of artistic skill.\n
-        
-        Outside of school, I enjoy watching fantasy and Sci-Fi movies, reading, and playing board games`,
-        link:"https://www.linkedin.com/in/sergio-villazon/"
-    },
-    {
-        name: 'Bilguun Bulgan',
-        role: 'HackXX Director',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/hackxx-director-2.jpg',
-        email: 'bilguun@tesc.ucsd.edu',
-        bio: `I’m a 3rd year computer science student who loves building software and teaching. I’ve been a tutor for the CS department for 10 classes now and counting. I also have the opportunity to direct HackXX this year along with Alice! When I’m not programming, tutoring or doing TESC related things, I’m usually found sketching.`,
-        link: "https://www.linkedin.com/in/bilguun-bulgan/"
-    },
-    {
-        name: 'Alice Lee',
-        role: 'HackXX Director',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/hackxx-director-1.jpg',
-        email: 'alice@tesc.ucsd.edu',
-        bio: 'I’m a fourth year majoring Cognitive Science with a specialization in Human Computer Interaction and minoring in Computer Science and Global Health. I’ll be directing HackXX with Bilguun this year because I’m passionate about women’s empowerment, especially in STEM fields. I’m also a Service Leader for Side by Side, a social justice oriented service-learning org on campus, and I work as a barista at Audrey’s.',
-        link: 'https://www.linkedin.com/in/alice-y-lee/'
+        name: 'Summer Joyce Batasin',
+        role: 'VP External',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-external.jpeg',
+        email: 'summer@tesc.ucsd.edu',
+        bio: 'I am a third-year bioengineering: biotechnology major and this year’s VP External for TESC. I will be supporting our marketing, sponsorship, and design teams to help TESC put on some great events for UCSD’s engineering community. When I’m not doing research or studying, I love to bake and relax at the beach.',
+        link: 'https://www.linkedin.com/in/summer-joyce'
     },
     {
         name: 'Subhankar Panda',
+        role: 'VP Internal',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-internal.jpg',
+        email: 'subhankar@tesc.ucsd.edu',
+        bio: "I'm Panda, I'm a 4th year Math-CS major. I've been in TESC since my sophomore year, primarily working on the tech team. As VP Internal this year, my job is to maintain TESC's internal health and to provide our board members with the resources they need to be successful. Outside of TESC, you can find me at the rock climbing gym, watching Formula 1 or on the quest to find San Diego's best california burrito.",
+        link: "https://www.linkedin.com/in/subhankar-panda/"
+    },
+    {
+        name: 'Kyle Gillaspy',
+        role: 'VP Finance',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-finance.jpg',
+        link: 'https://www.linkedin.com/in/kylegillaspy/',
+        email: 'kyle.gillaspy@tesc.ucsd.edu',
+        bio: "I am a third-year computer science major with an interest in finance. As the VP Finance for TESC I help maintain the funding cycle and internal financial metrics to help maximize our support of the engineering community! In my free time I enjoy hiking and UEFA football."
+    },
+    {
+        name: 'Sergio Villazon',
+        role: 'VP Events',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/vp-events.jpg',
+        email: 'sergio@tesc.ucsd.edu',
+        bio: "I am the incoming VP Events. I am a fourth-year computer science major. I've been involved with TESC since my freshman-year and am really excited to work with everyone this year!"
+    },
+    {
+        name: 'Jimmy Dang',
+        role: 'SD Hacks Director',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/sd-hacks-director.jpg',
+        email: 'jimmy@tesc.ucsd.edu',
+        bio: "My name is Jimmy Dang and I will be serving as the SD Hacks Director. I am a third-year computer science major who enjoys going out and getting food. You can also find me looking at dog pictures while playing Minecraft all day.",
+        link: "https://www.linkedin.com/in/jimmydang1/"
+    },
+    {
+        name: 'Sneheil Saxena',
+        role: 'Sponsorship Lead',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/sponsorship-lead.jpg',
+        link: 'https://www.linkedin.com/in/sneheilsaxena/',
+        email: 'sneheil@tesc.ucsd.edu',
+        bio: "I'm a fourth-year mathematics & computer science major, and I serve as the Sponsorship Lead for TESC! I aim to empower TESC to serve the engineering community by ensuring that our events are financially well supported and that our sponsors' expectations are exceeded. My academic interests include algorithms, mathematical statistics, and CS education research. I'm also working towards finishing up my first album and performing live more frequently."
+    },
+    {
+        name: 'Jocelyn Wei',
+        role: 'ProDev Lead',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/prodev-lead.jpeg',
+        email: 'jocelyn@tesc.ucsd.edu',
+        bio: "I'm a fourth-year computer science major from northern California. When I'm not at work on my laptop, you can find me at home or in Geisel, probably still on my laptop. I'm also TESC's ProDev chair - feel free to talk to me about Decaf!",
+        link:"https://www.linkedin.com/in/joswei"
+    },
+    {
+        name: 'Lisa Luo',
         role: 'Technical Lead',
-        img: 'https://ca.slack-edge.com/T1598AR7T-U82KB5FG8-f5ea3a482fa2-1024',
-        bio: "I'm Panda, 3rd year Mathematics & Computer Science major at UCSD. As TESC's Tech Lead, I build the websites and applications that TESC and its events use. In my free time I like to watch Formula 1, explore San Diego and mindlessly scroll through my Twitter feed",
-        link: 'https://www.linkedin.com/in/subhankar-panda/',
-        email: 'subhankar@tesc.ucsd.edu'
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/tech-lead.jpg',
+        bio: "I am Lisa Luo, and as the Technical Lead, I am responsible for developing websites and applications for TESC. I am a third-year computer science major and psychology minor. When I'm not obsessing over Marvel, musicals, and video games, I'm buying Lego sets, drinking coffee, and playing with jigsaw puzzles.",
+        link: 'https://www.linkedin.com/in/lisa--luo/',
+        email: 'lisa@tesc.ucsd.edu'
     },
     {
-        name: 'Cora Xing',
-        role: 'Design Lead',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/visualdesign-lead.jpg',
-        bio: "I'm a second-year computer science major who loves to design and solve problems for social impact. I help people troubleshoot technical problems as an UCSD Information Technology Services (ITS) networking technician, and I read Webtoons in my spare time.",
-        link: 'https://www.linkedin.com/in/coraxyc/',
-        email: 'cora@tesc.ucsd.edu'
+        name: 'Jasmine Hoang',
+        role: 'Visual Design Lead',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/visual-design-lead.HEIC',
+        bio: "I'm a third-year computer science major and this year's Visual Design Lead! I'm in charge of designing websites and other media for TESC events. When I'm not doing that, I'm probably playing Minecraft or painting.",
+        link: 'https://www.linkedin.com/in/jasminenhoang/',
+        email: 'jasmine@tesc.ucsd.edu'
     },
     {
-        name: 'Andy Li',
+        name: 'Ashley Rojas',
         role: 'Outreach Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/outreach-lead.jpg',
-        bio: 'I am a 3rd year computer engineering major and the Outreach Lead for TESC. At school, I really enjoy learning new things and understanding the complicated logic of how complicated systems like computers work. In my spare time, I watch sports, mainly basketball and baseball, and browse the internet looking for something to make me laugh.',
-        email: 'andy@tesc.ucsd.edu',
-        link: ""
+        bio: "I am a third-year chemical engineering major with an interest in Material Science. I was a member of the TESC Social Committee, and I am now the Outreach Lead coordinating Enspire and Splash. As an Outreach Lead, I am dedicated in assisting San Diego's under-resourced and underrepresented communities, so if you have a big or small idea that you would like to incorporate into your community, talk to me! In my free time I like to go to concerts, volunteer for the WeLoveU Foundation and ASEZ, advocate for Women's Leadership Project, work out, and go to LA to hang out with family and friends!",
+        email: 'ashley@tesc.ucsd.edu',
+        link: "https://www.linkedin.com/in/ashley-rojas-704048160"
     },
     {
-        name: 'Catherine Xia',
+        name: 'Cindy Alberto',
         role: 'Social Lead',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/social-lead.jpg',
-        email: 'catherine@tesc.ucsd.edu',
-        bio: "I am a second-year computer engineering major. As the Social Lead of TESC, I would like to bring more students into our engineering community and let them enjoy connecting with people having the same passion. Also, I like constantly challenging myself, aiming for a better self every day. In my free time, I enjoy TV shows, food hunting and travelling.",
-        link: 'https://www.linkedin.com/in/fengbo-xia/'
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/social-lead.jpeg',
+        email: 'cindy@tesc.ucsd.edu',
+        bio: "I am a third-year mechanical engineering major and Social Lead for TESC. Outside of school I enjoy reading, watching TV, and hanging out with friends."
     },
     {
-        name: 'Cameron Wilkinson',
-        role: 'Council Relations Lead',
+        name: 'Ysabelle Lam',
+        role: 'Council Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/council-lead.jpg',
-        email: 'cameron@tesc.ucsd.edu',
-        bio: '4th year mechanical engineering major with a passion to solve problems. Let’s make UCSD the best it can be.',
-        link: 'http://linkedin.com/in/cameron-wilkinson'
+        email: 'ysabelle@tesc.ucsd.edu',
+        bio: "I'm a fourth-year aerospace engineering major with a minor in business. I joined TESC as the Council Lead with a hope to better serve the engineering community and facilitate an environment of collaboration and opportunities for academic and professional growth. Outside of school, I host outreach workshops for K-12 students, attend hackathons, or spend time outdoors.",
+        link: 'https://www.linkedin.com/in/ysabellelam/'
     },
     {
-        name: 'Evon Hung',
+        name: 'Katie Chen',
         role: 'Marketing Lead',
         img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/marketing-lead.jpg',
-        email: 'evon@tesc.ucsd.edu',
-        link: 'https://linkedin.com/in/evonhung',
-        bio: `I’m a fourth-year communication major, double minor in business and design, who loves to connect people with people, and people with opportunities. I craft and share stories, and lead campaigns that reach thousands. You can find me in conversations with new people, taste-testing ramen joints, and adventuring all around San Diego.`
+        email: 'katie@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/katie-c-5827aa121',
+        bio: "I am a third-year majoring in cognitive science with a specialization in human-computer interaction and minoring in design at UCSD. As Marketing Lead, I am in charge of sharing stories, leading campaigns, and curating marketing material for TESC. When I have free time, I like to go on food adventures with friends, drink A LOT of boba, and work on my graphic design skills, to name a few things."
     },
     {
-        name: 'Joshua Hedgpeth',
+        name: 'Natalie Chen',
         role: 'Project Spaces Lead',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/projectspaces-lead.jpeg',
-        email: 'joshua@tesc.ucsd.edu',
-        link: 'https://www.linkedin.com/in/joshua-hedgpeth',
-        bio: "I am an Aerospace Engineering major in my second year at UCSD. I have been involved with the Triton Engineering Student Council on the Project Spaces committee since Fall 2017, and in Spring 2018 became the Project Spaces Lead. I am also a Lead Structures Engineer in Rocket Propulsion Laboratory at UCSD, an aerospace club on campus and one of TESC's many member organizations. I am from Sierra Madre, CA, and outside of school I like to play intramural basketball and practice the guitar in my free time."
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/project-spaces-lead.jpg',
+        email: 'natalie@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/natalie-chen-6b68a2142/',
+        bio: 'I am a fourth-year bioengineering major and I currently serve as the Project Space Lead as well as the Assistant Director of SD Hacks 2019. In my free time I enjoy cooking and baking. If not in the kitchen I can be found cuddling with my dog Photon!'
     },
     {
-        name: 'Nick Lin',
-        role: 'Data Analyst',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/data-analyst.jpg',
-        link: 'https://www.linkedin.com/in/nick-lin-2771a4139/',
-        email: 'nick.lin@tesc.ucsd.edu',
-        bio: "I'm Nick Lin, TESC's Data Analyst. This is my second year in data science even though I’m a third year student. I was one of those working kids that you see in Chinese restaurants. Currently I’m mostly busy helping researchers, and doing my own projects. I’m a big fan of old Hong Kong movies and stand up."
-    },
-    {
-        name: 'Jeffrey Yang',
-        role: 'Financial Analyst',
-        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/financial-analyst.jpg',
-        link: 'https://www.linkedin.com/in/jeffrey-yang-405061171',
-        email: 'jeffrey@tesc.ucsd.edu',
-        bio: "I am a first-year computer engineering major currently serving as the Financial Analyst for TESC. I enjoy programming and learning about almost everything computer related. In my free time, you can usually find me playing video games or watching movies."
+        name: 'Thant Htoo Zaw',
+        role: 'Internal Projects Lead',
+        img: 'https://s3.us-east-2.amazonaws.com/tesc-website/board/internal-projects-lead.jpg',
+        link: 'https://www.linkedin.com/in/htoo97/',
+        email: 'thant@tesc.ucsd.edu',
+        bio: "I'm Thant, a fourth-year Computer Engineering major. As Internal Projects Lead, I am always looking for ways to improve TESC's technical processes. I like planning events, which have ranged from SD Hacks and HackXX to a fashion show back in high school. These days, I'm either on road trips, playing board games or testing my limits for spicy food."
     }
+
+    // Missing Financial Analyst
 ]
 
 export default board;

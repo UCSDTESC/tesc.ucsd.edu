@@ -176,14 +176,19 @@
         font-size: 1.3rem;
         margin-top: 1rem;
         font-weight: bold;
+        display: block;
 
         a {
             color: $tesc-blue;
-            text-decoration: underline;
+            //text-decoration: underline;
             overflow: hidden;
             &:hover {
                 color: $tesc-red;
             }
+        }
+
+        span {
+            text-decoration: underline;
         }
     }
 }
