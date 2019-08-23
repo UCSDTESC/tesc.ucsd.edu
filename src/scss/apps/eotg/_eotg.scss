@@ -4,32 +4,4 @@ $eotg-green: #6FC167;
     height: 100%;
 }
 
-.eotg-toggle {
-    background: white;
-    color: black !important;
-    font-weight: 400;
-    border: 2px solid white;
-
-    &:hover {
-        background: transparent;
-        color: white !important;
-    }
-}
-
-.eotg-green-text {
-    color: green !important;
-}
-
-.eotg-green-gradient {
-    background: linear-gradient(49.53deg, green 12.76%, yellow 97.14%);;
-}
-
-.eotg-green-bg {
-    background: green !important;
-
-    & .question__heading a, & .question__content {
-        color: black;
-    }
-}
-
 @import './components/all';
