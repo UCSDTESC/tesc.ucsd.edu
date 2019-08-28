@@ -1,0 +1,29 @@
+.filter {
+    background-color: $eotg-green;
+    width: 100%;
+    text-align: left;
+    color: white;
+    padding-left: 0.3rem;
+  
+    &:after {
+      position: absolute;
+      right: 0.5rem;
+      top: calc(50% - 0.2rem);
+    }
+  
+    &__badge {
+      background: white;
+      color: $white;
+    }
+  
+    &__clear {
+      background: transparent;
+      margin-right: 0.1rem;
+      padding: 0 0.4rem;
+  
+      &:hover, &:focus {
+        background: $eotg-green;
+        color: $white;
+      }
+    }
+  }

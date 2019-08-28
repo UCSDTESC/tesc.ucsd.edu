@@ -1,17 +1,27 @@
 import React, {Component} from 'react';
 
+import Nav from './components/Nav';
 import Hero from './components/Hero';
 import About from './components/About';
+import Orgs from './components/Orgs';
 import Footer from './components/Footer';
 
 class EOTGPage extends Component {
 
+    componentDidMount() {
+        document.title = "EOTG 2019 | UCSD TESC";
+    }
+
     render() {
         return (
             <>       
+                {/*<Nav />*/}
                 <Hero />         
                 <About />
+                {/*<Orgs />*/}
                 <Footer />
+                {/*<script src="./js/sortElements.js"></script>
+                <script src="./js/company-table.js"></script>*/}
             </>
         )
     }
