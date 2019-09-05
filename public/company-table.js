@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 $(function(){
   $('#companies').find('.company').filter(function() {
     return $(this).index() === 0;

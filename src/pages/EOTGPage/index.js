@@ -6,6 +6,9 @@ import About from './components/About';
 import Orgs from './components/Orgs';
 import Footer from './components/Footer';
 
+import './js/sortElements';
+import './js/company-table';
+
 class EOTGPage extends Component {
 
     componentDidMount() {
@@ -18,7 +21,7 @@ class EOTGPage extends Component {
                 {/*<Nav />*/}
                 <Hero />         
                 <About />
-                {/*<Orgs />*/}
+                <Orgs />
                 <Footer />
                 {/*<script src="./js/sortElements.js"></script>
                 <script src="./js/company-table.js"></script>*/}

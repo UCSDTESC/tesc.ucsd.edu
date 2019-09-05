@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 /**
  * jQuery.fn.sortElements
  * --------------
@@ -24,7 +22,7 @@ import $ from 'jquery';
  *   The <td>'s parent (<tr>) will be sorted instead
  *   of the <td> itself.
  */
-$.fn.sortElements = (function(){
+jQuery.fn.sortElements = (function(){
   
   var sort = [].sort;
   
