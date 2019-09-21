@@ -7,8 +7,12 @@
         color: white;
     }
 
-    p {
+    p, a {
         font-size: 1.3rem;
         color: white;
+    }
+
+    a {
+        text-decoration: underline;
     }
 }
