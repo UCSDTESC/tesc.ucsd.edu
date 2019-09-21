@@ -5,7 +5,8 @@ import asyncComponent from './asyncComponent'
 import Layout from './layouts/Layout';
 
 import DecafRoutes from './pages/DecafPage/Routes';
-import EnspireRoutes from './pages/EnspirePage/Routes'
+import EnspireRoutes from './pages/EnspirePage/Routes';
+import EOTGRoutes from './pages/EOTGPage/Routes';
 
 import HomePage from './pages/HomePage';
 
@@ -43,6 +44,7 @@ class Routes extends React.Component {
 
                 <Route path='/decaf' component={DecafRoutes} />
                 <Route path='/enspire' component={EnspireRoutes} />
+                <Route path='/eotg' component={EOTGRoutes} />
 
                 <Route component={this.withLayout(NotFoundPage)} />
             </Switch>

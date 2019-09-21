@@ -1,0 +1,45 @@
+/*.footer {
+    margin: 3rem 0 3rem;
+    color: $eotg-green;
+  
+    &__links {
+      list-style: none;
+      padding: 0;
+    }
+  
+    &__link {
+      color: $tesc-blue;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  
+    &__link-item {
+      font-size: 1.75rem;
+  
+      &:not(:first-child) {
+        margin-top: 1rem;
+  
+        @include media-breakpoint-up(md) {
+          margin-top: 0;
+        }
+      }
+      &--logo {
+        img {
+          width: 7rem;
+        }
+        text-align: center;
+        max-width: 25rem;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
+      }
+    }
+
+    &__sm {
+      font-size: 1rem;
+      text-align: center;
+      max-width: 100%;
+    }
+  }*/

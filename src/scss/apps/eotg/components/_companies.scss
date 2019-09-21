@@ -1,0 +1,55 @@
+$logo-hover-padding: 0.5rem;
+
+.companies {
+  text-align: center;
+  position: relative;
+  padding-bottom: 5rem;
+
+  &:before {
+    $bg-margin: 10rem;
+    $bg-width: 2*$bg-margin;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    //background-image: url(../assets/shapes-mobile.svg);
+    background-size: 480px;
+    background-position: top center;
+    background-repeat: repeat-y;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+      max-width: none;
+      //background-image: url(../assets/shapes.svg);
+      background-size: 85%;
+    }
+  }
+
+  &__grid {
+    align-items: center;
+    justify-content: center;    
+  }
+
+  &__logo {
+    max-height: 8rem;
+    border: none !important;
+    background: none !important;
+
+    &--padded {
+      padding: 1.25rem;
+
+      &:hover {
+        padding: calc(1.25rem + #{$logo-hover-padding}) !important;
+      }
+    }
+
+    &:hover {
+      padding: $logo-hover-padding;
+    }
+  }
+}

@@ -1,4 +1,11 @@
 const currEvents = [
+    /*{
+        name: 'Engineers on the Green: Fall 2019',
+        link: '/eotg',
+        isInternalLink: true,
+        img: '/decaf-event.svg',
+        date: "2019-09-30T14:00:00.000Z"
+    },*/
     {
         name: 'Decaf 2019',
         link: '/decaf',
@@ -7,7 +14,7 @@ const currEvents = [
         date: "2019-01-18T00:00:00.000Z"
     },
     {
-        name: 'Engineers On The Green 2019',
+        name: 'Engineers on the Green: Winter 2019',
         link: 'https://www.facebook.com/events/342196413243975/',
         isInternalLink: false,
         img: '/eotg-event.svg',

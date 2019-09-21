@@ -1,0 +1,17 @@
+$eotg-green: #71C167;
+
+#eotg-main {
+    height: 100%;
+}
+
+.eotg-contact {
+    background: $eotg-green;
+
+    a {
+        color: white;
+    }
+}
+
+
+
+@import './components/all';
