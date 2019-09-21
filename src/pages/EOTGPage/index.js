@@ -18,13 +18,10 @@ class EOTGPage extends Component {
     render() {
         return (
             <>       
-                {/*<Nav />*/}
                 <Hero />         
                 <About />
                 <Orgs />
                 <Footer />
-                {/*<script src="./js/sortElements.js"></script>
-                <script src="./js/company-table.js"></script>*/}
             </>
         )
     }

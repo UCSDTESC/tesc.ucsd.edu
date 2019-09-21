@@ -1,5 +1,6 @@
 .eotg-hero {
     background: $eotg-green;
+    padding-top: 4rem;
     
     &__container {
         width: 80%;
@@ -7,17 +8,17 @@
         height: 87%;
     }
 
-    &__left {
+    /*&__left {
         @include media-breakpoint-down(sm) {
             text-align: center;
             margin-top: 3rem;
         }
-    }
+    }*/
 
     &__title {
         font-size: 3rem;
         color: white;
-        margin-top: 2rem;
+        //margin-top: 2rem;
     }
 
     &__cta {

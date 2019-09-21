@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 $(function(){
-  $('#companies').find('.company').filter(function() {
+  $('#orgs').find('.eotg-org').filter(function() {
     return $(this).index() === 0;
   }).sortElements(function(a, b) {
     if ($.text([a]) === $.text([b])) return 0;
@@ -13,168 +13,96 @@ $(function(){
 
   var columnMap = {
     name: 1,
-    industry: 2,
-    position: 3,
-    workAuth: 4
+    department: 2
   };
 
   var activeFilters = {
-    industry: "",
-    position: "",
-    workAuth: "",
-    name: "",
+    department: "",
+    name: ""
   };
 
-  var industryOptions = $('.industry-filter__options');
-  var positionOptions = $('.position-filter__options');
-  var workAuthOptions = $('.authorisation-filter__options');
+  var departmentOptions = $('.eotg-department-filter__options');
 
   function createFilterOptions() {
-    var uniqueIndustries = {};
-    var uniquePositions = {};
-    var uniqueWorkAuths = {};
+    var uniqueDepartments = {};
 
+    $('#orgs .eotg-org__content').each(function() {
+      var departmentElem = $('.eotg-org__department span', this);
 
-    $('#companies .company').each(function() {
-      var industryElem = $('.company__industry span', this);
-      var positionElem = $('.company__position span', this);
-      var workAuthElem = $('.company__auth span', this);
+      var departments = departmentElem.text().split(', ');
 
-      var industries = industryElem.text().split(', ');
-      var positions = positionElem.text().split(', ');
-      var workAuths = workAuthElem.text().split(', ');
-
-      console.log(industries, positions, workAuths)
+      console.log(departments);
       
-      industries.forEach(function(industry) {
-        if (Object.keys(uniqueIndustries).indexOf(industry) === -1) {
-          uniqueIndustries[industry] = 1;
+      departments.forEach(function(department) {
+        if (Object.keys(uniqueDepartments).indexOf(department) === -1) {
+          uniqueDepartments[department] = 1;
         } else {
-          uniqueIndustries[industry]++;
-        }
-      });
-
-      positions.forEach(function(position) {
-        if (Object.keys(uniquePositions).indexOf(position) === -1) {
-          uniquePositions[position] = 1;
-        } else {
-          uniquePositions[position]++;
-        }
-      });
-
-      workAuths.forEach(function(workAuth) {
-        if (Object.keys(uniqueWorkAuths).indexOf(workAuth) === -1) {
-          uniqueWorkAuths[workAuth] = 1;
-        } else {
-          uniqueWorkAuths[workAuth]++;
+          uniqueDepartments[department]++;
         }
       });
     });
+
+    var sortedDepartments = Object.keys(uniqueDepartments).sort();
+
+    // Add "All" option first so it shows up first
+    var newOption = $('<button/>',
+      {
+        'html': 'All Engineering <span class="eotg-filter__badge badge badge-pill">' + uniqueDepartments['All Engineering'] + '</span>',
+        'class': 'eotg-department-filter__option eotg-filter__option dropdown-item',
+        'data-filter': 'All'
+      });
+    departmentOptions.append(newOption);
+
+    // Remove "All Engineering" from the list of departments left to add to the dropdown
+    var indexOfAll = sortedDepartments.indexOf('All Engineering');
+    if (indexOfAll != -1) {
+      sortedDepartments.splice(indexOfAll, indexOfAll + 1);
+    }
     
-    Object.keys(uniqueIndustries).forEach(function(industry) {
+    sortedDepartments.forEach(department => {
       var newOption = $('<button/>',
       {
-        'html': industry + ' <span class="filter__badge badge badge-pill">' + uniqueIndustries[industry] + '</span>',
-        'class': 'industry-filter__option filter__option dropdown-item',
-        'data-filter': industry
+        'html': department + ' <span class="eotg-filter__badge badge badge-pill">' + uniqueDepartments[department] + '</span>',
+        'class': 'eotg-department-filter__option eotg-filter__option dropdown-item',
+        'data-filter': department
       });
-      industryOptions.append(newOption);
-    });
-
-    Object.keys(uniquePositions).forEach(function(position) {
-      var newOption = $('<button/>',
-      {
-        'html': position + ' <span class="filter__badge badge badge-pill">' + uniquePositions[position] + '</span>',
-        'class': 'position-filter__option filter__option dropdown-item',
-        'data-filter': position
-      });
-      positionOptions.append(newOption);
-    });
-
-    Object.keys(uniqueWorkAuths).forEach(function(authorisation) {
-      var newOption = $('<button/>',
-      {
-        'html': authorisation + ' <span class="filter__badge badge badge-pill">' + uniqueWorkAuths[authorisation] + '</span>',
-        'class': 'authorisation-filter__option filter__option dropdown-item',
-        'data-filter': authorisation
-      });
-      workAuthOptions.append(newOption);
+      departmentOptions.append(newOption);
     });
   };
 
-  function setIndustryFilter() {
-    $('.industry-filter__option').click(function() {
+  function setDepartmentFilter() {
+    $('.eotg-department-filter__option').click(function() {
       var filter = $(this).attr('data-filter');
-      activeFilters.industry = filter;
+      activeFilters.department = filter;
       var clearBtn = $('<button />',
       {
         'html': '<i class="fas fa-times"></i>',
-        'class': 'filter__clear btn',
-        'click': clearIndustryFilter
+        'class': 'eotg-filter__clear btn',
+        'click': clearDepartmentFilter
       });
-      var filterElem = $(".industry-filter");
+      var filterElem = $(".eotg-department-filter");
       filterElem.html(clearBtn);
       filterElem.append(filter);
       onFilterChanged();
     });
   };
 
-  function setCompanyFilter() {
-    $('.company-table__search').bind('input', function() {
+  function setOrganizationFilter() {
+    $('.eotg-org-table__search').bind('input', function() {
       var filter = $(this).val();
-      activeFilters.name = filter;
+      activeFilters.name = filter.toLowerCase();
       onFilterChanged();
     });
   }
 
-  function setPositionFilter() {
-    $('.position-filter__option').click(function() {
-      var filter = $(this).attr('data-filter');
-      activeFilters.position = filter;
-      var clearBtn = $('<button />',
-      {
-        'html': '<i class="fas fa-times"></i>',
-        'class': 'filter__clear btn',
-        'click': clearPositionFilter
-      });
-      var filterElem = $(".position-filter");
-      filterElem.html(clearBtn);
-      filterElem.append(filter);
-      onFilterChanged();
-    });
-  };
-
-  function setAuthorisationFilter() {
-    $('.authorisation-filter__option').click(function() {
-      var filter = $(this).attr('data-filter');
-      activeFilters.workAuth = filter;
-      var clearBtn = $('<button />',
-      {
-        'html': '<i class="fas fa-times"></i>',
-        'class': 'filter__clear btn',
-        'click': clearAuthorisationFilter
-      });
-      var filterElem = $(".authorisation-filter");
-      filterElem.html(clearBtn);
-      filterElem.append(filter);
-      onFilterChanged();
-    });
-  };
-
   function onFilterChanged() {
-    $('#companies .company').each(function() {
-      var name = $('.company__name', this).text();
-      var industry = $('.company__industry span', this).text();
-      var position = $('.company__position span', this).text();
-      var workAuth = $('.company__auth span', this).text();
+    $('#orgs .eotg-org__content').each(function() {
+      var name = $('.eotg-org__name', this).text().toLowerCase();
+      var department = $('.eotg-org__department span', this).text();
 
       if (name.indexOf(activeFilters.name) === -1) {
         $(this).hide();
-      } else if (industry.indexOf(activeFilters.industry) === -1) {
-        $(this).hide();
-      } else if(position.indexOf(activeFilters.position) === -1) {
-        $(this).hide();
-      } else if(workAuth.indexOf(activeFilters.workAuth) === -1) {
+      } else if (department.indexOf(activeFilters.department) === -1) {
         $(this).hide();
       } else {
         $(this).show();
@@ -182,27 +110,15 @@ $(function(){
     });
   };
 
-  function clearIndustryFilter() {
-    activeFilters.industry = "";
-    $(".industry-filter").text('Industry');
+  function clearDepartmentFilter() {
+    activeFilters.department = "";
+    $(".eotg-department-filter").text('Department');
     onFilterChanged();
   }
 
-  function clearPositionFilter() {
-    activeFilters.position = "";
-    $(".position-filter").text('Position');
-    onFilterChanged();
-  }
-
-  function clearAuthorisationFilter() {
-    activeFilters.workAuth = "";
-    $(".authorisation-filter").text('Work Authorisation');
-    onFilterChanged();
-  }
+  console.log("HELLO");
 
   createFilterOptions();
-  setIndustryFilter();
-  setPositionFilter();
-  setAuthorisationFilter();
-  setCompanyFilter();
+  setDepartmentFilter();
+  setOrganizationFilter();
 });

@@ -54,7 +54,7 @@ class Hero extends React.Component {
 
 
                 <div className="container-fluid text-center eotg-contents">
-                    <Nav />
+                    {/*<Nav />*/}
                     <div className="row h-100">
                         
                         <div className="col-md-6">

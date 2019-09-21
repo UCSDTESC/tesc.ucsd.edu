@@ -9,9 +9,9 @@ const EOTGPage = asyncComponent(() => import('./index'));
 
 class EOTGRoutes extends React.Component {
 
-    withEOTGLayout(Child, isCompany) {
+    withEOTGLayout(Child) {
         return () =>
-            (<EOTGLayout isCompany={isCompany}>
+            (<EOTGLayout>
                 <Child />
             </EOTGLayout>)
     }
@@ -19,7 +19,7 @@ class EOTGRoutes extends React.Component {
     render() {
         return (
             <Switch>
-                <Route path="/eotg/" exact component={this.withEOTGLayout(EOTGPage, false)}/>
+                <Route path="/eotg/" exact component={this.withEOTGLayout(EOTGPage)}/>
             </Switch>
         )
     }

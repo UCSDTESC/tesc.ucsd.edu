@@ -1,8 +1,8 @@
-.filter {
-    background-color: $eotg-green;
+.eotg-filter {
+    background-color: $white;
     width: 100%;
     text-align: left;
-    color: white;
+    color: black;
     padding-left: 0.3rem;
   
     &:after {
@@ -12,8 +12,8 @@
     }
   
     &__badge {
-      background: white;
-      color: $white;
+      background: $eotg-green;
+      color: white;
     }
   
     &__clear {
@@ -23,7 +23,7 @@
   
       &:hover, &:focus {
         background: $eotg-green;
-        color: $white;
+        color: black;
       }
     }
   }
