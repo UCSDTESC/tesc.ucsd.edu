@@ -17,7 +17,6 @@ $logo-hover-padding: 0.5rem;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    //background-image: url(../assets/shapes-mobile.svg);
     background-size: 480px;
     background-position: top center;
     background-repeat: repeat-y;
@@ -25,7 +24,6 @@ $logo-hover-padding: 0.5rem;
 
     @include media-breakpoint-up(md) {
       max-width: none;
-      //background-image: url(../assets/shapes.svg);
       background-size: 85%;
     }
   }

@@ -1,6 +1,7 @@
 import $ from 'jquery';
 
 $(function(){
+  // look in 'eotg-org' div for the stuff
   $('#orgs').find('.eotg-org').filter(function() {
     return $(this).index() === 0;
   }).sortElements(function(a, b) {
@@ -11,21 +12,19 @@ $(function(){
     return this.parentNode;
   });
 
-  var columnMap = {
-    name: 1,
-    department: 2
-  };
-
+  // the current active filters
   var activeFilters = {
     department: "",
     name: ""
   };
 
+  // holds the list of all department options
   var departmentOptions = $('.eotg-department-filter__options');
 
   function createFilterOptions() {
     var uniqueDepartments = {};
 
+    // look in each eotg-org__content and parse the departments
     $('#orgs .eotg-org__content').each(function() {
       var departmentElem = $('.eotg-org__department span', this);
 
@@ -33,6 +32,7 @@ $(function(){
 
       console.log(departments);
       
+      // count the number of each department
       departments.forEach(function(department) {
         if (Object.keys(uniqueDepartments).indexOf(department) === -1) {
           uniqueDepartments[department] = 1;
@@ -42,9 +42,10 @@ $(function(){
       });
     });
 
+    // sort the departments
     var sortedDepartments = Object.keys(uniqueDepartments).sort();
 
-    // Add "All" option first so it shows up first
+    // add "All Engineering" option first so it shows up first
     var newOption = $('<button/>',
       {
         'html': 'All Engineering <span class="eotg-filter__badge badge badge-pill">' + uniqueDepartments['All Engineering'] + '</span>',
@@ -53,7 +54,7 @@ $(function(){
       });
     departmentOptions.append(newOption);
 
-    // Remove "All Engineering" from the list of departments left to add to the dropdown
+    // remove "All Engineering" from the list of departments left to add to the dropdown
     var indexOfAll = sortedDepartments.indexOf('All Engineering');
     if (indexOfAll != -1) {
       sortedDepartments.splice(indexOfAll, indexOfAll + 1);

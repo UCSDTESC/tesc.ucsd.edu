@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {attendingOrgs} from '../data/Orgs';
 
 function IndividualOrg(props) {
-  //const col = props.col || 'col-md-4 col-lg-4';
   console.log(props);
 
   return (
@@ -13,28 +12,7 @@ function IndividualOrg(props) {
         </div>
     </div>
   )
-  }
-
-  /*if (props.size === "small") {
-      return (
-          <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
-              <SmallImg src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" />
-          </SponsorContainer>
-      )
-  } else  if (props.size === "medium") {
-      return (
-          <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
-              <MediumImg src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" />
-          </SponsorContainer>
-      )
-  } else {
-      return (
-          <SponsorContainer className={`${col} my-5 d-block`} href={props.link} target="_blank">
-              <LargeImg src={props.logo} className={`img-fluid d-block m-auto  ${props.className}`} alt="" width="110%"/>
-          </SponsorContainer>
-      )
-  }
-}*/
+}
 
 class Orgs extends React.Component {
   renderOrgs(attendingOrgs) {
@@ -50,6 +28,7 @@ class Orgs extends React.Component {
 
             <div className="container">
                 <div className="row">
+                    {/* search bar and filter */}
                     <div className="col-md mt-3">
                         <input type="text" placeholder="Organization Name" className="form-control eotg-org-table__search"/>
                     </div>
@@ -66,17 +45,10 @@ class Orgs extends React.Component {
                 </div>
             </div>
 
+            {/* render all the orgs */}
             <div id="eotg-orgs">
                 <div className="container p-0 mt-5 eotg-org">
                 <div className="row justify-content-center">
-                    {/*<div className="col-md-4 align-self-center">
-                        <div className="eotg-org__content">
-                          <h3 className="eotg-org__name">Lego Club</h3>
-                          <div className="eotg-org__department">
-                              Department: <span>Fun</span>
-                          </div>
-                        </div>
-                    </div>*/}
                     {this.renderOrgs(attendingOrgs)}
                 </div>
                 </div>

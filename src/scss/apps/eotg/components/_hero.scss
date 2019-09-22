@@ -8,17 +8,9 @@
         height: 87%;
     }
 
-    /*&__left {
-        @include media-breakpoint-down(sm) {
-            text-align: center;
-            margin-top: 3rem;
-        }
-    }*/
-
     &__title {
         font-size: 3rem;
         color: white;
-        //margin-top: 2rem;
     }
 
     &__cta {

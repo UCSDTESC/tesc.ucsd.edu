@@ -1,15 +1,12 @@
 import React, {Component} from 'react';
 import $ from 'jquery';
-import Nav from './Nav';
 import {NavLink, withRouter} from 'react-router-dom';
 
 import {ReactComponent as HeroPic} from '../svg/eotg.svg';
 
 class Hero extends React.Component {
 
-    // change #about later - i liked 800 ms over 450
     scrollAnimation() {
-        // window.scrollTo(0,0)
         $('html, body').animate({
             scrollTop: $('#about').offset().top
         }, 800);

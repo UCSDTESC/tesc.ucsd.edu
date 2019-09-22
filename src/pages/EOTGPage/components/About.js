@@ -11,7 +11,7 @@ class About extends React.Component {
                         <h1 className="text-center w-100">About Engineers on the Green</h1>
 
                         <p className="mt-5">
-                        Enginners on the Green is a great opportunity to learn more about the different engineering organizations on campus and how you can get involved. Check out the Facebook event page <a href="https://www.facebook.com/events/341443063439848/" target="_blank">here</a>.
+                            Enginners on the Green is a great opportunity to learn more about the different engineering organizations on campus and how you can get involved. Check out the Facebook event page <a href="https://www.facebook.com/events/341443063439848/" target="_blank">here</a>.
                         </p>
                         
                     </div>

@@ -1,7 +1,4 @@
 .eotg-org {
-    
-    //background: white;
-    //border-radius: 8px;
 
     &__left {
         margin-left: 2rem;
@@ -10,23 +7,10 @@
     &__content {
         margin: 1rem;
         padding: 0.25rem;
-        //background: white;
         border-radius: 8px;
         border-style: solid;
         border-color: white;
-        // height: 8rem;
-        //min-height: 8rem;
-        //height: 10rem;
         text-align: center;
-
-        //display: table-cell;
-        //vertical-align: middle;
-        //align-items: center;
-        //justify-content: center;
-
-        /*@include media-breakpoint-down(md) {
-            text-align: center;
-        }*/
     }
 
     &__featurette {
