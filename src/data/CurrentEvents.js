@@ -1,11 +1,18 @@
 const currEvents = [
-    /*{
+    {
         name: 'Engineers on the Green: Fall 2019',
         link: '/eotg',
         isInternalLink: true,
-        img: '/decaf-event.svg',
-        date: "2019-09-30T14:00:00.000Z"
-    },*/
+        img: '/eotg-event-fa19.svg',
+        date: "2019-09-30T21:00:00.000Z"
+    },
+    {
+        name: 'SD Hacks 2019',
+        link: 'https://sdhacks.io/',
+        isInternalLink: false,
+        img: 'sd-hacks-event.svg',
+        date: "2019-10-25T00:00:00.000Z"
+    },
     {
         name: 'Decaf 2019',
         link: '/decaf',
@@ -17,7 +24,7 @@ const currEvents = [
         name: 'Engineers on the Green: Winter 2019',
         link: 'https://www.facebook.com/events/342196413243975/',
         isInternalLink: false,
-        img: '/eotg-event.svg',
+        img: '/eotg-event-wi19.svg',
         date: "2019-01-07T00:00:00.000Z"
     },
     {
