@@ -1,5 +1,5 @@
 .eotg-about {
-    padding-top: 4rem;
+    padding-top: 5rem;
     width: 100%;
     background: $eotg-green;
 
@@ -14,5 +14,9 @@
 
     a {
         text-decoration: underline;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 15rem;
     }
 }

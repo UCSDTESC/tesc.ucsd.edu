@@ -16,14 +16,14 @@ class Footer extends React.Component {
                 </section>
                 <footer className="footer" id="footer">
                     <div class="container-fluid">
-                        <ul class="footer__links flex-column ml-md-auto d-flex flex-md-row justify-content-between text-center text-md-left">
+                        <ul class="footer__links flex-column ml-md-auto d-flex flex-md-row justify-content-between text-center align-items-center text-md-left">
                         <li class="footer__link-item">
-                            <a class="footer__link" target="_new" href="https://www.facebook.com/SDHacks/">
+                            <a class="footer__link" target="_new" href="https://www.facebook.com/ucsd.tesc/">
                             <i class="fab fa-facebook-square"></i>
                             </a>
                         </li>
                         <li class="footer__link-item">
-                            <a class="footer__link" target="_new" href="https://twitter.com/SDHacks">
+                            <a class="footer__link" target="_new" href="https://twitter.com/ucsdtesc">
                             <i class="fab fa-twitter-square"></i>
                             </a>
                         </li>

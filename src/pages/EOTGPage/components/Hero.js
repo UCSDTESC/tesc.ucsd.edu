@@ -15,7 +15,7 @@ class Hero extends React.Component {
     render() {
         return (
             <section className="w-100 h-100 d-flex justify-content-center eotg-hero">
-                <div className="container-fluid text-center eotg-contents">
+                <div className="container-fluid text-center eotg-hero__container">
                     <div className="row h-100">
                         <div className="col-md-6">
                             <HeroPic className="eotg-hero__graphic" />
