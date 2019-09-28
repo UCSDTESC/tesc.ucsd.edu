@@ -15,6 +15,14 @@ class About extends React.Component {
                         </p>
                         
                     </div>
+
+                    <div className="row text-center align-items-center justify-content-center">
+                        <h1 className="text-center w-100">Map</h1>
+
+                        <p className="mt-5">
+                            Get a map <a href="/eotg-fa19-map.pdf" target="_blank">here</a>!
+                        </p>
+                    </div>
                 </div>
             </section>
         )
