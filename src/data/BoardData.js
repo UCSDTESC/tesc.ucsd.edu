@@ -78,12 +78,12 @@ const board = [
         email: 'jasmine@tesc.ucsd.edu'
     },
     {
-        name: 'Ashley Rojas',
+        name: 'Nicholas Fu',
         role: 'Outreach Lead',
-        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/outreach-lead.jpg',
-        bio: "I am a third-year chemical engineering major with an interest in Material Science. I was a member of the TESC Social Committee, and I am now the Outreach Lead coordinating Enspire and Splash. As an Outreach Lead, I am dedicated in assisting San Diego's under-resourced and underrepresented communities, so if you have a big or small idea that you would like to incorporate into your community, talk to me! In my free time I like to go to concerts, volunteer for the WeLoveU Foundation and ASEZ, advocate for Women's Leadership Project, work out, and go to LA to hang out with family and friends!",
-        email: 'ashley@tesc.ucsd.edu',
-        link: "https://www.linkedin.com/in/ashley-rojas-704048160"
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/outreach-lead.png',
+        bio: "My name is Nicholas Fu and I will be serving as the Outreach Lead. I am a third-year Aerospace Engineering major who is in charge of TESC events like Enspire and Splash. In my free time I like to snowboard, drive my car, and watching basketball.",
+        email: 'nicholas.fu@tesc.ucsd.edu',
+        link: "https://www.linkedin.com/in/nicholas-fu-oc/"
     },
     {
         name: 'Cindy Alberto',
