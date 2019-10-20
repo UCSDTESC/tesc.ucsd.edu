@@ -7,7 +7,6 @@ import Layout from './layouts/Layout';
 import DecafRoutes from './pages/DecafPage/Routes';
 import EnspireRoutes from './pages/EnspirePage/Routes';
 import EOTGRoutes from './pages/EOTGPage/Routes';
-
 import HomePage from './pages/HomePage';
 
 const OrgPage = lazy(() => import('./pages/HomePage/OrgPage'));
