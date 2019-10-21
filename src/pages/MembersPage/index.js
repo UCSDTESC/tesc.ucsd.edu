@@ -76,7 +76,7 @@ class MembersPage extends Component {
                 </div>
                 <div className="about__text mt-5 text-center">
                     <p className="about__copy">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed lacus aliquam, cursus lectus egestas, pretium eros. 
+                    TESC is proud to support its student run council orgs. TESC council orgs work hard to support the engineering community through a combination of outreach events, technical workshops, student run projects and research, social events, and professional development workshops. Learn more about our council below.
                     </p>
                 </div>
                 <div className="container">
