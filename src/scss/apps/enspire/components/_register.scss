@@ -1,5 +1,7 @@
 .enspire-register {
-    background: $enspire-yellow;
+    background: $background;
+    color: $blue;
+    text-align: center;
 
     &__head {
         text-align: center;
@@ -7,23 +9,13 @@
         padding-top: 3rem;
     }
 
-    &__left {
-        padding-top: 1.5rem;
-        text-align: left;
-
-        &-participants, &-volunteers {
-            padding-top: 1.5rem;
-        }
+    &__participants, &__volunteers {
+        text-align: center;
+        padding-top: 2rem;
     }
 
-    &__note {
-        color: red;
-        font-size: 4rem;
-        font-weight: 900;
-    }
-
-    &__right {
-        margin-top: 2rem;
+    b {
+        font-weight: 1200;
     }
 
     p {

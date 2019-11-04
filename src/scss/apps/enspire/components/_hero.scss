@@ -1,8 +1,6 @@
 .enspire-hero {
-    
-    background-image: url(/Enspire-hero-bg.png);
-    background-size: cover;
-    position: relative;
+    padding-top: 2rem;
+    background: $background;
 
     &::after {
         content: "";
@@ -11,11 +9,12 @@
         right: 0;
         top: 0;
         bottom: 0;
-        background: $transparent-white;
     }
 
     &__logo {
         max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .enspire-contents {
@@ -27,9 +26,13 @@
     }
 
     p {
-        color: $tesc-blue;
+        color: $blue;
         font-size: 1.5rem;
         font-weight: 600;
+    }
+
+    a:active {
+        color: none;
     }
 
     .btn-space-right {
@@ -54,6 +57,11 @@
     .btn-custom-large:hover {
         color: white;
         background-color: $enspire-yellow;
+    }
+
+    .btn-custom-large:active {
+        color: $enspire-yellow;
+        background: $enspire-yellow;
     }
 
     .btn.btn-custom-chevron {

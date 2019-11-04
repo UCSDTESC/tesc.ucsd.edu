@@ -1,3 +1,16 @@
 .enspire-pics {
-    background: green;
+    background: $background;
+    color: $blue;
+    position: relative;
+
+    &__head {
+        text-align: center;
+        font-size: 2.8rem;
+        padding-top: 3rem;
+    }
+
+    &__photo {
+        padding: 1rem;
+        width: 100%;
+    }
 }

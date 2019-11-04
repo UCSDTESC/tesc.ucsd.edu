@@ -22,14 +22,14 @@ class Hero extends Component {
                     <img className="enspire-hero__logo" src="/Enspire-logo-text-blue.svg" />
                     <p>
                         <br />
-                        UC San Diego &#9679; January 28, 2019
+                        UC San Diego &#9679; January 27, 2020
                         <br />
                         Explore UCSD for a day of fun and engaging engineering activities.
                     </p>
-                    <button type="button" className="btn btn-outline-primary btn-custom-large btn-space-right">Register now</button>
-                    <button type="button" className="btn btn-outline-primary btn-custom-large btn-space-left">Volunteer sign-up</button>
-                    <br /><br />
-                    <button type="button" className="btn btn-custom-chevron" onClick={this.scrollAnimation}><i className="fas fa-chevron-down fa-5x"></i></button>
+                    <a href="https://forms.gle/pmTdHGC7gmA6MdE2A" target="_blank"><button type="button" className="btn btn-outline-primary btn-custom-large btn-space-right" >Register Now</button></a>
+                    {/*<button type="button" className="btn btn-outline-primary btn-custom-large btn-space-left">Volunteer sign-up</button>*/}
+                    {/*<br /><br />
+                    <button type="button" className="btn btn-custom-chevron" onClick={this.scrollAnimation}><i className="fas fa-chevron-down fa-5x"></i></button>*/}
                 </div>
             </section>
         )

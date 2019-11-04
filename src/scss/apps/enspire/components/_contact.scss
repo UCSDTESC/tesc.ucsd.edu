@@ -1,0 +1,15 @@
+.enspire-contact {
+    background: $background;
+
+    h1 {
+        color: $blue;
+    }
+
+    &__link {
+        color: $blue;
+    }
+
+    &__link:hover {
+        color: $blue;
+    }
+}

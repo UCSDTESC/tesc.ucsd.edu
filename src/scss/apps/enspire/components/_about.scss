@@ -1,5 +1,13 @@
 .enspire-about {
-    background: white;
+    background: $background;
+    padding-top: 3rem;
+    color: $blue;
+
+    &__head {
+        text-align: center;
+        font-size: 2.8rem;
+        padding-top: 3rem;
+    }
 
     p {
         font-size: 1.3rem;
