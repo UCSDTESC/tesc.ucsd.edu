@@ -1,6 +1,10 @@
 .enspire-hero {
     padding-top: 2rem;
-    background: $background;
+    padding: 2rem;
+    //background: $background;
+    background-image: url('/Enspire-hero-bg.png');
+    background-size: cover;
+    position: relative;
 
     &::after {
         content: "";
@@ -9,12 +13,13 @@
         right: 0;
         top: 0;
         bottom: 0;
+        background: $transparent-white;
     }
 
     &__logo {
         max-width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .enspire-contents {
