@@ -39,7 +39,7 @@ class Events extends React.Component {
 
         if (currEvents.length == 0) {
             return (
-                <div className="events__none">
+                <div className="events__none text-center">
                     Nothing Yet, Stay Tuned For More
                 </div>
             )
@@ -53,12 +53,14 @@ class Events extends React.Component {
 
         if (pastEvents.length == 0) {
             return (
-                <div className="events__none">
+                <div className="events__none text-center">
                     Nothing Yet, Stay Tuned For More
                 </div>
             )
         }
-        return pastEvents.map((c, i) => <Event {...c} key={i} />);
+
+        // limit number of past events to max 5
+        return pastEvents.slice(0, 5).map((c, i) => <Event {...c} key={i} />);
     }
 
     render() {
