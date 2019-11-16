@@ -46,12 +46,12 @@ const board = [
         link: "https://www.linkedin.com/in/jimmydang1/"
     },
     {
-        name: 'Sneheil Saxena',
+        name: 'Alex Fong',
         role: 'Sponsorship Lead',
-        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/sponsorship-lead.jpg',
-        link: 'https://www.linkedin.com/in/sneheilsaxena/',
-        email: 'sneheil@tesc.ucsd.edu',
-        bio: "I'm a fourth-year mathematics & computer science major, and I serve as the Sponsorship Lead for TESC! I aim to empower TESC to serve the engineering community by ensuring that our events are financially well supported and that our sponsors' expectations are exceeded. My academic interests include algorithms, mathematical statistics, and CS education research. I'm also working towards finishing up my first album and performing live more frequently."
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/sponsorship-lead.JPG',
+        link: 'https://www.linkedin.com/in/alexmatthewfong/',
+        email: 'alex@tesc.ucsd.edu',
+        bio: "I am a third-year mathematics/computer science major. As Sponsorship Lead, my job is to make sure that TESC’s events are financially well supported by exceeding the expectations of our wonderful sponsors. When I’m not on calls with our company representatives or studying, you can find me at data science and startup events!"
     },
     {
         name: 'Jocelyn Wei',
@@ -110,11 +110,19 @@ const board = [
     },
     {
         name: 'Natalie Chen',
-        role: 'Project Spaces Lead',
+        role: 'HackXX Director & Project Spaces Lead',
         img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/project-spaces-lead.JPG',
         email: 'natalie@tesc.ucsd.edu',
         link: 'https://www.linkedin.com/in/natalie-chen-6b68a2142/',
-        bio: 'I am a fourth-year bioengineering major and I currently serve as the Project Space Lead as well as the Assistant Director of SD Hacks 2019. In my free time I enjoy cooking and baking. If not in the kitchen I can be found cuddling with my dog Photon!'
+        bio: 'I am a fourth-year bioengineering major and I currently serve as the HackXX Director as well as the Project Spaces Lead. I enjoy cooking, baking, and cuddling with my dog Photon!'
+    },
+    {
+        name: 'Cora Xing',
+        role: 'Assistant HackXX Director',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/assistant-hackxx-director.jpg',
+        email: 'cora@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/coraxyc/',
+        bio: "Hi, I’m Cora! I’m a third-year computer science major, and I’m the Assistant HackXX Director for 2020. In my spare time, I love making projects at hackathons (I’ve gone to more than 8!), I’m a photographer, and I illustrate drosophila neuron figures for the Su Lab at UCSD."
     },
     {
         name: 'Thant Htoo Zaw',
@@ -123,9 +131,14 @@ const board = [
         link: 'https://www.linkedin.com/in/htoo97/',
         email: 'thant@tesc.ucsd.edu',
         bio: "I'm Thant, a fourth-year Computer Engineering major. As Internal Projects Lead, I am always looking for ways to improve TESC's technical processes. I like planning events, which have ranged from SD Hacks and HackXX to a fashion show back in high school. These days, I'm either on road trips, playing board games or testing my limits for spicy food."
+    },
+    {
+        name: 'Bobby Tatum',
+        role: 'Financial Analyst',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/financial-analyst.jpg',
+        email: 'robert@tesc.ucsd.edu',
+        bio: 'I am a second-year computer science major serving as the Financial Analyst within TESC. I assist Kyle, the VP Finance, with building the budget, disbursing funds, and tracking expenditures. In my free time, I watch plenty of basketball, supporting the Lakers and Suns. In the future, I hope to use my degree to work on Wall Street.'
     }
-
-    // Missing Financial Analyst
 ]
 
 export default board;
