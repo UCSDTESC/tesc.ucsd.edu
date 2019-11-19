@@ -15,7 +15,7 @@ class About extends Component {
                             Enspire is an annual outreach event that the Triton Engineering Student Council (TESC) holds for local underprivileged students. This will be our 13th year hosting the event. We plan on having 200-250 high school students attend this event.
                         </p>
                         <p>
-                            Our event consists of bringing high school students to UCSD for a day of Engineering and Educational activities, including cool projects run by on-campus organizations. The purpose of the program is to give students the opportunity to see themselves going to college and becoming part of the STEM community, realizing that they too can succeed in these challenging fields. In addition, we will have talks by the Society of Women Engineers as well as UCSD representatives to encourage students to really see STEM as a viable career path.
+                            Our event consists of bringing high school students to UCSD for a day of Engineering and Educational activities, including cool projects run by on-campus organizations. The purpose of the program is to give students the opportunity to see themselves going to college and becoming part of the STEM community, realizing that they too can succeed in these challenging fields. In addition, we will have talks by Women In Computing as well as UCSD representatives to encourage students to really see STEM as a viable career path.
                         </p>
                     </div>
                 </div>
