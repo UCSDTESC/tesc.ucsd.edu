@@ -9,11 +9,52 @@ class Footer extends React.Component {
         const isCompany = this.props.match.path === "/decaf/companies"
         const bg = isCompany ? "decaf-green-gradient" : "decaf-gradient-bg"
         return (
-            <div id="footer">
+            <div>
+                <section className="contact" id="contact">
+                    <div class="container-fluid d-flex align-items-center h-100">
+                        <h1 class="contact__header m-auto">
+                            Talk to us at <a class="contact__link" href="mailto:jocelyn@tesc.ucsd.edu">jocelyn@tesc.ucsd.edu</a> if you have any questions.
+                        </h1>
+                    </div>
+                </section>
+                <footer className="footer" id="footer">
+                    <div class="container-fluid">
+                        <ul class="footer__links flex-column ml-md-auto d-flex flex-md-row justify-content-between text-center align-items-center text-md-left">
+                        <li class="footer__link-item">
+                            <a class="footer__link" target="_new" href="https://www.facebook.com/ucsd.tesc/">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a class="footer__link" target="_new" href="https://twitter.com/ucsdtesc">
+                            <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li class="footer__link-item footer__link-item--logo">
+                            <a class="footer__link" href="http://tesc.ucsd.edu" target="_new">
+                            <img src="/tesc-logo.png" />
+                            </a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a class="footer__link" target="_new" href="https://medium.com/triton-engineering-student-council">
+                            <i class="fab fa-medium"></i>
+                            </a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a class="footer__link" target="_new" href="mailto:hello@tesc.ucsd.edu">
+                            <i class="fas fa-envelope-square"></i>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+
+            /*<div id="footer">
                 <section className={`contact ${bg}`} id="contact">
                 <div className="container-fluid d-flex align-items-center h-100">
                     <h1 className="contact__header m-auto">
-                    Talk to us at <a className="contact__link" href="mailto:hello@tesc.ucsd.edu">sergio@tesc.ucsd.edu</a> if you have any questions.
+                    Talk to us at <a className="contact__link" href="mailto:jocelyn@tesc.ucsd.edu">jocelyn@tesc.ucsd.edu</a> if you have any questions.
                     </h1>
                 </div>
                 </section>
@@ -46,7 +87,9 @@ class Footer extends React.Component {
                     </ul>
                 </div>
                 </footer>
-            </div>
+            </div>*/
+
+            
         );
     }
 }

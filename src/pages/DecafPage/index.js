@@ -15,7 +15,7 @@ import {withRouter} from 'react-router-dom';
 class DecafPage extends React.Component {
 
     componentDidMount() {
-        document.title = "Decaf 2019 | UCSD TESC";
+        document.title = "Decaf 2020 | UCSD TESC";
 
         //TODO: remove jQuery here
         $("link[rel='shortcut icon']").attr("href", "/decaf-icon.svg");
@@ -40,17 +40,17 @@ class DecafPage extends React.Component {
     render() {
         return (
             <>
-                <TopAlert copy={
+                {/*<TopAlert copy={
                     <div className="text-center lead">
                         <span>Looks like it's going to rain 🌧 ️on Thursday - Remember to bring an umbrella <span role="img" aria-label="Umbrella Emoji" className="">☔</span> with you to Decaf!</span>
                     </div>
-                } />
+                } />*/}
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
-                <Attending />
+                {/*<Attending />
                 {!this.props.isCompany && <FLO/>}
                 <Faq isCompany={this.props.isCompany} />
-                <Sponsors />
+                <Sponsors />*/}
             </>
         )
     }

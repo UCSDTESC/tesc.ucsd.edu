@@ -8,12 +8,12 @@ class DecafNav extends React.Component {
         return (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/">HOME</NavLink>
+                    <NavLink className="nav-link text-white" to="/decaf">HOME</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#about">ABOUT</NavLink>
                 </li>
-                <li className="nav-item nav__item text-center">
+                {/*<li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#attending">ATTENDING</NavLink>
                 </li>
                 <li className="nav-item text-center">
@@ -21,7 +21,7 @@ class DecafNav extends React.Component {
                 </li>
                 <li className="nav-item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#faq">FAQ</NavLink>
-                </li>
+                </li>*/}
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#contact">CONTACT</NavLink>
                 </li>
@@ -36,17 +36,17 @@ class DecafNav extends React.Component {
         return (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/">HOME</NavLink>
+                    <NavLink className="nav-link text-white" to="/decaf">HOME</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#about">ABOUT</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                    <a className="nav-link text-white" href="http://tinyurl.com/decaf2019" target="_blank">REGISTER</a>
+                    <a className="nav-link text-white" href="https://events.eventzilla.net/e/decaf-2020-2138755381" target="_blank">REGISTER</a>
                 </li>
-                <li className="nav-item text-center">
+                {/*<li className="nav-item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#faq">FAQ</NavLink>
-                </li>
+                </li>*/}
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#contact">CONTACT</NavLink>
                 </li>

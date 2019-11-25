@@ -20,7 +20,7 @@ class Hero extends React.Component {
 
         if (isCompany) {
             return (
-                <a className="btn decaf-hero__cta decaf-green-text" target="_blank" href="http://tinyurl.com/decaf2019" id="hero-cta">
+                <a className="btn decaf-hero__cta decaf-green-text" target="_blank" href="https://events.eventzilla.net/e/decaf-2020-2138755381" id="hero-cta">
                     Register your company 💼
                 </a>
             );
@@ -28,12 +28,12 @@ class Hero extends React.Component {
         else {
             return (
                 <>
-                    <a className="btn decaf-hero__cta mr-3" target="_blank" href="https://tesc.typeform.com/to/AvDtNV" id="hero-cta">
+                    {/*<a className="btn decaf-hero__cta mr-3" target="_blank" href="https://tesc.typeform.com/to/AvDtNV" id="hero-cta">
                         <span>Submit Resume 📝</span> 
                     </a>
                     <Link className="btn decaf-hero__cta" to="/decaf#attending" id="hero-cta">
                         <span> Attending Companies</span>
-                    </Link>
+                    </Link>*/}
                 </>
             )
         }
@@ -132,13 +132,13 @@ class Hero extends React.Component {
                                 <div className="w-100">
                                     <img className="decaf-hero__logo" src="/decaf-logo.svg"/>
                                     <div className="decaf-hero__title pb-2">
-                                       <b> Disciplines in Engineering Career Fair </b>
+                                       <b> Disciplines of Engineering Career Fair </b>
                                     </div>
                                     <div className="decaf-hero__detail">
                                         PC Ballrooms, UC San Diego
                                     </div>
                                     <div className="decaf-hero__detail">
-                                        January 17, 2019 // 10AM - 3PM
+                                        January 16, 2020 // 9AM - 2PM
                                     </div>
                                     {this.renderCTA()}
                                 </div>

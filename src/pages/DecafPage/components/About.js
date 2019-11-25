@@ -5,11 +5,11 @@ function CompanyCopy(props) {
     return (
         <>
             <p>
-                <b> Decaf, </b> or <b>Disciplines of Engineering Career Fair, </b> is an annual student-run career fair.
+                The <b>Disciplines of Engineering Career Fair</b>, or <b>Decaf</b>, is an annual student-run career fair.
             </p>
 
             <p>
-                <b>Decaf</b> provides company representatives with a unique opportunity to interact and engage with UC San Diego's talented engineering students regarding career options, internships and permanent or summer employment opportunities.
+                Attending <b>Decaf</b> will provide you with the opportunity to interact and engage with UC San Diego's talented engineering students regarding career options, internships and permanent or summer employment opportunities.
             </p>
         </>
     )
@@ -19,11 +19,11 @@ function StudentCopy(props) {
     return (
         <>
             <p>
-                <b> Decaf, </b> or <b>Disciplines of Engineering Career Fair, </b> is an annual student-run career fair.
+                The <b>Disciplines of Engineering Career Fair</b>, or <b>Decaf</b>, is an annual student-run career fair.
             </p>
 
             <p>
-                <b>Decaf</b> is an annual student-run career fair which will provide you with a great opportunity to meet and connect with representatives from some of the top engineering companies.
+                Attending <b>Decaf</b> will provide you with the opportunity to meet and connect with representatives from some of the top companies in engineering.
             </p>
         </>
     )
@@ -38,7 +38,7 @@ class About extends React.Component {
                     What's <b>Decaf</b> ☕?
                 </div>
 
-                <div className="decaf-about__container">
+                <div className="decaf-about__container text-center">
                     {this.props.isCompany ? <CompanyCopy /> : <StudentCopy />}
                 </div>
 
