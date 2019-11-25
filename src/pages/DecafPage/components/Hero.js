@@ -138,7 +138,7 @@ class Hero extends React.Component {
                                         PC Ballrooms, UC San Diego
                                     </div>
                                     <div className="decaf-hero__detail">
-                                        January 16, 2020 // 9AM - 2PM
+                                        January 16, 2020 // 8AM - 2PM
                                     </div>
                                     {this.renderCTA()}
                                 </div>
