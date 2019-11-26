@@ -7,11 +7,12 @@ class Footer extends React.Component {
     render() {
 
         const isCompany = this.props.match.path === "/decaf/companies"
+        const bg = isCompany ? "decaf-green-gradient" : "decaf-gradient-bg"
 
         if (this.props.isCompany) {
             return (
                 <div>
-                    <section className="contact" id="contact">
+                    <section className={`contact ${bg}`} id="contact">
                         <div class="container-fluid d-flex align-items-center h-100">
                             <h1 class="contact__header m-auto">
                                 Talk to us at <a class="contact__link" href="mailto:sponsor@tesc.ucsd.edu">sponsor@tesc.ucsd.edu</a> if you have any questions.
@@ -54,7 +55,7 @@ class Footer extends React.Component {
         } else {
             return (
                 <div>
-                    <section className="contact" id="contact">
+                    <section className={`contact ${bg}`} id="contact">
                         <div class="container-fluid d-flex align-items-center h-100">
                             <h1 class="contact__header m-auto">
                                 Talk to us at <a class="contact__link" href="mailto:hello@tesc.ucsd.edu">hello@tesc.ucsd.edu</a> if you have any questions.

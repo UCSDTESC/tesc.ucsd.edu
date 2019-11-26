@@ -14,13 +14,28 @@ class FLO extends Component {
                 <div className="container events__container">
                     <div className="row justify-content-center flex-row events__cards">
                         <div className="col-md events__card">
-                            <a href="https://www.facebook.com/events/2305606929674201/" target="_blank">
-                                <img src="/flo-1.svg" className="w-100 h-100"/>
+                            <a href="https://www.facebook.com/events/2774240862607284/" target="_blank">
+                                <img src="/decaf2020/flo-aiche-ispe-0.svg" className="w-100 h-100"/>
                             </a>
                         </div>
                         <div className="col-md events__card">
-                            <a href="https://www.facebook.com/events/545829875915573/" target="_blank">
-                                <img src="/flo-3.svg" className="w-100 h-100"/>
+                            <a href="https://www.facebook.com/events/2493851977558282/" target="_blank">
+                                <img src="/decaf2020/flo-cses-ieee-1.svg" className="w-100 h-100"/>
+                            </a>
+                        </div>
+                        <div className="col-md events__card">
+                            <a href="https://www.facebook.com/events/303170183899680/" target="_blank">
+                                <img src="/decaf2020/flo-swe-eceusc-2.svg" className="w-100 h-100"/>
+                            </a>
+                        </div>
+                        <div className="col-md events__card">
+                            <a href="https://www.facebook.com/events/465278830787035/" target="_blank">
+                                <img src="/decaf2020/flo-tbp-tt-3.svg" className="w-100 h-100"/>
+                            </a>
+                        </div>
+                        <div className="col-md events__card">
+                            <a href="https://www.facebook.com/events/272593493694400/" target="_blank">
+                                <img src="/decaf2020/flo-acm-ds3-4.svg" className="w-100 h-100"/>
                             </a>
                         </div>
                     </div>
