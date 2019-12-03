@@ -13,19 +13,24 @@ $decaf-light-green: #17A381;
 }
 
 .decaf-toggle {
-    background: white;
-    color: $decaf-dark-blue !important;
+    background: transparent;
+    color: white !important;
     font-weight: 400;
     border: 2px solid white;
 
     &:hover {
-        background: transparent;
-        color: white !important;
+        background: white;
+        color: $decaf-dark-blue !important;
     }
 }
 
 .decaf-green-text {
-    color: $decaf-light-green !important;
+    color: white !important;
+
+    &:hover {
+        background: white;
+        color: $decaf-dark-green !important;
+    }
 }
 
 .decaf-green-gradient {
@@ -38,6 +43,10 @@ $decaf-light-green: #17A381;
     & .question__heading a, & .question__content {
         color: $decaf-dark-green;
     }
+}
+
+.decaf-blue-bg {
+    background: $decaf-dark-blue !important;
 }
 
 @import 'components/all';

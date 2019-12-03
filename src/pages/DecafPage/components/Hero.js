@@ -39,6 +39,20 @@ class Hero extends React.Component {
         }
     }
 
+    renderLogo() {
+        const {isCompany} = this.props;
+
+        if (isCompany) {
+            return (
+                <img className="decaf-hero__logo" src="/decaf2020/decaf-logo-companies.svg"/>
+            );
+        } else {
+            return (
+                <img className="decaf-hero__logo" src="/decaf2020/decaf-logo-students.svg"/>
+            );
+        }
+    }
+
     componentDidMount() {
 
         if (PLAY_ANIM) {
@@ -130,7 +144,7 @@ class Hero extends React.Component {
                         <div className="row h-100">
                             <div className="col-md-6 d-flex align-items-center decaf-hero__left">
                                 <div className="w-100">
-                                    <img className="decaf-hero__logo" src="/decaf-logo.svg"/>
+                                    {this.renderLogo()}
                                     <div className="decaf-hero__title pb-2">
                                        <b> Disciplines of Engineering Career Fair </b>
                                     </div>

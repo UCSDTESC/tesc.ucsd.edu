@@ -7,7 +7,7 @@ class Footer extends React.Component {
     render() {
 
         const isCompany = this.props.match.path === "/decaf/companies"
-        const bg = isCompany ? "decaf-green-gradient" : "decaf-gradient-bg"
+        const bg = isCompany ? 'decaf-green-bg' : 'decaf-blue-bg'
 
         if (this.props.isCompany) {
             return (

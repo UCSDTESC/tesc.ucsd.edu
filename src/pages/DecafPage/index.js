@@ -18,7 +18,7 @@ class DecafPage extends React.Component {
         document.title = "Decaf 2020 | UCSD TESC";
 
         //TODO: remove jQuery here
-        $("link[rel='shortcut icon']").attr("href", "/decaf-icon.svg");
+        $("link[rel='shortcut icon']").attr("href", "/decaf-icon.png");
 
         const {hash} = this.props.location;
         window.scrollTo(0,0);
@@ -48,10 +48,9 @@ class DecafPage extends React.Component {
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
                 {!this.props.isCompany && <FLO/>}
-                {/*<Attending />
-                {!this.props.isCompany && <FLO/>}
+                {/*<Attending />*/}
                 <Faq isCompany={this.props.isCompany} />
-                <Sponsors />*/}
+                {/*<Sponsors />*/}
             </>
         )
     }

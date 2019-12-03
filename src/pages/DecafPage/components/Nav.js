@@ -15,18 +15,18 @@ class DecafNav extends React.Component {
                 </li>
                 {/*<li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#attending">ATTENDING</NavLink>
-                </li>
+                </li>*/}
                 <li className="nav-item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#flo">FLO</NavLink>
                 </li>
                 <li className="nav-item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#faq">FAQ</NavLink>
-                </li>*/}
+                </li>
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#contact">CONTACT</NavLink>
                 </li>
                 <li className="nav-item text-center">
-                    <NavLink className="nav-link btn nav__toggle decaf-toggle" to="/decaf/companies">FOR COMPANIES</NavLink>
+                    <NavLink className="nav-link btn nav__toggle decaf-toggle" to="/decaf/companies">SWITCH TO COMPANY VIEW</NavLink>
                 </li>
             </ul>
         );
@@ -36,22 +36,22 @@ class DecafNav extends React.Component {
         return (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf">HOME</NavLink>
+                    <NavLink className="nav-link text-white" to="/decaf/companies">HOME</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf#about">ABOUT</NavLink>
+                    <NavLink className="nav-link text-white" to="/decaf/companies#about">ABOUT</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
                     <a className="nav-link text-white" href="https://events.eventzilla.net/e/decaf-2020-2138755381" target="_blank">REGISTER</a>
                 </li>
-                {/*<li className="nav-item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf#faq">FAQ</NavLink>
-                </li>*/}
+                <li className="nav-item text-center">
+                    <NavLink className="nav-link text-white" to="/decaf/companies#faq">FAQ</NavLink>
+                </li>
                 <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf#contact">CONTACT</NavLink>
+                    <NavLink className="nav-link text-white" to="/decaf/companies#contact">CONTACT</NavLink>
                 </li>
                 <li className="nav-item text-center">
-                    <NavLink className="nav-link btn nav__toggle decaf-toggle decaf-green-text" to="/decaf">FOR STUDENTS</NavLink>
+                    <NavLink className="nav-link btn nav__toggle decaf-toggle decaf-green-text" to="/decaf">SWITCH TO STUDENT VIEW</NavLink>
                 </li>
             </ul>
         )
