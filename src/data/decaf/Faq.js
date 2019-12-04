@@ -35,7 +35,7 @@ const companyFaq = [
     },
     {
         question: "I would like to use rideshare to get to the event - where should I get dropped off?",
-        answer: "The best place to get dropped off is the same as the drop-off point for shuttles running between parking garages and the venue: You can navigate to Croutons on Rupertus Lane/Myers Dr., and then follow the walking instructions to the Price Center Ballrooms."
+        answer: "The best place to get dropped off is at Croutons on Rupertus Lane/Myers Dr., and then you can follow the walking instructions to the Price Center Ballrooms. This is same as the drop-off point for shuttles running between parking garages and the venue."
     }
 ]
 
