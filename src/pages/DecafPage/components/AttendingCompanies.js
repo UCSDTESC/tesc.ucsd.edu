@@ -187,6 +187,7 @@ class AttendingCompanies extends React.Component {
   createCompanyRows = (displayCompanies, displayRows) => {
     let rowCounter = 0;
     let arraySliceCounter = 0;
+    let numInRow = 3;
     let companyRows = [];           // JSX prints array, so store in the companies as components in this
 
     while (rowCounter < displayRows) {
@@ -195,7 +196,7 @@ class AttendingCompanies extends React.Component {
         <div className="card-deck-wrapper">
           <CardDeck>
             {
-              displayCompanies.slice(arraySliceCounter, arraySliceCounter + 4).map(company =>
+              displayCompanies.slice(arraySliceCounter, arraySliceCounter + numInRow).map(company =>
               <Company 
                 name={company["Organization"]}
                 positions={company["Position Types"]}
@@ -210,31 +211,39 @@ class AttendingCompanies extends React.Component {
       
       companyRows.push(rowView);
       rowCounter += 1;
-      arraySliceCounter += 4;
+      arraySliceCounter += numInRow;
     }
 
     return companyRows;
   }
 
   filterCompaniesByKeys = (companies, keys, keyName) => companies.filter((company) => {    // Filter on all the companies everytime
-      
+  
+      // if there are no filters, return true for every company so that every company is displayed
+      if (keys.length === 0) {
+        return true;
+      }
+
       for (let filter of keys) {
         filter = filter.trim();
+
+        // if any of the filters match the company, return true to display it
+        // this is OR filtering
         if (keyName === 'Work Authorizations') {
-          if (company['Work Authorizations'].includes(filter) === false) {
-            return false;
+          if (company['Work Authorizations'].includes(filter)) {
+            return true;
           }
         } else if (keyName === 'Position Types') {
-          if (company['Position Types'].includes(filter) === false) {
-            return false;
+          if (company['Position Types'].includes(filter)) {
+            return true;
           }
         } else if (keyName == 'Industry Field') {
-          if (!company['Industry Field'].has(filter)) {
-            return false;
+          if (company['Industry Field'].has(filter)) {
+            return true;
           }
         }
       }
-      return true;
+      return false;
     });
 
   filterCompaniesBySearchText = (companies, text) => companies.filter((company) => {
@@ -280,25 +289,26 @@ class AttendingCompanies extends React.Component {
 
     filteredCompanies = filteredCompanies.sort((a, b) => a.Organization.toLowerCase() < b.Organization.toLowerCase() ? -1 : 1);
 
-    let displayRows = Math.ceil(filteredCompanies.length / 4);
+    let displayRows = Math.ceil(filteredCompanies.length / 3);
     return (
       <div className="decaf-companies">
         <div className="decaf-companies__head">
-          Companies Attending <Link to="/decaf">Decaf 2019</Link>
+          Companies Attending <Link to="/decaf">Decaf 2020</Link>
         </div>
 
         <div className="decaf-companies__filterbar">
-          <div className="row mb-4">
+          <FilterBar 
+            data={this.state.dropdownValues}   
+            handleFieldChange={this.handleFieldChange}
+            handlePositionChange={this.handlePositionChange}
+            handleWorkAuthChange={this.handleWorkAuthChange}
+            handleSearchChange={this.handleSearchChange}
+            searchValue={this.state.filters.search}
+          />
+
+          <div className="row mb-4 decaf-companies__key">
             {this.renderKey()}
           </div>
-          <FilterBar 
-          data={this.state.dropdownValues}   
-          handleFieldChange={this.handleFieldChange}
-          handlePositionChange={this.handlePositionChange}
-          handleWorkAuthChange={this.handleWorkAuthChange}
-          handleSearchChange={this.handleSearchChange}
-          searchValue={this.state.filters.search}
-          />
         </div>
 
         {this.createCompanyRows(filteredCompanies, displayRows)}

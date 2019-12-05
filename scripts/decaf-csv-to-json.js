@@ -1,6 +1,9 @@
 /* Script: csv-to-json.js 
    Features: This script converts the incoming companies file(csv) to a JSON string as given below
    Output: ./src/data/updatedDECAFOrders.json
+
+   Note: Run this script from the overall folder using scripts/decaf-csv-to-json.js or else
+   the path for the csvFile will be wrong
 */
 
 const csvFile = './src/data/updatedDECAForders.csv';
@@ -28,7 +31,7 @@ toJSON()
       console.log(`The CSV file was converted to JSON and stored as ${csvFile.slice(0, -4)}.json`); // Log the success
     });
   })
-  .catch((err) => console.log('Error occured while converting CSV to JSON'));
+  .catch((err) => console.log('Error occured while converting CSV to JSON: ' + err));
 
 
 

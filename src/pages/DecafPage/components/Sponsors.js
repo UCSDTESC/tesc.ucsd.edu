@@ -29,7 +29,7 @@ class Sponsors extends React.Component {
                             <div className="text-center decaf-sponsors__content-head">
                                 Sponsors
                             </div>
-                            <div className="row mt-5">
+                            <div className="row mt-5 justify-content-center">
                                 {this.renderCompanies()}
                             </div>
                         </div>

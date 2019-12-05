@@ -2,39 +2,29 @@ import React from 'react';
 
 const sponsors = [
     {
-        img: '/sponsors/servicenow.jpg',
-        name: 'ServiceNow',
-        link: 'https://www.servicenow.com/'
+        img: '/sponsors/applied-composites.svg',
+        name: 'Applied Composites',
+        link: 'https://www.appliedcomposites.com/'
     },
     {
-        img: '/sponsors/ibm.svg',
-        name: 'IBM',
-        link: 'https://ibm.com'
+        img: '/sponsors/bentley.png',
+        name: 'Bentley',
+        link: 'https://www.bentley.com/'
     },
     {
-        img: '/sponsors/ga.svg',
-        name: 'General Atomics',
-        link: 'http://www.ga.com/'
+        img: '/sponsors/brain-corp.png',
+        name: 'Brain Corp',
+        link: 'https://www.braincorp.com/'
     },
     {
-        img: '/sponsors/hunter.png',
-        name: 'Hunter Industries',
-        link: 'https://www.hunterindustries.com/en-metric'
+        img: '/sponsors/hughes-network-systems.svg',
+        name: 'Hughes Network Systems',
+        link: 'https://www.hughes.com/'
     },
     {
-        img: '/sponsors/l3.jpg',
-        name: 'L3 Technologies',
-        link: 'https://www.l3t.com/'
-    },
-    {
-        img: '/sponsors/veeva.png',
-        name: 'Veeva Systems',
-        link: 'https://www.veeva.com/'
-    },
-    {
-        img: '/sponsors/ps.png',
-        name: 'PlayStation',
-        link: 'https://www.playstation.com/en-za/'
+        img: '/sponsors/playstation.svg',
+        name: 'Playstation',
+        link: 'https://www.playstation.com/'
     },
     {
         img: '/sponsors/seismic.svg',
@@ -42,24 +32,9 @@ const sponsors = [
         link: 'https://seismic.com/'
     },
     {
-        img: '/sponsors/synopsys_color.svg',
-        name: 'Synopsys',
-        link: 'https://www.synopsys.com/'
-    },
-    {
-        img: '/sponsors/yahoo.svg',
-        name: 'Yahoo',
-        link: 'https://yahoo.com'
-    },
-    {
-        img: 'https://s19525.pcdn.co/wp-content/uploads/2016/05/mitchell-logo.jpg',
-        name: 'Mitchell International',
-        link: 'https://www.mitchell.com/'
-    },
-    {
-        img: '/sponsors/clover.png',
-        name: 'Clover',
-        link: 'https://www.clover.com'
+        img: '/sponsors/servicenow.svg',
+        name: 'ServiceNow',
+        link: 'https://www.servicenow.com/'
     }
 ]
 

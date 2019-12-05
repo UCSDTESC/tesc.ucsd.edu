@@ -48,9 +48,9 @@ class DecafPage extends React.Component {
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
                 {!this.props.isCompany && <FLO/>}
-                {/*<Attending />*/}
+                <Attending />
                 <Faq isCompany={this.props.isCompany} />
-                {/*<Sponsors />*/}
+                <Sponsors />
             </>
         )
     }

@@ -6,13 +6,13 @@ const Attending = (props) => {
     return (
         <div className="decaf-companies" id="attending">
             <div className="decaf-companies__head">
-            Attending Companies
+                Attending Companies
             </div>
             <div className="my-5 text-center decaf-company__body">
-                <Link to="/decaf/attending"> Click Here </Link> to see companies attending Decaf 2019!
+                <Link to="/decaf/attending"> Click Here</Link> to see companies attending Decaf 2020!
             </div>
 
-            <div className="decaf-companies__head">
+            {/*<div className="decaf-companies__head">
                 Room Map
             </div>
 
@@ -23,7 +23,7 @@ const Attending = (props) => {
                         Download Map
                     </p>
                 </a>
-            </div>
+            </div>*/}
         </div>
     )
 }
