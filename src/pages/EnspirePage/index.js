@@ -5,6 +5,7 @@ import About from './components/About';
 import Pictures from './components/Pictures';
 import Register from './components/Register';
 import Faq from './components/Faq';
+import Schedule from './components/Schedule';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import $ from 'jquery';
@@ -26,8 +27,9 @@ class EnspirePage extends Component {
                 <Hero />
                 <About />
                 <Register />
-                <Pictures />
+                {/*<Schedule />*/}
                 <Faq />
+                <Pictures />
                 {/*<Footer />*/}
             </>
         )

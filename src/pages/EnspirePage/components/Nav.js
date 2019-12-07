@@ -6,7 +6,7 @@ class Nav extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg w-75 enspire-nav sticky-top">
-                <div className="navbar-brand"><img src="/Enspire-logo-text-blue.svg" className="enspire-nav__logo"/></div>
+                <div className="navbar-brand"><img src="" className="enspire-nav__logo"/></div>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item text-center">
                         <NavLink className="nav-link text-blue" to="/enspire">Home</NavLink>

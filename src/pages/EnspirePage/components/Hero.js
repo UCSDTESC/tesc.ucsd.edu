@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import $ from 'jquery';
-// import Nav from './Nav';
+import Nav from './Nav';
 
 class Hero extends Component {
 

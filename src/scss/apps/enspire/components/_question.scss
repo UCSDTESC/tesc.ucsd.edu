@@ -4,15 +4,15 @@
     text-align: initial;
     border-radius: $border-radius * 4;
     margin-bottom: 2rem;
-    background: $blue;
-    color: white;
+    background: white;
+    color: black;
 
     &__heading {
         margin: 0.8rem 2rem;
         text-align: center;
 
         a {
-            color: white;
+            color: black;
             font-size: 1.5rem;
             font-weight: 800;
 
@@ -42,6 +42,6 @@
 
     &__content {
         margin: 0 2rem;
-        color: white;
+        color: black;
     }
 }

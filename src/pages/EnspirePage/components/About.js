@@ -12,10 +12,10 @@ class About extends Component {
                     </div>
                     <div className="row text-center">
                         <p>
-                            Enspire is an annual outreach event that the Triton Engineering Student Council (TESC) holds for local underprivileged students. This will be our 13th year hosting the event. We plan on having 200-250 high school students attend this event.
+                            Enspire is UC San Diego’s Triton Engineering Student Council (TESC) annual outreach event for high school students in the Greater San Diego Area. Enspire seeks to provide engaging and informational workshops that will encourage students to pursue a path in college education. Enspire’s goal is to give students the opportunity to see themselves going to college and becoming a part of the STEM community, hopefully realizing that they too can succeed in these challenging fields.
                         </p>
                         <p>
-                            Our event consists of bringing high school students to UCSD for a day of Engineering and Educational activities, including cool projects run by on-campus organizations. The purpose of the program is to give students the opportunity to see themselves going to college and becoming part of the STEM community, realizing that they too can succeed in these challenging fields. In addition, we will have talks by Women In Computing as well as UCSD representatives to encourage students to really see STEM as a viable career path.
+                            To achieve this goal, this year Enspire will be hosting informational sessions by UC San Diego’s Financial Aid office to inform students about the many ways to make college more affordable. In addition, a panel by members of UC San Diego’s diversity organizations will show how students of many different backgrounds can thrive in college. Finally, we have several activities planned by the member organizations of the Triton Engineering Student Council that seek to engage students while introducing concepts taught in UC San Diego’s introductory engineering courses.
                         </p>
                     </div>
                 </div>
