@@ -22,8 +22,6 @@ class Hero extends Component {
                         UC San Diego &#9679; January 27, 2020
                         <br />
                         Explore UCSD for a day of fun and engaging engineering activities.
-                        <br />
-                        Registration deadline is December 14.
                     </p>
                     <a href="https://forms.gle/pmTdHGC7gmA6MdE2A" target="_blank"><button type="button" className="btn btn-outline-primary btn-custom-large btn-space-right" >Register Now</button></a>
                     {/*<button type="button" className="btn btn-outline-primary btn-custom-large btn-space-left">Volunteer sign-up</button>*/}

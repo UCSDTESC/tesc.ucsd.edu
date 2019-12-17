@@ -27,7 +27,7 @@ class EnspirePage extends Component {
                 <Hero />
                 <About />
                 <Register />
-                {/*<Schedule />*/}
+                <Schedule />
                 <Faq />
                 <Pictures />
                 {/*<Footer />*/}
