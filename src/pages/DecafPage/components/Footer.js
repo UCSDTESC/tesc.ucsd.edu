@@ -24,12 +24,12 @@ class Footer extends React.Component {
                             <ul class="footer__links flex-column ml-md-auto d-flex flex-md-row justify-content-between text-center align-items-center text-md-left">
                             <li class="footer__link-item">
                                 <a class="footer__link" target="_new" href="https://www.facebook.com/ucsd.tesc/">
-                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li class="footer__link-item">
                                 <a class="footer__link" target="_new" href="https://twitter.com/ucsdtesc">
-                                <i class="fab fa-twitter-square"></i>
+                                <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
                             <li class="footer__link-item footer__link-item--logo">
@@ -38,13 +38,13 @@ class Footer extends React.Component {
                                 </a>
                             </li>
                             <li class="footer__link-item">
-                                <a class="footer__link" target="_new" href="https://medium.com/triton-engineering-student-council">
-                                <i class="fab fa-medium"></i>
+                                <a class="footer__link" target="_new" href="https://www.instagram.com/ucsdtesc/">
+                                <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li class="footer__link-item">
                                 <a class="footer__link" target="_new" href="mailto:hello@tesc.ucsd.edu">
-                                <i class="fas fa-envelope-square"></i>
+                                <i class="fas fa-envelope"></i>
                                 </a>
                             </li>
                             </ul>
@@ -67,12 +67,12 @@ class Footer extends React.Component {
                             <ul class="footer__links flex-column ml-md-auto d-flex flex-md-row justify-content-between text-center align-items-center text-md-left">
                             <li class="footer__link-item">
                                 <a class="footer__link" target="_new" href="https://www.facebook.com/ucsd.tesc/">
-                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li class="footer__link-item">
                                 <a class="footer__link" target="_new" href="https://twitter.com/ucsdtesc">
-                                <i class="fab fa-twitter-square"></i>
+                                <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
                             <li class="footer__link-item footer__link-item--logo">
@@ -81,13 +81,13 @@ class Footer extends React.Component {
                                 </a>
                             </li>
                             <li class="footer__link-item">
-                                <a class="footer__link" target="_new" href="https://medium.com/triton-engineering-student-council">
-                                <i class="fab fa-medium"></i>
+                                <a class="footer__link" target="_new" href="https://www.instagram.com/ucsdtesc/">
+                                <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li class="footer__link-item">
                                 <a class="footer__link" target="_new" href="mailto:hello@tesc.ucsd.edu">
-                                <i class="fas fa-envelope-square"></i>
+                                <i class="fas fa-envelope"></i>
                                 </a>
                             </li>
                             </ul>

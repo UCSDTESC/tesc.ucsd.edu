@@ -57,5 +57,20 @@
     &__key {
         margin-top: 3rem;
     }
-}
 
+    &__button {
+        color: $decaf-dark-blue !important;
+        background: white;
+        font-size: 2rem;
+        border-radius: 1rem;
+        margin-bottom: 5rem;
+        padding: 0.5rem;
+        border: solid 3px $decaf-dark-blue;
+
+        &:hover {
+            background: $decaf-dark-blue;
+            color: white !important;
+            text-decoration: none;
+        }
+    }
+}

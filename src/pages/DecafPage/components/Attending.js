@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
 
 const Attending = (props) => {
 
@@ -9,7 +10,12 @@ const Attending = (props) => {
                 Attending Companies
             </div>
             <div className="my-5 text-center decaf-company__body">
-                <Link to="/decaf/attending"> Click Here</Link> to see companies attending Decaf 2020!
+                {/*<Link to="/decaf/attending"> Click Here</Link>*/}
+                <a className="decaf-companies__button" href="/decaf/attending">Click Here</a><br/>
+                {/*<a className="btn decaf-hero__cta decaf-green-text" target="_blank" href="https://events.eventzilla.net/e/decaf-2020-2138755381" id="hero-cta">
+                    Register your company 💼
+                </a>*/}
+                to see companies attending Decaf 2020!
             </div>
 
             {/*<div className="decaf-companies__head">

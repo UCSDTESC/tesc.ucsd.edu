@@ -30,10 +30,10 @@ class Hero extends React.Component {
                 <>
                     {/*<a className="btn decaf-hero__cta mr-3" target="_blank" href="https://tesc.typeform.com/to/AvDtNV" id="hero-cta">
                         <span>Submit Resume 📝</span> 
-                    </a>
-                    <Link className="btn decaf-hero__cta" to="/decaf#attending" id="hero-cta">
+                    </a>*/}
+                    <Link className="btn decaf-hero__cta" to="/decaf/attending" id="hero-cta">
                         <span> Attending Companies</span>
-                    </Link>*/}
+                    </Link>
                 </>
             )
         }
