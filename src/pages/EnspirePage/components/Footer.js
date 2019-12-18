@@ -22,7 +22,7 @@ class Footer extends Component {
                         </li>
                         <li class="footer__link-item">
                             <a class="footer__link" target="_new" href="https://twitter.com/ucsdtesc">
-                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li class="footer__link-item footer__link-item--logo">
@@ -31,8 +31,8 @@ class Footer extends Component {
                             </a>
                         </li>
                         <li class="footer__link-item">
-                            <a class="footer__link" target="_new" href="https://medium.com/triton-engineering-student-council">
-                            <i class="fab fa-medium"></i>
+                            <a class="footer__link" target="_new" href="https://instagram.com/ucsdtesc/">
+                            <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li class="footer__link-item">
