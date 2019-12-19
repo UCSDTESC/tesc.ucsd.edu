@@ -11,7 +11,7 @@ const enspireFaq = [
     },
     {
         question: "I registered. When will I hear a response?",
-        answer: "Registration deadline is December 14th. We will let all schools know the status of their registration by December 20th."
+        answer: "Registration will continue on a rolling basis. We will let you know of final decisions when we can."
     },
     {
         question: "What is appropriate attire for students to wear to the event?",
