@@ -13,11 +13,11 @@ class DecafNav extends React.Component {
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#about">ABOUT</NavLink>
                 </li>
-                <li className="nav-item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf#flo">FLO</NavLink>
-                </li>
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf/attending">ATTENDING</NavLink>
+                </li>
+                <li className="nav-item text-center">
+                    <NavLink className="nav-link text-white" to="/decaf#flo">FLO</NavLink>
                 </li>
                 <li className="nav-item text-center">
                     <NavLink className="nav-link text-white" to="/decaf#faq">FAQ</NavLink>
@@ -40,6 +40,9 @@ class DecafNav extends React.Component {
                 </li>
                 <li className="nav-item nav__item text-center">
                     <NavLink className="nav-link text-white" to="/decaf/companies#about">ABOUT</NavLink>
+                </li>
+                <li className="nav-item nav__item text-center">
+                    <NavLink className="nav-link text-white" to="/decaf/attending">ATTENDING</NavLink>
                 </li>
                 <li className="nav-item nav__item text-center">
                     <a className="nav-link text-white" href="https://events.eventzilla.net/e/decaf-2020-2138755381" target="_blank">REGISTER</a>
