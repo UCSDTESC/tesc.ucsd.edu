@@ -18,9 +18,6 @@ jobs:
       - name: Build tesc.ucsd.edu
         run: npm install && npm run build
         shell: bash
-    name: Move build to server
-    runs-on: ubuntu-latest
-    steps:
       - name: Move files with rsync
         uses: AEnterprise/rsync-deploy@v1.0
         env:
