@@ -29,10 +29,10 @@ class Hero extends React.Component {
                                     Warren Mall, UC San Diego
                                 </div>
                                 <div className="eotg-hero__detail">
-                                    September 30, 2019 // 2PM - 6PM
+                                    January 13, 2020 // 1PM - 5PM
                                 </div>
                                 <div className="eotg-hero__button_div">
-                                    <a className="eotg-hero__button" href="https://www.facebook.com/events/341443063439848/" target="_blank">Facebook Event Page</a>
+                                    <a className="eotg-hero__button" href="https://www.facebook.com/events/988688638175276/?notif_t=event_friend_going&notif_id=1576989295206656" target="_blank">Facebook Event Page</a>
                                 </div>
                             </div>
                         </div>

@@ -1,11 +1,16 @@
 .eotg-attending-orgs {
     padding-bottom: 5rem;
-    background: $eotg-green;
+    background: $eotg-blue;
   
     &__header {
       margin-bottom: 2rem;
       padding-top: 4rem;
       color: white;
       text-align: center;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: white;
     }
   }

@@ -1,11 +1,13 @@
 $eotg-green: #71C167;
+$eotg-blue: #4FCDF3;
 
 #eotg-main {
     height: 100%;
+    background: $eotg-blue;
 }
 
 .eotg-contact {
-    background: $eotg-green;
+    background: $eotg-blue;
 
     a {
         color: white;

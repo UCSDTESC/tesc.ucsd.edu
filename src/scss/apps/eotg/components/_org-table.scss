@@ -15,7 +15,7 @@
     }
     ::-webkit-scrollbar-thumb {
         border-radius: 4px;
-        background-color: $eotg-green;
+        background-color: $eotg-blue;
         -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
     }
   
@@ -38,13 +38,13 @@
     }
   
     td {
-      border-color: $eotg-green;
+      border-color: $eotg-blue;
       border-width: 2px;
       vertical-align: middle;
     }
   
     &__header {
-      background-color: $eotg-green;
+      background-color: $eotg-blue;
       color: black;
     }
   
