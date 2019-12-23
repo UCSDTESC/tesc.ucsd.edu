@@ -19,7 +19,7 @@ jobs:
         run: npm install && npm run build
         shell: bash
       - name: Move files with rsync
-        uses: AEnterprise/rsync-deploy@v1.0
+        uses: ./.github/actions/hello-world-action
         env:
           DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-e -c -r --delete"
