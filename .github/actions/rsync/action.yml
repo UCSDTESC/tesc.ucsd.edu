@@ -1,0 +1,5 @@
+name: 'Deploy rsync'
+description: 'Copy over directories to a server over rsync'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
