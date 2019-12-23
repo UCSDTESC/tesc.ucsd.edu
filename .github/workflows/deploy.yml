@@ -1,0 +1,30 @@
+name: Deploy 
+
+# Deploy on every push to the repository on master
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Builds tesc.ucsd.edu for deployment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '11.x'
+      - name: Build tesc.ucsd.edu
+        run: npm install && npm run build
+        shell: bash
+      - name: Move files with rsync
+        uses: ./.github/actions/rsync
+        env:
+          DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-e -c -r --delete"
+          SERVER_PORT: ${{ secrets.SERVER_PORT }}
+          FOLDER: "build"
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          USERNAME: ${{ secrets.USERNAME }}
+          SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }}
