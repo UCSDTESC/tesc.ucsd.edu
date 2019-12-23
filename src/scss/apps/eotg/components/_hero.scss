@@ -12,6 +12,10 @@
         color: white;
     }
 
+    /*&__right {
+        padding: 3rem;
+    }*/
+
     &__cta {
         color: $decaf-dark-blue !important;
         background: white;
@@ -29,9 +33,10 @@
     &__graphic {
         width: 80%;
         height: 80%;
-        display: block;
-        margin-left: auto;
-        margin-top: 1rem;
+        //display: block;
+        //margin-left: auto;
+        //margin-top: 1rem;
+        //z-index: 100;
     }
 
     &__logo {

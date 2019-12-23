@@ -11,7 +11,7 @@ import './js/company-table';
 class EOTGPage extends Component {
 
     componentDidMount() {
-        document.title = "EOTG 2019 | UCSD TESC";
+        document.title = "EOTG 2020 | UCSD TESC";
     }
 
     render() {
