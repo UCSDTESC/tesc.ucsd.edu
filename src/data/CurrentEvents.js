@@ -2,7 +2,7 @@ const currEvents = [
     {
         name: 'Decaf 2020',
         link: '/decaf',
-        isInteralLink: true,
+        isInternalLink: true,
         img: '/decaf2020/decaf2020-event.svg',
         date: "2020-01-16T22:00:00.000Z"
     },
