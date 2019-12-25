@@ -22,9 +22,19 @@ const sponsors = [
         link: 'https://www.hughes.com/'
     },
     {
+        img: '/sponsors/hunter-new.png',
+        name: 'Hunter',
+        link: 'https://www.hunterindustries.com/'
+    },
+    {
         img: '/sponsors/playstation.svg',
         name: 'Playstation',
         link: 'https://www.playstation.com/'
+    },
+    {
+        img: '/sponsors/ripplematch.png',
+        name: 'Ripplematch',
+        link: 'https://www.ripplematch.com/'
     },
     {
         img: '/sponsors/seismic.svg',
@@ -35,6 +45,11 @@ const sponsors = [
         img: '/sponsors/servicenow.svg',
         name: 'ServiceNow',
         link: 'https://www.servicenow.com/'
+    },
+    {
+        img: '/sponsors/viasat.png',
+        name: 'Viasat',
+        link: 'https://www.viasat.com/'
     }
 ]
 
