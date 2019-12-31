@@ -1,5 +1,4 @@
 import React from 'react';
-import {ReactComponent as HeroGraphic} from '../../../svg/hero.svg';
 import $ from 'jquery';
 
 class OrgHero extends React.Component {
@@ -37,8 +36,8 @@ class OrgHero extends React.Component {
                         <div id="calendar" />
                     </div>
                     </div>
-                    <div className="col-md-6 p-0 d-flex">
-                    <HeroGraphic className="hero__graphic w-100 align-self-center" />
+                    <div className="col-md-6">
+                        <img className="hero__graphic img-fluid" src="/hero.png"/>
                     </div>
                 </div>
                 </div>

@@ -1,12 +1,10 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import {Route, Switch} from 'react-router-dom';
-
-import asyncComponent from '../../asyncComponent';
 
 import DecafLayout from '../../layouts/DecafLayout';
 
-const DecafPage = asyncComponent(() => import('./index'));
-const AttendingPage = asyncComponent(() => import('./AttendingPage'));
+const DecafPage = lazy(() => import('./index'));
+const AttendingPage = lazy(() => import('./AttendingPage'));
 
 class DecafRoutes extends React.Component {
 

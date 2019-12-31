@@ -1,6 +1,6 @@
 import {Switch, Route, withRouter} from 'react-router-dom';
-import React from 'react';
-import asyncComponent from './asyncComponent'
+import React, {lazy, Suspense} from 'react';
+import {Spinner} from 'reactstrap';
 
 import Layout from './layouts/Layout';
 
@@ -10,12 +10,20 @@ import EOTGRoutes from './pages/EOTGPage/Routes';
 
 import HomePage from './pages/HomePage';
 
-const OrgPage = asyncComponent(() => import('./pages/HomePage/OrgPage'));
-const AboutPage = asyncComponent(() => import('./pages/AboutPage'));
-const MembershipPage = asyncComponent(() => import('./pages/MembershipPage'));
-const SpacesPage = asyncComponent(() => import('./pages/SpacesPage'));
-const FinancePage = asyncComponent(() => import('./pages/FinancePage'));
-const NotFoundPage = asyncComponent(() => import('./pages/NotFoundPage'));
+const OrgPage = lazy(() => import('./pages/HomePage/OrgPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const MembershipPage = lazy(() => import('./pages/MembershipPage'));
+const SpacesPage = lazy(() => import('./pages/SpacesPage'));
+const FinancePage = lazy(() => import('./pages/FinancePage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+
+function LoadingSpinner(props) {
+    return (
+        <div className="w-100 h-100 d-flex align-items-center justify-content-center">
+            <Spinner animation="border" role="status" size="xl"/>
+        </div>
+    )
+}
 
 class Routes extends React.Component {
 
@@ -34,20 +42,22 @@ class Routes extends React.Component {
             text-align: center`
         );
         return  (
-            <Switch>
-                <Route exact path="/" component={this.withLayout(HomePage)}/>
-                <Route exact path="/orgs" component={this.withLayout(OrgPage, true)}/>
-                <Route exact path="/about" component={AboutPage} />
-                <Route exact path="/orgs/membership" component={this.withLayout(MembershipPage, true)}/>
-                <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
-                <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>
+            <Suspense fallback={<LoadingSpinner />}>
+                <Switch>
+                    <Route exact path="/" component={this.withLayout(HomePage)}/>
+                    <Route exact path="/orgs" component={this.withLayout(OrgPage, true)}/>
+                    <Route exact path="/about" component={AboutPage} />
+                    <Route exact path="/orgs/membership" component={this.withLayout(MembershipPage, true)}/>
+                    <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
+                    <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>
 
-                <Route path='/decaf' component={DecafRoutes} />
-                <Route path='/enspire' component={EnspireRoutes} />
-                <Route path='/eotg' component={EOTGRoutes} />
+                    <Route path='/decaf' component={DecafRoutes} />
+                    <Route path='/enspire' component={EnspireRoutes} />
+                    <Route path='/eotg' component={EOTGRoutes} />
 
-                <Route component={this.withLayout(NotFoundPage)} />
-            </Switch>
+                    <Route component={this.withLayout(NotFoundPage)} />
+                </Switch>
+            </Suspense>
         )
     }
 }

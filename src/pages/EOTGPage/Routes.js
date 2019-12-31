@@ -1,11 +1,9 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import {Route, Switch} from 'react-router-dom';
-
-import asyncComponent from '../../asyncComponent';
 
 import EOTGLayout from '../../layouts/EOTGLayout';
 
-const EOTGPage = asyncComponent(() => import('./index'));
+const EOTGPage = lazy(() => import('./index'));
 
 class EOTGRoutes extends React.Component {
 

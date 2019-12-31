@@ -1,6 +1,4 @@
 import React from 'react';
-import {ReactComponent as HeroGraphic} from '../../../svg/hero.svg';
-import {TimelineLite} from 'gsap';
 
 class Hero extends React.Component {
 
@@ -29,7 +27,7 @@ class Hero extends React.Component {
                             {/*<div className="hero__graphic w-100">
                                 <HeroGraphic className="w-100"/>
                             </div>*/}
-                            <img className="hero__graphic" src="/hero.svg"/>
+                            <img className="hero__graphic img-fluid" src="/hero.png"/>
                         </div>
                     </div>
                 </div>
