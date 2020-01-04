@@ -1,37 +1,30 @@
-﻿Industry Field,Position Types,Work Authorizations,Organization
-"Environment Engineering & Energy, Mechanical & Aerospace Engineering, Electrical Engineering, Bioengineering / Biotech",Full-Time,U.S. Citizen,Applied Medical
-"Environment Engineering & Energy, Mechanical & Aerospace Engineering, Electrical Engineering, Bioengineering / Biotech",Full-Time,U.S. Citizen,Applied Medical
-Computer Engineering,"Full-Time, Internship",U.S. Citizen,Accel Robotics
-"Computer Science, Computer Engineering","Full-Time, Internship",U.S. Citizen,Veeva
-"Computer Science, Computer Engineering","Full-Time, Internship",U.S. Citizen,Veeva
-"Computer Science, Computer Engineering","Full-Time, Internship",U.S. Citizen,Veeva
-"Computer Science, Computer Engineering","Full-Time, Internship",U.S. Citizen,Veeva
-"Computer Science, Computer Engineering","Full-Time, Internship",U.S. Citizen,Veeva
-Computer Science,"Full-Time, Internship",U.S. Citizen,Appfolio
-"Computer Science, Computer Engineering, Consumer / Retail",Internship,"U.S. Citizen, U.S. Permanent Resident, DACA/Other, International Student Visa",Seismic Software
-"Computer Science, Computer Engineering, Consumer / Retail",Internship,"U.S. Citizen, U.S. Permanent Resident, DACA/Other, International Student Visa",Seismic Software
-"Computer Science, Computer Engineering, Consumer / Retail",Internship,"U.S. Citizen, U.S. Permanent Resident, DACA/Other, International Student Visa",Seismic Software
-"Computer Science, Computer Engineering, Consumer / Retail",Internship,"U.S. Citizen, U.S. Permanent Resident, DACA/Other, International Student Visa",Seismic Software
-"Mechanical & Aerospace Engineering, Electrical Engineering, Computer Engineering","Full-Time, Internship","U.S. Citizen, U.S. Permanent Resident, DACA/Other, International Student Visa",Hunter Industries
-"Mechanical & Aerospace Engineering, Computer Science, Electrical Engineering","Full-Time, Internship",U.S. Citizen,Cubic Corporation
-"Mechanical & Aerospace Engineering, Computer Science, Electrical Engineering","Full-Time, Internship",U.S. Citizen,Cubic Corporation
-"Mechanical & Aerospace Engineering, Computer Science, Electrical Engineering","Full-Time, Internship",U.S. Citizen,Cubic Corporation
-"Computer Science, Computer Engineering",Internship,"U.S. Citizen, U.S. Permanent Resident, International Student Visa",ServiceNow
-"Mechanical & Aerospace Engineering, Electrical Engineering, Computer Engineering","Full-Time, Internship","U.S. Citizen, U.S. Permanent Resident",Quartus Engineering
-"Mechanical & Aerospace Engineering, Electrical Engineering, Computer Engineering","Full-Time, Internship","U.S. Citizen, U.S. Permanent Resident",Quartus Engineering
-"Mechanical & Aerospace Engineering, Computer Science, Electrical Engineering, Computer Engineering","Full-Time, Internship",U.S. Citizen,General Atomics
-"Mechanical & Aerospace Engineering, Computer Science, Electrical Engineering, Computer Engineering","Full-Time, Internship",U.S. Citizen,General Atomics
-"Mechanical & Aerospace Engineering, Computer Science, Electrical Engineering, Computer Engineering","Full-Time, Internship",U.S. Citizen,General Atomics
-"Mechanical & Aerospace Engineering, Computer Science, Electrical Engineering, Computer Engineering","Full-Time, Internship",U.S. Citizen,General Atomics
-"Computer Science","Full-Time, Part-Time, Internship","U.S. Citizen, U.S. Permanent Resident, DACA/Other, International Student Visa",iD Tech
-"Mechanical & Aerospace Engineering","Full-Time, Internship",U.S. Citizen,Applied Composites
-"Computer Science, Electrical Engineering, Computer Engineering","Full-Time, Internship",U.S. Citizen U.S. Permanent Resident DACA/Other International Student Visa,Brain Corporation
-"Computer Science",Internship,"U.S. Citizen, U.S. Permanent Resident, International Student Visa",PlayStation
-"Computer Science, Electrical Engineering, Computer Engineering","Full-Time, Internship","U.S. Citizen, U.S. Permanent Resident, International Student Visa",Hughes Network Systems
-"Computer Science, Computer Engineering",Internship,"U.S. Citizen, U.S. Permanent Resident, International Student Visa",Bentley Systems
-"Computer Science, Electrical Engineering","Full-Time, Internship",U.S. Citizen,Viasat Inc.
-"Computer Science","Full-Time, Internship","U.S. Citizen, U.S. Permanent Resident, International Student Visa",Supplyframe Inc
-"Computer Science","Full-Time, Internship","U.S. Citizen, U.S. Permanent Resident, DACA/Other, International Student Visa",Arista Networks
-"Life & Physical Science,Materials & Structural Engineering, Civil Engineering, Mechanical & Aerospace Engineering, Computer Science, Electrical Engineering, Computer Engineering","Full-Time","U.S. Citizen","412 Test Engineering Group (US Air Force)"
-"Environment Engineering & Energy, Materials & Structural Engineering, Civil Engineering, Mechanical & Aerospace Engineering, Electrical Engineering, Computer Engineering","Full-Time","U.S. Citizen, U.S. Permanent Resident, DACA/Other",Los Angeles Department of Water and Power
-"Computer Science, Bioengineering / Biotech","Full-Time","U.S. Citizen, U.S. Permanent Resident","Danaher"
+Industry Field,Position Types,Work Authorizations,Organization
+Software,Full-Time,U.S. Citizen,Verint
+Electrical Engineering,Internship,U.S. Citizen  U.S. Permanent Resident  International Student Visa,Western Digital
+Bioengineering / Biotech,Full-Time  Internship,U.S. Citizen  U.S. Permanent Resident  International Student Visa,Dexcom
+Computer Science,Full-Time  Internship,U.S. Citizen  U.S. Permanent Resident,Atlassian
+Electrical Engineering,Full-Time,U.S. Citizen  U.S. Permanent Resident  DACA/Other  International Student Visa,pSemi Corporation
+Environment Engineering & Energy,Internship,U.S. Citizen,San Diego Gas and Electric
+"Computer Science,Computer Engineering",Full-Time  Part-Time  Internship,U.S. Citizen  U.S. Permanent Resident  DACA/Other  International Student Visa,Teradata
+Computer Science,Full-Time  Internship,U.S. Citizen  U.S. Permanent Resident  DACA/Other  International Student Visa,Dropbox
+Computer Science,Full-Time  Internship,U.S. Citizen  U.S. Permanent Resident  DACA/Other  International Student Visa,Arista Networks
+"Life & Physical Science,Materials & Structural Engineering,Civil Engineering,Mechanical & Aerospace Engineering,Computer Science,Electrical Engineering,Computer Engineering",Full-Time,U.S. Citizen,412 Test Engineering Group
+"Environment Engineering & Energy,Materials & Structural Engineering,Civil Engineering,Mechanical & Aerospace Engineering,Electrical Engineering,Computer Engineering",Full-Time,U.S. Citizen  U.S. Permanent Resident  DACA/Other,Los Angeles Department of Water and Power
+"Computer Science,Bioengineering / Biotech",Full-Time,U.S. Citizen  U.S. Permanent Resident,Danaher
+Computer Engineering,Full-Time  Part-Time  Internship,U.S. Citizen  U.S. Permanent Resident,Accel Robotics
+Computer Science,Full-Time  Internship,U.S. Citizen  U.S. Permanent Resident  International Student Visa,Supplyframe Inc
+"Environment Engineering & Energy,Mechanical & Aerospace Engineering,Electrical Engineering,Bioengineering / Biotech",Full-Time,U.S. Citizen,Applied Medical
+"Computer Science,Computer Engineering",Full-Time  Internship,U.S. Citizen,Veeva
+"Computer Science,Computer Engineering,Consumer / Retail",Internship,U.S. Citizen  U.S. Permanent Resident  DACA/Other  International Student Visa,Seismic Software
+"Mechanical & Aerospace Engineering,Electrical Engineering,Computer Engineering",Full-Time  Internship,U.S. Citizen  U.S. Permanent Resident  DACA/Other  International Student Visa,Hunter Industries
+"Mechanical & Aerospace Engineering,Computer Science,Electrical Engineering",Full-Time  Internship,U.S. Citizen,Cubic Corporation
+"Computer Science,Computer Engineering",Internship,U.S. Citizen  U.S. Permanent Resident  International Student Visa,ServiceNow
+"Mechanical & Aerospace Engineering,Electrical Engineering,Computer Engineering",Full-Time  Internship,U.S. Citizen  U.S. Permanent Resident,Quartus Engineering
+"Mechanical & Aerospace Engineering,Computer Science,Electrical Engineering,Computer Engineering",Full-Time  Internship,U.S. Citizen,General Atomics
+Computer Science,Full-Time  Part-Time  Internship,U.S. Citizen  U.S. Permanent Resident  DACA/Other  International Student Visa,iD Tech
+Mechanical & Aerospace Engineering,Full-Time  Internship,U.S. Citizen,Applied Composites
+"Computer Science,Electrical Engineering,Computer Engineering",Full-Time Internship,U.S. Citizen U.S. Permanent Resident DACA/Other International Student Visa,Brain Corporation
+Computer Science,Internship,U.S. Citizen  U.S. Permanent Resident  International Student Visa,PlayStation
+"Computer Science,Electrical Engineering,Computer Engineering",Full-Time  Internship,U.S. Citizen  U.S. Permanent Resident  International Student Visa,Hughes Network Systems
+"Computer Science,Computer Engineering",Internship,U.S. Citizen  U.S. Permanent Resident  International Student Visa,Bentley Systems
+"Computer Science,Electrical Engineering",Full-Time  Internship,U.S. Citizen,Viasat Inc.
