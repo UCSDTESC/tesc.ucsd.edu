@@ -1,9 +1,16 @@
 const currEvents = [
     {
+        name: 'Engineers on the Green: Winter 2020',
+        link: '/eotg',
+        isInternalLink: true,
+        img: '/eotg-event-wi20.svg',
+        date: "2020-01-14T03:00:00.000Z"
+    },
+    {
         name: 'Decaf 2020',
         link: '/decaf',
         isInternalLink: true,
-        img: '/decaf2020/decaf2020-event.svg',
+        img: '/decaf20-event.svg',
         date: "2020-01-16T22:00:00.000Z"
     },
     {
