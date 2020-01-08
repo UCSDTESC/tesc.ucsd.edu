@@ -28,9 +28,9 @@ class Hero extends React.Component {
         else {
             return (
                 <>
-                    {/*<a className="btn decaf-hero__cta mr-3" target="_blank" href="https://tesc.typeform.com/to/AvDtNV" id="hero-cta">
+                    <a className="btn decaf-hero__cta mr-3" target="_blank" href="https://tesc.typeform.com/to/hwNBpM" id="hero-cta">
                         <span>Submit Resume 📝</span> 
-                    </a>*/}
+                    </a>
                     <Link className="btn decaf-hero__cta" to="/decaf/attending" id="hero-cta">
                         <span> Attending Companies</span>
                     </Link>
