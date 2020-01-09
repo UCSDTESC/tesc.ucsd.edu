@@ -16,13 +16,21 @@ class Register extends Component {
 
                         <div className="enspire-register__participants">
                             <p><b>Participants, please complete the following:</b></p>
-                            <span><p>Liability Waiver Form (Coming Soon) | Photo Release Form (Coming Soon)</p></span>
+                            <span>
+                                <p>
+                                    <a href="https://drive.google.com/a/tesc.ucsd.edu/file/d/14HF2ijOw_V-0UCIUlX2NgnWmdT1O8Mc_/view?usp=drivesdk" target="_blank">Model Release Waiver</a> | <a href="https://drive.google.com/a/tesc.ucsd.edu/file/d/1hGXO79l00O1EXnvH1RDN1h2iO38Ttl8J/view?usp=drivesdk" target="_blank">Liability Waiver</a>
+                                </p>
+                            </span>
                             <p>** Note: All students must have both waivers filled out to attend Enspire! **</p>
                         </div>
 
                         <div className="enspire-register__volunteers">
                             <p><b>Volunteers, please complete the following:</b></p>
-                            <span><p>Volunteer Registration Form (Coming Soon)</p></span>
+                            <span>
+                                <p>
+                                    <a href="https://docs.google.com/forms/d/129gtJM0wOD5BKzh3B0mNnEpsfUh1xsy5waMdFmD65y8/viewform?edit_requested=true" target="_blank">Volunteer Registration Form</a>
+                                </p>
+                            </span>
                         </div>                                 
                     </div>
                 </div>
