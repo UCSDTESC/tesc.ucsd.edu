@@ -1,10 +1,11 @@
 const board = [
     {
-        name: 'Jonathan Luck',
+        name: 'Caitlyn Liu',
         role: 'President',
-        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/president.jpg',
-        email: 'jonathan@tesc.ucsd.edu',
-        bio: "I am a fifth-year computer science major. As President for TESC, I strongly believe in supporting the engineering community at UCSD. Outside of engineering, I love reading, cooking, quizbowl, and event planning. I am interested in the intersection of cyber, intelligence, and national security."
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/president.jpeg',
+        email: 'caitlyn@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/caitlynmliu/',
+        bio: "I am a 4th-year Math-CS Major. I joined TESC in my freshman year, initially serving on the Professional Development Committee, and served as VP External last year. As President of TESC, I do a lot of talking and a little of everything -- my team makes my job a breeze. I work with an exceptional team whom I share a vision with - to help connect students with as many resources as possible in UCSD’s Jacobs School of Engineering and to empower future engineers."
     },
     {
         name: 'Summer Joyce Batasin',
@@ -115,14 +116,6 @@ const board = [
         email: 'natalie@tesc.ucsd.edu',
         link: 'https://www.linkedin.com/in/natalie-chen-6b68a2142/',
         bio: 'I am a fourth-year bioengineering major and I currently serve as the HackXX Director as well as the Project Spaces Lead. I enjoy cooking, baking, and cuddling with my dog Photon!'
-    },
-    {
-        name: 'Cora Xing',
-        role: 'Assistant HackXX Director',
-        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/assistant-hackxx-director.jpg',
-        email: 'cora@tesc.ucsd.edu',
-        link: 'https://www.linkedin.com/in/coraxyc/',
-        bio: "Hi, I’m Cora! I’m a third-year computer science major, and I’m the Assistant HackXX Director for 2020. In my spare time, I love making projects at hackathons (I’ve gone to more than 8!), I’m a photographer, and I illustrate drosophila neuron figures for the Su Lab at UCSD."
     },
     {
         name: 'Thant Htoo Zaw',
