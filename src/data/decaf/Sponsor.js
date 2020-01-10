@@ -114,7 +114,7 @@ const sponsors = [
     {
         img: '/sponsors/air-force.svg',
         name: 'Air Force STEM',
-        link: "https://www.afciviliancareers.com/students.php"
+        link: "http://tinyurl.com/yghfq5yt"
     },
     {
         img: '/sponsors/atlassian.svg',
