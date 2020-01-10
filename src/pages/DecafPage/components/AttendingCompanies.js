@@ -203,6 +203,7 @@ class AttendingCompanies extends React.Component {
                 field={[...company["Industry Field"]]}
                 nationalities={company["Work Authorizations"]}
                 description=""
+                link={company["Link"]}
               />)
             }
           </CardDeck>

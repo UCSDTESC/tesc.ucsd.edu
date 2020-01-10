@@ -25,7 +25,7 @@ const Avatar = (props) => {
 const Company = (props) => (
   <Card className="">
     <CardBody>
-      <CardTitle className="decaf-company__name">{ props.name }</CardTitle>
+      <CardTitle className="decaf-company__name"><a href={props.link} target="_blank">{ props.name }</a></CardTitle>
       <CardSubtitle className="decaf-company__positions">{ props.positions.toString().replace(/, /g, ",").replace(/,/g, ", ") }</CardSubtitle>
       <div className="decaf-company__fields">
           
