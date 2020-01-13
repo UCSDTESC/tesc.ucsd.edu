@@ -40,11 +40,11 @@ class DecafPage extends React.Component {
     render() {
         return (
             <>
-                {/*<TopAlert copy={
+                <TopAlert copy={
                     <div className="text-center lead">
                         <span>Looks like it's going to rain 🌧 ️on Thursday - Remember to bring an umbrella <span role="img" aria-label="Umbrella Emoji" className="">☔</span> with you to Decaf!</span>
                     </div>
-                } />*/}
+                } />
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
                 <Attending />
