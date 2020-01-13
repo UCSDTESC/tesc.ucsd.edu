@@ -131,6 +131,14 @@ const board = [
         img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/financial-analyst.jpg',
         email: 'robert@tesc.ucsd.edu',
         bio: 'I am a second-year computer science major serving as the Financial Analyst within TESC. I assist Kyle, the VP Finance, with building the budget, disbursing funds, and tracking expenditures. In my free time, I watch plenty of basketball, supporting the Lakers and Suns. In the future, I hope to use my degree to work on Wall Street.'
+    },
+    {
+        name: 'Amal Eldick',
+        role: 'Assistant HackXX Director',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/assistant-hackxx-director.jpg',
+        email: "amal@tesc.ucsd.edu",
+        bio: "I am a fourth-year math-CS major and this year's HackXX Assistant Director. Outside of school, I help organize other female-centric hackathons, and love finding new boba & dessert spots in San Diego!",
+        link: "https://www.linkedin.com/in/amal-eldick/"
     }
 ]
 
