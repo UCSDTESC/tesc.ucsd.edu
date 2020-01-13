@@ -1,17 +1,17 @@
 import React from 'react';
-import companies from '../../../data/decaf/Sponsor';
+import {companies, partners} from '../../../data/decaf/Sponsor';
 
 function Sponsor(props) {
-    /*if (props.name === "Air Force STEM") {
-        return (
-            <a className="col-md-4 decaf-sponsor" href={props.link} target="_blank">
-                <img src={props.img} className="decaf-sponsor__img" alt={props.name} height='30%'/>
-            </a>
-        )
-    }*/
-
     return (
         <a className="col-md-4 decaf-sponsor" href={props.link} target="_blank">
+            <img src={props.img} className="decaf-sponsor__img" alt={props.name}/>
+        </a>
+    )
+}
+
+function Partner(props) {
+    return (
+        <a className="col-md-6 decaf-sponsor" href={props.link} target="_blank">
             <img src={props.img} className="decaf-sponsor__img" alt={props.name}/>
         </a>
     )
@@ -21,6 +21,10 @@ class Sponsors extends React.Component {
 
     renderCompanies() {
         return companies.map((c) => <Sponsor {...c}/>)
+    }
+
+    renderPartners() {
+        return partners.map((c) => <Partner {...c} />)
     }
 
     render() {
@@ -36,6 +40,9 @@ class Sponsors extends React.Component {
                             </div>
                             <div className="text-center mt-5 decaf-sponsors__content-head-sm">
                                 Thank you to all of our sponsors! Here are just a few:
+                            </div>
+                            <div className="row mt-5 justify-content-center align-items-center">
+                                {this.renderPartners()}
                             </div>
                             <div className="row mt-5 justify-content-center align-items-center">
                                 {this.renderCompanies()}

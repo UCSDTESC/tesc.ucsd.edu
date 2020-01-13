@@ -1,6 +1,6 @@
 import React from 'react';
 
-const sponsors = [
+const companies = [
     {
         img: '/sponsors/appfolio.svg',
         name: 'Appfolio',
@@ -45,16 +45,6 @@ const sponsors = [
         img: '/sponsors/hughes.svg',
         name: 'Hughes Network Systems',
         link: 'https://www.hughes.com/'
-    },
-    {
-        img: '/sponsors/hunter.svg',
-        name: 'Hunter',
-        link: 'https://www.hunterindustries.com/'
-    },
-    {
-        img: '/sponsors/playstation.svg',
-        name: 'Playstation',
-        link: 'https://www.playstation.com/'
     },
     {
         img: '/sponsors/psemi.svg',
@@ -112,15 +102,28 @@ const sponsors = [
         link: "https://www.westerndigital.com/"
     },
     {
-        img: '/sponsors/air-force.svg',
-        name: 'Air Force STEM',
-        link: "http://tinyurl.com/yghfq5yt"
-    },
-    {
         img: '/sponsors/atlassian.svg',
         name: 'Atlassian',
         link: "https://www.atlassian.com/"
+    },
+    {
+        img: '/sponsors/air-force.svg',
+        name: 'Air Force STEM',
+        link: "http://tinyurl.com/yghfq5yt"
     }
 ]
 
-export default sponsors;
+const partners = [
+    {
+        img: '/sponsors/hunter.svg',
+        name: 'Hunter',
+        link: 'https://www.hunterindustries.com/'
+    },
+    {
+        img: '/sponsors/playstation.svg',
+        name: 'Playstation',
+        link: 'https://www.playstation.com/'
+    }
+]
+
+export {companies, partners};
