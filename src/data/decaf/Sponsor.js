@@ -128,6 +128,12 @@ const partners = [
         img: '/sponsors/playstation.svg',
         name: 'Playstation',
         link: 'https://www.playstation.com/'
+    },
+    {
+        img: '/sponsors/mitchell.svg',
+        name: 'Mitchell',
+        link: 'https://www.mitchell.com/',
+        className: 'decaf-sponsor__img__smol'
     }
 ]
 

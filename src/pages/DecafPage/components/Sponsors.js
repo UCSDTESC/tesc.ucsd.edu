@@ -11,8 +11,8 @@ function Sponsor(props) {
 
 function Partner(props) {
     return (
-        <a className="col-md-6 decaf-sponsor" href={props.link} target="_blank">
-            <img src={props.img} className="decaf-sponsor__img" alt={props.name}/>
+        <a className={`col-md-6 decaf-sponsor`} href={props.link} target="_blank">
+            <img src={props.img} className={`decaf-sponsor__img ${props.className ? props.className : ''}`} alt={props.name}/>
         </a>
     )
 }

@@ -1,5 +1,4 @@
 .decaf-sponsor {
-
     margin: 2rem 0;
 
     &__img {
@@ -11,5 +10,14 @@
         &:hover {
             width: 75%;
         }
+
+        &__smol {
+            width: 50%;
+
+            &:hover {
+                width: 45%;
+            }
+        }
+
     }
 }
