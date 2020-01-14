@@ -110,6 +110,11 @@ const companies = [
         img: '/sponsors/air-force.svg',
         name: 'Air Force STEM',
         link: "http://tinyurl.com/yghfq5yt"
+    },
+    {
+        img: '/sponsors/experian.svg',
+        name: 'Experian',
+        link: 'https://www.experian.com/'
     }
 ]
 
