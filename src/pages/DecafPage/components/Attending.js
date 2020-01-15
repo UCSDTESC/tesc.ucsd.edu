@@ -14,7 +14,7 @@ const Attending = (props) => {
                 to see companies attending Decaf 2020!
             </div>
 
-            <div className="decaf-companies__head">
+            <div className="decaf-companies__head" id="map">
                 Room Map
             </div>
 
