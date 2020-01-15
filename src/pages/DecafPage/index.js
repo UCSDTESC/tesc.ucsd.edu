@@ -40,11 +40,12 @@ class DecafPage extends React.Component {
     render() {
         return (
             <>
-                <TopAlert copy={
+                {!this.props.isCompany && <TopAlert copy={
                     <div className="text-center lead">
-                        <span>Looks like it's going to rain 🌧 ️on Thursday - Remember to bring an umbrella <span role="img" aria-label="Umbrella Emoji" className="">☔</span> with you to Decaf!</span>
+                        {/*<span>Looks like it's going to rain 🌧 ️on Thursday - Remember to bring an umbrella <span role="img" aria-label="Umbrella Emoji" className="">☔</span> with you to Decaf!</span>*/}
+                        <span>Check out <a href="https://decaf.live" target="_blank">decaf.live</a> for live updates and Decaf ticket info!</span>
                     </div>
-                } />
+                } /> }
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
                 <Attending />

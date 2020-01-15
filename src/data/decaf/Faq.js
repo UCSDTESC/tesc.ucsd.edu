@@ -57,8 +57,8 @@ const studentFaq = [
         answer: <div>Yes, there is. You can either: attend one of our front-of-line opportunity (F.L.O.) events for early access (attendance is limited per event), or volunteer for Decaf (sign up to volunteer at <a href="https://forms.gle/gM97ZupMhfFsLLgF9" target="_blank">this link</a>). You can find more information by going to our <a href="https://www.facebook.com/events/2457677007678696/" target="_blank">Facebook event page</a>.</div>
     },
     {
-        question: "I have F.L.O. access. What next?",
-        answer: "If you have attended one of our F.L.O. events and have your FLO ticket, you can come in to the West Ballroom from the library walk side (it will be the same entrance as that of regular line, except that the regular line will go towards Sixth College). Your FLO status will be verified at the door when you show us your ticket, at which point you will be given a wristband. Note: You will need to bring your UCSD ID and your Decaf ticket in order to check in."
+        question: "What does FLO give me?",
+        answer: <div><p>FLO allows you to enter the ballrooms from 8am-9am at the very beginning of the event. If you cannot attend during that hour, having a FLO ticket means that you are eligible to enter the lines in front of each Ballroom door (whereas general admission attendees will only be allowed into those lines on a rolling basis throughout the day after 9am). Having FLO access means you do not have to wait in the general admission ticket issuance line to receive a ticket, and you will have an earlier ticket number than anyone in the general admission line.</p><p>Note that there is no order in the per-ballroom lines except for first-come, first-served, and the speed at which these lines move will be dependent on the speed at which people exit the ballrooms.</p></div>
     },
     {
         question: "What is the dress code for the event?",
