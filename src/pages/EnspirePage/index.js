@@ -17,7 +17,7 @@ class EnspirePage extends Component {
     }
 
     componentWillUnmount() {
-        document.title = 'UCSD TESC | 2019'
+        document.title = 'UCSD TESC'
     }
 
     render() {

@@ -23,18 +23,17 @@ class DecafPage extends React.Component {
         const {hash} = this.props.location;
         window.scrollTo(0,0);
 
-
         if (!$(hash).offset()) return;
         if (hash) {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 450);
         }
-
     }
 
     componentWillUnmount() {
-        document.title = 'UCSD TESC | 2019'
+        document.title = 'UCSD TESC'
+        $("link[rel='shortcut icon']").attr("href", "/favicon.png");
     }
 
     render() {
