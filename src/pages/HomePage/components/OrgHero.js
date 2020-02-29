@@ -28,8 +28,8 @@ class OrgHero extends React.Component {
             <section className="hero h-100">
                 <div className="container-fluid w-100 p-0 h-100 ml-0">
                 <div className="row h-100 hero__row w-100 mx-0">
-                    <div className="col-md-6 d-flex">
-                    <div className="align-self-center calendar">
+                    <div className="col-md-6 d-flex mb-4">
+                    <div className="align-self-start calendar">
                         <div className="hero__copy-orgs">
                         Upcoming Events & Deadlines
                         </div>
