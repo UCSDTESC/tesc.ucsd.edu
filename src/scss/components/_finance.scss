@@ -5,8 +5,8 @@
     }
 
     &__pill {
-        background: $tesc-blue;
-        color: white;
+        background: transparent;
+        color: $tesc-blue;
         padding: 0.8rem;
         border: solid 2px $tesc-blue;
         font-size: 1.2rem;
@@ -27,8 +27,8 @@
         }
 
         &-active {
-            background: white;
-            color: $tesc-blue;
+            background: $tesc-blue;
+            color: white;
         }
 
         &:hover {
