@@ -1,5 +1,12 @@
 const currEvents = [
     {
+        name: 'HackXX 2020',
+        link: 'https://www.hackxx.io',
+        isInternalLink: false,
+        img: '/hackxx2020-event.svg',
+        date: "2020-05-03T00:00:00.000Z"
+    },
+    {
         name: 'Engineers on the Green: Winter 2020',
         link: '/eotg',
         isInternalLink: true,
@@ -48,13 +55,13 @@ const currEvents = [
         img: '/enspire-event.svg',
         date: "2019-01-29T00:00:00.000Z"
     },*/
-    {
+    /*{
         name: 'HackXX 2019',
         link: 'http://www.hackxx.io',
         isInternalLink: false,
         img: '/hackxx-event.svg',
         date: "2019-04-16T00:00:00.000Z"
-    },
+    },*/
     {
         name: 'TESC\'s Got Talent 2019',
         link: 'https://www.facebook.com/events/423672735070702/',
