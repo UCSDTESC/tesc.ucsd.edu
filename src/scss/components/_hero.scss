@@ -11,7 +11,7 @@
 
     &__copy {
         color: $tesc-blue;
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         font-weight: bold;
         //max-width: 23rem;
         margin-top: -6rem;
@@ -20,6 +20,14 @@
             font-size: 2.3rem;
             color: $tesc-blue;
             font-weight: bold;
+        }
+        
+        &-word {
+            transition: color 0.5s ease;
+            
+            &__grey {
+                color: grey;
+            }
         }
 
         @include media-breakpoint-down(sm) {
