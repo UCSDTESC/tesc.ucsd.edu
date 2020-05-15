@@ -15,6 +15,7 @@ const AboutPage = lazy(() => import('./pages/AboutPage'));
 const MembershipPage = lazy(() => import('./pages/MembershipPage'));
 const SpacesPage = lazy(() => import('./pages/SpacesPage'));
 const FinancePage = lazy(() => import('./pages/FinancePage'));
+const MembersPage = lazy(() => import('./pages/MembersPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 function LoadingSpinner(props) {
@@ -47,6 +48,7 @@ class Routes extends React.Component {
                     <Route exact path="/" component={this.withLayout(HomePage)}/>
                     <Route exact path="/orgs" component={this.withLayout(OrgPage, true)}/>
                     <Route exact path="/about" component={AboutPage} />
+                    <Route exact path="/members" component={this.withLayout(MembersPage)} />
                     <Route exact path="/orgs/membership" component={this.withLayout(MembershipPage, true)}/>
                     <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
                     <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>
