@@ -4,7 +4,7 @@ import {Badge, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 
 function Member(props) {
     return (
-        <div className="col-md-3 d-flex p-3" onClick={props.toggleModal}>
+        <div className="col-md-3 d-flex p-3 about__member" onClick={props.toggleModal}>
             <img className="img-responsive w-100 align-self-center justify-self-center" src={props.logo.url}/>
         </div>
     )
@@ -36,7 +36,17 @@ class MembersPage extends Component {
     };
 
     renderMembers() {
-        return this.state.records.map(m => <Member {...m} toggleModal={() => this.setCurrOrg(m)}/>)
+        const chunkSize = 4;
+        let rows = [],
+            arr = this.state.records;
+        for (var i=0,len=arr.length; i<len; i+=chunkSize)
+            rows.push(arr.slice(i,i+chunkSize));
+        
+        return rows.map(r => (
+            <div className="row justify-content-center">
+                {r.map(m => <Member {...m} toggleModal={() => this.setCurrOrg(m)}/>)}
+            </div>
+        ));
     }
 
     render() {
@@ -80,9 +90,10 @@ class MembersPage extends Component {
                     </p>
                 </div>
                 <div className="container">
-                    <div className="row">
                     {this.renderMembers()}
-                    </div>
+                    <div className="row">
+                        ...and many more!
+                    </div> 
                 </div>
             </section>
             </>

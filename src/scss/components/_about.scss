@@ -16,6 +16,12 @@
         }
     }
 
+    &__member {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
     &__copy {
         font-size: 1.5rem;
     }
