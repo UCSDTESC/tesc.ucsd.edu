@@ -4,18 +4,16 @@ import Board from './components/Board';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 
-class AboutPage extends React.Component {
+function AboutPage() {
 
-    render() {
-        return (
-            <>
-                <Nav />
-                <AboutBlurb />
-                <Board />
-                <Footer />
-            </>
-        );
-    }
+    return (
+        <>
+            <Nav />
+            <AboutBlurb />
+            <Board />
+            <Footer />
+        </>
+    );
 }
 
 export default AboutPage;

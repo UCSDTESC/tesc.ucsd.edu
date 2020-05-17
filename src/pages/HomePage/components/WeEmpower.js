@@ -21,7 +21,7 @@ function WeEmpower(){
       }
       $(wordRef.current).fadeOut(() => {
         currIdx = normalizeIdx(currIdx - 1);
-        wordRef.current.innerText = copy[currIdx];
+        wordRef.current && (wordRef.current.innerText = copy[currIdx]);
         $(wordRef.current).fadeIn();
       });
     }, 1500);

@@ -1,5 +1,5 @@
 import {Switch, Route, withRouter} from 'react-router-dom';
-import React, {lazy, Suspense} from 'react';
+import React, {lazy, Suspense, useEffect} from 'react';
 import {Spinner} from 'reactstrap';
 
 import Layout from './layouts/Layout';
@@ -25,42 +25,43 @@ function LoadingSpinner(props) {
     )
 }
 
-class Routes extends React.Component {
+function Routes() {
 
-    withLayout(Child, isOrgs=false) {
+    const withLayout = (Child, isOrgs=false) => {
         return () => 
             (<Layout isOrgs={isOrgs}>
                 <Child />
             </Layout>)
     }
 
-    render() {
+    useEffect(() => {
         console.log('%c Interested in building awesome web projects? Email us at hello@tesc.ucsd.edu! ', `
             background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); 
             color: black; 
             font-size: 2rem; 
             text-align: center`
         );
-        return  (
-            <Suspense fallback={<LoadingSpinner />}>
-                <Switch>
-                    <Route exact path="/" component={this.withLayout(HomePage)}/>
-                    <Route exact path="/orgs" component={this.withLayout(OrgPage, true)}/>
-                    <Route exact path="/about" component={AboutPage} />
-                    <Route exact path="/members" component={this.withLayout(MembersPage)} />
-                    <Route exact path="/orgs/membership" component={this.withLayout(MembershipPage, true)}/>
-                    <Route exact path="/orgs/spaces" component={this.withLayout(SpacesPage, true)}/>
-                    <Route exact path="/orgs/finance" component={this.withLayout(FinancePage, true)}/>
+    }, []);
 
-                    <Route path='/decaf' component={DecafRoutes} />
-                    <Route path='/enspire' component={EnspireRoutes} />
-                    <Route path='/eotg' component={EOTGRoutes} />
+    return  (
+        <Suspense fallback={<LoadingSpinner />}>
+            <Switch>
+                <Route exact path="/" component={withLayout(HomePage)}/>
+                <Route exact path="/orgs" component={withLayout(OrgPage, true)}/>
+                <Route exact path="/about" component={() => <AboutPage />} />
+                <Route exact path="/members" component={withLayout(MembersPage)} />
+                <Route exact path="/orgs/membership" component={withLayout(MembershipPage, true)}/>
+                <Route exact path="/orgs/spaces" component={withLayout(SpacesPage, true)}/>
+                <Route exact path="/orgs/finance" component={withLayout(FinancePage, true)}/>
 
-                    <Route component={this.withLayout(NotFoundPage)} />
-                </Switch>
-            </Suspense>
-        )
-    }
+                <Route path='/decaf' component={DecafRoutes} />
+                <Route path='/enspire' component={EnspireRoutes} />
+                <Route path='/eotg' component={EOTGRoutes} />
+
+                <Route component={withLayout(NotFoundPage)} />
+            </Switch>
+        </Suspense>
+    )
 }
 
 export default withRouter(Routes);

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Airtable from '../../data/airtableConnection';
 import {Badge, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 
@@ -10,95 +10,79 @@ function Member(props) {
     )
 }
 
-class MembersPage extends Component {
+function MembersPage() {
 
-    constructor(props) {
-        super(props);
-        this.base = Airtable.base('appFhSHX6s9v3csVC');
-        this.state = {
-            records: [],
-            currOrg: null
-        }
-    }
+    const [records, setRecords] = useState([]);
+    const [currOrg, setCurrOrg] = useState(null);
+    const base = useRef(Airtable.base('appFhSHX6s9v3csVC'));
 
-    componentWillMount() {
-        this.base('Council Members Form Responses')
+    useEffect(() => {
+        base.current('Council Members Form Responses')
             .select()
             .all()
             .then(records => records.map(r => r._rawJson.fields))
             .then(records => records.map(r => ({...r, logo: r.logo[0]})))
             .then(records => records.sort((a, b) => a.name.localeCompare(b.name)))
-            .then(records => this.setState({records}))
-    }
+            .then(records => setRecords(records))
+    });
 
-    setCurrOrg = (org) => {
-        this.setState({currOrg: org});
-    };
-
-    renderMembers() {
-        const chunkSize = 4;
-        let rows = [],
-            arr = this.state.records;
-        for (var i=0,len=arr.length; i<len; i+=chunkSize)
-            rows.push(arr.slice(i,i+chunkSize));
+    const renderMembers = () => {
+        const rows = records.reduce((a,b,i,g) => !(i % 4) ? a.concat([g.slice(i,i+4)]) : a, []);        
         
         return rows.map(r => (
             <div className="row justify-content-center">
-                {r.map(m => <Member {...m} toggleModal={() => this.setCurrOrg(m)}/>)}
+                {r.map(m => <Member {...m} toggleModal={() => setCurrOrg(m)}/>)}
             </div>
         ));
     }
 
-    render() {
-        const {currOrg} = this.state;
-        return (
-            <>
-            <section className="about">
-                <Modal 
-                    isOpen={currOrg != null} centered={true}
-                    toggle={() => this.setCurrOrg(null)}>
-                    {currOrg && 
-                        <>
-                            <ModalHeader>
-                                {currOrg.name} ({currOrg.acronym && currOrg.acronym})
-                            </ModalHeader>
-                            <ModalBody>
-                                <p>{currOrg.bio}</p>
-                                <div>
-                                    {currOrg.fields && currOrg.fields.map(f => <Badge className="mr-2">{f}</Badge>)}
-                                </div>
-                            </ModalBody>
-                            <ModalFooter>
-                                <a className="btn nav__toggle" href={currOrg.website} target="_blank">
-                                    <i className="fa fa-link"></i>  Website
-                                </a>
-                                <a className="btn nav__toggle" href={`mailto:${currOrg.email}`}>
-                                    <i className="fa fa-envelope"></i>  Email
-                                </a>
-                            </ModalFooter>
-                        </>}
-                </Modal>
-                <div className="text-center about__header-red">
-                    Members
-                </div>
-                <div className="text-center about__header">
-                    Members of the Council
-                </div>
-                <div className="about__text mt-5 text-center">
-                    <p className="about__copy">
-                    TESC is proud to support its student run council orgs. TESC council orgs work hard to support the engineering community through a combination of outreach events, technical workshops, student run projects and research, social events, and professional development workshops. Learn more about our council below.
-                    </p>
-                </div>
-                <div className="container">
-                    {this.renderMembers()}
-                    <div className="row">
-                        ...and many more!
-                    </div> 
-                </div>
-            </section>
-            </>
-        )
-    }
+    return (
+        <>
+        <section className="about">
+            <Modal 
+                isOpen={currOrg != null} centered={true}
+                toggle={() => setCurrOrg(null)}>
+                {currOrg && 
+                    <>
+                        <ModalHeader>
+                            {currOrg.name} ({currOrg.acronym && currOrg.acronym})
+                        </ModalHeader>
+                        <ModalBody>
+                            <p>{currOrg.bio}</p>
+                            <div>
+                                {currOrg.fields && currOrg.fields.map(f => <Badge className="mr-2">{f}</Badge>)}
+                            </div>
+                        </ModalBody>
+                        <ModalFooter>
+                            <a className="btn nav__toggle" href={currOrg.website} target="_blank">
+                                <i className="fa fa-link"></i>  Website
+                            </a>
+                            <a className="btn nav__toggle" href={`mailto:${currOrg.email}`}>
+                                <i className="fa fa-envelope"></i>  Email
+                            </a>
+                        </ModalFooter>
+                    </>}
+            </Modal>
+            <div className="text-center about__header-red">
+                Members
+            </div>
+            <div className="text-center about__header">
+                Members of the Council
+            </div>
+            <div className="about__text mt-5 text-center">
+                <p className="about__copy">
+                TESC is proud to support its student run council orgs. TESC council orgs work hard to support the engineering community through a combination of outreach events, technical workshops, student run projects and research, social events, and professional development workshops. Learn more about our council below.
+                </p>
+            </div>
+            <div className="container">
+                {renderMembers()}
+                <h1 className="text-center">
+                    ...and many more!
+                </h1> 
+            </div>
+        </section>
+        </>
+    )
 }
 
 export default MembersPage;
