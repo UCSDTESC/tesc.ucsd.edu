@@ -1,15 +1,13 @@
 import React from 'react';
 import MembershipBlurb from './components/MembershipBlurb';
 
-class MembershipPage extends React.Component {
+function MembershipPage() {
 
-    render() {
-        return (
-            <>
-                <MembershipBlurb />
-            </>
-        );
-    }
+    return (
+        <>
+            <MembershipBlurb />
+        </>
+    );
 }
 
 export default MembershipPage;
