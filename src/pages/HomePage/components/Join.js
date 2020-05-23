@@ -14,10 +14,10 @@ class Hero extends React.Component {
                 </div>
                 <div className="join__btns row">
                     <div className="col-md text-center">
-                    <a className="btn join__cta" href="https://docs.google.com/forms/d/e/1FAIpQLScNK0mTKbkKciAnptEeCwjLmqlNUALrwHhJb6ABktlvqpF1kA/viewform?usp=sf_link"> TESC Committees</a>
+                    <a className="btn join__cta" href="http://tesc.link/join" target="_blank"> TESC Committees</a>
                     </div>
                     <div className="col-md text-center">
-                    <a className="btn join__cta" href="https://tesc.typeform.com/to/GeFYtC"> Council Organization</a>
+                    <a className="btn join__cta" href="https://tesc.typeform.com/to/GeFYtC" target="_blank"> Council Organization</a>
                     </div>
                 </div>
                 </div>
