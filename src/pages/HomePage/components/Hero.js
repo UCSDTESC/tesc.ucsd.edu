@@ -13,7 +13,7 @@ function Hero() {
                             <WeEmpower />
                         </div>
                         <div className="hero__cta">
-                            <a className="btn hero__cta-btn text-white" href="https://tesc.link/join" target="_blank"> Join Us <i class="fas fa-external-link-square-alt"></i> </a>
+                            <a className="btn hero__cta-btn text-white" href="http://tesc.link/join" target="_blank"> Join Us <i class="fas fa-external-link-square-alt"></i> </a>
                         </div>
                         </div>
                     </div>
