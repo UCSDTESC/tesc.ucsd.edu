@@ -22,7 +22,6 @@ function Hero() {
                 </div>
             </section>
         );
-    }
 }
 
 export default Hero;
