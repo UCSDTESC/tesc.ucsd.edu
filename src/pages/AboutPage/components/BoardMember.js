@@ -37,7 +37,7 @@ function BoardMember(props) {
     const {data, idx} = props
     const id = data.role.toLowerCase().replace(/ /g, '');
     const firstName = data.name.split(' ')[0];
-    
+
     return (
         <>
             <div className="col-md-3 m-0 px-1 py-1" id={id} ref={ref}>
@@ -66,7 +66,8 @@ function BoardMember(props) {
                     {data.link && <div className="full__connect">
                         Connect with {firstName} on <a target="_blank" href={data.link}> <span>LinkedIn</span> <i className="fab fa-linkedin-in"></i></a>
                     </div>}
-                    <div className="full__connect">
+                    <div className="full__connect">Binotto: "Sainz can be world champion with Ferrari"
+
                         Email {firstName} at <a target="_blank" href={'mailto:' + data.email}> <span>{data.email}</span> <i className="far fa-envelope"></i></a>
                     </div>
                 </div>

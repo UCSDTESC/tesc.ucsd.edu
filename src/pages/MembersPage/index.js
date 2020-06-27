@@ -4,8 +4,9 @@ import {Badge, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 
 function Member(props) {
     return (
-        <div className="col-md-3 d-flex p-3 about__member" onClick={props.toggleModal}>
-            <img className="img-responsive w-100 align-self-center justify-self-center" src={props.logo.url}/>
+        <div className="col-md-3 d-flex flex-column p-3 about__member" onClick={props.toggleModal}>
+            <img className="align-self-center justify-self-center my-auto" style={{maxHeight: '8rem', width: 'auto', maxWidth: '100%'}} src={props.logo.url}/>
+            <div className="text-center d-md-none">{props.useAcronym ? props.acronym : props.name}</div>
         </div>
     )
 }
@@ -24,15 +25,27 @@ function MembersPage() {
             .then(records => records.map(r => ({...r, logo: r.logo[0]})))
             .then(records => records.sort((a, b) => a.name.localeCompare(b.name)))
             .then(records => setRecords(records))
-    });
+    }, []);
 
     const renderMembers = () => {
-        const rows = records.reduce((a,b,i,g) => !(i % 4) ? a.concat([g.slice(i,i+4)]) : a, []);        
+        const rows = records.reduce((a,b,i,g) => {
+            let tmp = g.slice(i,i+4);
+            if (tmp.length < 4) {
+                tmp = tmp.concat(new Array(4 - tmp.length).fill(null));
+            }
+            return !(i % 4) ? a.concat([tmp]) : a
+        }, []);        
         
+        console.log(rows)
         return rows.map(r => (
+            <>
             <div className="row justify-content-center">
-                {r.map(m => <Member {...m} toggleModal={() => setCurrOrg(m)}/>)}
+                {r.map(m => m ? <Member {...m} toggleModal={() => setCurrOrg(m)}/> : <div className="col-md-3"></div>)}
             </div>
+            <div className="row mb-5 d-none d-md-flex">
+                {r.map(m => m ? <div className="col text-center">{m.useAcronym ? m.acronym : m.name}</div> : <div className="col-md-3"></div>)}
+            </div>
+            </>
         ));
     }
 
