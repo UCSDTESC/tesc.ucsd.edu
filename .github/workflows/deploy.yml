@@ -27,4 +27,6 @@ jobs:
           options: ''
           ssh_options: ''
           src: 'build/'
-          dest: ${{ secrets.SERVER_DESTINATION  }}s
+          dest: ${{ secrets.SERVER_DESTINATION }}
+      - name: Display status from deploy
+        run: echo "${{ steps.deploy.outputs.status }}"
