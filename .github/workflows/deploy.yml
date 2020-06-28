@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '11.x'
       - name: Build tesc.ucsd.edu
-        run: npm install && npm run build
+        run: npm install && CI=false npm run build
         shell: bash
       - name: Move files with rsync
         uses: Pendect/action-rsyncer@v1.1.0
