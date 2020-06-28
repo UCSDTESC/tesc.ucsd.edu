@@ -14,14 +14,13 @@ function WeEmpower(){
     let currIdx = copy.length - 2;
     wordRef.current.innerText = copy[currIdx];
     const clear = setInterval(() => {
-
       if (currIdx == copy.length - 1) {
         setAnimFinished(true);
         return clearTimeout(clear);
       }
       $(wordRef.current).fadeOut(() => {
         currIdx = normalizeIdx(currIdx - 1);
-        wordRef.current.innerText = copy[currIdx];
+        wordRef.current && (wordRef.current.innerText = copy[currIdx]);
         $(wordRef.current).fadeIn();
       });
     }, 1500);
