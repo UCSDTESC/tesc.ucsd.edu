@@ -37,7 +37,6 @@ function MembersPage() {
             return !(i % 4) ? a.concat([tmp]) : a
         }, []);        
         
-        console.log(rows)
         return rows.map(r => (
             <>
             <div className="row justify-content-center">

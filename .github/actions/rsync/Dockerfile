@@ -12,7 +12,6 @@ LABEL "com.github.actions.icon"="truck"
 
 LABEL "maintainer"="TESC Tech Team <hello@tesc.ucsd.edu>"
 
-
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
