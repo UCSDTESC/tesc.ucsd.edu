@@ -14,7 +14,6 @@ function WeEmpower(){
     let currIdx = copy.length - 2;
     wordRef.current.innerText = copy[currIdx];
     const clear = setInterval(() => {
-
       if (currIdx == copy.length - 1) {
         setAnimFinished(true);
         return clearTimeout(clear);

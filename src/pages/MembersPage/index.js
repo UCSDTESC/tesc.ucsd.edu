@@ -5,7 +5,7 @@ import {Badge, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 function Member(props) {
     return (
         <div className="col-md-3 d-flex flex-column p-3 about__member" onClick={props.toggleModal}>
-            <img className="align-self-center justify-self-center my-auto" style={{maxHeight: '8rem', width: 'auto', maxWidth: '100%'}} src={props.logo.url}/>
+            <img className="align-self-center justify-self-center" style={{maxHeight: '8rem', width: 'auto', maxWidth: '100%'}} src={props.logo.url}/>
             <div className="text-center d-md-none">{props.useAcronym ? props.acronym : props.name}</div>
         </div>
     )
@@ -22,6 +22,7 @@ function MembersPage() {
             .select()
             .all()
             .then(records => records.map(r => r._rawJson.fields))
+            .then(records => records.filter(r => r.validated))
             .then(records => records.map(r => ({...r, logo: r.logo[0]})))
             .then(records => records.sort((a, b) => a.name.localeCompare(b.name)))
             .then(records => setRecords(records))
