@@ -66,8 +66,7 @@ function BoardMember(props) {
                     {data.link && <div className="full__connect">
                         Connect with {firstName} on <a target="_blank" href={data.link}> <span>LinkedIn</span> <i className="fab fa-linkedin-in"></i></a>
                     </div>}
-                    <div className="full__connect">Binotto: "Sainz can be world champion with Ferrari"
-
+                    <div className="full__connect">
                         Email {firstName} at <a target="_blank" href={'mailto:' + data.email}> <span>{data.email}</span> <i className="far fa-envelope"></i></a>
                     </div>
                 </div>
