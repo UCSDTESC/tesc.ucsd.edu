@@ -18,7 +18,18 @@ jobs:
       - name: Build tesc.ucsd.edu
         run: npm install && CI=false npm run build
         shell: bash
-      - name: Test ssh
+      # - name: Test ssh
+      #   env:
+      #     DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
+      #     REMOTE_USER: ${{ secrets.REMOTE_USER }}
+      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+      #     REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
+      #   run: |
+      #     mkdir ~/.ssh
+      #     echo "${{ secrets.NEW_SERVER_KEY }}" > ~/.ssh/gh-actions-key
+      #     chmod 600 ~/.ssh/gh-actions-key
+      #     ssh ${REMOTE_USER}@${REMOTE_HOST} -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no
+      - name: Move files with rsync
         env:
           DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
@@ -27,16 +38,5 @@ jobs:
         run: |
           mkdir ~/.ssh
           echo "${{ secrets.NEW_SERVER_KEY }}" > ~/.ssh/gh-actions-key
-          chmod 600 ~/.ssh/gh-actions-key
-          ssh ${REMOTE_USER}@${REMOTE_HOST} -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no
-      # - name: Move files with rsync
-        # env:
-        #   DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
-        #   REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        #   REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        #   REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
-        # run: |
-        #   mkdir ~/.ssh
-        #   echo "$DEPLOY_KEY" > ~/.ssh/gh-actions-key
-        #   chmod 600 ~/.ssh/gh-actions-key
-        #   rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" build/ ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
+          chmod 700 ~/.ssh/gh-actions-key
+          rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
