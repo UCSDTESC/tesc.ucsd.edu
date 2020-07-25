@@ -20,7 +20,7 @@ jobs:
         shell: bash
       - name: Move files with rsync
         env:
-          DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
