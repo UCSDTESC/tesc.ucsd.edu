@@ -26,7 +26,7 @@ jobs:
           REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
         run: |
           mkdir ~/.ssh
-          echo "$DEPLOY_KEY" > ~/.ssh/gh-actions-key
+          echo "${{ secrets.NEW_SERVER_KEY }}" > ~/.ssh/gh-actions-key
           chmod 600 ~/.ssh/gh-actions-key
           ssh ${REMOTE_USER}@${REMOTE_HOST} -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no
       # - name: Move files with rsync
