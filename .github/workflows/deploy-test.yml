@@ -36,7 +36,11 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
         run: |
+          apt-get install expect
           mkdir ~/.ssh
           echo "${{ secrets.NEW_SERVER_KEY }}" > ~/.ssh/gh-actions-key
           chmod 700 ~/.ssh/gh-actions-key
-          rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
+          chmod +x ./scripts/script.sh
+          ./scripts/script.sh
+        # #!/usr/bin/expect -f
+        # spawn rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
