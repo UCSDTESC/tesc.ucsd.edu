@@ -64,7 +64,7 @@ jobs:
         run: |
           sudo apt-get install expect
           sudo chmod +x ./scripts/script.sh
-          ./scripts/script.sh $SSH_PASSWORD
+          ./scripts/script.sh test
         # rsync -avzr --delete -e "ssh -i $HOME/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
         # rsync -avzr --delete -e "ssh -i $(pwd)/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
         # chmod +x ./scripts/script.sh
