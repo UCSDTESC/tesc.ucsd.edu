@@ -1,3 +1,5 @@
+import React from 'react';
+
 const board = [
   {
     name: "Summer Joyce Batasin",
@@ -16,7 +18,7 @@ const board = [
       "https://tesc-website.s3.us-east-2.amazonaws.com/board/vp-external-2020.jpg",
     email: "ronak@tesc.ucsd.edu",
     bio:
-      "Hello there! I'm a computer science major here at UCSD, and I'm the VP External for 2020-2021. When I'm not supporting our amazing sponsorship, design and marketing teams at TESC, I'm starting random side projects and cooking new recipes. I was previously the VP External for ACM at UC San Diego — check it out @ https://acmucsd.com",
+      <div>Hello there! I'm a computer science major here at UCSD, and I'm the VP External for 2020-2021. When I'm not supporting our amazing sponsorship, design and marketing teams at TESC, I'm starting random side projects and cooking new recipes. I was previously the VP External for ACM at UC San Diego — check it out @ <a href="https://acmucsd.com" target="_blank">https://acmucsd.com</a>.</div>,
     link: "https://linkedin.com/in/trulyronak",
   },
   {
