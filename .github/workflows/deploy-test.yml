@@ -44,10 +44,11 @@ jobs:
           echo "HELLO IM ABOUT TO ls only ssh"
           ls -a .ssh
           echo ${{ secrets.NEW_SERVER_KEY }} > .ssh/gh-actions-key
-          chmod 700 .ssh/gh-actions-key
+          sudo chmod 600 .ssh
+          sudo chmod 600 .ssh/gh-actions-key
           echo "HELLO IM ABOUT TO ls 3"
           ls -a -l
-          rsync -avzr --delete -e "ssh -i .ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${{ secrets.REMOTE_DIR }}
+          rsync -avzr --delete -e "ssh -i .ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
         # chmod +x ./scripts/script.sh
         # ./scripts/script.sh
         # spawn rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
