@@ -54,7 +54,10 @@ jobs:
           sudo chmod 600 .ssh/gh-actions-key
           echo "HELLO IM ABOUT TO ls 3"
           ls -a -l
-          rsync -avzr --delete -e "ssh -i .ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
+          echo "HOME $HOME"
+          echo "pwd $(pwd)"
+          
+          rsync -avzr --delete -e "ssh -i $(pwd)/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
         # chmod +x ./scripts/script.sh
         # ./scripts/script.sh
         # spawn rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
