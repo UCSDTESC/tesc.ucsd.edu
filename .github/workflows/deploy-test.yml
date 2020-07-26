@@ -41,13 +41,13 @@ jobs:
           ls -a -l
           mkdir .ssh
           touch .ssh/gh-actions-key
-          echo "HELLO IM ABOUT TO ls 2"
-          ls -a -l
-          echo ${{ secrets.NEW_SERVER_KEY }} > ~/.ssh/gh-actions-key
-          chmod 700 ~/.ssh/gh-actions-key
+          echo "HELLO IM ABOUT TO ls only ssh"
+          ls -a .ssh
+          echo ${{ secrets.NEW_SERVER_KEY }} > .ssh/gh-actions-key
+          chmod 700 .ssh/gh-actions-key
           echo "HELLO IM ABOUT TO ls 3"
           ls -a -l
-          rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${{ secrets.REMOTE_DIR }}
+          rsync -avzr --delete -e "ssh -i .ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${{ secrets.REMOTE_DIR }}
         # chmod +x ./scripts/script.sh
         # ./scripts/script.sh
         # spawn rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
