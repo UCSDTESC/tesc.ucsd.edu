@@ -34,15 +34,18 @@ jobs:
         run: |
           echo "HELLO IM ABOUT TO ls 1"
           ls -a -l
-          mkdir .ssh
-          touch .ssh/gh-actions-key
+        # mkdir .ssh
+        #  touch .ssh/gh-actions-key
+          mkdir $HOME/.ssh
+          touch $HOME/.ssh/gh-actions-key
           echo "HELLO IM ABOUT TO ls only ssh"
-          ls -a .ssh
+        #  ls -a .ssh
+          ls -a ~HOME/.ssh
           echo "creating super secret key file"
       - name: Creating SSH Key
         env:
           DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
-        run: 'echo "$DEPLOY_KEY" > .ssh/gh-actions-key'
+        run: 'echo "$DEPLOY_KEY" > $HOME/.ssh/gh-actions-key'
       - name: Continue Deploy
         env:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
@@ -50,14 +53,17 @@ jobs:
           REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
         run: |
           echo "doing chmod stuff"
-          sudo chmod 600 .ssh
-          sudo chmod 600 .ssh/gh-actions-key
+          sudo chmod 600 $HOME/.ssh
+          sudo chmod 600 $HOME/.ssh/gh-actions-key
           echo "HELLO IM ABOUT TO ls 3"
           ls -a -l
+          ls -a -l ~/.ssh
+          wc -l ~/.ssh/gh-actions-key
           echo "HOME $HOME"
           echo "pwd $(pwd)"
-          
-          rsync -avzr --delete -e "ssh -i $(pwd)/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
+          rsync -avzr --delete -e "ssh -i $HOME/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
+
+        # rsync -avzr --delete -e "ssh -i $(pwd)/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
         # chmod +x ./scripts/script.sh
         # ./scripts/script.sh
         # spawn rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
