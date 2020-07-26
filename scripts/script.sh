@@ -7,6 +7,6 @@ expect "(yes/no)?"
 send "yes\r"
 
 expect "password:"
-send "$password\r"
+send "$password\n"
 
 puts "i guess it's done"
