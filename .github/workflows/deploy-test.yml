@@ -41,8 +41,7 @@ jobs:
           echo ${{ secrets.NEW_SERVER_KEY }} > ~/.ssh/gh-actions-key
           chmod 700 ~/.ssh/gh-actions-key
           ls -a -l
-          spawn rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
-        # chmod +x ./scripts/script.sh
-        # ./scripts/script.sh
-        # #!/usr/bin/expect -f
+          chmod +x ./scripts/script.sh
+          ./scripts/script.sh
+        # spawn rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
         # spawn rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
