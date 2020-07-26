@@ -2,7 +2,7 @@
 set timeout -1
 set password [lindex $argv 0]
 
-spawn rsync -avzr --delete -e ssh ./build/ tesc@tesc.ucsd.edu:~/htdocs/
+spawn rsync -avzr --progress --delete -e ssh ./build/ tesc@tesc.ucsd.edu:/var/www/tesc/htdocs/
 expect "(yes/no)?"
 send "yes\r"
 
