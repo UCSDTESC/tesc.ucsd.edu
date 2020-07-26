@@ -18,8 +18,6 @@ jobs:
       - name: Build tesc.ucsd.edu
         run: npm install && CI=false npm run build
         shell: bash
-      - name: "Install rsync"
-        run: apk add rsync openssh-client
       # - name: Test ssh
       #   env:
       #     DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
