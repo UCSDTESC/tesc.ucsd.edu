@@ -9,4 +9,4 @@ send "yes\r"
 expect "?assword:"
 send "$password\r"
 
-interact
+expect eof
