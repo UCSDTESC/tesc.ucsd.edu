@@ -53,12 +53,10 @@ jobs:
           REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
         run: |
           echo "doing chmod stuff"
-          sudo chmod 600 $HOME/.ssh
+          wc -l ~/.ssh/gh-actions-key
+          sudo chmod 700 $HOME/.ssh
           sudo chmod 600 $HOME/.ssh/gh-actions-key
           echo "HELLO IM ABOUT TO ls 3"
-          ls -a -l
-          ls -a -l ~/.ssh
-          wc -l ~/.ssh/gh-actions-key
           echo "HOME $HOME"
           echo "pwd $(pwd)"
           rsync -avzr --delete -e "ssh -i $HOME/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
