@@ -1,4 +1,4 @@
-name: Deploy 
+name: Deploy
 
 # Deploy on every push to the repository on master
 on:
@@ -19,15 +19,9 @@ jobs:
         run: npm install && CI=false npm run build
         shell: bash
       - name: Move files with rsync
-        uses: Pendect/action-rsyncer@v1.1.0
         env:
-          DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
-          DEST: ${{ secrets.SERVER_DESTINATION }}
-        with:
-          flags: "-avzr --delete"
-          options: ''
-          ssh_options: ''
-          src: 'build/'
-          dest: '$DEST'
-      - name: Display status from deploy
-        run: echo "${{ steps.deploy.outputs.status }}"
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+        run: |
+          sudo apt-get install expect
+          sudo chmod +x ./scripts/rsync-website.except
+          ./scripts/rsync-website.except $SSH_PASSWORD
