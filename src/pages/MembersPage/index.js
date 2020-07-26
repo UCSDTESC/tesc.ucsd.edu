@@ -67,12 +67,18 @@ function MembersPage() {
                             </div>
                         </ModalBody>
                         <ModalFooter>
-                            <a className="btn nav__toggle" href={currOrg.website} target="_blank">
-                                <i className="fa fa-link"></i>  Website
-                            </a>
-                            <a className="btn nav__toggle" href={`mailto:${currOrg.email}`}>
-                                <i className="fa fa-envelope"></i>  Email
-                            </a>
+                            { 
+                                currOrg.website &&
+                                <a className="btn nav__toggle" href={currOrg.website} target="_blank">
+                                    <i className="fa fa-link"></i>  Website
+                                </a> 
+                            }
+                            { 
+                                currOrg.email &&
+                                <a className="btn nav__toggle" href={`mailto:${currOrg.email}`}>
+                                    <i className="fa fa-envelope"></i>  Email
+                                </a>
+                            }
                         </ModalFooter>
                     </>}
             </Modal>
