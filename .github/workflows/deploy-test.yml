@@ -37,8 +37,6 @@ jobs:
           REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
         # sudo apt-get install expect
         run: |
-          echo "trying rsync"
-          `which rsync`
           echo "HELLO IM ABOUT TO ls 1"
           ls -a -l
           mkdir .ssh
