@@ -40,7 +40,7 @@ jobs:
           mkdir $HOME/.ssh
           touch $HOME/.ssh/gh-actions-key
           echo "HELLO IM ABOUT TO ls only ssh"
-          ls -a ~HOME/.ssh
+          ls -a $HOME/.ssh
           echo "creating super secret key file"
       - name: Creating SSH Key
         env:
