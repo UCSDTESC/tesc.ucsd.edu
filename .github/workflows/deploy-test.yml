@@ -30,7 +30,6 @@ jobs:
       #     chmod 600 ~/.ssh/gh-actions-key
       #     ssh ${REMOTE_USER}@${REMOTE_HOST} -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no
       - name: Move files with rsync
-        # sudo apt-get install expect
         # mkdir .ssh
         # touch .ssh/gh-actions-key
         # ls -a .ssh
@@ -61,6 +60,7 @@ jobs:
           echo "pwd $(pwd)"
       - name: Run expect...send script
         run: |
+          sudo apt-get install expect
           sudo chmod +x ./scripts/script.sh
           ./scripts/script.sh
         # rsync -avzr --delete -e "ssh -i $HOME/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:~/htdocs
