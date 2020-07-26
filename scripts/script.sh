@@ -6,7 +6,7 @@ spawn rsync -avzr --progress --delete -e ssh ./build/ tesc@tesc.ucsd.edu:/var/ww
 expect "(yes/no)?"
 send "yes\r"
 
-expect "password:"
+expect "?assword:"
 send "$password\n"
 
 puts "i guess it's done"
