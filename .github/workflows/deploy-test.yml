@@ -30,11 +30,6 @@ jobs:
       #     chmod 600 ~/.ssh/gh-actions-key
       #     ssh ${REMOTE_USER}@${REMOTE_HOST} -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no
       - name: Move files with rsync
-        env:
-          DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
         # sudo apt-get install expect
         run: |
           echo "HELLO IM ABOUT TO ls 1"
@@ -45,8 +40,14 @@ jobs:
           ls -a .ssh
           echo "creating super secret key file"
       - name: Creating SSH Key
+        env:
+          DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
         run: 'echo "$DEPLOY_KEY" > .ssh/gh-actions-key'
       - name: Continue Deploy
+        env:
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
         run: |
           echo "doing chmod stuff"
           sudo chmod 600 .ssh
