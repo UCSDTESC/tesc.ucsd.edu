@@ -44,7 +44,10 @@ jobs:
           echo "HELLO IM ABOUT TO ls only ssh"
           ls -a .ssh
           echo "creating super secret key file"
-          'echo "$DEPLOY_KEY" > .ssh/gh-actions-key'
+      - name: Creating SSH Key
+        run: 'echo "$DEPLOY_KEY" > .ssh/gh-actions-key'
+      - name: Continue Deploy
+        run: |
           echo "doing chmod stuff"
           sudo chmod 600 .ssh
           sudo chmod 600 .ssh/gh-actions-key
