@@ -59,6 +59,8 @@ jobs:
           echo "HOME $HOME"
           echo "pwd $(pwd)"
       - name: Run expect...send script
+        env:
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
         run: |
           sudo apt-get install expect
           sudo chmod +x ./scripts/script.sh
