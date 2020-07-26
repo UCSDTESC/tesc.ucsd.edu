@@ -37,12 +37,12 @@ jobs:
           REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
         # sudo apt-get install expect
         run: |
+          echo "HELLO IM ABOUT TO ls"
+          ls -a -l
           mkdir ~/.ssh
           touch ~/.ssh/gh-actions-key
           echo ${{ secrets.NEW_SERVER_KEY }} > ~/.ssh/gh-actions-key
           chmod 700 ~/.ssh/gh-actions-key
-          echo HELLO IM ABOUT TO ls
-          ls -a -l
           rsync -avzr --delete -e "ssh -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no" "build/" ${REMOTE_USER}@${REMOTE_HOST}:${{ secrets.REMOTE_DIR }}
         # chmod +x ./scripts/script.sh
         # ./scripts/script.sh
