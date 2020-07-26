@@ -31,15 +31,15 @@ jobs:
       #     ssh ${REMOTE_USER}@${REMOTE_HOST} -i ~/.ssh/gh-actions-key -o StrictHostKeyChecking=no
       - name: Move files with rsync
         # sudo apt-get install expect
+        # mkdir .ssh
+        # touch .ssh/gh-actions-key
+        # ls -a .ssh
         run: |
           echo "HELLO IM ABOUT TO ls 1"
           ls -a -l
-        # mkdir .ssh
-        #  touch .ssh/gh-actions-key
           mkdir $HOME/.ssh
           touch $HOME/.ssh/gh-actions-key
           echo "HELLO IM ABOUT TO ls only ssh"
-        #  ls -a .ssh
           ls -a ~HOME/.ssh
           echo "creating super secret key file"
       - name: Creating SSH Key

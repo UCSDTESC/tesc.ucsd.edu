@@ -21,13 +21,13 @@ jobs:
       - name: Move files with rsync
         uses: Pendect/action-rsyncer@v1.1.0
         env:
-          DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          DEPLOY_KEY: ${{ secrets.NEW_SERVER_KEY }}
           DEST: ${{ secrets.SERVER_DESTINATION }}
         with:
           flags: "-avzr --delete"
           options: ''
           ssh_options: ''
           src: 'build/'
-          dest: $DEST
+          dest: '$DEST'
       - name: Display status from deploy
         run: echo "${{ steps.deploy.outputs.status }}"
