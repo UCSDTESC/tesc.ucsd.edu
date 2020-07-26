@@ -15,6 +15,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '11.x'
+      - name: Set up .env
+        env: 
+          AIRTABLE_KEY: ${{ secrets.AIRTABLE_READ_ONLY_API_KEY }}
+        run: |
+          echo "REACT_APP_AIRTABLE_KEY=$AIRTABLE_KEY" > .env
       - name: Build tesc.ucsd.edu
         run: npm install && CI=false npm run build
         shell: bash
