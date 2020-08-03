@@ -26,13 +26,17 @@ class Hero extends React.Component {
                                 <b> Engineers on the Green </b>
                                 </div>
                                 <div className="eotg-hero__detail">
-                                    Warren Mall, UC San Diego
+                                    October 5th - 9th // Time (TBD)
                                 </div>
-                                <div className="eotg-hero__detail">
-                                    January 13, 2020 // 1PM - 5PM
+                                <div className="eotg-hero__button_div mb-5">
+                                    <a className="eotg-hero__button" href="https://www.facebook.com/events/638144703462548/" target="_blank" rel="noopener noreferrer">
+                                        Facebook Event Page
+                                    </a>
                                 </div>
                                 <div className="eotg-hero__button_div">
-                                    <a className="eotg-hero__button" href="https://www.facebook.com/events/988688638175276/?notif_t=event_friend_going&notif_id=1576989295206656" target="_blank">Facebook Event Page</a>
+                                    <a className="eotg-hero__button" href="https://discord.gg/WBaecP2" target="_blank" rel="noopener noreferrer">
+                                        Discord
+                                    </a>
                                 </div>
                             </div>
                         </div>
