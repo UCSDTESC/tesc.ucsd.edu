@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 class About extends React.Component {
 
@@ -9,11 +9,12 @@ class About extends React.Component {
                 <div className="container">
                     <div className="row text-center">
                         <h1 className="text-center w-100">About Engineers on the Green</h1>
-
                         <p className="mt-5">
-                            Engineers on the Green is a great opportunity to learn more about the different engineering organizations on campus and how you can get involved. Check out the Facebook event page <a href="https://www.facebook.com/events/638144703462548/" target="_blank" rel="noopener noreferrer">here</a>.
+                            Engineers on the Green is traditionally an engineering org fair where students can network with the various engineering orgs on campus. Although this event typically takes place in person, TESC has organized this online event to provide the opportunity for org involvement.
                         </p>
-                        
+                        <p>
+                            This website displays information about the attending orgs, and the Discord server is a platform for communication between orgs and students.
+                        </p>
                     </div>
                 </div>
                 

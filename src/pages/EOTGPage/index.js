@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Orgs from './components/Orgs';
+import Faq from './components/Faq';
 import Footer from './components/Footer';
 
 import './js/sortElements';
@@ -20,6 +21,7 @@ class EOTGPage extends Component {
                 <Hero />         
                 <About />
                 <Orgs />
+                <Faq />
                 <Footer />
             </>
         )
