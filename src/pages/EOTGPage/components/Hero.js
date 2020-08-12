@@ -1,7 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
 import $ from 'jquery';
-import {NavLink, withRouter} from 'react-router-dom';
-
 import {ReactComponent as HeroPic} from '../svg/eotg-wi20.svg';
 
 class Hero extends React.Component {
@@ -26,7 +24,7 @@ class Hero extends React.Component {
                                 <b> Engineers on the Green </b>
                                 </div>
                                 <div className="eotg-hero__detail">
-                                    October 5th - 9th // Time (TBD)
+                                    October 5th - 9th // 2-6 PM each day
                                 </div>
                                 <div className="eotg-hero__button_div mb-5">
                                     <a className="eotg-hero__button" href="https://www.facebook.com/events/638144703462548/" target="_blank" rel="noopener noreferrer">

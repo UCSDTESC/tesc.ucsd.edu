@@ -56,7 +56,7 @@ $(function(){
 
     // remove "All Engineering" from the list of departments left to add to the dropdown
     var indexOfAll = sortedDepartments.indexOf('All Engineering');
-    if (indexOfAll != -1) {
+    if (indexOfAll !== -1) {
       sortedDepartments.splice(indexOfAll, indexOfAll + 1);
     }
     
