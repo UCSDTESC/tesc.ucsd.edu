@@ -1,13 +1,35 @@
-import React from 'react'
+import React from 'react';
+import {studentFaq} from '../../../data/EOTGfaq';
+import FaqItem from './FaqItem';
 
-const Faq = () => {
-  return (
-    <section className="container">
-      <h1>
-        Frequently Asked Questions
-      </h1>
-    </section>
-  )
+class Faq extends React.Component {
+
+    render() {
+        
+        const data = studentFaq;
+        return (
+          
+            <div className={`eotg-hero`} id="faq">
+                <div className="eotg-faq__head">
+                    Frequently Asked Questionss
+                </div>
+                <div className="eotg-faq__head-sub mb-5">
+                    {''}
+                </div>
+                
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 my-auto">
+                            <div className="content pb-4">
+                                {data.map((d, i) => <FaqItem {...d} key={i} idx={i}/>)}
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+        )
+    }
 }
 
-export default Faq
+export default Faq;
