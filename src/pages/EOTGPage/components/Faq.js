@@ -1,5 +1,5 @@
 import React from 'react';
-import {studentFaq} from '../../../data/EOTGfaq';
+import studentFaq from '../../../data/EOTGfaq';
 import FaqItem from './FaqItem';
 
 class Faq extends React.Component {
@@ -10,11 +10,8 @@ class Faq extends React.Component {
         return (
           
             <div className={`eotg-hero`} id="faq">
-                <div className="eotg-faq__head">
-                    Frequently Asked Questionss
-                </div>
-                <div className="eotg-faq__head-sub mb-5">
-                    {''}
+                <div className="eotg-faq__head mb-5">
+                    Frequently Asked Questions
                 </div>
                 
                 <div className="container">
