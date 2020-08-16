@@ -209,13 +209,15 @@ const attendingOrgs = [
         day: 'Wednesday',
     },
     {
-        name: 'Design/Build/Fly (American Institute of Aeronautics and Astronautics)',
+        name:
+            'Design/Build/Fly (American Institute of Aeronautics and Astronautics)',
         acronym: 'DBF (AIAA)',
-        description: "The Design/Build/Fly (DBF) project team designs, fabricates, and demonstrates the flight capabilities of an electric-powered, radio-controlled aircraft that can best meet a given mission profile. The goal is a balanced design possessing good demonstrated flight handling qualities and practical manufacturing requirements while providing high vehicle performance. The contest provides a real-world aircraft design experience for engineering students by giving them the opportunity to validate their analytical studies. The competition is hosted by the American Institute of Aeronautics and Astronautics (AIAA) engineering society.",
+        description:
+            'The Design/Build/Fly (DBF) project team designs, fabricates, and demonstrates the flight capabilities of an electric-powered, radio-controlled aircraft that can best meet a given mission profile. The goal is a balanced design possessing good demonstrated flight handling qualities and practical manufacturing requirements while providing high vehicle performance. The contest provides a real-world aircraft design experience for engineering students by giving them the opportunity to validate their analytical studies. The competition is hosted by the American Institute of Aeronautics and Astronautics (AIAA) engineering society.',
         department: 'Mechanical and Aerospace Engineering',
         link: 'http://dbf.ucsd.edu/',
         email: '',
-        day: 'Wednesday'
+        day: 'Wednesday',
     },
     {
         name: 'Construction Management',
@@ -252,11 +254,13 @@ const attendingOrgs = [
     {
         name: 'Students for the Exploration and Development of Space',
         acronym: 'SEDS',
-        description: "We are a bunch of undergrad and graduate students that are currently designing a variety of liquid fueled rocket engines, a cube sat, and a rocket lander. We test rocket engines on our mobile test stand and are finishing off a liquid bi-propellant rocket.",
-        department: 'Computer Science and Engineering, Electrical and Computing Engineering, Mechanical and Aerospace Engineering, Structural Engineering',
+        description:
+            'We are a bunch of undergrad and graduate students that are currently designing a variety of liquid fueled rocket engines, a cube sat, and a rocket lander. We test rocket engines on our mobile test stand and are finishing off a liquid bi-propellant rocket.',
+        department:
+            'Computer Science and Engineering, Electrical and Computing Engineering, Mechanical and Aerospace Engineering, Structural Engineering',
         link: 'https://www.sedsucsd.org/',
         email: 'seds.ucsd@gmail.com',
-        day: 'Wednesday'
+        day: 'Wednesday',
     },
     {
         name: 'Triton Racing',
