@@ -28,4 +28,4 @@ const studentFaq = [
     }
 ]
 
-export {studentFaq};
+export default studentFaq;
