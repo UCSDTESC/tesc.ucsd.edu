@@ -24,12 +24,10 @@
     border-radius: $border-radius * 4;
     margin-bottom: 2rem;
     background: white;
-    
 
     &__heading {
         margin: 0.8rem 2rem;
         text-align: center;
-        
 
         a {
             color: $eotg-blue;
@@ -40,7 +38,7 @@
                 text-decoration: none;
             }
 
-            &[aria-expanded="true"] {
+            &[aria-expanded='true'] {
                 .question__icon {
                     transform: rotate(135deg);
                     -webkit-transition-duration: 0.5s;
@@ -50,8 +48,7 @@
                 }
             }
 
-
-            &[aria-expanded="false"] .question__icon {
+            &[aria-expanded='false'] .question__icon {
                 transform: rotate(0);
                 -webkit-transition-duration: 0.5s;
                 -moz-transition-duration: 0.5s;
