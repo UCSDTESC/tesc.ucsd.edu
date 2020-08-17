@@ -11,8 +11,8 @@ class FaqItem extends React.Component {
                     <div className="panel-heading" id={`heading-${idx}`} role="tab">
                         <div className="panel-title eotg-question__heading">
                             <a className="collapsed w-100 d-block" role="button" data-toggle="collapse" data-parent="#accordion" href={`#collapse-${idx}`} aria-expanded="false" aria-controls={`collapse-${idx}`}>
-                            {this.props.question}
-                            <i className="pull-right fa fa-plus float-right mt-1 question__icon"></i>
+                                {this.props.question}
+                                <i className="pull-right fa fa-plus float-right mt-1 question__icon"></i>
                             </a>
                         </div>
                     </div>
