@@ -1,9 +1,8 @@
 import React from 'react';
-import studentFaq from '../../../data/EOTGFaq';
+import studentFaq from '../data/EOTGfaq';
 import FaqItem from './FaqItem';
 
 class Faq extends React.Component {
-
     render() {
         const data = studentFaq;
         return (
@@ -15,14 +14,15 @@ class Faq extends React.Component {
                     <div className="row">
                         <div className="col-lg-12 my-auto">
                             <div className="content pb-4">
-                                {data.map((d, i) => <FaqItem {...d} key={i} idx={i}/>)}
+                                {data.map((d, i) => (
+                                    <FaqItem {...d} key={i} idx={i} />
+                                ))}
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
-
             </div>
-        )
+        );
     }
 }
 
