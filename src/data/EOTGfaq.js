@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 const studentFaq = [
     {
         question: "Is this event limited to engineering majors?",
