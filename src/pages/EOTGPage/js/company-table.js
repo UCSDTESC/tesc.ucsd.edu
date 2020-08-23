@@ -117,8 +117,6 @@ $(function(){
     onFilterChanged();
   }
 
-  console.log("HELLO");
-
   createFilterOptions();
   setDepartmentFilter();
   setOrganizationFilter();

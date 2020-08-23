@@ -9,6 +9,21 @@
         text-align: center;
     }
 
+    &__blurb {
+      font-size: 1.3rem;
+      color: white;
+      text-align: center;
+    }
+
+    &__day {
+      padding-top: 4rem;
+      padding-bottom: 1rem;
+      font-size: 1.2rem;
+      color: white;
+      font-weight: 800;
+      text-align: center;
+    }
+
     p {
         font-size: 1.3rem;
         color: white;
