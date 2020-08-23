@@ -3,3 +3,16 @@ $matcha-light-green: #73c78b;
 $matcha-dark-green: #28534a;
 
 @import 'components/all';
+
+/* UTILITY CLASSES */
+
+/* standard padding size for page sections (if padding is needed) */
+.matcha {
+    &__p-std {
+        padding: 2rem 5rem;
+    }
+
+    &__bg-dark-green {
+        background: $matcha-dark-green;
+    }
+}

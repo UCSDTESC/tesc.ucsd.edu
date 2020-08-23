@@ -11,25 +11,27 @@ const MatchaPage = () => {
 
     return (
         <Layout>
-            <section className="matcha-hero">
-                <Container fluid>
-                    <Row>
-                        <Col></Col>
-                        <Col className="matcha-hero__content">
-                            <h1 className="display-3">Matcha</h1>
-                            <h2>TESC's Virtual Career Fair</h2>
-                            <p className="text-italic">
-                                Matching Students with Engineering Jobs
-                            </p>
-                            <Button>Attending Companies</Button>
-                            <Button>Submit Resume</Button>
-                            <p>TESC</p>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
+            <Container
+                fluid
+                className="matcha-hero matcha__p-std"
+                style={{ paddingTop: '8rem' }}
+            >
+                <Row>
+                    <Col></Col>
+                    <Col className="matcha-hero__content">
+                        <h1 className="display-3">Matcha</h1>
+                        <h2>TESC's Virtual Career Fair</h2>
+                        <p className="text-italic">
+                            Matching Students with Engineering Jobs
+                        </p>
+                        <Button>Attending Companies</Button>
+                        <Button>Submit Resume</Button>
+                        <p>TESC</p>
+                    </Col>
+                </Row>
+            </Container>
 
-            <section>
+            <Container fluid className="matcha__p-std">
                 <h1>What's Matcha</h1>
                 <p>
                     The Disciplines of Engineering Career Fair, or Decaf, is an
@@ -40,7 +42,7 @@ const MatchaPage = () => {
                     meet and connect with representatives from some of the top
                     companies in engineering.
                 </p>
-            </section>
+            </Container>
 
             <section>
                 <h1>FLO</h1>
