@@ -19,7 +19,7 @@ class FaqItem extends React.Component {
                     >
                         <div className="panel-title eotg-question__heading">
                             <a
-                                className="collapsed w-100 d-block"
+                                className="collapsed w-100 d-inline-flex flex-wrap justify-content-center"
                                 role="button"
                                 data-toggle="collapse"
                                 data-parent="#accordion"
@@ -27,8 +27,10 @@ class FaqItem extends React.Component {
                                 aria-expanded="false"
                                 aria-controls={`collapse-${idx}`}
                             >
-                                {this.props.question}
-                                <i className="pull-right fa fa-plus float-right mt-1 question__icon"></i>
+                                <span className="mx-auto">
+                                    {this.props.question}
+                                </span>
+                                <i className="fa fa-plus mt-1 question__icon"></i>
                             </a>
                         </div>
                     </div>
