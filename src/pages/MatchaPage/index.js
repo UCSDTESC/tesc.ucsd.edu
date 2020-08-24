@@ -32,16 +32,21 @@ const MatchaPage = () => {
             </Container>
 
             <Container fluid className="matcha__p-std">
-                <h1>What's Matcha</h1>
-                <p>
-                    The Disciplines of Engineering Career Fair, or Decaf, is an
-                    annual student-run career fair.
-                </p>
-                <p>
-                    Attending Decaf will provide you with the opportunity to
-                    meet and connect with representatives from some of the top
-                    companies in engineering.
-                </p>
+                <Row>
+                    <Col md={8}>
+                        <h1>What's Matcha</h1>
+                        <p>
+                            The Disciplines of Engineering Career Fair, or
+                            Decaf, is an annual student-run career fair.
+                        </p>
+                        <p>
+                            Attending Decaf will provide you with the
+                            opportunity to meet and connect with representatives
+                            from some of the top companies in engineering.
+                        </p>
+                    </Col>
+                    <Col></Col>
+                </Row>
             </Container>
 
             <section>

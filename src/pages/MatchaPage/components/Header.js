@@ -22,11 +22,11 @@ function Header() {
     ];
     const toggle = () => setIsOpen(!isOpen);
 
-    const handleScroll = function () {
+    const handleScroll = () => {
         let _nav = $('#top-nav');
         const SCROLL_THRESHOLD = 2 * _nav.height();
 
-        if ($(this).scrollTop() > SCROLL_THRESHOLD) {
+        if ($(window).scrollTop() > SCROLL_THRESHOLD) {
             // if user scrolled down enough, make the nav gray
             _nav.addClass('matcha__bg-dark-green shadow');
         } else {
@@ -39,10 +39,22 @@ function Header() {
         }
     };
 
+    const handleTogglerClick = (e) => {
+        let _nav = $('#top-nav');
+        const SCROLL_THRESHOLD = 2 * _nav.height();
+
+        if ($('.navbar-toggler').scrollTop() < SCROLL_THRESHOLD) {
+            if (_nav.hasClass('matcha__bg-dark-green')) {
+                _nav.removeClass('matcha__bg-dark-green');
+            } else {
+                _nav.addClass('matcha__bg-dark-green');
+            }
+        }
+    };
+
     // This function handle the scroll performance issue
     const debounce = (func, wait = 20, immediate = true) => {
         let timeOut;
-        func = func.bind(window);
 
         return () => {
             let context = this,
@@ -60,11 +72,13 @@ function Header() {
 
     useEffect(() => {
         $(window).scroll(debounce(handleScroll, 15));
+        $('.navbar-toggler').on('click', handleTogglerClick);
 
         return () => {
             $(window).off('scroll', handleScroll);
+            $('.navbar-toggler').off('click', handleTogglerClick);
         };
-    }, [debounce, handleScroll]);
+    }, [debounce, handleScroll, handleTogglerClick]);
 
     return (
         <Navbar
