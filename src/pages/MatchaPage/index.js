@@ -4,6 +4,9 @@ import { Container, Row, Col, Button } from 'reactstrap';
 
 import Layout from '../../layouts/MatchaLayout';
 
+import HeroPattern from './static/hero-pattern.svg';
+import TescLogo from './static/tesc-logo-white.svg';
+
 const MatchaPage = () => {
     useEffect(() => {
         document.title = 'Matcha | UCSD TESC';
@@ -11,27 +14,37 @@ const MatchaPage = () => {
 
     return (
         <Layout>
-            <Container
-                fluid
-                className="matcha-hero matcha__p-std"
-                style={{ paddingTop: '8rem' }}
-            >
-                <Row>
-                    <Col></Col>
-                    <Col className="matcha-hero__content">
-                        <h1 className="display-3">Matcha</h1>
-                        <h2>TESC's Virtual Career Fair</h2>
-                        <p className="text-italic">
+            <Container fluid className="matcha-hero matcha__px-std">
+                <Row className="h-100">
+                    <Col className="align-self-end">
+                        <img src={HeroPattern} alt="hero pattern" />
+                    </Col>
+                    <Col className="matcha-hero__content align-self-center">
+                        <h1 className="matcha-hero__title">matcha</h1>
+                        <h2 className="matcha-hero__subtitle">
+                            TESC's Virtual Career Fair
+                        </h2>
+                        <h3 className="matcha-hero__slogan">
                             Matching Students with Engineering Jobs
-                        </p>
-                        <Button>Attending Companies</Button>
-                        <Button>Submit Resume</Button>
-                        <p>TESC</p>
+                        </h3>
+                        <Row className="flex-column">
+                            <Col className="mb-3">
+                                <Button outline className="matcha-hero__btn">
+                                    Attending Companies
+                                </Button>
+                            </Col>
+                            <Col>
+                                <Button outline className="matcha-hero__btn">
+                                    Submit Resume
+                                </Button>
+                            </Col>
+                        </Row>
+                        <img src={TescLogo} alt="TESC logo" className="mt-5" />
                     </Col>
                 </Row>
             </Container>
 
-            <Container fluid className="matcha__p-std">
+            <Container fluid className="matcha__px-std">
                 <Row>
                     <Col md={8}>
                         <h1>What's Matcha</h1>

@@ -83,11 +83,11 @@ function Header() {
     return (
         <Navbar
             expand="lg"
-            className="matcha-header matcha__p-std"
+            className="matcha-header matcha__px-std"
             id="top-nav"
         >
             <NavbarBrand href="/matcha" className="matcha-header__nav-brand">
-                Matcha
+                matcha
             </NavbarBrand>
             <NavbarToggler
                 onClick={toggle}

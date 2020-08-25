@@ -4,6 +4,14 @@ $matcha-dark-green: #28534a;
 
 @import 'components/all';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'Bauhaus';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Bauhaus'),
+        url('../pages/MatchaPage/static/BauhausHeavyRegular.otf')
+            format('opentype');
+}
 
 #matcha-main {
     font-family: 'Lato', sans-serif;
@@ -13,11 +21,20 @@ $matcha-dark-green: #28534a;
 
 /* standard padding size for page sections (if padding is needed) */
 .matcha {
-    &__p-std {
-        padding: 2rem 5rem;
+    &__px-std {
+        padding-left: clamp(3rem, 7vw, 7rem);
+        padding-right: clamp(3rem, 7vw, 7rem);
     }
 
     &__bg-dark-green {
         background: $matcha-dark-green;
+    }
+
+    &__font-bauhaus {
+        font-family: 'Bauhaus', 'lato', sans-serif;
+    }
+
+    &__font-lato {
+        font-family: 'lato', sans-serif;
     }
 }

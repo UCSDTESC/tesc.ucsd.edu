@@ -1,8 +1,47 @@
 .matcha-hero {
     background: $matcha-dark;
     color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &__content {
         text-align: right;
+    }
+
+    &__title {
+        font-family: 'Bauhaus', 'Lato', sans-serif;
+        font-size: 10rem;
+    }
+
+    &__subtitle {
+        font-family: 'Lato', sans-serif;
+        font-size: 3rem;
+        color: $matcha-light-green;
+    }
+
+    &__slogan {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2rem;
+        color: $matcha-light-green;
+        margin-bottom: 1.3em;
+    }
+
+    &__btn {
+        padding: 0.3em 0.5em;
+        font-size: 2rem;
+        color: $matcha-light-green;
+        line-height: 1.5;
+        border-radius: 1em;
+        border: 5px solid $matcha-light-green;
+    }
+
+    &__btn:hover {
+        border: 5px solid $matcha-light-green;
+        background: $matcha-light-green;
+        color: white;
     }
 }
