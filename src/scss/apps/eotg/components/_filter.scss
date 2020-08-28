@@ -4,26 +4,27 @@
     text-align: left;
     color: black;
     padding-left: 0.3rem;
-  
+
     &:after {
-      position: absolute;
-      right: 0.5rem;
-      top: calc(50% - 0.2rem);
+        position: absolute;
+        right: 0.5rem;
+        top: calc(50% - 0.2rem);
     }
-  
+
     &__badge {
-      background: $eotg-blue;
-      color: white;
+        background: $eotg-green;
+        color: white;
     }
-  
+
     &__clear {
-      background: transparent;
-      margin-right: 0.1rem;
-      padding: 0 0.4rem;
-  
-      &:hover, &:focus {
-        background: $eotg-blue;
-        color: black;
-      }
+        background: transparent;
+        margin-right: 0.1rem;
+        padding: 0 0.4rem;
+
+        &:hover,
+        &:focus {
+            background: $eotg-green;
+            color: black;
+        }
     }
-  }
+}
