@@ -1,5 +1,5 @@
 import React from 'react';
-import studentFaq from '../data/EOTGfaq';
+import studentFaq from '../data/EOTGFaq';
 import FaqItem from './FaqItem';
 
 class Faq extends React.Component {
