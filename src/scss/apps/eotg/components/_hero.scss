@@ -1,6 +1,8 @@
 .eotg-hero {
     background: $eotg-green;
-    padding-top: 4rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 
     &__container {
         width: 100%;
