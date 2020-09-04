@@ -1,62 +1,57 @@
 import React from 'react';
 import events from '../../../data/CurrentEvents';
-import {Link} from 'react-router-dom';
- 
-function Event(props) {
+import { Link } from 'react-router-dom';
 
-    let withWrapper = null
+function Event(props) {
+    let withWrapper = null;
     if (props.isInternalLink) {
         withWrapper = (jsx) => {
-            return (
-                <Link to={props.link}>
-                    {jsx}
-                </Link>
-            )
-        }
-    }
-    else {
+            return <Link to={props.link}>{jsx}</Link>;
+        };
+    } else {
         withWrapper = (jsx) => {
             return (
                 <a href={props.link} target="_blank">
                     {jsx}
                 </a>
-            )
-        }
+            );
+        };
     }
 
     return (
         <div className="col-md events__card">
-            {withWrapper(<img className="w-100 h-100" src={props.img}/>)}
+            {withWrapper(<img className="w-100 h-100" src={props.img} />)}
         </div>
     );
 }
 
 class Events extends React.Component {
-
     renderCurrEvents() {
-
-        let currEvents = events.filter(({date}) => Date.now() < new Date(date));
+        let currEvents = events.filter(
+            ({ date }) => Date.now() < new Date(date)
+        );
 
         if (currEvents.length == 0) {
             return (
                 <div className="events__none text-center">
                     Nothing Yet, Stay Tuned For More
                 </div>
-            )
+            );
         }
         return currEvents.map((c, i) => <Event {...c} key={i} />);
-
     }
 
     renderPastEvents() {
-        let pastEvents = events.filter(({date}) => Date.now() > new Date(date));
+        let pastEvents = events.filter(
+            ({ date }) => Date.now() > new Date(date)
+        );
 
-        if (pastEvents.length == 0) {
+        if (pastEvents.length === 0) {
             return (
                 <div className="events__none text-center">
                     Nothing Yet, Stay Tuned For More
                 </div>
-            )
+            );
         }
 
         // limit number of past events to max 5
@@ -66,9 +61,7 @@ class Events extends React.Component {
     render() {
         return (
             <section className="events mb-5" id="events">
-                <div className="text-center events__red">
-                    What's Happening?
-                </div>
+                <div className="text-center events__red">What's Happening?</div>
                 <div className="text-center events__header">
                     Upcoming Events
                 </div>
