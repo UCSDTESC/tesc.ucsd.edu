@@ -1,0 +1,25 @@
+$py: 6rem;
+
+.matcha-about {
+    padding-top: $py;
+    padding-bottom: $py;
+    padding-left: clamp(3rem, 7vw, 7rem);
+    color: $matcha-dark-green;
+
+    &__title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 5rem;
+        margin-bottom: 0.3em;
+    }
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
+
+    &__pattern {
+        width: 100%;
+    }
+}

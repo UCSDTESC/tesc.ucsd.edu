@@ -6,6 +6,8 @@ import Layout from '../../layouts/MatchaLayout';
 
 import HeroPattern from './static/hero-pattern.svg';
 import TescLogo from './static/tesc-logo-white.svg';
+import AboutPattern from './static/about-pattern.svg';
+import MatisTopVieW from './static/mantis-top-view.svg';
 
 const MatchaPage = () => {
     useEffect(() => {
@@ -29,12 +31,18 @@ const MatchaPage = () => {
                         </h3>
                         <Row className="flex-column">
                             <Col className="mb-3">
-                                <Button outline className="matcha-hero__btn">
+                                <Button
+                                    outline
+                                    className="matcha-btn matcha-btn-outline"
+                                >
                                     Attending Companies
                                 </Button>
                             </Col>
                             <Col>
-                                <Button outline className="matcha-hero__btn">
+                                <Button
+                                    outline
+                                    className="matcha-btn matcha-btn-outline"
+                                >
                                     Submit Resume
                                 </Button>
                             </Col>
@@ -44,21 +52,37 @@ const MatchaPage = () => {
                 </Row>
             </Container>
 
-            <Container fluid className="matcha__px-std">
+            <Container fluid className="matcha-about">
                 <Row>
                     <Col md={8}>
-                        <h1>What's Matcha</h1>
+                        <h1 className="matcha-about__title">What's Matcha?</h1>
                         <p>
-                            The Disciplines of Engineering Career Fair, or
-                            Decaf, is an annual student-run career fair.
+                            Matcha is a Fall annual student-run engineering
+                            career fair at UCSD. Open exclusively to UCSD
+                            students, it is coordinated by the Trition
+                            Engineering Student Council, which represents the
+                            wide spectrum of disciplines within the Jacobs
+                            School, and advocates for the interest of UCSD’s
+                            6500+ engineers.
                         </p>
                         <p>
-                            Attending Decaf will provide you with the
-                            opportunity to meet and connect with representatives
-                            from some of the top companies in engineering.
+                            The event will be taken place virtually via the
+                            online platform Symplicity, on{' '}
+                            <b>
+                                Thursday, October 22nd, 2020 from 9 AM - 4 PM.
+                            </b>
                         </p>
+                        <Button className="matcha-btn">
+                            Attending Companies
+                        </Button>
                     </Col>
-                    <Col></Col>
+                    <Col>
+                        <img
+                            src={AboutPattern}
+                            alt="about pattern"
+                            className="matcha-about__pattern"
+                        />
+                    </Col>
                 </Row>
             </Container>
 
