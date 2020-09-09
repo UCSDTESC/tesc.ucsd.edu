@@ -93,45 +93,46 @@ const Orgs = () => {
                 <div className="row justify-content-center eotg-attending-orgs__blurb">
                     This year, Engineers on the Green will take place over five
                     days. Below are the participating organziations grouped by
-                    what day they will be attending. Click on an organization's
-                    name to learn more.
+                    what day they will be attending. Click on each day to see the
+                    organizations that will be attending, and click on an 
+                    organization's name to learn more.
                 </div>
 
-                {/* Split five days into two rows because of spacing issues*/}
                 <div className="row justify-content-center">
-                    <div className="col-lg-4">
-                        <div className="eotg-attending-orgs__day text-center">
-                            Monday, Oct 5th
+                    {/* The nav bar tabs that display days */}
+                    <ul className="nav nav-tabs justify-content-center align-items-end mt-4">
+                        <li className="active"><a data-toggle="tab" href="#monday">Monday, Oct 5th</a></li>
+                        <li><a data-toggle="tab" href="#tuesday">Tuesday, Oct 6th</a></li>
+                        <li><a data-toggle="tab" href="#wednesday">Wednesday, Oct 7th</a></li>
+                        <li><a data-toggle="tab" href="#thursday">Thursday, Oct 8th</a></li>
+                        <li><a data-toggle="tab" href="#friday">Friday, Oct 9th</a></li>
+                    </ul>
+
+                    {/* The info that appears when you click each tab */}
+                    <div class="tab-content">
+                        <div id="monday" className="tab-pane fade show active">
+                            <div className="eotg-attending-orgs__day">Monday, Oct 5th</div>
+                            {renderDay(sortedOrgs['Monday'])}
                         </div>
-                        {renderDay(sortedOrgs['Monday'])}
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="eotg-attending-orgs__day text-center">
-                            Tuesday, Oct 6th
+                        <div id="tuesday" className="tab-pane fade">
+                            <div className="eotg-attending-orgs__day">Tuesday, Oct 6th</div>
+                            {renderDay(sortedOrgs['Tuesday'])}
                         </div>
-                        {renderDay(sortedOrgs['Tuesday'])}
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="eotg-attending-orgs__day text-center">
-                            Wednesday, Oct 7th
+                        <div id="wednesday" className="tab-pane fade">
+                            <div className="eotg-attending-orgs__day">Wednesday, Oct 7th</div>
+                            {renderDay(sortedOrgs['Wednesday'])}
                         </div>
-                        {renderDay(sortedOrgs['Wednesday'])}
+                        <div id="thursday" className="tab-pane fade">
+                            <div className="eotg-attending-orgs__day">Thursday, Oct 8th</div>
+                            {renderDay(sortedOrgs['Thursday'])}
+                        </div>
+                        <div id="friday" className="tab-pane fade">
+                            <div className="eotg-attending-orgs__day">Friday, Oct 9th</div>
+                            {renderDay(sortedOrgs['Friday'])}
+                        </div>
                     </div>
                 </div>
-                <div className="row justify-content-center">
-                    <div className="col-lg-4">
-                        <div className="eotg-attending-orgs__day text-center">
-                            Thursday, Oct 8th
-                        </div>
-                        {renderDay(sortedOrgs['Thursday'])}
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="eotg-attending-orgs__day text-center">
-                            Friday, Oct 9th
-                        </div>
-                        {renderDay(sortedOrgs['Friday'])}
-                    </div>
-                </div>
+                
             </div>
         </section>
     );
