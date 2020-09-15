@@ -28,8 +28,12 @@ const Orgs = () => {
 
     // Renders a single day of orgs
     const renderDay = (orgs) => {
-        return orgs.map((org) => (
-            <IndividualOrg {...org} toggleModal={() => setCurrOrg(org)} />
+        return orgs.map((org, i) => (
+            <IndividualOrg
+                {...org}
+                toggleModal={() => setCurrOrg(org)}
+                key={i}
+            />
         ));
     };
 
