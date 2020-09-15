@@ -1,8 +1,9 @@
 .eotg-hero {
-    background: $eotg-green;
+    background: $eotg-blue;
     min-height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
 
     &__container {
         width: 100%;
@@ -14,26 +15,9 @@
         color: white;
     }
 
-    /*&__right {
-        padding: 3rem;
-    }*/
-
-    &__cta {
-        color: $decaf-dark-blue !important;
-        background: white;
-        font-size: 1.5rem;
-        border-radius: 1rem;
-        margin-top: 1.5rem;
-        border: solid 2px white;
-
-        &:hover {
-            background: transparent;
-            color: white !important;
-        }
-    }
-
     &__graphic {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
     }
 
     &__logo {
@@ -63,8 +47,39 @@
 
         &:hover {
             background: white;
-            color: $eotg-green;
+            color: $eotg-blue;
             text-decoration: none;
+        }
+    }
+
+    &__clouds-top {
+        padding-top: 4rem;
+
+        img {
+            width: 80%;
+            max-width: 400px;
+            mix-blend-mode: soft-light;
+        }
+    }
+
+    &__clouds-bottom {
+        display: flex;
+        align-items: flex-end;
+        width: 100vw;
+        position: relative;
+        bottom: -30px;
+
+        .cloud-bottom-right {
+            text-align: right;
+            padding-right: 0;
+
+            img {
+                width: 70%;
+            }
+        }
+
+        img {
+            width: 100%;
         }
     }
 }
