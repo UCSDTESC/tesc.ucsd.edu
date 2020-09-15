@@ -1,6 +1,12 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import $ from 'jquery';
-import { ReactComponent as HeroPic } from '../svg/eotg-f20.svg';
+
+import BearIsland from '../svg/bear-island.svg';
+import CloudTopLeft from '../svg/cloud-top-left.svg';
+import CloudTopRight from '../svg/cloud-top-right.svg';
+import CloudBottomLeft from '../svg/cloud-bottom-left.svg';
+import CloudBottomRight from '../svg/cloud-bottom-right.svg';
 
 class Hero extends React.Component {
     scrollAnimation() {
@@ -15,12 +21,27 @@ class Hero extends React.Component {
     render() {
         return (
             <section className="eotg-hero">
-                <div className="container-fluid text-center eotg-hero__container">
-                    <div className="row h-100 justify-content-center">
-                        <div className="col-md-6 d-flex align-items-center">
-                            <HeroPic className="eotg-hero__graphic" />
-                        </div>
-                        <div className="col-md-6 d-flex align-items-center justify-content-center">
+                <Container className="text-center eotg-hero__container" fluid>
+                    <Row className="eotg-hero__clouds-top">
+                        <Col xs={6}>
+                            <img src={CloudTopLeft} alt="" />
+                        </Col>
+                        <Col>
+                            <img src={CloudTopRight} alt="" />
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center">
+                        <Col md={6}>
+                            <img
+                                src={BearIsland}
+                                alt=""
+                                className="eotg-hero__graphic"
+                            />
+                        </Col>
+                        <Col
+                            md="6"
+                            className="d-flex align-items-center justify-content-center"
+                        >
                             <div>
                                 <div className="eotg-hero__title pb-2">
                                     <b> Engineers on the Green </b>
@@ -49,9 +70,17 @@ class Hero extends React.Component {
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                    <Row className="eotg-hero__clouds-bottom">
+                        <Col xs={6}>
+                            <img src={CloudBottomLeft} alt="" />
+                        </Col>
+                        <Col className="cloud-bottom-right">
+                            <img src={CloudBottomRight} alt="" />
+                        </Col>
+                    </Row>
+                </Container>
             </section>
         );
     }
