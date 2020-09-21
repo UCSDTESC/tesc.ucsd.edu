@@ -1,3 +1,30 @@
+.eotg-attending-orgs {
+    background: $eotg-green;
+
+    &__header {
+        margin-bottom: 2rem;
+        padding-top: 4rem;
+        color: white;
+        text-align: center;
+    }
+
+    &__day {
+        padding: 1.5rem 0;
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+    }
+
+    a {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        vertical-align: bottom;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+}
+
 .eotg-org {
     &__left {
         margin-left: 2rem;
