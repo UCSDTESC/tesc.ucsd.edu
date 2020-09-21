@@ -16,6 +16,7 @@ const Orgs = () => {
                 style={{ background: 'transparent', border: '1px solid #ccc' }}
             />
         );
+
     };
 
     return (
