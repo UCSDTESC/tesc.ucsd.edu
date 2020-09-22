@@ -2,9 +2,10 @@ $py: 6rem;
 
 .matcha-about {
     padding-top: $py;
-    padding-bottom: $py;
     padding-left: clamp(3rem, 7vw, 7rem);
+    padding-right: 0;
     color: $matcha-dark-green;
+    position: relative;
 
     &__title {
         font-family: 'Lato', sans-serif;
@@ -21,5 +22,11 @@ $py: 6rem;
 
     &__pattern {
         width: 100%;
+    }
+
+    &__mantis {
+        position: absolute;
+        bottom: -450px;
+        left: 0;
     }
 }

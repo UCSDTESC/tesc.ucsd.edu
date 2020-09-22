@@ -7,7 +7,7 @@ import Layout from '../../layouts/MatchaLayout';
 import HeroPattern from './static/hero-pattern.svg';
 import TescLogo from './static/tesc-logo-white.svg';
 import AboutPattern from './static/about-pattern.svg';
-import MatisTopVieW from './static/mantis-top-view.svg';
+import MantisTop from './static/mantis-top.svg';
 
 const MatchaPage = () => {
     useEffect(() => {
@@ -84,17 +84,24 @@ const MatchaPage = () => {
                         />
                     </Col>
                 </Row>
+                <img
+                    src={MantisTop}
+                    alt="mantis top view"
+                    className="matcha-about__mantis"
+                />
             </Container>
 
-            <section>
-                <h1>FLO</h1>
-                <h2>Early Access Events</h2>
-                <p>
-                    F.L.O - Early Access events let you into Matcha an hour
-                    earlier allowing you to get the first crack at speaking with
-                    representatives from every company attending.
-                </p>
-            </section>
+            <div className="matcha-flo-intro">
+                <Container>
+                    <h1>FLO</h1>
+                    <h2>Early Access Events</h2>
+                    <p>
+                        F.L.O - Early Access events let you into Matcha an hour
+                        earlier allowing you to get the first crack at speaking
+                        with representatives from every company attending.
+                    </p>
+                </Container>
+            </div>
 
             <section>
                 <h1>FLO Events</h1>
