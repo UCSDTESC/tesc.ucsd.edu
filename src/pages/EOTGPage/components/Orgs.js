@@ -34,7 +34,7 @@ const Orgs = () => {
 
                 <div className="row justify-content-center">
                     {/* The nav bar tabs that display days */}
-                    <ul className="nav nav-tabs justify-content-center align-items-end mt-4">
+                    <ul className="nav nav-tabs eotg-attending-orgs__tabs justify-content-center align-items-end mt-4">
                         <li className="active">
                             <a data-toggle="tab" href="#monday">
                                 Monday, Oct 5th
