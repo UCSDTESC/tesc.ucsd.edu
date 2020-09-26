@@ -21,6 +21,12 @@
         text-align: center;
     }
 
+    &__tabs {
+        @include media-breakpoint-down(sm) {
+            min-height: 8rem;
+        }
+    }
+
     a {
         padding-left: 1rem;
         padding-right: 1rem;
