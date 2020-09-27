@@ -6,6 +6,11 @@
     justify-content: center;
     background: $matcha-dark-green;
     color: white;
+    position: relative;
+
+    .container {
+        margin-bottom: 7rem;
+    }
 
     h1 {
         font-size: 80px;
@@ -20,5 +25,20 @@
 
     p {
         font-size: 30px;
+        font-weight: 400;
+    }
+
+    &__pattern {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 400px;
+    }
+
+    &__mantis {
+        position: absolute;
+        bottom: -300px;
+        right: 0;
+        z-index: 1;
     }
 }

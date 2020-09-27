@@ -8,6 +8,10 @@ import HeroPattern from './static/hero-pattern.svg';
 import TescLogo from './static/tesc-logo-white.svg';
 import AboutPattern from './static/about-pattern.svg';
 import MantisTop from './static/mantis-top.svg';
+import FloIntroPattern from './static/flo-intro-pattern.svg';
+import MantisTea from './static/mantis-tea.svg';
+import FloPatternTop from './static/flo-pattern-top.svg';
+import FloPatternBottom from './static/flo-pattern-bottom.svg';
 
 const MatchaPage = () => {
     useEffect(() => {
@@ -91,7 +95,7 @@ const MatchaPage = () => {
                 />
             </Container>
 
-            <div className="matcha-flo-intro">
+            <section className="matcha-flo-intro">
                 <Container>
                     <h1>FLO</h1>
                     <h2>Early Access Events</h2>
@@ -101,11 +105,33 @@ const MatchaPage = () => {
                         with representatives from every company attending.
                     </p>
                 </Container>
-            </div>
+                <img
+                    src={FloIntroPattern}
+                    alt=""
+                    className="matcha-flo-intro__pattern"
+                />
+                <img
+                    src={MantisTea}
+                    alt=""
+                    className="matcha-flo-intro__mantis"
+                />
+            </section>
 
-            <section>
-                <h1>FLO Events</h1>
-                <p>To be Announced</p>
+            <section className="matcha-flo">
+                <Container>
+                    <h1>FLO Events</h1>
+                    <p>To be Announced</p>
+                </Container>
+                <img
+                    src={FloPatternTop}
+                    alt=""
+                    className="matcha-flo__pattern-t"
+                />
+                <img
+                    src={FloPatternBottom}
+                    alt=""
+                    className="matcha-flo__pattern-b"
+                />
             </section>
 
             <section>
