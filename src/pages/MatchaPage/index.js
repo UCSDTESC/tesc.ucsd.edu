@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'reactstrap';
 
 import Layout from '../../layouts/MatchaLayout';
+import Faq from './components/Faq'
 
 import HeroPattern from './static/hero-pattern.svg';
 import TescLogo from './static/tesc-logo-white.svg';
@@ -134,10 +135,7 @@ const MatchaPage = () => {
                 />
             </section>
 
-            <section>
-                <h1>FAQ</h1>
-                <h2>Frequently Asked Questions</h2>
-            </section>
+            <Faq/>
         </Layout>
     );
 };
