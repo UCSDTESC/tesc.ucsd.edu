@@ -5,11 +5,12 @@ import FaqItem from './FaqItem';
 class Faq extends React.Component {
     render() {
         const data = studentFaq;
-        return (
-            <div className="matcha-faq" id="faq">
 
+        return (
+            <section className="matcha-faq" id="faq">
                 <div className="matcha-faq__head mb-5">
-                FAQ Frequently Asked Questions
+                    <h1>FAQ</h1>
+                    <h2>Frequently Asked Questions</h2>
                 </div>
                 <div className="container">
                     <div className="row">
@@ -22,7 +23,7 @@ class Faq extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }
