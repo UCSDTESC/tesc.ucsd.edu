@@ -2,6 +2,7 @@
     width: 100%;
     background: white;
     color: white;
+    position: relative;
 
     &__head {
         text-align: center;
@@ -16,6 +17,18 @@
         h2 {
             font-size: 50px;
         }
+    }
+
+    &__teapot {
+        position: absolute;
+        left: 0;
+        top: -70px;
+    }
+
+    &__pattern {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
 

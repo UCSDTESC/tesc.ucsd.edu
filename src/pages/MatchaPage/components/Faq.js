@@ -2,12 +2,18 @@ import React from 'react';
 import studentFaq from '../data/MatchaFaq.js';
 import FaqItem from './FaqItem';
 
+import Teapot from '../static/teapot.svg';
+import FaqPattern from '../static/faq-pattern.svg';
+
 class Faq extends React.Component {
     render() {
         const data = studentFaq;
 
         return (
             <section className="matcha-faq" id="faq">
+                <img src={Teapot} alt="" className="matcha-faq__teapot" />
+                <img src={FaqPattern} alt="" className="matcha-faq__pattern" />
+
                 <div className="matcha-faq__head mb-5">
                     <h1>FAQ</h1>
                     <h2>Frequently Asked Questions</h2>
