@@ -7,7 +7,7 @@
     transition: all 0.2s;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    z-index: 2;
+    z-index: 1000;
     overflow: hidden;
 
     &__nav-item {

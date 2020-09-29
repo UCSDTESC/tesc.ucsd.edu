@@ -22,11 +22,19 @@ const MatchaPage = () => {
     return (
         <Layout>
             <Container fluid className="matcha-hero matcha__px-std">
-                <Row className="h-100">
+                <Row className="matcha-hero__row-main">
                     <Col className="align-self-end">
-                        <img src={HeroPattern} alt="hero pattern" />
+                        <img
+                            src={HeroPattern}
+                            alt="hero pattern"
+                            className="matcha-hero__pattern"
+                        />
                     </Col>
-                    <Col className="matcha-hero__content align-self-center">
+                    <Col
+                        lg
+                        xs={12}
+                        className="text-center text-lg-right align-self-center"
+                    >
                         <h1 className="matcha-hero__title">matcha</h1>
                         <h2 className="matcha-hero__subtitle">
                             TESC's Virtual Career Fair
@@ -59,7 +67,7 @@ const MatchaPage = () => {
 
             <Container fluid className="matcha-about">
                 <Row>
-                    <Col md={8}>
+                    <Col lg={8} xs={12}>
                         <h1 className="matcha-about__title">What's Matcha?</h1>
                         <p>
                             Matcha is a Fall annual student-run engineering

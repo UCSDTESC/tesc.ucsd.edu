@@ -1,15 +1,40 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
+import { Container } from 'reactstrap';
+import { AiFillHome, AiFillFacebook } from 'react-icons/ai';
+import FooterPattern from '../static/footer-pattern.svg';
 
-class Footer extends React.Component {
+const Footer = () => {
+    return (
+        <footer className="matcha-footer">
+            <img
+                src={FooterPattern}
+                alt=""
+                className="matcha-footer__pattern"
+            />
+            <Container>
+                <h1 className="mb-4">
+                    Have a different question? <br />
+                    Contact us!
+                </h1>
 
-    render() {
-      return (
-        <footer>
-          This is footer
+                <p>
+                    <a href="mailto:sponsorship@tesc.ucsd.edu">
+                        sponsorship@tesc.ucsd.edu
+                    </a>
+                </p>
+                <p>
+                    <AiFillHome />{' '}
+                    <a href="https://tesc.ucsd.edu">https://tesc.ucsd.edu</a>
+                </p>
+                <p>
+                    <AiFillFacebook />{' '}
+                    <a href="https://www.facebook.com/ucsd.tesc/">
+                        Visit our Facebook Page!
+                    </a>
+                </p>
+            </Container>
         </footer>
-      )
-    }
-}
+    );
+};
 
-export default withRouter(Footer);
+export default Footer;

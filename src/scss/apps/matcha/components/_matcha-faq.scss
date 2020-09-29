@@ -4,18 +4,29 @@
     color: white;
     position: relative;
 
+    @include media-breakpoint-down(lg) {
+        padding-top: 20rem;
+        padding-bottom: 3rem;
+    }
+
     &__head {
         text-align: center;
         padding-top: 4rem;
         font-weight: 900;
         color: $matcha-dark;
 
+        @include media-breakpoint-down(md) {
+            text-align: left;
+        }
+
         h1 {
             font-size: 80px;
+            font-family: 'Lato', sans-serif;
         }
 
         h2 {
             font-size: 50px;
+            font-family: 'Lato', sans-serif;
         }
     }
 
@@ -23,6 +34,10 @@
         position: absolute;
         left: 0;
         top: -70px;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
     }
 
     &__pattern {
@@ -45,7 +60,7 @@
         text-align: center;
 
         a {
-            color: $matcha-dark-green;
+            color: $matcha-dark;
             font-size: 1.4rem;
             font-weight: 800;
 

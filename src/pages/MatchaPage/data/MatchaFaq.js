@@ -50,7 +50,7 @@ const studentFaq = [
         answer: '** i will put the tips later 💵',
     },
     {
-        question: 'What can I expect from Matcha',
+        question: 'What can I expect from Matcha?',
         answer:
             'An online career fair where you will get to meet company representatives as if you were talking to them in person. It will closely mirror a physical career fair, with the ability to queue into lines to speak one-on-one with recruiters.',
     },
