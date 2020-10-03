@@ -22,18 +22,26 @@
     }
 
     &__tabs {
+        border: none;
+
         @include media-breakpoint-down(sm) {
             min-height: 8rem;
         }
-    }
 
-    a {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        vertical-align: bottom;
-        color: white;
-        font-size: 1.1rem;
-        font-weight: 700;
+        li {
+            border: solid $eotg-blue;
+            border-radius: 1rem;
+            margin: 0 0.5rem;
+        }
+
+        a {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            vertical-align: bottom;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
     }
 }
 
