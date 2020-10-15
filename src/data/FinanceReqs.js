@@ -6,7 +6,7 @@ const oldReqs = [
         content: [
             <div>Must be an undergraduate student engineering organization within the Jacobs School of Engineering.</div>,
             <div>Must be registered as an active student organization with the Center for Student Involvement (CSI).</div>,
-            <div>Must be an active TESC organization. <i>Probationary organizations are not eligible for funding. Organizations that became probationary TESC members before Spring 2019 are eligible.</i></div>
+            <div>Must be an active TESC full member organization.</div>
         ]
     },
     {
@@ -15,8 +15,8 @@ const oldReqs = [
             <div>Funds requested for any event, project, or equipment must relate to the mission of the organization.</div>,
             <div>TESC will not fund any food items in cases where AS funding could be used for your event.</div>,
             <div>We do not fund sales tax or shipping costs.</div>,
-            <div>For travel related expenses, please apply to the <a target="_blank" href="http://jacobsschool.ucsd.edu/idea/resources/travel.shtml" >Student Travel Fund</a> AS TCF cannot be used for conferences, but can be used for competitions/tournaments that occur while school is in-session (i.e. not during spring, summer, or winter break).</div>,
-            <div>Apply for <a href="https://finance.ucsd.edu/Home/FundingGuide" target="blank">AS Tournament & Competition Funding</a> to request funding to apply to competitions.</div>,
+            <div>For travel related expenses, please apply to the <a href="https://jacobsschool.ucsd.edu/idea/resources/student-travel" target="_blank" rel="noopener noreferrer">Student Travel Fund</a> AS TCF cannot be used for conferences, but can be used for competitions/tournaments that occur while school is in-session (i.e. not during spring, summer, or winter break).</div>,
+            <div>Apply for <a href="https://finance.ucsd.edu/Home/FundingGuide" target="_blank"rel="noopener noreferrer">AS Tournament & Competition Funding</a> to request funding to apply to competitions.</div>,
             <div>Any request for an event or project must be done at least 4 weeks in advance, with exceptions granted for extraordinary circumstances at the discretion of the VP Finance.</div>,
             <div>We approve funding requests based on the list of expenses submitted during the funding request process. This means we will not reimburse you for expenses that were not included in that list. If small changes need to be made to the initial budget (ie. different supplier), email the <a href="mailto:robert@tesc.ucsd.edu" target="_blank">VP Finance</a> for approval.</div>,
             <div>For projects that will take longer than 10 weeks to complete, a funding request is required at least once a quarter.</div>
@@ -26,11 +26,11 @@ const oldReqs = [
         title: 'Process for Funding and Reimbursement',
         content: [
             <div>Create an itemized budget of expected expenses, such as the one below.<img src="/tesc-itemized-budget-example.png" /></div>,
-            <div>Submit a funding request through <a href="https://tesc.typeform.com/to/s8mOzg" target="_blank">Typeform</a>.</div>,
-            <div>You will receive an email from the <a href="mailto:robert@tesc.ucsd.edu" target="_blank">VP Finance</a> within two weeks of submitting the funding request either approving, partially approving, or denying your funding request. If you have not received an email from the VP Finance within two weeks, send an email to <a href="mailto:pvp@tesc.ucsd.edu" target="_blank">pvp@tesc.ucsd.edu</a></div>,
+            <div>Submit a funding request through Typeform. This Typeform will be opened once allocations have been distributed.</div>,
+            <div>You will receive an email from the <a href="mailto:robert@tesc.ucsd.edu" target="_blank" rel="noopener noreferrer" >VP Finance</a> within two weeks of submitting the funding request either approving, partially approving, or denying your funding request. If you have not received an email from the VP Finance within two weeks, send an email to <a href="mailto:pvp@tesc.ucsd.edu" target="_blank">pvp@tesc.ucsd.edu</a>.</div>,
             <div>Spend your organization’s money to host the event/buy the materials.</div>,
-            <div>Submit a reimbursement request on <a href="https://tesc.typeform.com/to/PCck45" target="_blank">typeform</a> with a scan/photo/screenshot of your receipt.</div>,
-            <div>You will receive an email from TESC within two weeks of submitting the reimbursement request informing you of how you can collect your payment. If you have not received an email within two weeks, send an email to <a href="mailto:pvp@tesc.ucsd.edu" target="_blank">pvp@tesc.ucsd.edu</a></div>
+            <div>Submit a reimbursement request on Typeform with a scan/photo/screenshot of your receipt. This Typeform will be opened once allocations have been distributed.</div>,
+            <div>You will receive an email from TESC within two weeks of submitting the reimbursement request informing you of how you can collect your payment. If you have not received an email within two weeks, send an email to <a href="mailto:pvp@tesc.ucsd.edu" target="_blank">pvp@tesc.ucsd.edu</a>.</div>
         ]
     }
 ]
@@ -38,10 +38,10 @@ const oldReqs = [
 const newReqs = {
     title: 'What’s Required',
     content: [
-        <div>A budget with all of your (planned) expenses from Fall 2019 to the end of Summer 2020. It doesn’t need to be completely exhaustive for future expenses, but it should have all the money spent so far (in fall quarter 2019). Please provide as many details as you can, but we understand this budget is a prediction - ideally yours will be based off of previous years’ expenses.</div>,
+        <div>A budget with all of your (planned) expenses from Fall 2020 to the end of Summer 2021. It doesn’t need to be completely exhaustive for future expenses, but it should have all the money spent so far (in fall quarter 2020). Please provide as many details as you can, but we understand this budget is a prediction - ideally yours will be based off of previous years’ expenses.</div>,
         <div>A member list. Please provide a roster of the active UCSD students in your org. You will also need their UCSD email address.</div>,
         <div>
-            An outreach event/initiative plan. Outreach events/initiatives are those where your goal is to interact with the future generation of engineers and/or historically underrepresented groups in engineering/STEM. For an outreach event to count, it must be on the <a href="http://bit.ly/TESCcaladd" target="_blank">Council events calendar</a> (email <a href="mailto:callie@tesc.ucsd.edu" target="_blank">callie@tesc.ucsd.edu</a> if your org does not have access) three weeks before the event happens. The calendar post needs to have the location, hosting organization, and someone to contact.
+            An outreach event/initiative plan. Outreach events/initiatives are those where your goal is to interact with the future generation of engineers and/or historically underrepresented groups in engineering/STEM. For an outreach event to count, it must be on the <a href="http://bit.ly/TESCcaladd" target="_blank" rel="noopener noreferrer">Council events calendar</a> (email <a href="mailto:callie@tesc.ucsd.edu" target="_blank" target="_blank" rel="noopener noreferrer">callie@tesc.ucsd.edu</a> if your org does not have access) three weeks before the event happens. The calendar post needs to have the location, hosting organization, and someone to contact.
             <ul type='a'>
                 <li>
                     An example may be putting on an event bringing high school students to UCSD or consistently visiting high schools.     
