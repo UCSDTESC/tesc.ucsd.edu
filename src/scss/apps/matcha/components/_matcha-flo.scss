@@ -1,0 +1,23 @@
+.matcha-flo {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $matcha-dark;
+    color: white;
+    position: relative;
+
+    &__pattern-t {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+    }
+
+    &__pattern-b {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
