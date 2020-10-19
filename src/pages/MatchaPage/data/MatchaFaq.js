@@ -14,16 +14,16 @@ const studentFaq = [
         answer:
             'All UCSD students (undergraduate and graduate students) and alumni with a valid UCSD ID.',
     },
-    {
-        question: 'Is there any way to get early access?',
-        answer:
-            'Yes there is! You can attend one of our front-of-line opportunity (F.L.O.) events for early access.',
-    },
-    {
-        question: 'What does FLO give me?',
-        answer:
-            'FLO allows you to attend Matcha from 9am - 10am at the very beginning of the event.',
-    },
+    // {
+    //     question: 'Is there any way to get early access?',
+    //     answer:
+    //         'Yes there is! You can attend one of our front-of-line opportunity (F.L.O.) events for early access.',
+    // },
+    // {
+    //     question: 'What does FLO give me?',
+    //     answer:
+    //         'FLO allows you to attend Matcha from 9am - 10am at the very beginning of the event.',
+    // },
     {
         question: 'What is the dress code for the event?',
         answer:
@@ -33,10 +33,10 @@ const studentFaq = [
         question: 'How do I register for a ticket?',
         answer: '"Not sure yet"',
     },
-    {
-        question: 'What companies are attending?',
-        answer: 'Check out the list of attending companies here.',
-    },
+    // {
+    //     question: 'What companies are attending?',
+    //     answer: 'Check out the list of attending companies here.',
+    // },
     {
         question: 'Is Matcha online or in-person?',
         answer: 'Matcha will be online this year.',
@@ -45,10 +45,10 @@ const studentFaq = [
         question: 'Will there be video calls?',
         answer: 'Yes, so dress accordingly!',
     },
-    {
-        question: 'Any tips?',
-        answer: '** i will put the tips later 💵',
-    },
+    // {
+    //     question: 'Any tips?',
+    //     answer: '** i will put the tips later 💵',
+    // },
     {
         question: 'What can I expect from Matcha?',
         answer:

@@ -12,22 +12,29 @@ import $ from 'jquery';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
+
+    // className is (one of) the class name of the respective section on page
     const navLinks = [
-        { name: 'home', href: '#' },
-        { name: 'about', href: '#' },
-        { name: 'attending', href: '#' },
-        { name: 'flo', href: '#' },
-        { name: 'faq', href: '#' },
-        { name: 'contact', href: '#' },
+        { name: 'home', href: '#', className: 'matcha-hero' },
+        { name: 'about', href: '#about', className: 'matcha-about' },
+        // {
+        //     name: 'attending',
+        //     href: '#attending',
+        //     className: 'matcha-attending',
+        // },
+        { name: 'flo', href: '#flo', className: 'matcha-flo' },
+        { name: 'faq', href: '#faq', className: 'matcha-faq' },
+        { name: 'contact', href: '#contact', className: 'matcha-footer' },
     ];
     const toggle = () => setIsOpen(!isOpen);
 
+    // handle navbar color change when scrolled down
     const handleScroll = () => {
         let _nav = $('#top-nav');
         const SCROLL_THRESHOLD = 2 * _nav.height();
 
         if ($(window).scrollTop() > SCROLL_THRESHOLD) {
-            // if user scrolled down enough, make the nav gray
+            // if user scrolled down enough, make the nav green
             _nav.addClass('matcha__bg-dark-green shadow');
         } else {
             if (
@@ -52,7 +59,7 @@ function Header() {
         }
     };
 
-    // This function handle the scroll performance issue
+    // handle the scroll performance issue
     const debounce = (func, wait = 20, immediate = true) => {
         let timeOut;
 
@@ -71,12 +78,24 @@ function Header() {
     };
 
     useEffect(() => {
-        $(window).scroll(debounce(handleScroll, 15));
+        $(window).on('scroll', debounce(handleScroll, 15));
         $('.navbar-toggler').on('click', handleTogglerClick);
+
+        navLinks.forEach(({ href, className }) => {
+            $(`a[href='${href}']`).on('click', () => {
+                $('html,body').animate(
+                    {
+                        scrollTop: $(`.${className}`).offset().top,
+                    },
+                    'slow'
+                );
+            });
+        });
 
         return () => {
             $(window).off('scroll', handleScroll);
             $('.navbar-toggler').off('click', handleTogglerClick);
+            navLinks.forEach(({ href }) => $(`a[href='${href}']`).off());
         };
     }, [debounce, handleScroll, handleTogglerClick]);
 

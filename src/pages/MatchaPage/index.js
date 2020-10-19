@@ -37,12 +37,12 @@ const MatchaPage = () => {
                     >
                         <h1 className="matcha-hero__title">matcha</h1>
                         <h2 className="matcha-hero__subtitle">
-                            TESC's Virtual Career Fair
+                            TESC's Virtual Career Conference
                         </h2>
                         <h3 className="matcha-hero__slogan">
                             Matching Students with Engineering Jobs
                         </h3>
-                        <Row className="flex-column">
+                        {/* <Row className="flex-column">
                             <Col className="mb-3">
                                 <Button
                                     outline
@@ -59,7 +59,7 @@ const MatchaPage = () => {
                                     Submit Resume
                                 </Button>
                             </Col>
-                        </Row>
+                        </Row> */}
                         <img src={TescLogo} alt="TESC logo" className="mt-5" />
                     </Col>
                 </Row>
@@ -85,9 +85,9 @@ const MatchaPage = () => {
                                 Thursday, October 22nd, 2020 from 9 AM - 4 PM.
                             </b>
                         </p>
-                        <Button className="matcha-btn">
+                        {/* <Button className="matcha-btn">
                             Attending Companies
-                        </Button>
+                        </Button> */}
                     </Col>
                     <Col>
                         <img

@@ -24,11 +24,21 @@ const Footer = () => {
                 </p>
                 <p>
                     <AiFillHome />{' '}
-                    <a href="https://tesc.ucsd.edu">https://tesc.ucsd.edu</a>
+                    <a
+                        href="https://tesc.ucsd.edu"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        https://tesc.ucsd.edu
+                    </a>
                 </p>
                 <p>
                     <AiFillFacebook />{' '}
-                    <a href="https://www.facebook.com/ucsd.tesc/">
+                    <a
+                        href="https://www.facebook.com/events/3775389302477501/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Visit our Facebook Page!
                     </a>
                 </p>
