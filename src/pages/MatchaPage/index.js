@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'reactstrap';
+import $ from 'jquery';
 
 import Layout from '../../layouts/MatchaLayout';
 import Faq from './components/Faq';
@@ -17,6 +18,10 @@ import FloPatternBottom from './static/flo-pattern-bottom.svg';
 const MatchaPage = () => {
     useEffect(() => {
         document.title = 'Matcha | UCSD TESC';
+        $("link[rel='shortcut icon']").attr(
+            'href',
+            'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍵</text></svg>'
+        );
     });
 
     return (
