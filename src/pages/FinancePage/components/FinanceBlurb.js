@@ -34,11 +34,11 @@ class FinanceBlurb extends React.Component {
                     </h1>
 
                     <p>
-                        TESC allocates funds to orgs on a yearly cycle. Orgs should expect to receive an email with an amount allocated to them by the end of week 7, FA19. If your organization fails to join the funding cycle before the week 3 deadline, there will be no way of receiving TESC funds until next year.
+                        TESC allocates funds to orgs on a yearly cycle. Orgs should expect to receive an email with an amount allocated to them by the end of week 7, FA20. If your organization fails to join the funding cycle before the week 5 deadline, there will be no way of receiving TESC funds until next year.
                     </p>
 
                     <p>
-                        The deadline to submit for funds for the 2019-2020 school year is <b className="finance__em">SUNDAY, OCTOBER 20 at 11:59 PM PST</b>.
+                        The deadline to submit for funds for the 2020-2021 school year is <b className="finance__em">SUNDAY, NOVEMBER 8 at 11:59 PM PST</b>.
                     </p>
 
                     <p>
@@ -51,10 +51,10 @@ class FinanceBlurb extends React.Component {
 
                     <FinanceReq data={newReqs} />
 
-                    <h3 className="text-center w-100 mt-5">Things to submit by <b className="finance__em">Sunday, October 20 at 11:59 PM PST</b></h3>
+                    <h3 className="text-center w-100 mt-5">Things to submit by <b className="finance__em">Sunday, November 8 at 11:59 PM PST</b></h3>
 
                     <p>
-                        Fill out this <a href="https://tesc.typeform.com/to/HLke9M" target="_blank">typeform</a>, to do so please have available the following:<br/>
+                        Fill out this <a href="https://tesc.typeform.com/to/ZTJJFkRB" target="_blank" rel="noopener noreferrer">Typeform</a>, to do so please have available the following:<br/>
                         <i>Note that this typeform is comprehensive, and will take around an hour</i>
                     </p>
 
@@ -62,15 +62,15 @@ class FinanceBlurb extends React.Component {
                         <li>
                             Budgets
                             <ul>
-                                <li>2018-2019 (Final)</li>
-                                <li>2019-2020 (Prospective)</li>
+                                <li>2019-2020 (Final)</li>
+                                <li>2020-2021 (Prospective)</li>
                             </ul>
                         </li>
                         <li>
                             Member List
                             <ul>
-                                <li>2018-2019 (Final)</li>
-                                <li>2019-2020 (Prospective)</li>
+                                <li>2019-2020 (Final)</li>
+                                <li>2020-2021 (Prospective)</li>
                             </ul>
                         </li>
                         <li>
@@ -106,7 +106,7 @@ class FinanceBlurb extends React.Component {
                     <div className="text-center pb-5">
                         <span className={`finance__pill finance__pill-l ${leftActive ? 'finance__pill-active' : ''}`}
                             onClick={() => this.togglePill(true)}>
-                                Application Eligibility
+                                Funding Eligibility
                         </span>
                         <span className={`finance__pill finance__pill-r ${!leftActive ? 'finance__pill-active' : ''}`}
                             onClick={() => this.togglePill(false)}>
