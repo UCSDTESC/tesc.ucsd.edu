@@ -1,3 +1,5 @@
+import React from 'react';
+
 const studentFaq = [
     {
         question: 'What is Matcha?',
@@ -6,8 +8,19 @@ const studentFaq = [
     },
     {
         question: 'How can I get the most up to date information on Matcha?',
-        answer:
-            'Follow our Facebook event page to stay up to date with Matcha.',
+        answer: (
+            <>
+                Follow our{' '}
+                <a
+                    href="https://www.facebook.com/events/3775389302477501/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Facebook event page
+                </a>{' '}
+                to stay up to date with Matcha.
+            </>
+        ),
     },
     {
         question: 'Who can attend Matcha?',
