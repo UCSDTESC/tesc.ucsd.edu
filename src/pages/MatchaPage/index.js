@@ -71,7 +71,7 @@ const MatchaPage = () => {
                         <h1 className="matcha-about__title">What's Matcha?</h1>
                         <p>
                             Matcha is a Fall annual student-run engineering
-                            career fair at UCSD. Open exclusively to UCSD
+                            career conference at UCSD. Open exclusively to UCSD
                             students, it is coordinated by the Trition
                             Engineering Student Council, which represents the
                             wide spectrum of disciplines within the Jacobs

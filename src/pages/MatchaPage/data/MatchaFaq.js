@@ -4,7 +4,7 @@ const studentFaq = [
     {
         question: 'What is Matcha?',
         answer:
-            'Matcha is our first ever fully virtual career fair. It will be on October 22 from 9am-4pm',
+            'Matcha is our first ever fully virtual career conference. It will be on October 22 from 9am-4pm.',
     },
     {
         question: 'How can I get the most up to date information on Matcha?',
@@ -42,10 +42,10 @@ const studentFaq = [
         answer:
             'There is no dress code for the event, but business casual is recommended.',
     },
-    {
-        question: 'How do I register for a ticket?',
-        answer: '"Not sure yet"',
-    },
+    // {
+    //     question: 'How do I register for a ticket?',
+    //     answer: '"Not sure yet"',
+    // },
     // {
     //     question: 'What companies are attending?',
     //     answer: 'Check out the list of attending companies here.',
@@ -62,11 +62,11 @@ const studentFaq = [
     //     question: 'Any tips?',
     //     answer: '** i will put the tips later 💵',
     // },
-    {
-        question: 'What can I expect from Matcha?',
-        answer:
-            'An online career fair where you will get to meet company representatives as if you were talking to them in person. It will closely mirror a physical career fair, with the ability to queue into lines to speak one-on-one with recruiters.',
-    },
+    // {
+    //     question: 'What can I expect from Matcha?',
+    //     answer:
+    //         'An online career fair where you will get to meet company representatives as if you were talking to them in person. It will closely mirror a physical career fair, with the ability to queue into lines to speak one-on-one with recruiters.',
+    // },
 ];
 
 export default studentFaq;
