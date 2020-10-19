@@ -1,0 +1,95 @@
+.matcha-faq {
+    width: 100%;
+    background: white;
+    color: white;
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 20rem;
+        padding-bottom: 3rem;
+    }
+
+    &__head {
+        text-align: center;
+        padding-top: 4rem;
+        font-weight: 900;
+        color: $matcha-dark;
+
+        @include media-breakpoint-down(md) {
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 80px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-family: 'Lato', sans-serif;
+        }
+    }
+
+    &__teapot {
+        position: absolute;
+        left: 0;
+        top: -70px;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    &__pattern {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.matcha-question {
+    border: solid 6px $matcha-dark-green;
+    font-size: 1.2rem;
+    text-align: initial;
+    border-radius: 38px;
+    margin-bottom: 2rem;
+    background: white;
+
+    &__heading {
+        margin: 0.8rem 2rem;
+        text-align: center;
+
+        a {
+            color: $matcha-dark;
+            font-size: 1.4rem;
+            font-weight: 800;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &[aria-expanded='true'] {
+                .question__icon {
+                    transform: rotate(135deg);
+                    -webkit-transition-duration: 0.5s;
+                    -moz-transition-duration: 0.5s;
+                    -o-transition-duration: 0.5s;
+                    transition-duration: 0.5s;
+                }
+            }
+
+            &[aria-expanded='false'] .question__icon {
+                transform: rotate(0);
+                -webkit-transition-duration: 0.5s;
+                -moz-transition-duration: 0.5s;
+                -o-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+
+    &__content {
+        margin: 0 2rem;
+        color: $matcha-dark;
+    }
+}

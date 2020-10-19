@@ -1,0 +1,47 @@
+.matcha-hero {
+    background: $matcha-dark;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    &__row-main {
+        height: 100%;
+
+        @include media-breakpoint-down(md) {
+            height: auto;
+        }
+    }
+
+    &__title {
+        font-family: 'Bauhaus', 'Lato', sans-serif;
+        font-size: clamp(2rem, 20vw, 10rem);
+    }
+
+    &__subtitle {
+        font-family: 'Lato', sans-serif;
+        font-size: clamp(1rem, 5vw, 2.5rem);
+        color: $matcha-light-green;
+    }
+
+    &__slogan {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: clamp(1rem, 4vw, 2rem);
+        color: $matcha-light-green;
+        margin-bottom: 1.3em;
+    }
+
+    &__pattern {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}
