@@ -4,7 +4,7 @@ const studentFaq = [
     {
         question: 'What is Matcha?',
         answer:
-            'Matcha is our first ever fully virtual career conference. It will be on October 22 from 9am-4pm.',
+            'Matcha is our first ever fully virtual career conference. It will be on November 16-20, 2020 from 9am-5pm',
     },
     {
         question: 'How can I get the most up to date information on Matcha?',
