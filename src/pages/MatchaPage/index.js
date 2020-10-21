@@ -22,6 +22,11 @@ const MatchaPage = () => {
             'href',
             'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍵</text></svg>'
         );
+
+        return () => {
+            document.title = 'UCSD TESC';
+            $("link[rel='shortcut icon']").attr('href', '/favicon.png');
+        };
     });
 
     return (
@@ -75,20 +80,17 @@ const MatchaPage = () => {
                     <Col lg={8} xs={12}>
                         <h1 className="matcha-about__title">What's Matcha?</h1>
                         <p>
-                            Matcha is a Fall annual student-run engineering
-                            career conference at UCSD. Open exclusively to UCSD
-                            students, it is coordinated by the Trition
-                            Engineering Student Council, which represents the
-                            wide spectrum of disciplines within the Jacobs
-                            School, and advocates for the interest of UCSD’s
-                            6500+ engineers.
+                            Matcha is our first ever fully virtual career
+                            conference. Open exclusively to UCSD students, it is
+                            coordinated by the Trition Engineering Student
+                            Council, which represents the wide spectrum of
+                            disciplines within the Jacobs School, and advocates
+                            for the interest of UCSD’s 6500+ engineers.
                         </p>
                         <p>
                             The event will be taken place virtually via the
                             online platform Symplicity, on{' '}
-                            <b>
-                                Thursday, October 22nd, 2020 from 9 AM - 4 PM.
-                            </b>
+                            <b>November 16 - 20, 2020 from 9 AM - 5 PM.</b>
                         </p>
                         {/* <Button className="matcha-btn">
                             Attending Companies
