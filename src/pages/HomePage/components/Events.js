@@ -11,7 +11,7 @@ function Event(props) {
     } else {
         withWrapper = (jsx) => {
             return (
-                <a href={props.link} target="_blank">
+                <a href={props.link} target="_blank" rel="noopener noreferrer">
                     {jsx}
                 </a>
             );
@@ -20,7 +20,9 @@ function Event(props) {
 
     return (
         <div className="col-md events__card">
-            {withWrapper(<img className="w-100 h-100" src={props.img} />)}
+            {withWrapper(
+                <img className="w-100 h-100" src={props.img} alt="" />
+            )}
         </div>
     );
 }
@@ -31,7 +33,7 @@ class Events extends React.Component {
             ({ date }) => Date.now() < new Date(date)
         );
 
-        if (currEvents.length == 0) {
+        if (currEvents.length === 0) {
             return (
                 <div className="events__none text-center">
                     Nothing Yet, Stay Tuned For More
