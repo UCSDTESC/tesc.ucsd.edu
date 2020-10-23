@@ -16,7 +16,7 @@ const board = [
             'https://tesc-website.s3.us-east-2.amazonaws.com/board/vp-external-2020.JPG',
         email: 'jeremiah@tesc.ucsd.edu',
         bio:
-            "Hi! I'm the TESC Design Lead. I'm also a fourth-year computer science major who loves software development but also really values aesthetics. A couple things about me: I love to rock climb and boulder. I love movies. And I love trying new foods.",
+            "Hi! I'm the TESC VP External. I'm also a fourth-year computer science major who loves software development but also really values aesthetics. A couple things about me: I love to rock climb and boulder. I love movies. And I love trying new foods.",
         link: 'https://www.linkedin.com/in/jeremiahalindogan/',
     },
     {
@@ -86,7 +86,7 @@ const board = [
             'https://tesc-website.s3.us-east-2.amazonaws.com/board/town-hall-director-david-2020.jpg',
         bio:
             "Hey! My name is David and I'm a third-year Computer Science major and Physics minor. This year, I'll be serving as the TESC Town Hall Director, where I'll be hosting town hall events for various departments in the Jacobs School of Engineering. When I'm not working, I like to go surf or snowboard, play games, and attempt to cook.",
-        email: 'david@tesc.ucsd.edu',
+        email: 'david.dempsey@tesc.ucsd.edu',
         link: 'https://www.linkedin.com/in/davidgdempsey/',
     },
     {
@@ -160,20 +160,10 @@ const board = [
         link: 'https://www.linkedin.com/in/callie-boskin-a50b47132/',
     },
     {
-        name: 'Thang Phan',
-        role: 'Marketing Lead',
-        img:
-            'https://tesc-website.s3.us-east-2.amazonaws.com/board/marketing-lead-thang-2020.JPG',
-        email: 'thang@tesc.ucsd.edu',
-        link: 'https://www.linkedin.com/in/thangmichaelphan/',
-        bio:
-            "Hi! I'm a third-year majoring in computer science and minoring in entrepreneurship and innovation. I currently serve as TESC's Marketing Lead. In my free time I like to exercise, watch movies, and mindlessly think about start-up ideas!",
-    },
-    {
         name: 'Prothit Halder',
         role: 'Marketing Lead',
         img:
-            'https://tesc-website.s3.us-east-2.amazonaws.com/board/marketing-lead-prothit-2020.jpeg',
+            'https://tesc-website.s3.us-east-2.amazonaws.com/board/marketing-lead-2020.jpeg',
         email: 'prothit@tesc.ucsd.edu',
         link: 'https://www.linkedin.com/in/prothit-halder-96794219a/',
         bio:
