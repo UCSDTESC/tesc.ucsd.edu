@@ -44,7 +44,7 @@ function Footer() {
                                 href="http://tesc.ucsd.edu"
                                 target="_new"
                             >
-                                <img src="/tesc-logo.png" />
+                                <img src="/tesc-logo.png" alt="TESC logo" />
                             </a>
                         </li>
                         <li className="footer__link-item">

@@ -1,6 +1,5 @@
 import React from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
-import $ from 'jquery';
+import { withRouter } from 'react-router-dom';
 
 class Footer extends React.Component {
     render() {
@@ -51,7 +50,10 @@ class Footer extends React.Component {
                                         href="http://tesc.ucsd.edu"
                                         target="_new"
                                     >
-                                        <img src="/tesc-logo.png" />
+                                        <img
+                                            src="/tesc-logo.png"
+                                            alt="TESC logo"
+                                        />
                                     </a>
                                 </li>
                                 <li className="footer__link-item">
@@ -121,7 +123,10 @@ class Footer extends React.Component {
                                         href="http://tesc.ucsd.edu"
                                         target="_new"
                                     >
-                                        <img src="/tesc-logo.png" />
+                                        <img
+                                            src="/tesc-logo.png"
+                                            alt="TESC logo"
+                                        />
                                     </a>
                                 </li>
                                 <li className="footer__link-item">

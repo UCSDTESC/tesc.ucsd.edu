@@ -1,31 +1,55 @@
-import React, {Component} from 'react';
-import {NavLink, withRouter} from 'react-router-dom';
+import React, { Component } from 'react';
+import { NavLink, withRouter } from 'react-router-dom';
 
 class Nav extends Component {
-
     render() {
         return (
             <nav className="navbar navbar-expand-lg w-75 enspire-nav sticky-top">
-                <div className="navbar-brand"><img src="" className="enspire-nav__logo"/></div>
+                <div className="navbar-brand">
+                    <img
+                        src=""
+                        className="enspire-nav__logo"
+                        alt="Enspire logo"
+                    />
+                </div>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item text-center">
-                        <NavLink className="nav-link text-blue" to="/enspire">Home</NavLink>
+                        <NavLink className="nav-link text-blue" to="/enspire">
+                            Home
+                        </NavLink>
                     </li>
                     <li className="nav-item text-center">
-                        <NavLink className="nav-link text-blue" to="/enspire#about">About</NavLink>
+                        <NavLink
+                            className="nav-link text-blue"
+                            to="/enspire#about"
+                        >
+                            About
+                        </NavLink>
                     </li>
                     <li className="nav-item text-center">
-                        <NavLink className="nav-link text-blue" to="/enspire">Register</NavLink>
+                        <NavLink className="nav-link text-blue" to="/enspire">
+                            Register
+                        </NavLink>
                     </li>
                     <li className="nav-item text-center">
-                        <NavLink className="nav-link text-blue" to="/enspire#schedule">Schedule</NavLink>
+                        <NavLink
+                            className="nav-link text-blue"
+                            to="/enspire#schedule"
+                        >
+                            Schedule
+                        </NavLink>
                     </li>
                     <li className="nav-item text-center">
-                        <NavLink className="nav-link text-blue" to="/enspire#contact">Contact</NavLink>
+                        <NavLink
+                            className="nav-link text-blue"
+                            to="/enspire#contact"
+                        >
+                            Contact
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
-        )
+        );
     }
 }
 
