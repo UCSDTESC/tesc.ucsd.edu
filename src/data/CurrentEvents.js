@@ -18,7 +18,7 @@ const currEvents = [
         link: '/matcha',
         isInternalLink: true,
         img: '/matcha-event-fa20.svg',
-        date: '2020-10-22T22:00:00.000Z',
+        date: '2020-11-20T22:00:00.000Z',
     },
     /*{
         name: 'Engineers on the Green: Fall 2019',
