@@ -2,24 +2,24 @@ import React, { useState, useEffect, useRef } from 'react';
 import $ from 'jquery';
 
 function WeEmpower() {
-    const copy = [
-        'designers',
-        'innovators',
-        'leaders',
-        'students',
-        'communities',
-        'creators',
-        'engineers',
-    ];
     const [animFinished, setAnimFinished] = useState(false);
-
-    const normalizeIdx = (n, m = copy.length) => ((n % m) + m) % m;
 
     const wordRef = useRef(null);
 
     useEffect(() => {
+        const copy = [
+            'designers',
+            'innovators',
+            'leaders',
+            'students',
+            'communities',
+            'creators',
+            'engineers',
+        ];
         let currIdx = copy.length - 2;
         wordRef.current.innerText = copy[currIdx];
+
+        const normalizeIdx = (n, m = copy.length) => ((n % m) + m) % m;
         const clear = setInterval(() => {
             if (currIdx === copy.length - 1) {
                 setAnimFinished(true);
