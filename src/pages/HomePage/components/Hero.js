@@ -20,7 +20,7 @@ function Hero() {
                                 >
                                     {' '}
                                     Join Us{' '}
-                                    <i class="fas fa-external-link-square-alt"></i>{' '}
+                                    <i className="fas fa-external-link-square-alt"></i>{' '}
                                 </a>
                             </div>
                         </div>
