@@ -20,6 +20,13 @@ const currEvents = [
         img: '/matcha-event-fa20.svg',
         date: '2020-11-20T22:00:00.000Z',
     },
+    {
+        name: 'Destress with TESC',
+        link: 'https://www.facebook.com/events/2508219399475867/',
+        isInternalLink: false,
+        img: '/destress-event-fa20.svg',
+        date: '2020-11-11T22:00:00.000Z',
+    },
     /*{
         name: 'Engineers on the Green: Fall 2019',
         link: '/eotg',
