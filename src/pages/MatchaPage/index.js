@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 import $ from 'jquery';
 
 import Layout from '../../layouts/MatchaLayout';
+import FeaturedSessions from './components/Sessions';
 import Faq from './components/Faq';
 
 import HeroPattern from './static/hero-pattern.svg';
@@ -12,8 +13,6 @@ import AboutPattern from './static/about-pattern.svg';
 import MantisTop from './static/mantis-top.svg';
 import FloIntroPattern from './static/flo-intro-pattern.svg';
 import MantisTea from './static/mantis-tea.svg';
-import FloPatternTop from './static/flo-pattern-top.svg';
-import FloPatternBottom from './static/flo-pattern-bottom.svg';
 
 const MatchaPage = () => {
     useEffect(() => {
@@ -47,7 +46,7 @@ const MatchaPage = () => {
                     >
                         <h1 className="matcha-hero__title">matcha</h1>
                         <h2 className="matcha-hero__subtitle">
-                            TESC's Virtual Career Conference
+                            TESC's Virtual Engineering Conference
                         </h2>
                         <h3 className="matcha-hero__slogan">
                             Matching Students with Engineering Jobs
@@ -133,23 +132,7 @@ const MatchaPage = () => {
                 />
             </section>
 
-            <section className="matcha-flo">
-                <Container>
-                    <h1>FLO Events</h1>
-                    <p>To be Announced</p>
-                </Container>
-                <img
-                    src={FloPatternTop}
-                    alt=""
-                    className="matcha-flo__pattern-t"
-                />
-                <img
-                    src={FloPatternBottom}
-                    alt=""
-                    className="matcha-flo__pattern-b"
-                />
-            </section>
-
+            <FeaturedSessions />
             <Faq />
         </Layout>
     );
