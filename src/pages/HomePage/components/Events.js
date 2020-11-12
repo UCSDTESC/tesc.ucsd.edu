@@ -88,7 +88,6 @@ function Events() {
             });
         return currEvents.map((c, i) => <Event {...c} key={i} />);
     }
-
     // render past events by creating event cards
     function renderPastEvents() {
         let pastEvents = records;
