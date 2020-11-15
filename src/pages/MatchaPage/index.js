@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import $ from 'jquery';
 
 import Layout from '../../layouts/MatchaLayout';
@@ -51,24 +51,19 @@ const MatchaPage = () => {
                         <h3 className="matcha-hero__slogan">
                             Matching Students with Engineering Jobs
                         </h3>
-                        {/* <Row className="flex-column">
+                        <Row className="flex-column">
                             <Col className="mb-3">
                                 <Button
                                     outline
                                     className="matcha-btn matcha-btn-outline"
+                                    href="http://www.tesc.link/drinkMatcha"
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
-                                    Attending Companies
+                                    Register Now
                                 </Button>
                             </Col>
-                            <Col>
-                                <Button
-                                    outline
-                                    className="matcha-btn matcha-btn-outline"
-                                >
-                                    Submit Resume
-                                </Button>
-                            </Col>
-                        </Row> */}
+                        </Row>
                         <img src={TescLogo} alt="TESC logo" className="mt-5" />
                     </Col>
                 </Row>
@@ -110,7 +105,7 @@ const MatchaPage = () => {
                 />
             </Container>
 
-            <section className="matcha-flo-intro">
+            {/* <section className="matcha-flo-intro">
                 <Container>
                     <h1>FLO</h1>
                     <h2>Early Access Events</h2>
@@ -130,7 +125,7 @@ const MatchaPage = () => {
                     alt=""
                     className="matcha-flo-intro__mantis"
                 />
-            </section>
+            </section> */}
 
             <FeaturedSessions />
             <Faq />
