@@ -5,15 +5,13 @@ import $ from 'jquery';
 
 import Layout from '../../layouts/MatchaLayout';
 import FeaturedSessions from './components/Sessions';
+import DailyRundown from './components/Calendar';
 import Faq from './components/Faq';
 
 import HeroPattern from './static/hero-pattern.svg';
 import TescLogo from './static/tesc-logo-white.svg';
 import AboutPattern from './static/about-pattern.svg';
 import MantisTop from './static/mantis-top.svg';
-import FloIntroPattern from './static/flo-intro-pattern.svg';
-import MantisTea from './static/mantis-tea.svg';
-
 const MatchaPage = () => {
     useEffect(() => {
         document.title = 'Matcha | UCSD TESC';
@@ -109,29 +107,8 @@ const MatchaPage = () => {
                     className="matcha-about__mantis"
                 />
             </Container>
-
-            <section className="matcha-flo-intro">
-                <Container>
-                    <h1>FLO</h1>
-                    <h2>Early Access Events</h2>
-                    <p>
-                        F.L.O - Early Access events let you into Matcha an hour
-                        earlier allowing you to get the first crack at speaking
-                        with representatives from every company attending.
-                    </p>
-                </Container>
-                <img
-                    src={FloIntroPattern}
-                    alt=""
-                    className="matcha-flo-intro__pattern"
-                />
-                <img
-                    src={MantisTea}
-                    alt=""
-                    className="matcha-flo-intro__mantis"
-                />
-            </section>
-
+            
+            <DailyRundown />
             <FeaturedSessions />
             <Faq />
         </Layout>
