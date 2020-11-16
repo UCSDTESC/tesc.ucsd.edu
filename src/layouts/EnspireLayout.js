@@ -1,20 +1,18 @@
 import React from 'react';
 
+import Header from '../pages/EnspirePage/components/Header';
 import Footer from '../pages/EnspirePage/components/Footer';
 
-class EnspireLayout extends React.Component {
-
-    render() {
-        return (
-            <>
-                <div id="enspire-main">
-                    {React.cloneElement(this.props.children, {...this.props})}
-                    <Footer />
-                </div>
-            </>
-        )
-    }
-}
+const EnspireLayout = ({ children }) => {
+    return (
+        <>
+            <div id="enspire-main">
+                <Header />
+                <main>{children}</main>
+                <Footer />
+            </div>
+        </>
+    );
+};
 
 export default EnspireLayout;
-
