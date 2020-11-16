@@ -11,39 +11,29 @@ const DailyRundown = () => {
         <section className="matcha-calendar">
             <Container fluid>
                 <h1 className="matcha-calendar__title">Daily Rundown</h1>
-                <h2 className="matcha-calendar__week">November 16 - 20, 2020</h2>
+                <h2 className="matcha-calendar__week">
+                    November 16 - 20, 2020
+                </h2>
                 <Row>
-                    <Col md={4}>
-                        <CalendarCard 
-                            today={'Monday'}
-                            date={'November 16'}
-                        />
+                    <Col lg={4} md={6} sm={12}>
+                        <CalendarCard today={'Monday'} date={'November 16'} />
                     </Col>
-                    <Col md={4}>
+                    <Col lg={4} md={6} sm={12}>
+                        <CalendarCard today={'Tuesday'} date={'November 17'} />
+                    </Col>
+                    <Col lg={4} md={6}>
                         <CalendarCard
-                            today={'Tuesday'}
-                            date={'November 17'}
-                        />
-                    </Col>
-                    <Col md={4}>
-                        <CalendarCard 
                             today={'Wednesday'}
                             date={'November 18'}
                         />
                     </Col>
                 </Row>
                 <Row>
-                <Col md={{size: 4, offset: 2}}>
-                        <CalendarCard 
-                            today={'Thursday'}
-                            date={'November 19'}
-                        />
+                    <Col lg={4} md={{ size: 6, offset: 2 }} sm={12}>
+                        <CalendarCard today={'Thursday'} date={'November 19'} />
                     </Col>
-                    <Col md={4}>
-                        <CalendarCard
-                            today={'Friday'}
-                            date={'November 20'}
-                        />
+                    <Col lg={4} md={6} sm={12}>
+                        <CalendarCard today={'Friday'} date={'November 20'} />
                     </Col>
                 </Row>
             </Container>
@@ -53,13 +43,9 @@ const DailyRundown = () => {
                 alt=""
                 className="matcha-calendar__pattern"
             />
-            <img
-                src={MantisTea}
-                alt=""
-                className="matcha-calendar__mantis"
-            />
+            <img src={MantisTea} alt="" className="matcha-calendar__mantis" />
         </section>
     );
 };
 
-export default DailyRundown
+export default DailyRundown;
