@@ -1,5 +1,100 @@
-.matcha-flo-intro {
+.matcha-calendar-event-org {
+    text-align: left;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+
+    &__time {
+        color: black;
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        color: black;
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    &__organizer {
+        color: $matcha-dark-green;
+        font-family: 'Lato', sans-serif;
+        font-size: 17px;
+        font-style: italic;
+    }
+}
+
+.matcha-calendar-event-com {
+    text-align: left;
+    background-color: $matcha-dark;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+
+    &__time {
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    &__organizer {
+        color: $matcha-light-green;
+        font-family: 'Lato', sans-serif;
+        font-size: 17px;
+        font-style: italic;
+    }
+}
+
+.matcha-calendar-card {
+    text-align: left;
+    border: solid 10px white;
+    border-radius: 20px;
+    background-color: $matcha-dark-green;
+    padding: 2rem;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 79vh;
+    box-shadow: 21.503px 21.503px 10.7515px rgba(0, 0, 0, 0.5);
+
+    &__title {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    &__date {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+}
+
+.matcha-calendar {
     text-align: center;
+    padding: $py clamp(3rem, 7vw, 7rem);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,22 +113,21 @@
         margin-bottom: 7rem;
     }
 
-    h1 {
+    .row {
+        justify-content: center;
+    }
+
+    &__title {
         font-family: 'Lato', sans-serif;
         font-size: 80px;
-        font-weight: 900;
     }
 
-    h2 {
+    &__week {
         font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: lighter;
         font-size: 50px;
-        font-weight: 900;
         margin-bottom: 3rem;
-    }
-
-    p {
-        font-size: 30px;
-        font-weight: 400;
     }
 
     &__pattern {
