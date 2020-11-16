@@ -23,7 +23,11 @@ function Header() {
             //     href: '#attending',
             //     className: 'matcha-attending',
             // },
-            { name: 'flo', href: '#flo', className: 'matcha-flo' },
+            {
+                name: 'sessions',
+                href: '#sessions',
+                className: 'matcha-sessions',
+            },
             { name: 'faq', href: '#faq', className: 'matcha-faq' },
             { name: 'contact', href: '#contact', className: 'matcha-footer' },
         ],
