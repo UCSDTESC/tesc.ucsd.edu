@@ -1,2 +1,19 @@
 .enspire-hero {
+    min-height: 100vh;
+    background: url(../../../../pages/EnspirePage/static/wires-hero.svg) center
+        no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-size: 180px;
+        text-align: center;
+    }
+
+    &__super {
+    }
+
+    &__sub {
+    }
 }

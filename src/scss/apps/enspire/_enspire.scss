@@ -1,11 +1,82 @@
+$enspire-gradient-blue: linear-gradient(180deg, #00172c 0%, #2b3272 100%);
+$enspire-blue: #00172c;
 
-#enspire-main {
-    height: 100%;
+@font-face {
+    font-family: 'Trap';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Trap'),
+        url('../../../pages/EnspirePage/static/Trap-Light.otf')
+            format('opentype');
 }
 
-$transparent-white: rgba(255, 255, 255, 0.85);
-$border-radius: 0.3rem;
-$background: white;
-$blue: #0044AA;
+@font-face {
+    font-family: 'Trap';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Trap'),
+        url('../../../pages/EnspirePage/static/Trap-Regular.otf')
+            format('opentype');
+}
 
-@import './components/all'
+@font-face {
+    font-family: 'Trap';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Trap'),
+        url('../../../pages/EnspirePage/static/Trap-Medium.otf')
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'Trap';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Trap'),
+        url('../../../pages/EnspirePage/static/Trap-SemiBold.otf')
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'Trap';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Trap'),
+        url('../../../pages/EnspirePage/static/Trap-Bold.otf')
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'Trap';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Trap'),
+        url('../../../pages/EnspirePage/static/Trap-ExtraBold.otf')
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'Trap';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Trap'),
+        url('../../../pages/EnspirePage/static/Trap-Black.otf')
+            format('opentype');
+}
+
+#enspire-main {
+    background: $enspire-blue;
+    color: white;
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Trap', sans-serif;
+    }
+
+    h1 {
+        font-weight: 900;
+    }
+}
+
+@import './components/all';
