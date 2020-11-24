@@ -6,7 +6,7 @@ import Footer from '../pages/EnspirePage/components/Footer';
 const EnspireLayout = ({ children }) => {
     return (
         <>
-            <div id="enspire-main">
+            <div className="enspire-main">
                 <Header />
                 <main>{children}</main>
                 <Footer />

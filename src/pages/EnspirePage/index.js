@@ -23,9 +23,9 @@ const EnspirePage = () => {
     return (
         <>
             <Hero />
-            <About />
+            {/* <About /> */}
             <Register />
-            <Faq />
+            {/* <Faq /> */}
         </>
     );
 };

@@ -1,2 +1,28 @@
 .enspire-register {
+    min-height: 70vh;
+    text-align: center;
+
+    &__title {
+        .sup {
+            font-size: 3rem;
+            color: $enspire-cyan;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        .main {
+            font-size: 6.25rem;
+        }
+
+        .sub {
+            font-size: 3.75rem;
+            text-align: right;
+        }
+
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
 }

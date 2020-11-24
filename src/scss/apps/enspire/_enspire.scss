@@ -1,5 +1,7 @@
 $enspire-gradient-blue: linear-gradient(180deg, #00172c 0%, #2b3272 100%);
-$enspire-blue: #00172c;
+$enspire-dark: #00172c;
+$enspire-blue: #232d66;
+$enspire-cyan: #3bc0b2;
 
 @font-face {
     font-family: 'Trap';
@@ -64,13 +66,14 @@ $enspire-blue: #00172c;
             format('opentype');
 }
 
-#enspire-main {
+.enspire-main {
     background: $enspire-blue;
     color: white;
+    background-image: url(../../../pages/EnspirePage/static/background.svg),
+        $enspire-gradient-blue;
+    background-size: cover;
 
-    h1,
-    h2,
-    h3 {
+    * {
         font-family: 'Trap', sans-serif;
     }
 

@@ -1,2 +1,21 @@
 .enspire-header {
+    background-color: $enspire-cyan;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    padding: 0.5em;
+    border-radius: 20px 0 0 20px;
+    z-index: 1000;
+
+    font-weight: 900;
+    font-size: 2.5rem;
+
+    a {
+        color: white;
+        transition: color 0.1s;
+    }
+
+    a:hover {
+        color: #013f8c;
+    }
 }
