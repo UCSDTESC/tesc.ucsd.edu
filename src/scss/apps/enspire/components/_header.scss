@@ -2,13 +2,13 @@
     background-color: $enspire-cyan;
     position: fixed;
     right: 0;
-    top: 60px;
+    top: 5vw;
     padding: 0.5em;
     border-radius: 20px 0 0 20px;
     z-index: 1000;
 
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 4vw, 2.5rem);
 
     .nav {
         height: auto;

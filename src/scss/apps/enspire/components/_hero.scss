@@ -39,7 +39,7 @@
 
     &__sub {
         font-weight: bold;
-        font-size: 1.7rem;
+        font-size: clamp(1.3rem, 5vw, 1.7rem);
         text-align: right;
         text-shadow: 2px 2px 0px #000000;
         margin-right: 4em;
