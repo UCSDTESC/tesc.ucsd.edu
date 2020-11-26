@@ -88,7 +88,7 @@ $enspire-cyan: #3bc0b2;
 
     .section-title {
         text-align: center;
-        font-size: 6.25rem;
+        font-size: clamp(2rem, 20vw, 6.25rem);
     }
 
     .circuit-line-divider {
@@ -115,10 +115,11 @@ $enspire-cyan: #3bc0b2;
         border-color: $enspire-cyan;
         border-radius: 500px;
         color: #1e2a5d;
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 4vw, 3rem);
         font-weight: 800;
         padding: 0.5em 3em;
         margin: 2.5rem auto;
+        text-decoration: none;
     }
 }
 
