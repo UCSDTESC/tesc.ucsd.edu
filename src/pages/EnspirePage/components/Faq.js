@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import enspireFaq from '../../../data/EnspireFaq';
+import enspireFaq from '../data/EnspireFaq';
 import Divider from './Divider';
 import FaqItem from '../components/FaqItem';
 

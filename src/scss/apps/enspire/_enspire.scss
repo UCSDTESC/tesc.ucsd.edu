@@ -81,6 +81,11 @@ $enspire-cyan: #3bc0b2;
         font-weight: 900;
     }
 
+    a {
+        color: $enspire-cyan;
+        text-decoration: underline;
+    }
+
     .section-title {
         text-align: center;
         font-size: 6.25rem;
