@@ -1,6 +1,13 @@
 .enspire-register {
-    min-height: 70vh;
     text-align: center;
+
+    .container {
+        margin-top: 3rem;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     &__title {
         .sup {
@@ -18,8 +25,6 @@
             font-size: 3.75rem;
             text-align: right;
         }
-
-        margin-bottom: 3rem;
     }
 
     h2 {

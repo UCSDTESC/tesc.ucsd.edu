@@ -19,7 +19,9 @@ const Footer = () => {
                         <div className="enspire-footer__contact">
                             <h1>
                                 contact{' '}
-                                <a href="mailto:emma@tesc.edu">emma@tesc.edu</a>{' '}
+                                <a href="mailto:emma@tesc.ucsd.edu">
+                                    emma@tesc.ucsd.edu
+                                </a>{' '}
                                 for more information
                             </h1>
                             <h2>

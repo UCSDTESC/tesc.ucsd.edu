@@ -1,5 +1,7 @@
 import React from 'react';
+import { Container } from 'reactstrap';
 import enspireFaq from '../../../data/EnspireFaq';
+import Divider from './Divider';
 import FaqItem from '../components/FaqItem';
 
 const Faq = () => {
@@ -7,21 +9,13 @@ const Faq = () => {
 
     return (
         <div className="enspire-faq">
-            <div className="enspire-faq__head">
-                <b>Frequently Asked Questions</b>
-            </div>
-
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12 my-auto">
-                        <div className="content pb-3">
-                            {data.map((d, i) => (
-                                <FaqItem {...d} key={i} idx={i} />
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h1 className="section-title">FAQs</h1>
+            <Divider />
+            <Container>
+                {data.map((d, i) => (
+                    <FaqItem {...d} key={i} />
+                ))}
+            </Container>
         </div>
     );
 };

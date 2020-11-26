@@ -11,6 +11,21 @@ const Header = () => {
                 href: '#',
                 className: 'enspire-hero',
             },
+            {
+                name: 'about',
+                href: '#about',
+                className: 'enspire-about',
+            },
+            {
+                name: 'register',
+                href: '#register',
+                className: 'enspire-register',
+            },
+            {
+                name: 'FAQs',
+                href: '#faq',
+                className: 'enspire-faq',
+            },
         ],
         []
     );

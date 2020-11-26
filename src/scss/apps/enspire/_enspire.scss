@@ -80,6 +80,41 @@ $enspire-cyan: #3bc0b2;
     h1 {
         font-weight: 900;
     }
+
+    .section-title {
+        text-align: center;
+        font-size: 6.25rem;
+    }
+
+    .circuit-line-divider {
+        display: flex;
+        align-items: center;
+
+        .line {
+            height: 15px;
+            width: 70vw;
+            background-color: $enspire-cyan;
+        }
+
+        .circ {
+            height: 40px;
+            width: 40px;
+            border: 7px solid $enspire-cyan;
+            border-radius: 50%;
+            margin-left: -3px;
+        }
+    }
+
+    .btn {
+        background-color: $enspire-cyan;
+        border-color: $enspire-cyan;
+        border-radius: 500px;
+        color: #1e2a5d;
+        font-size: 3rem;
+        font-weight: 800;
+        padding: 0.5em 3em;
+        margin: 2.5rem auto;
+    }
 }
 
 @import './components/all';

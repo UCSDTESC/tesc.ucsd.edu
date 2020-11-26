@@ -1,2 +1,21 @@
 .enspire-faq {
+    .container {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+}
+
+.enspire-faq-item {
+    margin: 3rem 0;
+
+    h2 {
+        color: $enspire-cyan;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: 2rem;
+        font-weight: 900;
+    }
 }
