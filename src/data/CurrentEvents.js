@@ -1,6 +1,13 @@
 const currEvents = [
     {
+        name: 'SD Hacks 2021',
+        link: 'https://www.sdhacks.io/',
+        img: '/sd-hacks-event-wi21.png',
+        date: '2021-02-19T00:00:00.000Z',
+    },
+    {
         name: 'Baking With TESC',
+        link: 'https://www.facebook.com/events/288833392533125',
         img: '/baking-event-fa20.png',
         date: '2020-12-04T00:00:00.000Z',
     },
