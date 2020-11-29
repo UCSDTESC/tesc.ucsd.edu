@@ -1,5 +1,10 @@
 const currEvents = [
     {
+        name: 'Baking With TESC',
+        img: '/baking-event-fa20.png',
+        date: '2020-12-04T00:00:00.000Z',
+    },
+    {
         name: 'HackXX 2020',
         link: 'https://www.hackxx.io',
         isInternalLink: false,
@@ -27,13 +32,6 @@ const currEvents = [
         img: '/destress-event-fa20.svg',
         date: '2020-11-11T22:00:00.000Z',
     },
-    /*{
-        name: 'Engineers on the Green: Fall 2019',
-        link: '/eotg',
-        isInternalLink: true,
-        img: '/eotg-event-fa19.svg',
-        date: "2019-09-30T21:00:00.000Z"
-    },*/
     {
         name: 'SD Hacks 2019',
         link: 'http://sdhacks.io/',
@@ -41,34 +39,6 @@ const currEvents = [
         img: 'sd-hacks-event.svg',
         date: '2019-10-25T00:00:00.000Z',
     },
-    /*{
-        name: 'Decaf 2019',
-        link: '/decaf',
-        isInternalLink: true,
-        img: '/decaf-event.svg',
-        date: "2019-01-18T00:00:00.000Z"
-    },*/
-    /*{
-        name: 'Engineers on the Green: Winter 2019',
-        link: 'https://www.facebook.com/events/342196413243975/',
-        isInternalLink: false,
-        img: '/eotg-event-wi19.svg',
-        date: "2019-01-07T00:00:00.000Z"
-    },*/
-    /*{
-        name: 'Enspire 2019',
-        link: 'https://goo.gl/forms/yiP92qPBcoNVjsIM2',
-        isInternalLink: false,
-        img: '/enspire-event.svg',
-        date: "2019-01-29T00:00:00.000Z"
-    },*/
-    /*{
-        name: 'HackXX 2019',
-        link: 'http://www.hackxx.io',
-        isInternalLink: false,
-        img: '/hackxx-event.svg',
-        date: "2019-04-16T00:00:00.000Z"
-    },*/
     {
         name: "TESC's Got Talent 2019",
         link: 'https://www.facebook.com/events/423672735070702/',
