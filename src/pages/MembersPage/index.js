@@ -48,29 +48,33 @@ function MembersPage() {
             return !(i % 4) ? a.concat([tmp]) : a;
         }, []);
 
-        return rows.map((r) => (
-            <>
+        return rows.map((r, i) => (
+            <div key={i}>
                 <div className="row justify-content-center">
-                    {r.map((m) =>
+                    {r.map((m, i) =>
                         m ? (
-                            <Member {...m} toggleModal={() => setCurrOrg(m)} />
+                            <Member
+                                {...m}
+                                toggleModal={() => setCurrOrg(m)}
+                                key={i}
+                            />
                         ) : (
-                            <div className="col-md-3"></div>
+                            <div className="col-md-3" key={i} />
                         )
                     )}
                 </div>
                 <div className="row mb-5 d-none d-md-flex">
-                    {r.map((m) =>
+                    {r.map((m, i) =>
                         m ? (
-                            <div className="col text-center">
+                            <div className="col text-center" key={i}>
                                 {m.useAcronym ? m.acronym : m.name}
                             </div>
                         ) : (
-                            <div className="col-md-3"></div>
+                            <div className="col-md-3" key={i} />
                         )
                     )}
                 </div>
-            </>
+            </div>
         ));
     };
 
