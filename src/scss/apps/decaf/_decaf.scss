@@ -5,6 +5,7 @@ $decaf-dark-green: #2b7586;
 $decaf-light-green: #17a381;
 
 $decaf-orange: #e55b42;
+$decaf-scarlet-blush: #fa7b5a;
 
 @font-face {
     font-family: 'Woodchuck';
@@ -57,52 +58,10 @@ $decaf-orange: #e55b42;
     * {
         font-family: 'Woodchuck', sans-serif;
     }
-}
 
-.decaf-gradient-bg {
-    background: linear-gradient(-45deg, $decaf-light-blue, $decaf-dark-blue);
-}
-
-.decaf-toggle {
-    background: transparent;
-    color: white !important;
-    font-weight: 400;
-    border: 2px solid white;
-
-    &:hover {
-        background: white;
-        color: $decaf-dark-blue !important;
+    .container {
+        max-width: 70%;
     }
-}
-
-.decaf-green-text {
-    color: white !important;
-
-    &:hover {
-        background: white;
-        color: $decaf-dark-green !important;
-    }
-}
-
-.decaf-green-gradient {
-    background: linear-gradient(
-        49.53deg,
-        $decaf-dark-green 12.76%,
-        $decaf-light-green 97.14%
-    );
-}
-
-.decaf-green-bg {
-    background: $decaf-light-green !important;
-
-    & .question__heading a,
-    & .question__content {
-        color: $decaf-dark-green;
-    }
-}
-
-.decaf-blue-bg {
-    background: $decaf-dark-blue !important;
 }
 
 @import 'components/all';
