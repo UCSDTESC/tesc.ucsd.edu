@@ -1,162 +1,49 @@
-import React from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import React, { useState } from 'react';
+import { withRouter } from 'react-router-dom';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+} from 'reactstrap';
 
-class DecafNav extends React.Component {
-    everyoneLinks() {
-        return (
-            <ul className="navbar-nav ml-auto">
-                <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf">
-                        HOME
-                    </NavLink>
-                </li>
-                <li className="nav-item nav__item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf#about">
-                        ABOUT
-                    </NavLink>
-                </li>
-                <li className="nav-item nav__item text-center">
-                    <NavLink
-                        className="nav-link text-white"
-                        to="/decaf/attending"
-                    >
-                        ATTENDING
-                    </NavLink>
-                </li>
-                <li className="nav-item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf#flo">
-                        FLO
-                    </NavLink>
-                </li>
-                <li className="nav-item text-center">
-                    <NavLink className="nav-link text-white" to="/decaf#faq">
-                        FAQ
-                    </NavLink>
-                </li>
-                <li className="nav-item nav__item text-center">
-                    <NavLink
-                        className="nav-link text-white"
-                        to="/decaf#contact"
-                    >
-                        CONTACT
-                    </NavLink>
-                </li>
-                <li className="nav-item text-center">
-                    <NavLink
-                        className="nav-link btn nav__toggle decaf-toggle"
-                        to="/decaf/companies"
-                    >
-                        SWITCH TO COMPANY VIEW
-                    </NavLink>
-                </li>
-            </ul>
-        );
-    }
+import Logo from '../assets/logo-header.svg';
 
-    companyLinks() {
-        return (
-            <ul className="navbar-nav ml-auto">
-                <li className="nav-item nav__item text-center">
-                    <NavLink
-                        className="nav-link text-white"
-                        to="/decaf/companies"
-                    >
-                        HOME
-                    </NavLink>
-                </li>
-                <li className="nav-item nav__item text-center">
-                    <NavLink
-                        className="nav-link text-white"
-                        to="/decaf/companies#about"
-                    >
-                        ABOUT
-                    </NavLink>
-                </li>
-                <li className="nav-item nav__item text-center">
-                    <NavLink
-                        className="nav-link text-white"
-                        to="/decaf/attending"
-                    >
-                        ATTENDING
-                    </NavLink>
-                </li>
-                <li className="nav-item nav__item text-center">
-                    <a
-                        className="nav-link text-white"
-                        href="https://events.eventzilla.net/e/decaf-2020-2138755381"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        REGISTER
-                    </a>
-                </li>
-                <li className="nav-item text-center">
-                    <NavLink
-                        className="nav-link text-white"
-                        to="/decaf/companies#faq"
-                    >
-                        FAQ
-                    </NavLink>
-                </li>
-                <li className="nav-item nav__item text-center">
-                    <NavLink
-                        className="nav-link text-white"
-                        to="/decaf/companies#contact"
-                    >
-                        CONTACT
-                    </NavLink>
-                </li>
-                <li className="nav-item text-center">
-                    <NavLink
-                        className="nav-link btn nav__toggle decaf-toggle decaf-green-text"
-                        to="/decaf"
-                    >
-                        SWITCH TO STUDENT VIEW
-                    </NavLink>
-                </li>
-            </ul>
-        );
-    }
+const DecafNav = ({ isCompany }) => {
+    const [isOpen, setIsOpen] = useState(false);
 
-    render() {
-        const { isCompany } = this.props;
+    const toggle = () => setIsOpen(!isOpen);
 
-        return (
-            <header>
-                <div className="pt-3" id="top-nav">
-                    <nav className="navbar navbar-expand-lg navbar-light nav__items">
-                        <NavLink to="/decaf">
-                            <img
-                                className="nav__logo w-50"
-                                href="#"
-                                src="/decaf-icon.svg"
-                                alt="Decaf icon"
-                            />
-                        </NavLink>
-                        <button
-                            className="navbar-toggler nav__toggler collapsed"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span className="navbar-toggler-icon" />
-                        </button>
-                        <div
-                            className="collapse navbar-collapse"
-                            id="navbarSupportedContent"
-                        >
-                            {isCompany
-                                ? this.companyLinks()
-                                : this.everyoneLinks()}
-                        </div>
-                    </nav>
-                </div>
-            </header>
-        );
-    }
-}
+    return (
+        <header className="decaf-nav">
+            <Navbar expand="md">
+                <NavbarBrand href="/decaf/companies">
+                    <img src={Logo} alt="logo" />
+                    <span>DECAF</span>
+                </NavbarBrand>
+                <NavbarToggler onClick={toggle} />
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="ml-auto" navbar>
+                        <NavItem>
+                            <NavLink href="#">HOME</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="#">ABOUT</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="#">FAQ</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="#">SPONSORS</NavLink>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+        </header>
+    );
+};
 
 export default withRouter(DecafNav);

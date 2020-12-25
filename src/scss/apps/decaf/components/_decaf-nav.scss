@@ -1,0 +1,38 @@
+.decaf-nav {
+    font-weight: 700;
+    width: 90%;
+    margin: 0 auto;
+
+    .nav-item {
+        a {
+            font-size: 2rem;
+            color: black;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: $decaf-orange;
+        }
+    }
+
+    .nav-item + .nav-item {
+        margin-left: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 3rem;
+        font-weight: 900;
+        color: $decaf-orange;
+
+        img {
+            position: relative;
+            z-index: 1;
+        }
+
+        span {
+            position: relative;
+            top: 10px;
+            left: -30px;
+        }
+    }
+}

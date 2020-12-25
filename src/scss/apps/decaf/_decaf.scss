@@ -1,11 +1,62 @@
-$decaf-light-blue: #3399FF;
-$decaf-dark-blue: #2F5F8E;
+$decaf-light-blue: #3399ff;
+$decaf-dark-blue: #2f5f8e;
 
-$decaf-dark-green: #2B7586;
-$decaf-light-green: #17A381;
+$decaf-dark-green: #2b7586;
+$decaf-light-green: #17a381;
 
-#decaf-main {
-    height: 100%;
+$decaf-orange: #e55b42;
+
+@font-face {
+    font-family: 'Woodchuck';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Woodchuck'),
+        url('../../../pages/DecafPage/assets/fonts/Woodchuck-Thin.otf')
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'Woodchuck';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Woodchuck'),
+        url('../../../pages/DecafPage/assets/fonts/Woodchuck-Light.otf')
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'Woodchuck';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Woodchuck'),
+        url('../../../pages/DecafPage/assets/fonts/Woodchuck-Regular.otf')
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'Woodchuck';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Woodchuck'),
+        url('../../../pages/DecafPage/assets/fonts/Woodchuck-Bold.otf')
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'Woodchuck';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Woodchuck'),
+        url('../../../pages/DecafPage/assets/fonts/Woodchuck-Heavy.otf')
+            format('opentype');
+}
+
+.decaf-main {
+    color: black;
+
+    * {
+        font-family: 'Woodchuck', sans-serif;
+    }
 }
 
 .decaf-gradient-bg {
@@ -34,13 +85,18 @@ $decaf-light-green: #17A381;
 }
 
 .decaf-green-gradient {
-    background: linear-gradient(49.53deg, $decaf-dark-green 12.76%, $decaf-light-green 97.14%);;
+    background: linear-gradient(
+        49.53deg,
+        $decaf-dark-green 12.76%,
+        $decaf-light-green 97.14%
+    );
 }
 
 .decaf-green-bg {
     background: $decaf-light-green !important;
 
-    & .question__heading a, & .question__content {
+    & .question__heading a,
+    & .question__content {
         color: $decaf-dark-green;
     }
 }
