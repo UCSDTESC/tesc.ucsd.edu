@@ -16,10 +16,10 @@ const About = ({ isCompany }) => {
                         />
                     </Col>
                     <Col>
-                        <h1>
+                        <h1 className="section-title">
                             what is
                             <br />
-                            DECAF
+                            <em>DECAF</em>
                         </h1>
                         <p>
                             The Disciplines of Engineering Career Fair, or

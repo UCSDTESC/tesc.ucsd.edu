@@ -1,10 +1,6 @@
 .decaf-hero {
     padding: 5rem 0;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 1) 65%,
-        rgba(250, 123, 90, 1) 65%
-    );
+    background: linear-gradient(180deg, #fff 65%, $decaf-scarlet-blush 65%);
 
     &__content {
         display: flex;
@@ -13,7 +9,7 @@
         justify-content: space-between;
 
         h1 {
-            color: $decaf-orange;
+            color: $decaf-sunkist-scarlet;
             font-weight: 900;
             font-size: 6.25rem;
             margin-bottom: 0;
@@ -25,7 +21,7 @@
         }
 
         p {
-            color: $decaf-orange;
+            color: $decaf-sunkist-scarlet;
             font-size: 1.5rem;
             margin-bottom: 3rem;
         }

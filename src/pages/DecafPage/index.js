@@ -1,15 +1,10 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
+import $ from 'jquery';
 
 import Hero from './components/Hero';
 import About from './components/About';
-import Faq from './components/Faq';
-import Sponsors from './components/Sponsors';
-import FLO from './components/FLO';
-
-import $ from 'jquery';
-
-import Attending from './components/Attending';
-import { withRouter } from 'react-router-dom';
+import Stats from './components/Stats';
 
 class DecafPage extends React.Component {
     componentDidMount() {
@@ -42,10 +37,7 @@ class DecafPage extends React.Component {
             <>
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
-                <Attending />
-                {!this.props.isCompany && <FLO />}
-                <Faq isCompany={this.props.isCompany} />
-                <Sponsors />
+                <Stats />
             </>
         );
     }

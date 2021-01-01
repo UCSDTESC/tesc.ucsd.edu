@@ -1,10 +1,4 @@
-$decaf-light-blue: #3399ff;
-$decaf-dark-blue: #2f5f8e;
-
-$decaf-dark-green: #2b7586;
-$decaf-light-green: #17a381;
-
-$decaf-orange: #e55b42;
+$decaf-sunkist-scarlet: #e55b42;
 $decaf-scarlet-blush: #fa7b5a;
 
 @font-face {
@@ -61,6 +55,19 @@ $decaf-scarlet-blush: #fa7b5a;
 
     .container {
         max-width: 70%;
+    }
+
+    .section-title {
+        color: black;
+        font-weight: 900;
+        font-size: 3rem;
+
+        em {
+            color: white;
+            font-size: 4rem;
+            font-style: normal;
+            text-shadow: 8px 8px 0px $decaf-sunkist-scarlet;
+        }
     }
 }
 
