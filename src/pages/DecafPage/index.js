@@ -1,10 +1,15 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { Container, Row, Col } from 'reactstrap';
 import $ from 'jquery';
 
 import Hero from './components/Hero';
 import About from './components/About';
 import Stats from './components/Stats';
+import Faq from './components/Faq';
+import Sponsors from './components/Sponsors';
+
+import BobbyBass from './assets/bobby-bass.svg';
 
 class DecafPage extends React.Component {
     componentDidMount() {
@@ -38,6 +43,26 @@ class DecafPage extends React.Component {
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
                 <Stats />
+
+                <section className="decaf-announcement">
+                    <Container>
+                        <Row>
+                            <Col>
+                                <p>
+                                    Decaf 21 will be hosted virtually this year.
+                                    The primary platform for the event will be
+                                    Discord!
+                                </p>
+                            </Col>
+                            <Col>
+                                <img src={BobbyBass} alt="bobby bass" />
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+
+                <Faq />
+                <Sponsors />
             </>
         );
     }

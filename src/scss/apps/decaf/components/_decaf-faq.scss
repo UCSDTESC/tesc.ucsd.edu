@@ -1,0 +1,32 @@
+.decaf-faq {
+    background-color: $decaf-zzzquil;
+    padding: 15rem 0;
+    position: relative;
+
+    &__title {
+        color: black;
+        font-weight: 900;
+        font-size: 3rem;
+        position: relative;
+        top: -280px;
+
+        em {
+            color: $decaf-zzzquil;
+            font-size: 4rem;
+            font-style: normal;
+            text-shadow: 8px 8px 0px $decaf-lemon-drop;
+        }
+    }
+
+    &__border-top {
+        width: 100%;
+        position: absolute;
+        top: -35px;
+    }
+
+    &__border-bottom {
+        width: 100%;
+        position: absolute;
+        bottom: -35px;
+    }
+}
