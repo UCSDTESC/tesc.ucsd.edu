@@ -10,6 +10,7 @@ import Faq from './components/Faq';
 import Sponsors from './components/Sponsors';
 
 import BobbyBass from './assets/bobby-bass.svg';
+import { getRectCenter } from '@fullcalendar/core';
 
 class DecafPage extends React.Component {
     componentDidMount() {
@@ -38,6 +39,20 @@ class DecafPage extends React.Component {
     }
 
     render() {
+        const desStyle = {
+        fontFamily: "Woodchuck",
+        fontStyle: "normal",
+        fontWeight: "bold",
+        color: "white",
+        textAlign: "center"
+        }
+
+        const imgStyle = {
+            transform: "rotate(10deg)",
+            margin: "-40%",
+            maxWidth: "100%",
+            height: "auto"
+        }
         return (
             <>
                 <Hero isCompany={this.props.isCompany} />
@@ -48,14 +63,14 @@ class DecafPage extends React.Component {
                     <Container>
                         <Row>
                             <Col>
-                                <p>
+                                <h1 style={desStyle} >
                                     Decaf 21 will be hosted virtually this year.
-                                    The primary platform for the event will be
-                                    Discord!
-                                </p>
+                                    The primary platform for the event will be 
+                                    <span style={{color:"#29193E"}}> Discord!</span>
+                                </h1>
                             </Col>
-                            <Col>
-                                <img src={BobbyBass} alt="bobby bass" />
+                            <Col xs={3}>
+                                <img src={BobbyBass} alt="bobby bass" style={imgStyle} />
                             </Col>
                         </Row>
                     </Container>
