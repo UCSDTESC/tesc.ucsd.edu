@@ -3,6 +3,7 @@ import { Container, Row } from 'reactstrap';
 
 import potHead from "../assets/pot-head.svg"
 import buford from "../assets/buford.svg"
+import shadow from "../assets/pot-head-shadow.svg"
 import Col from 'reactstrap/lib/Col';
 
 const Sponsors = () => {
@@ -22,7 +23,18 @@ const Sponsors = () => {
         fontStyle: "normal",
         fontWeight: "900",
         margin: "auto -30%",
-        fontSize: "20vw"
+        fontSize: "20vw",
+        position: "relative",
+        zIndex: "5"
+    }
+
+    const shadowStyle = {
+        position: "absolute",
+        zIndex: "1",
+        width: "22%",
+        height: "auto",
+        marginTop: "5%",
+        marginLeft: "-2%",
     }
     
     const potHeadStyle = {
@@ -32,7 +44,6 @@ const Sponsors = () => {
         zIndex: "12",
         width: "100%",
         height: "auto",
-        filter: "drop-shadow(0 1rem 5px #8C74B7)"
     }
 
     const bufordStyle = {
@@ -67,14 +78,17 @@ const Sponsors = () => {
                     </h1>
                 </Row>
                 <Row>
-                    <Col><img src={potHead} style={potHeadStyle}/></Col>
+                    <img src={shadow} style={shadowStyle}/>
+                    <Col><img src={potHead} style={potHeadStyle}/>
+
+                    </Col>
                     <Col xs={6}><h2 style={TBDStyle}>TBD</h2></Col>
                     <Col><img src={buford} style={bufordStyle} /></Col>
                 </Row>
                 <Row>
                     <p style={contactStyle}>
                         Contact us at{' '}
-                        <a href="mailto:sponsor@tesc.ucsd.edu">
+                        <a href="mailto:sponsor@tesc.ucsd.edu" style={{color:"#29193E"}}>
                             sponsor@tesc.ucsd.edu
                         </a>{' '}
                         if you have any questions!

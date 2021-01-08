@@ -49,7 +49,6 @@ class DecafPage extends React.Component {
 
         const imgStyle = {
             transform: "rotate(10deg)",
-            margin: "-40%",
             maxWidth: "100%",
             height: "auto"
         }
