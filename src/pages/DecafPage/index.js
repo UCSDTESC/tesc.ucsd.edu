@@ -40,18 +40,18 @@ class DecafPage extends React.Component {
 
     render() {
         const desStyle = {
-        fontFamily: "Woodchuck",
-        fontStyle: "normal",
-        fontWeight: "bold",
-        color: "white",
-        textAlign: "center"
-        }
+            fontFamily: 'Woodchuck',
+            fontStyle: 'normal',
+            fontWeight: 'bold',
+            color: 'white',
+            textAlign: 'center',
+        };
 
         const imgStyle = {
-            transform: "rotate(10deg)",
-            maxWidth: "100%",
-            height: "auto"
-        }
+            transform: 'rotate(10deg)',
+            maxWidth: '100%',
+            height: 'auto',
+        };
         return (
             <>
                 <Hero isCompany={this.props.isCompany} />
@@ -61,15 +61,27 @@ class DecafPage extends React.Component {
                 <section className="decaf-announcement">
                     <Container>
                         <Row>
-                            <Col>
-                                <h1 style={desStyle} >
+                            <Col
+                                style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                }}
+                            >
+                                <h1 style={desStyle}>
                                     Decaf 21 will be hosted virtually this year.
-                                    The primary platform for the event will be 
-                                    <span style={{color:"#29193E"}}> Discord!</span>
+                                    The primary platform for the event will be
+                                    <span style={{ color: '#29193E' }}>
+                                        {' '}
+                                        Discord!
+                                    </span>
                                 </h1>
                             </Col>
                             <Col xs={3}>
-                                <img src={BobbyBass} alt="bobby bass" style={imgStyle} />
+                                <img
+                                    src={BobbyBass}
+                                    alt="bobby bass"
+                                    style={imgStyle}
+                                />
                             </Col>
                         </Row>
                     </Container>
