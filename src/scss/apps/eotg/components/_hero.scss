@@ -1,5 +1,6 @@
 .eotg-hero {
-    background: $eotg-blue;
+    background-image: url(../../../../pages/EOTGPage/svg/bg-hero.svg);
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -47,39 +48,13 @@
 
         &:hover {
             background: white;
-            color: $eotg-blue;
+            color: $eotg-ice-pack;
             text-decoration: none;
         }
     }
 
-    &__clouds-top {
-        padding-top: 4rem;
-
-        img {
-            width: 80%;
-            max-width: 400px;
-            mix-blend-mode: soft-light;
-        }
-    }
-
-    &__clouds-bottom {
-        display: flex;
-        align-items: flex-end;
-        width: 100vw;
-        position: relative;
-        bottom: -30px;
-
-        .cloud-bottom-right {
-            text-align: right;
-            padding-right: 0;
-
-            img {
-                width: 70%;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
+    .bg-img {
+        -webkit-user-drag: none;
+        user-select: none;
     }
 }
