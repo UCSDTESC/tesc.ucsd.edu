@@ -40,7 +40,7 @@ const DecafNav = ({ isCompany }) => {
     return (
         <header className="decaf-nav">
             <Navbar expand="md">
-                <NavbarBrand href="/decaf/companies">
+                <NavbarBrand>
                     <img
                         src={isCompany ? LogoCompany : LogoStudent}
                         alt="logo"

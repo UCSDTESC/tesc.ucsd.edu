@@ -103,7 +103,7 @@ class DecafPage extends React.Component {
                     </Container>
                 </section>
 
-                <Faq />
+                <Faq isCompany={this.props.isCompany} />
                 <Sponsors />
             </>
         );
