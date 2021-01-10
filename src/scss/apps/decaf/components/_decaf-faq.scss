@@ -82,5 +82,14 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
+
+        .panel-body {
+            padding-bottom: 1rem;
+
+            .panel-answer {
+                display: flex;
+                align-items: center;
+            }
+        }
     }
 }
