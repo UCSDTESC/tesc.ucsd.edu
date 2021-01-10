@@ -35,7 +35,7 @@ const studentFaq = [
             <>
                 Follow our{' '}
                 <a
-                    href="https://www.facebook.com/events/126567392614539"
+                    href="https://www.facebook.com/events/1045225139323545"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -128,7 +128,7 @@ const studentFaq = [
                 </a>
                 ). You can find more information by going to our{' '}
                 <a
-                    href="https://www.facebook.com/events/126567392614539"
+                    href="https://www.facebook.com/events/1045225139323545"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
