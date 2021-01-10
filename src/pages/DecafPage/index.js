@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import $ from 'jquery';
 
 import Hero from './components/Hero';
@@ -9,15 +9,18 @@ import Stats from './components/Stats';
 import Faq from './components/Faq';
 import Sponsors from './components/Sponsors';
 
-import BobbyBass from './assets/bobby-bass.svg';
-import { getRectCenter } from '@fullcalendar/core';
+import BobbyBassCompany from './assets/company/bobby-bass.svg';
+import BobbyBassStudent from './assets/student/bobby-bass.svg';
 
 class DecafPage extends React.Component {
     componentDidMount() {
         document.title = 'Decaf 2021 | UCSD TESC';
 
         //TODO: remove jQuery here
-        $("link[rel='shortcut icon']").attr('href', '/decaf-logo.svg');
+        $("link[rel='shortcut icon']").attr(
+            'href',
+            `/decaf-logo-${this.props.isCompany ? 'company' : 'student'}.svg`
+        );
 
         const { hash } = this.props.location;
         window.scrollTo(0, 0);
@@ -56,15 +59,21 @@ class DecafPage extends React.Component {
             <>
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
-                <Stats />
-
-                <section className="decaf-announcement">
+                {this.props.isCompany && <Stats />}
+                <section
+                    className={`decaf-announcement ${
+                        this.props.isCompany
+                            ? 'decaf-bg-orange'
+                            : 'decaf-bg-purple'
+                    }`}
+                >
                     <Container>
                         <Row>
                             <Col
                                 style={{
                                     display: 'flex',
-                                    alignItems: 'center',
+                                    flexDirection: 'column',
+                                    justifyContent: 'center',
                                 }}
                             >
                                 <h1 style={desStyle}>
@@ -75,10 +84,17 @@ class DecafPage extends React.Component {
                                         Discord!
                                     </span>
                                 </h1>
+                                {!this.props.isCompany && (
+                                    <Button>View Attending Companies</Button>
+                                )}
                             </Col>
                             <Col xs={3}>
                                 <img
-                                    src={BobbyBass}
+                                    src={
+                                        this.props.isCompany
+                                            ? BobbyBassCompany
+                                            : BobbyBassStudent
+                                    }
                                     alt="bobby bass"
                                     style={imgStyle}
                                 />

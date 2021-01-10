@@ -1,6 +1,5 @@
 .decaf-hero {
     padding: 5rem 0;
-    background: linear-gradient(180deg, #fff 65%, $decaf-scarlet-blush 65%);
 
     &__content {
         display: flex;
@@ -9,7 +8,6 @@
         justify-content: space-between;
 
         h1 {
-            color: $decaf-sunkist-scarlet;
             font-weight: 900;
             font-size: 6.25rem;
             margin-bottom: 0;
@@ -21,7 +19,6 @@
         }
 
         p {
-            color: $decaf-sunkist-scarlet;
             font-size: 1.5rem;
             margin-bottom: 3rem;
         }
@@ -29,10 +26,53 @@
         .btn {
             font-size: 2rem;
             font-weight: 700;
-            background-color: $decaf-scarlet-blush;
             border-radius: 50px;
-            border-color: $decaf-scarlet-blush;
             padding: 0.375rem 1.3rem;
+            min-width: 80%;
+        }
+    }
+}
+
+.decaf-hero--company {
+    background: linear-gradient(180deg, #fff 65%, $decaf-scarlet-blush 65%);
+
+    .decaf-hero__content {
+        h1 {
+            color: $decaf-sunkist-scarlet;
+        }
+
+        p {
+            color: $decaf-sunkist-scarlet;
+        }
+
+        .btn-1 {
+            background-color: $decaf-scarlet-blush;
+            border-color: $decaf-scarlet-blush;
+        }
+    }
+}
+
+.decaf-hero--student {
+    background: linear-gradient(180deg, #fff 65%, $decaf-grapevine 65%);
+
+    .decaf-hero__content {
+        h1 {
+            color: $decaf-grapevine;
+        }
+
+        p {
+            color: $decaf-grapevine;
+        }
+
+        .btn-1 {
+            background-color: $decaf-grapevine;
+            border-color: $decaf-grapevine;
+        }
+
+        .btn-2 {
+            margin-top: 1rem;
+            background-color: $decaf-pepto-bismo;
+            border-color: $decaf-pepto-bismo;
         }
     }
 }
