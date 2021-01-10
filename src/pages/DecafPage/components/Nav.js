@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { withRouter } from 'react-router-dom';
 import {
     Collapse,
@@ -9,36 +9,63 @@ import {
     NavItem,
     NavLink,
 } from 'reactstrap';
+import $ from 'jquery';
 
-import Logo from '../assets/logo-header.svg';
+import LogoCompany from '../assets/company/logo-header.svg';
+import LogoStudent from '../assets/student/logo-header.svg';
 
 const DecafNav = ({ isCompany }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const navLinks = useMemo(() => ['about', 'faq', 'sponsors'], []);
 
     const toggle = () => setIsOpen(!isOpen);
+
+    useEffect(() => {
+        navLinks.forEach((name) => {
+            $(`a[href='#${name}']`).on('click', () => {
+                $('html,body').animate(
+                    {
+                        scrollTop: $(`.decaf-${name}`).offset().top,
+                    },
+                    'slow'
+                );
+            });
+        });
+
+        return () => {
+            navLinks.forEach(({ href }) => $(`a[href='${href}']`).off());
+        };
+    }, [navLinks]);
 
     return (
         <header className="decaf-nav">
             <Navbar expand="md">
                 <NavbarBrand href="/decaf/companies">
-                    <img src={Logo} alt="logo" />
-                    <span>DECAF</span>
+                    <img
+                        src={isCompany ? LogoCompany : LogoStudent}
+                        alt="logo"
+                    />
+                    <span
+                        className={isCompany ? 'logo-company' : 'logo-student'}
+                    >
+                        DECAF
+                    </span>
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="ml-auto" navbar>
-                        <NavItem>
-                            <NavLink href="#">HOME</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#">ABOUT</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#">FAQ</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#">SPONSORS</NavLink>
-                        </NavItem>
+                    <Nav
+                        navbar
+                        className={`ml-auto ${
+                            isCompany ? 'nav-company' : 'nav-student'
+                        }`}
+                    >
+                        {navLinks.map((name, i) => (
+                            <NavItem key={i}>
+                                <NavLink href={`#${name}`}>
+                                    {name.toUpperCase()}
+                                </NavLink>
+                            </NavItem>
+                        ))}
                     </Nav>
                 </Collapse>
             </Navbar>

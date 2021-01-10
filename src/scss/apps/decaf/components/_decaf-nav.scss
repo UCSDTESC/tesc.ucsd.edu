@@ -3,15 +3,23 @@
     width: 90%;
     margin: 0 auto;
 
+    .navbar-nav.nav-company {
+        a:hover {
+            color: $decaf-sunkist-scarlet;
+        }
+    }
+
+    .navbar-nav.nav-student {
+        a:hover {
+            color: $decaf-grapevine;
+        }
+    }
+
     .nav-item {
         a {
             font-size: 2rem;
             color: black;
             transition: color 0.2s;
-        }
-
-        a:hover {
-            color: $decaf-sunkist-scarlet;
         }
     }
 
@@ -22,7 +30,6 @@
     .navbar-brand {
         font-size: 3rem;
         font-weight: 900;
-        color: $decaf-sunkist-scarlet;
 
         img {
             position: relative;
@@ -33,6 +40,14 @@
             position: relative;
             top: 10px;
             left: -30px;
+        }
+
+        .logo-company {
+            color: $decaf-sunkist-scarlet;
+        }
+
+        .logo-student {
+            color: $decaf-grapevine;
         }
     }
 }

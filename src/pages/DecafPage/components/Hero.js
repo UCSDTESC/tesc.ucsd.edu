@@ -1,28 +1,59 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import HeroImgLeft from '../assets/hero-graphic-left.svg';
-import HeroImgBottom from '../assets/hero-graphic-bottom.svg';
+
+import HeroImgLeftCompany from '../assets/company/hero-graphic-left.svg';
+import HeroImgBottomCompany from '../assets/company/hero-graphic-bottom.svg';
+import HeroImgLeftStudent from '../assets/student/hero-graphic-left.svg';
+import HeroImgBottomStudent from '../assets/student/hero-graphic-bottom.svg';
 
 const Hero = ({ isCompany }) => {
     return (
-        <section className="decaf-hero">
+        <section
+            className={`decaf-hero ${
+                isCompany ? 'decaf-hero--company' : 'decaf-hero--student'
+            }`}
+        >
             <Container>
                 <Row>
                     <Col xl={5} md={7}>
-                        <img src={HeroImgLeft} alt="" width="100%" />
+                        <img
+                            src={
+                                isCompany
+                                    ? HeroImgLeftCompany
+                                    : HeroImgLeftStudent
+                            }
+                            alt=""
+                            width="100%"
+                        />
                     </Col>
                     <Col className="decaf-hero__content">
                         <div>
                             <h1>DECAF</h1>
-                            <h2>FOR COMPANIES</h2>
+                            <h2>FOR {isCompany ? 'COMPANIES' : 'STUDENTS'}</h2>
                             <p>
                                 Disciplines of Engineering Career Fair
                                 <br />
                                 On Discord, January 19-21, 2021
                             </p>
-                            <Button>Register Your Company</Button>
+                            <Button className="btn-1">
+                                {isCompany
+                                    ? 'Register Your Company'
+                                    : 'Sign Up for Decaf'}
+                            </Button>
+                            {!isCompany && (
+                                <Button className="btn-2">
+                                    Attending Companies
+                                </Button>
+                            )}
                         </div>
-                        <img src={HeroImgBottom} alt="" />
+                        <img
+                            src={
+                                isCompany
+                                    ? HeroImgBottomCompany
+                                    : HeroImgBottomStudent
+                            }
+                            alt=""
+                        />
                     </Col>
                 </Row>
             </Container>
