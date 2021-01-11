@@ -1,5 +1,12 @@
 const currEvents = [
     {
+        name: 'Decaf 2021',
+        link: '/decaf',
+        isInternalLink: true,
+        img: '/decaf-event-wi21.svg',
+        date: '2021-01-19T00:00:00.000Z',
+    },
+    {
         name: 'Engineering on the Green: Winter 2021',
         link: '',
         img: '/eotg-event-wi21.svg',
