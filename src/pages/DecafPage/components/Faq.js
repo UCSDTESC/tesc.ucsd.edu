@@ -13,8 +13,6 @@ import FaqItem from './FaqItem';
 const Faq = ({ isCompany }) => {
     const data = isCompany ? companyFaq : studentFaq;
 
-    console.log(data);
-
     return (
         <section className="decaf-faq">
             <img
@@ -22,7 +20,7 @@ const Faq = ({ isCompany }) => {
                 alt=""
                 className="decaf-faq__border-top"
             />
-            <img src={Spotlight} alt="" />
+            <img src={Spotlight} alt="" className="decaf-faq__spotlight" />
             <Container>
                 <h1 className="decaf-faq__title">
                     frequently asked
@@ -30,15 +28,19 @@ const Faq = ({ isCompany }) => {
                     <em>QUESTIONS</em>
                 </h1>
                 <Row>
-                    <Col>
+                    <Col lg={8} xs={12}>
                         <div className="content pb-4">
                             {data.map((d, i) => (
                                 <FaqItem {...d} key={i} idx={i} />
                             ))}
                         </div>
                     </Col>
-                    <Col xs="auto">
-                        <img src={StickersAll} alt="sticker set" />
+                    <Col>
+                        <img
+                            src={StickersAll}
+                            alt="sticker set"
+                            className="decaf-faq__sticker-set"
+                        />
                     </Col>
                 </Row>
             </Container>

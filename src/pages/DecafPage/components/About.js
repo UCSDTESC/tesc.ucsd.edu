@@ -21,10 +21,10 @@ const About = ({ isCompany }) => {
                                     : AboutGraphicStudent
                             }
                             alt=""
-                            className="d-block mx-auto"
+                            width="80%"
                         />
                     </Col>
-                    <Col>
+                    <Col md={6} xs={12}>
                         <h1 className="section-title">
                             what is
                             <br />

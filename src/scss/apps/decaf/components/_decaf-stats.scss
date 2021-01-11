@@ -16,6 +16,7 @@
         padding: 0;
         display: flex;
         flex-direction: column;
+        width: 30vw;
 
         div {
             padding: 2rem 1rem;
@@ -24,18 +25,24 @@
 
         h2 {
             color: white;
-            font-size: 3rem;
+            font-size: clamp(1.5rem, 3vw, 3rem);
             text-shadow: 8px 0px 0px $decaf-sunkist-scarlet;
         }
 
         p {
-            font-size: 18px;
+            font-size: clamp(1rem, 1.1vw, 18px);
             color: white;
         }
 
         svg {
             position: relative;
             bottom: -15px;
+            width: 100%;
+            height: auto;
+        }
+
+        @include media-breakpoint-down(sm) {
+            border-right-width: 4px;
         }
     }
 
@@ -44,5 +51,11 @@
         padding: 1rem;
         border: 4px solid white;
         border-left-width: 2px;
+        display: flex;
+        align-items: center;
+
+        @include media-breakpoint-down(sm) {
+            border-left-width: 4px;
+        }
     }
 }

@@ -65,11 +65,11 @@ $decaf-pepto-bismo: #fd8ba4;
     .section-title {
         color: black;
         font-weight: 900;
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 3vw, 3rem);
 
         em {
             color: white;
-            font-size: 4rem;
+            font-size: clamp(2rem, 4vw, 4rem);
             font-style: normal;
             text-shadow: 8px 8px 0px $decaf-sunkist-scarlet;
         }

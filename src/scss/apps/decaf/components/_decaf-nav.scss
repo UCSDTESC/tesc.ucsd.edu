@@ -16,15 +16,16 @@
     }
 
     .nav-item {
+        margin-left: 2rem;
+
         a {
             font-size: 2rem;
-            color: black;
             transition: color 0.2s;
         }
     }
 
-    .nav-item + .nav-item {
-        margin-left: 2rem;
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
     }
 
     .navbar-brand {

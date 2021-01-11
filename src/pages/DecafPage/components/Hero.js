@@ -15,7 +15,7 @@ const Hero = ({ isCompany }) => {
         >
             <Container>
                 <Row>
-                    <Col xl={5} md={7}>
+                    <Col xl={5} lg={7} md={6}>
                         <img
                             src={
                                 isCompany
@@ -24,28 +24,27 @@ const Hero = ({ isCompany }) => {
                             }
                             alt=""
                             width="100%"
+                            className="hero-img-l"
                         />
                     </Col>
                     <Col className="decaf-hero__content">
-                        <div>
-                            <h1>DECAF</h1>
-                            <h2>FOR {isCompany ? 'COMPANIES' : 'STUDENTS'}</h2>
-                            <p>
-                                Disciplines of Engineering Career Fair
-                                <br />
-                                On Discord, January 19-21, 2021
-                            </p>
-                            <Button className="btn-1">
-                                {isCompany
-                                    ? 'Register Your Company'
-                                    : 'Sign Up for Decaf'}
+                        <h1>DECAF</h1>
+                        <h2>FOR {isCompany ? 'COMPANIES' : 'STUDENTS'}</h2>
+                        <p>
+                            Disciplines of Engineering Career Fair
+                            <br />
+                            On Discord, January 19-21, 2021
+                        </p>
+                        <Button className="btn-1">
+                            {isCompany
+                                ? 'Register Your Company'
+                                : 'Sign Up for Decaf'}
+                        </Button>
+                        {!isCompany && (
+                            <Button className="btn-2">
+                                Attending Companies
                             </Button>
-                            {!isCompany && (
-                                <Button className="btn-2">
-                                    Attending Companies
-                                </Button>
-                            )}
-                        </div>
+                        )}
                         <img
                             src={
                                 isCompany
@@ -53,6 +52,8 @@ const Hero = ({ isCompany }) => {
                                     : HeroImgBottomStudent
                             }
                             alt=""
+                            width="85%"
+                            className="hero-img-b"
                         />
                     </Col>
                 </Row>

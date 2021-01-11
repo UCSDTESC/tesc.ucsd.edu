@@ -25,7 +25,11 @@ const Stats = () => {
                     },
                 ].map(({ type, chart }, i) => [
                     <Row key={i}>
-                        <Col className="decaf-stats__group-title" xs="auto">
+                        <Col
+                            className="decaf-stats__group-title"
+                            md="auto"
+                            xs={12}
+                        >
                             <div>
                                 <h2>
                                     {type}

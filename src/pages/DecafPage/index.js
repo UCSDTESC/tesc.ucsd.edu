@@ -52,8 +52,7 @@ class DecafPage extends React.Component {
 
         const imgStyle = {
             transform: 'rotate(10deg)',
-            maxWidth: '100%',
-            height: 'auto',
+            width: '100%',
         };
         return (
             <>
@@ -70,6 +69,8 @@ class DecafPage extends React.Component {
                     <Container>
                         <Row>
                             <Col
+                                md={8}
+                                xs={12}
                                 style={{
                                     display: 'flex',
                                     flexDirection: 'column',
@@ -88,7 +89,7 @@ class DecafPage extends React.Component {
                                     <Button>View Attending Companies</Button>
                                 )}
                             </Col>
-                            <Col xs={3}>
+                            <Col>
                                 <img
                                     src={
                                         this.props.isCompany
