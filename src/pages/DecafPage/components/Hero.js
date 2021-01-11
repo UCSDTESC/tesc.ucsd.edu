@@ -35,7 +35,16 @@ const Hero = ({ isCompany }) => {
                             <br />
                             On Discord, January 19-21, 2021
                         </p>
-                        <Button className="btn-1">
+                        <Button
+                            className="btn-1"
+                            href={
+                                isCompany
+                                    ? 'http://www.tesc.link/registerDecaf'
+                                    : 'http://www.tesc.link/decafReg'
+                            }
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             {isCompany
                                 ? 'Register Your Company'
                                 : 'Sign Up for Decaf'}
