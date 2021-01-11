@@ -44,13 +44,11 @@ const Stats = () => {
                             <Border />
                         </Col>
                         <Col className="decaf-stats__chart">
-                            <div>
-                                <img
-                                    src={chart}
-                                    alt={`pie chart on ${type}s of students who attended Decaf 2020`}
-                                    width="100%"
-                                />
-                            </div>
+                            <img
+                                src={chart}
+                                alt={`pie chart on ${type}s of students who attended Decaf 2020`}
+                                width="100%"
+                            />
                         </Col>
                     </Row>,
                 ])}
