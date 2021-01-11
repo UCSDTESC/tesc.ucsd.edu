@@ -1,14 +1,8 @@
 import React from 'react';
-import AttendingCompanies from './components/AttendingCompanies'
-class AttendingPage extends React.Component {
+import AttendingCompanies from './components/AttendingCompanies';
 
-    render() {
-        return (
-            <div>
-                <AttendingCompanies />
-            </div>
-        )
-    }
-}
+const AttendingPage = () => {
+    return <AttendingCompanies />;
+};
 
 export default AttendingPage;

@@ -1,61 +1,102 @@
 .decaf-hero {
+    padding: 5rem 0;
 
-    background: linear-gradient(-45deg, $decaf-light-blue, $decaf-dark-blue);
-    color: white;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
 
-    &__green {
-        background: linear-gradient(49.53deg, $decaf-dark-green 12.76%, $decaf-light-green 97.14%);
-    }
-    
-    &__container {
-        width: 80%;
-        margin-left: 10%;
-        height: 87%;
-    }
+        h1 {
+            font-weight: 900;
+            font-size: clamp(3rem, 6vw, 6.25rem);
+            margin-bottom: 0;
+        }
 
-    &__left {
+        h2 {
+            font-size: clamp(1rem, 3vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
+            margin-bottom: 2vw;
+        }
+
+        .btn {
+            font-size: clamp(1rem, 2vw, 2rem);
+            font-weight: 700;
+            border-radius: 50px;
+            padding: 0.375rem 1.3rem;
+            min-width: 80%;
+            margin-bottom: 1rem;
+        }
+
         @include media-breakpoint-down(sm) {
-            text-align: center;
-            margin-top: 3rem;
+            align-items: center;
         }
     }
 
-    &__title {
-        font-size: 1.5rem;
-        margin-top: 2rem;
+    .hero-img-l {
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
     }
 
-    &__cta {
-        color: $decaf-dark-blue !important;
+    .hero-img-b {
+        @include media-breakpoint-only(md) {
+            display: none;
+        }
+    }
+}
+
+.decaf-hero--company {
+    background: linear-gradient(180deg, #fff 65%, $decaf-scarlet-blush 65%);
+
+    @include media-breakpoint-down(md) {
         background: white;
-        font-size: 1.5rem;
-        border-radius: 1rem;
-        margin-top: 1.5rem;
-        border: solid 2px white;
+    }
 
-        &:hover {
-            background: transparent;
-            color: white !important;
+    .decaf-hero__content {
+        h1 {
+            color: $decaf-sunkist-scarlet;
+        }
+
+        p {
+            color: $decaf-sunkist-scarlet;
+        }
+
+        .btn-1 {
+            background-color: $decaf-scarlet-blush;
+            border-color: $decaf-scarlet-blush;
         }
     }
+}
 
-    &__graphic {
-        width: 85%;
-        height: 85%;
-        display: block;
-        margin-left: auto;
-        margin-top: 1rem;
+.decaf-hero--student {
+    background: linear-gradient(180deg, #fff 65%, $decaf-grapevine 65%);
 
-        @include media-breakpoint-down(sm) {
-            margin: 2rem auto;
+    @include media-breakpoint-down(md) {
+        background: white;
+    }
+
+    .decaf-hero__content {
+        h1 {
+            color: $decaf-grapevine;
         }
-    }
 
-    &__logo {
-        width: 60%;
-    }
+        p {
+            color: $decaf-grapevine;
+        }
 
-    &__detail {
-        font-size: 1.2rem;
+        .btn-1 {
+            background-color: $decaf-grapevine;
+            border-color: $decaf-grapevine;
+        }
+
+        .btn-2 {
+            background-color: $decaf-pepto-bismo;
+            border-color: $decaf-pepto-bismo;
+        }
     }
 }

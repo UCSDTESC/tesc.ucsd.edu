@@ -1,51 +1,52 @@
 import React from 'react';
-import {ReactComponent as AboutGraphic} from '../svg/decaf-about.svg';
+import { Container, Row, Col } from 'reactstrap';
 
-function CompanyCopy(props) {
+import AboutGraphicCompany from '../assets/company/about-graphic.svg';
+import AboutGraphicStudent from '../assets/student/about-graphic.svg';
+
+const About = ({ isCompany }) => {
     return (
-        <>
-            <p>
-                The <b>Disciplines of Engineering Career Fair</b>, or <b>Decaf</b>, is an annual student-run career fair.
-            </p>
-
-            <p>
-                Attending <b>Decaf</b> will provide you with the opportunity to interact and engage with UC San Diego's talented engineering students regarding career options, internships and permanent or summer employment opportunities.
-            </p>
-        </>
-    )
-}
-
-function StudentCopy(props) {
-    return (
-        <>
-            <p>
-                The <b>Disciplines of Engineering Career Fair</b>, or <b>Decaf</b>, is an annual student-run career fair.
-            </p>
-
-            <p>
-                Attending <b>Decaf</b> will provide you with the opportunity to meet and connect with representatives from some of the top companies in engineering.
-            </p>
-        </>
-    )
-}
-
-class About extends React.Component {
-
-    render() {
-        return (
-            <div className="decaf-about" id="about">
-                <div className="decaf-about__head">
-                    What's <b>Decaf</b> ☕?
-                </div>
-
-                <div className="decaf-about__container text-center">
-                    {this.props.isCompany ? <CompanyCopy /> : <StudentCopy />}
-                </div>
-
-                <AboutGraphic className="d-block mx-auto py-5 decaf-about__graphic"/>
-            </div>
-        )
-    }
-}
+        <section
+            className={`decaf-about ${
+                isCompany ? 'decaf-bg-orange' : 'decaf-bg-purple'
+            }`}
+        >
+            <Container>
+                <Row>
+                    <Col>
+                        <img
+                            src={
+                                isCompany
+                                    ? AboutGraphicCompany
+                                    : AboutGraphicStudent
+                            }
+                            alt=""
+                            width="80%"
+                        />
+                    </Col>
+                    <Col md={6} xs={12}>
+                        <h1 className="section-title">
+                            what is
+                            <br />
+                            <em style={{ textShadow: !isCompany && 'none' }}>
+                                DECAF
+                            </em>
+                        </h1>
+                        <p>
+                            {isCompany
+                                ? 'The Disciplines of Engineering Career Fair, or Decaf, is an annual career fair organized by the Triton Engineering Student Council. Established in 1998, Decaf aims to make it easy for you to break through directly to prospective talent.'
+                                : 'The Disciplines of Engineering Career Fair, or Decaf, is an annual student-run career fair hosted by the Triton Engineering Student Council. Come by to have the opportunity to attend recruiting and information sessions, receive feedback on your resume, and more!'}
+                        </p>
+                        <p>
+                            {isCompany
+                                ? 'Attending Decaf will provide you with the opportunity to draw from a broad pool of UC San Diego’s talented engineering students. Join our growing list of sponsors to ensure you get a chance to interact with students and fulfill your hiring goals.'
+                                : 'The event will take place virtually via the online platform Discord from January 19 - 21, 2021.'}
+                        </p>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+    );
+};
 
 export default About;

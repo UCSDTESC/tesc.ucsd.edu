@@ -1,78 +1,108 @@
 import React from 'react';
-import { companies, partners } from '../../../data/decaf/Sponsor';
+import { Container, Row } from 'reactstrap';
 
-function Sponsor(props) {
+import potHead from '../assets/pot-head.svg';
+import buford from '../assets/buford.svg';
+import shadow from '../assets/pot-head-shadow.svg';
+import Col from 'reactstrap/lib/Col';
+
+const Sponsors = () => {
+    const asStyle = {
+        fontFamily: 'Woodchuck',
+        fontStyle: 'normal',
+        fontWeight: '900',
+        lineHeight: '150%',
+        color: '#8C74B7',
+        margin: 'auto',
+    };
+
+    const TBDStyle = {
+        color: '#291637',
+        fontFamily: 'Woodchuck',
+        fontStyle: 'normal',
+        fontWeight: '900',
+        margin: 'auto -30%',
+        fontSize: '20vw',
+        position: 'relative',
+        zIndex: '5',
+    };
+
+    const shadowStyle = {
+        position: 'absolute',
+        zIndex: '1',
+        width: '22%',
+        height: 'auto',
+        marginTop: '5%',
+        marginLeft: '-2%',
+    };
+
+    const potHeadStyle = {
+        marginTop: '35%',
+        marginLeft: '-25%',
+        position: 'absolute',
+        zIndex: '12',
+        width: '100%',
+        height: 'auto',
+    };
+
+    const bufordStyle = {
+        marginTop: '20%',
+        marginLeft: '-20%',
+        width: '100%',
+        height: 'auto',
+        position: 'absolute',
+        zIndex: '12',
+    };
+
+    const contactStyle = {
+        textAlign: 'center',
+        color: '#29193E',
+        fontFamily: 'Woodchuck',
+        fontStyle: 'normal',
+        fontWeight: 'bold',
+        lineHeight: '150%',
+        fontSize: '3vw',
+        margin: '0 12%',
+    };
+
     return (
-        <a
-            className="col-md-4 decaf-sponsor"
-            href={props.link}
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <img
-                src={props.img}
-                className="decaf-sponsor__img"
-                alt={props.name}
-            />
-        </a>
+        <section className="decaf-sponsors">
+            <Container>
+                <Row>
+                    <h1 style={asStyle}>ATTENDING</h1>
+                </Row>
+                <Row>
+                    <h1 style={asStyle}>
+                        <span style={{ fontSize: '150%' }}>SPONSORS</span>
+                    </h1>
+                </Row>
+                <Row>
+                    <img src={shadow} style={shadowStyle} alt="" />
+                    <Col>
+                        <img src={potHead} style={potHeadStyle} alt="" />
+                    </Col>
+                    <Col xs={6}>
+                        <h2 style={TBDStyle}>TBD</h2>
+                    </Col>
+                    <Col>
+                        <img src={buford} style={bufordStyle} alt="" />
+                    </Col>
+                </Row>
+                <Row>
+                    <p style={contactStyle}>
+                        Contact us at{' '}
+                        <a
+                            href="mailto:sponsor@tesc.ucsd.edu"
+                            style={{ color: '#29193E' }}
+                        >
+                            sponsor@tesc.ucsd.edu
+                        </a>{' '}
+                        if you have any questions!
+                    </p>
+                </Row>
+            </Container>
+        </section>
     );
-}
-
-function Partner(props) {
-    return (
-        <a
-            className={`col-md-6 decaf-sponsor`}
-            href={props.link}
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <img
-                src={props.img}
-                className={`decaf-sponsor__img ${
-                    props.className ? props.className : ''
-                }`}
-                alt={props.name}
-            />
-        </a>
-    );
-}
-
-class Sponsors extends React.Component {
-    renderCompanies() {
-        return companies.map((c) => <Sponsor {...c} />);
-    }
-
-    renderPartners() {
-        return partners.map((c) => <Partner {...c} />);
-    }
-
-    render() {
-        return (
-            <div className="decaf-sponsors">
-                <div className="container-fluid h-100">
-                    <div className="row h-100">
-                        <div className="col-md-2 decaf-sponsors__left"></div>
-                        <div className="col-md-8 decaf-sponsors__content col-sm-12">
-                            <div className="text-center decaf-sponsors__content-head">
-                                Sponsors
-                            </div>
-                            <div className="text-center mt-5 decaf-sponsors__content-head-sm">
-                                Thank you to all of our sponsors! Here are just
-                                a few:
-                            </div>
-                            <div className="row mt-5 justify-content-center align-items-center">
-                                {this.renderPartners()}
-                            </div>
-                            <div className="row mt-5 justify-content-center align-items-center">
-                                {this.renderCompanies()}
-                            </div>
-                        </div>
-                        <div className="col-md-2 decaf-sponsors__right"></div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-}
+};
 
 export default Sponsors;

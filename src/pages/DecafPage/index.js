@@ -1,23 +1,26 @@
 import React from 'react';
-
-import TopAlert from './components/TopAlert';
-import Hero from './components/Hero';
-import About from './components/About';
-import Faq from './components/Faq';
-import Sponsors from './components/Sponsors';
-import FLO from './components/FLO';
-
+import { withRouter } from 'react-router-dom';
+import { Container, Row, Col, Button } from 'reactstrap';
 import $ from 'jquery';
 
-import Attending from './components/Attending';
-import { withRouter } from 'react-router-dom';
+import Hero from './components/Hero';
+import About from './components/About';
+import Stats from './components/Stats';
+import Faq from './components/Faq';
+import Sponsors from './components/Sponsors';
+
+import BobbyBassCompany from './assets/company/bobby-bass.svg';
+import BobbyBassStudent from './assets/student/bobby-bass.svg';
 
 class DecafPage extends React.Component {
     componentDidMount() {
-        document.title = 'Decaf 2020 | UCSD TESC';
+        document.title = 'Decaf 2021 | UCSD TESC';
 
         //TODO: remove jQuery here
-        $("link[rel='shortcut icon']").attr('href', '/decaf-icon.png');
+        $("link[rel='shortcut icon']").attr(
+            'href',
+            `/decaf-logo-${this.props.isCompany ? 'company' : 'student'}.svg`
+        );
 
         const { hash } = this.props.location;
         window.scrollTo(0, 0);
@@ -39,32 +42,68 @@ class DecafPage extends React.Component {
     }
 
     render() {
+        const desStyle = {
+            fontFamily: 'Woodchuck',
+            fontStyle: 'normal',
+            fontWeight: 'bold',
+            color: 'white',
+            textAlign: 'center',
+        };
+
+        const imgStyle = {
+            transform: 'rotate(10deg)',
+            width: '100%',
+        };
         return (
             <>
-                {!this.props.isCompany && (
-                    <TopAlert
-                        copy={
-                            <div className="text-center lead">
-                                {/*<span>Looks like it's going to rain 🌧 ️on Thursday - Remember to bring an umbrella <span role="img" aria-label="Umbrella Emoji" className="">☔</span> with you to Decaf!</span>*/}
-                                <span>
-                                    Check out{' '}
-                                    <a
-                                        href="https://decaf.live"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        decaf.live
-                                    </a>{' '}
-                                    for live updates and Decaf ticket info!
-                                </span>
-                            </div>
-                        }
-                    />
-                )}
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
-                <Attending />
-                {!this.props.isCompany && <FLO />}
+                {this.props.isCompany && <Stats />}
+                <section
+                    className={`decaf-announcement ${
+                        this.props.isCompany
+                            ? 'decaf-bg-orange'
+                            : 'decaf-bg-purple'
+                    }`}
+                >
+                    <Container>
+                        <Row>
+                            <Col
+                                md={8}
+                                xs={12}
+                                style={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'center',
+                                }}
+                            >
+                                <h1 style={desStyle}>
+                                    Decaf 21 will be hosted virtually this year.
+                                    The primary platform for the event will be
+                                    <span style={{ color: '#29193E' }}>
+                                        {' '}
+                                        Discord!
+                                    </span>
+                                </h1>
+                                {/* {!this.props.isCompany && (
+                                    <Button>View Attending Companies</Button>
+                                )} */}
+                            </Col>
+                            <Col>
+                                <img
+                                    src={
+                                        this.props.isCompany
+                                            ? BobbyBassCompany
+                                            : BobbyBassStudent
+                                    }
+                                    alt="bobby bass"
+                                    style={imgStyle}
+                                />
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+
                 <Faq isCompany={this.props.isCompany} />
                 <Sponsors />
             </>

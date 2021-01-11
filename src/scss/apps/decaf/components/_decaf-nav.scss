@@ -1,0 +1,54 @@
+.decaf-nav {
+    font-weight: 700;
+    width: 90%;
+    margin: 0 auto;
+
+    .navbar-nav.nav-company {
+        a:hover {
+            color: $decaf-sunkist-scarlet;
+        }
+    }
+
+    .navbar-nav.nav-student {
+        a:hover {
+            color: $decaf-grapevine;
+        }
+    }
+
+    .nav-item {
+        margin-left: 2rem;
+
+        a {
+            font-size: 2rem;
+            transition: color 0.2s;
+        }
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+    }
+
+    .navbar-brand {
+        font-size: 3rem;
+        font-weight: 900;
+
+        img {
+            position: relative;
+            z-index: 1;
+        }
+
+        span {
+            position: relative;
+            top: 10px;
+            left: -30px;
+        }
+
+        .logo-company {
+            color: $decaf-sunkist-scarlet;
+        }
+
+        .logo-student {
+            color: $decaf-grapevine;
+        }
+    }
+}

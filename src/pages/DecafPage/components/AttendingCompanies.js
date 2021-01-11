@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import { CardDeck } from 'reactstrap';
 
 import { Company, Avatar } from './Company';
-import updatedDECAForders from '../../../data/updatedDECAForders.json';
 import FilterBar from './FilterBar';
+import updatedDECAForders from '../data/updatedDECAForders.json';
 
 class AttendingCompanies extends React.Component {
     constructor(props) {
