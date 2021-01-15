@@ -1,5 +1,12 @@
 const currEvents = [
     {
+        name: 'Enspire 2021',
+        link: '/enspire',
+        isInternalLink: true,
+        img: '/enspire-event-wi21.svg',
+        date: '2021-01-30T00:00:00.000Z',
+    },
+    {
         name: 'Decaf 2021',
         link: '/decaf',
         isInternalLink: true,
