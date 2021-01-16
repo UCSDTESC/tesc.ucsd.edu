@@ -1,95 +1,55 @@
 import React from 'react';
-import { Container, Row } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 import potHead from '../assets/pot-head.svg';
 import buford from '../assets/buford.svg';
 import shadow from '../assets/pot-head-shadow.svg';
-import Col from 'reactstrap/lib/Col';
+import Veeva from '../assets/sponsors/veeva.svg';
+import Ladwp from '../assets/sponsors/ladwp.png';
 
 const Sponsors = () => {
-    const asStyle = {
-        fontFamily: 'Woodchuck',
-        fontStyle: 'normal',
-        fontWeight: '900',
-        lineHeight: '150%',
-        color: '#8C74B7',
-        margin: 'auto',
-    };
-
-    const TBDStyle = {
-        color: '#291637',
-        fontFamily: 'Woodchuck',
-        fontStyle: 'normal',
-        fontWeight: '900',
-        margin: 'auto -30%',
-        fontSize: '20vw',
-        position: 'relative',
-        zIndex: '5',
-    };
-
-    const shadowStyle = {
-        position: 'absolute',
-        zIndex: '1',
-        width: '22%',
-        height: 'auto',
-        marginTop: '5%',
-        marginLeft: '-2%',
-    };
-
-    const potHeadStyle = {
-        marginTop: '35%',
-        marginLeft: '-25%',
-        position: 'absolute',
-        zIndex: '12',
-        width: '100%',
-        height: 'auto',
-    };
-
-    const bufordStyle = {
-        marginTop: '20%',
-        marginLeft: '-20%',
-        width: '100%',
-        height: 'auto',
-        position: 'absolute',
-        zIndex: '12',
-    };
-
-    const contactStyle = {
-        textAlign: 'center',
-        color: '#29193E',
-        fontFamily: 'Woodchuck',
-        fontStyle: 'normal',
-        fontWeight: 'bold',
-        lineHeight: '150%',
-        fontSize: '3vw',
-        margin: '0 12%',
-    };
-
     return (
         <section className="decaf-sponsors">
             <Container>
+                <h1 className="decaf-sponsors__title">
+                    ATTENDING
+                    <br />
+                    <span>SPONSORS</span>
+                </h1>
                 <Row>
-                    <h1 style={asStyle}>ATTENDING</h1>
-                </Row>
-                <Row>
-                    <h1 style={asStyle}>
-                        <span style={{ fontSize: '150%' }}>SPONSORS</span>
-                    </h1>
-                </Row>
-                <Row>
-                    <img src={shadow} style={shadowStyle} alt="" />
                     <Col>
-                        <img src={potHead} style={potHeadStyle} alt="" />
+                        <img
+                            src={potHead}
+                            className="decaf-sponsors__pot-head"
+                            alt=""
+                        />
+                        <img
+                            src={shadow}
+                            className="decaf-sponsors__shadow"
+                            alt=""
+                        />
                     </Col>
-                    <Col xs={6}>
-                        <h2 style={TBDStyle}>TBD</h2>
+                    <Col xs={8}>
+                        <div className="decaf-sponsors__logo-container">
+                            <img
+                                src={Veeva}
+                                alt=""
+                                width="100%"
+                                className="mb-5"
+                            />
+                            <img src={Ladwp} alt="" width="100%" />
+                        </div>
                     </Col>
                     <Col>
-                        <img src={buford} style={bufordStyle} alt="" />
+                        <img
+                            src={buford}
+                            className="decaf-sponsors__buford"
+                            alt=""
+                        />
                     </Col>
                 </Row>
                 <Row>
-                    <p style={contactStyle}>
+                    <p className="decaf-sponsors__contact">
                         Contact us at{' '}
                         <a
                             href="mailto:sponsor@tesc.ucsd.edu"
