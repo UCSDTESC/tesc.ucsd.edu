@@ -1,6 +1,7 @@
 .decaf-companies {
     width: 100%;
     background: white;
+    font-family: 'Woodchuck', sans-serif;
 
     &__filterbar {
         text-align: center;
@@ -8,6 +9,39 @@
         //margin-bottom: 4.5rem;
         margin-left: 10%;
         width: 80%;
+    }
+
+    &__filter-input {
+        border: solid 5px $decaf-zzzquil;
+        border-radius: 10px;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        color: $decaf-zzzquil;
+    }
+
+    &__filter-select {
+        div[class$='control'] {
+            border: solid 5px $decaf-zzzquil;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            color: $decaf-zzzquil;
+
+            & > div:first-child {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            & > div:nth-child(2) {
+                background: $decaf-zzzquil;
+                display: flex;
+                justify-content: center;
+                width: 15%;
+
+                span {
+                    background-color: transparent;
+                }
+            }
+        }
     }
 
     &__head {

@@ -1,8 +1,19 @@
 .decaf-company {
+    border: solid 5px $decaf-zzzquil;
+    border-radius: 10px;
+
     &__name {
+        a {
+            color: $decaf-zzzquil;
+            font-weight: 700;
+            font-size: 32px;
+        }
     }
 
     &__positions {
+        color: $decaf-zzzquil;
+        font-weight: 400;
+        font-size: 18px;
     }
 
     &__fields {
@@ -23,6 +34,10 @@
     }
 
     &__field {
+        background-color: $decaf-lemon-drop;
+        color: $decaf-zzzquil;
+        font-weight: 400;
+        font-size: 16px;
         margin-right: 5px;
         margin-bottom: 5px;
     }
@@ -38,6 +53,9 @@
     }
 
     &__keyname {
+        color: #fcfcfc;
+        font-weight: 400;
+        font-size: 24px;
         max-width: calc(100% - 2.1rem);
 
         @include media-breakpoint-down(md) {
@@ -47,8 +65,8 @@
 
     &__avatar {
         color: white;
-        width: 2.1rem;
-        height: 2.1rem;
+        width: 3.25rem;
+        height: 3.25rem;
         padding-top: 0.3rem;
         border-radius: 50%;
 
@@ -57,10 +75,10 @@
         }
 
         $colors: (
-            blue: #2f6192,
-            green: #1a967e,
-            yellow: #dd8940,
-            purple: #ffbf00,
+            us: $decaf-slime-lime,
+            pr: $decaf-pepto-bismo,
+            do: $decaf-lemon-drop,
+            i: $decaf-taro-slush,
         );
 
         @each $name, $hex in $colors {

@@ -13,10 +13,10 @@ const Avatar = (props) => {
     const { name } = props;
 
     const styles = {
-        'U.S. Citizen': ['US', 'decaf-company__avatar-blue'],
-        'U.S. Permanent Resident': ['PR', 'decaf-company__avatar-green'],
-        'DACA/Other': ['D/O', 'decaf-company__avatar-yellow'],
-        'International Student Visa': ['I', 'decaf-company__avatar-purple'],
+        'U.S. Citizen': ['US', 'decaf-company__avatar-us'],
+        'U.S. Permanent Resident': ['PR', 'decaf-company__avatar-pr'],
+        'DACA/Other': ['D/O', 'decaf-company__avatar-do'],
+        'International Student Visa': ['I', 'decaf-company__avatar-i'],
     };
 
     const [short, style] = styles[name];
@@ -30,7 +30,7 @@ const Avatar = (props) => {
 };
 
 const Company = (props) => (
-    <Card className="">
+    <Card className="decaf-company">
         <CardBody>
             <CardTitle className="decaf-company__name">
                 <a href={props.link} target="_blank" rel="noopener noreferrer">
@@ -44,8 +44,12 @@ const Company = (props) => (
                     .replace(/,/g, ', ')}
             </CardSubtitle>
             <div className="decaf-company__fields">
-                {props.field.map((f) => (
-                    <Badge className="decaf-company__field" color="info">
+                {props.field.map((f, i) => (
+                    <Badge
+                        className="decaf-company__field"
+                        color="info"
+                        key={i}
+                    >
                         {f}
                     </Badge>
                 ))}
@@ -58,11 +62,12 @@ const Company = (props) => (
             <CardText>{props.description}</CardText>
         </CardBody>
         <CardFooter className="decaf-company__footer">
-            {props.nationalities.map((position) => (
+            {props.nationalities.map((position, i) => (
                 <Avatar
                     name={position}
                     company={props.name}
                     className="decaf-company__avatar"
+                    key={i}
                 />
             ))}
         </CardFooter>

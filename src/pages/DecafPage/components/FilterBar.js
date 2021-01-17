@@ -27,6 +27,7 @@ class FilterBar extends Component {
                         placeholder="Company"
                         value={this.props.searchValue}
                         onChange={this.props.handleSearchChange}
+                        className="decaf-companies__filter-input"
                     />
                 </Col>
                 <Col md="3" className="my-2">
@@ -35,6 +36,7 @@ class FilterBar extends Component {
                         options={this.props.data.fields}
                         onChange={this.props.handleFieldChange}
                         placeholder="Industry"
+                        className="decaf-companies__filter-select"
                     />
                 </Col>
                 <Col md="3" className="my-2">
@@ -43,6 +45,7 @@ class FilterBar extends Component {
                         options={this.props.data.positions}
                         onChange={this.props.handlePositionChange}
                         placeholder="Work Type"
+                        className="decaf-companies__filter-select"
                     />
                 </Col>
                 <Col md="3" className="my-2">
@@ -51,6 +54,7 @@ class FilterBar extends Component {
                         options={this.props.data.workAuths}
                         onChange={this.props.handleWorkAuthChange}
                         placeholder="Work Auth"
+                        className="decaf-companies__filter-select"
                     />
                 </Col>
             </Row>

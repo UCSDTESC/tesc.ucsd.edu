@@ -202,7 +202,7 @@ class AttendingCompanies extends React.Component {
 
         while (rowCounter < displayRows) {
             const rowView = (
-                <div className="decaf-companies__container">
+                <div className="decaf-companies__container" key={rowCounter}>
                     <div className="card-deck-wrapper">
                         <CardDeck>
                             {displayCompanies
@@ -210,7 +210,7 @@ class AttendingCompanies extends React.Component {
                                     arraySliceCounter,
                                     arraySliceCounter + numInRow
                                 )
-                                .map((company) => (
+                                .map((company, i) => (
                                     <Company
                                         name={company['Organization']}
                                         positions={company['Position Types']}
@@ -220,6 +220,7 @@ class AttendingCompanies extends React.Component {
                                         }
                                         description=""
                                         link={company['Link']}
+                                        key={i}
                                     />
                                 ))}
                         </CardDeck>
@@ -281,8 +282,11 @@ class AttendingCompanies extends React.Component {
 
         return (
             <>
-                {auths.map((x) => (
-                    <div className="col-md-3 d-flex align-items-center justify-content-center">
+                {auths.map((x, i) => (
+                    <div
+                        className="col-md-3 d-flex align-items-center justify-content-center"
+                        key={i}
+                    >
                         <span className="decaf-company__keyname">
                             {x}&nbsp;
                         </span>
