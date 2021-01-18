@@ -53,10 +53,11 @@
     }
 
     &__keyname {
-        color: #fcfcfc;
+        color: white;
         font-weight: 400;
         font-size: 24px;
         max-width: calc(100% - 2.1rem);
+        margin-right: 10px;
 
         @include media-breakpoint-down(md) {
             width: auto;
@@ -64,11 +65,14 @@
     }
 
     &__avatar {
-        color: white;
+        display: inline-block;
+        color: $decaf-zzzquil;
         width: 3.25rem;
         height: 3.25rem;
-        padding-top: 0.3rem;
+        padding-top: 0.5rem;
         border-radius: 50%;
+        font-weight: 400;
+        font-size: 24px;
 
         & + & {
             margin-left: 5px;

@@ -28,11 +28,11 @@ class DecafRoutes extends React.Component {
                     exact
                     component={this.withDecafLayout(DecafPage, true)}
                 />
-                {/* <Route
+                <Route
                     path="/decaf/attending"
                     exact
                     component={AttendingPage}
-                /> */}
+                />
             </Switch>
         );
     }

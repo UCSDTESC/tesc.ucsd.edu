@@ -5,10 +5,7 @@
 
     &__filterbar {
         text-align: center;
-        margin-top: 1.5rem;
-        //margin-bottom: 4.5rem;
-        margin-left: 10%;
-        width: 80%;
+        padding-top: 1.5rem;
     }
 
     &__filter-input {
@@ -45,12 +42,42 @@
     }
 
     &__head {
-        text-align: center;
-        font-size: 3rem;
-        margin-top: 4.5rem;
+        padding: 4.5rem 0;
+        background-color: $decaf-orange-soda;
 
-        b {
+        h1 {
+            font-family: 'Woodchuck', sans-serif;
             font-weight: 900;
+            font-size: 42.12px;
+            color: white;
+
+            span {
+                color: $decaf-zzzquil;
+            }
+        }
+
+        .coffee {
+            text-align: right;
+            font-family: 'Woodchuck', sans-serif;
+            font-weight: 900;
+            font-size: 102.845px;
+            text-shadow: 10px -10px 0px $decaf-zzzquil;
+        }
+
+        .year {
+            text-align: left;
+            font-family: 'Woodchuck', sans-serif;
+            font-weight: 900;
+            font-size: 47.62px;
+            text-shadow: 10px -10px 0px $decaf-zzzquil;
+        }
+
+        .cup {
+            margin-left: 5rem;
+        }
+
+        .notes {
+            margin-left: 3rem;
         }
     }
 
@@ -86,8 +113,18 @@
         }
     }
 
-    &__key {
-        margin-top: 3rem;
+    &__nav {
+        padding: 1rem 0;
+        background: $decaf-zzzquil;
+
+        .btn {
+            font-size: 24px;
+            border-radius: 40px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            background-color: $decaf-taro-slush;
+            color: $decaf-zzzquil;
+        }
     }
 
     &__button {

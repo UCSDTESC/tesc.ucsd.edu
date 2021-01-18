@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CardDeck } from 'reactstrap';
+import { Row, Col, CardDeck, Button } from 'reactstrap';
 
 import { Company, Avatar } from './Company';
 import FilterBar from './FilterBar';
 import updatedDECAForders from '../data/updatedDECAForders.json';
+
+import CoffeCup from '../assets/attending/cup.svg';
+import EighthNotes from '../assets/attending/notes.svg';
 
 class AttendingCompanies extends React.Component {
     constructor(props) {
@@ -283,15 +286,12 @@ class AttendingCompanies extends React.Component {
         return (
             <>
                 {auths.map((x, i) => (
-                    <div
-                        className="col-md-3 d-flex align-items-center justify-content-center"
-                        key={i}
-                    >
+                    <Col key={i} xs="auto">
                         <span className="decaf-company__keyname">
                             {x}&nbsp;
                         </span>
                         <Avatar name={x} />
-                    </div>
+                    </Col>
                 ))}
             </>
         );
@@ -342,22 +342,58 @@ class AttendingCompanies extends React.Component {
         let displayRows = Math.ceil(filteredCompanies.length / 3);
         return (
             <div className="decaf-companies">
+                <div className="decaf-companies__nav">
+                    <Row className="mb-4 justify-content-between decaf-companies__container">
+                        <Col xs="auto d-flex flex-column justify-content-center">
+                            <Button href="/decaf">Back to MAIN SITE</Button>
+                        </Col>
+                        {this.renderKey()}
+                    </Row>
+                </div>
+
                 <div className="decaf-companies__head">
-                    Companies Attending <Link to="/decaf">Decaf 2020</Link>
+                    <div className="decaf-companies__container">
+                        <Row>
+                            <Col>
+                                <h1>
+                                    Companies <br />
+                                    <span>Attending</span>{' '}
+                                </h1>
+                                <Row>
+                                    <Col>
+                                        <h1 className="coffee">DECAF</h1>
+                                    </Col>
+                                    <Col>
+                                        <h1 className="year">
+                                            20
+                                            <br />
+                                            21
+                                        </h1>
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col>
+                                <img className="cup" src={CoffeCup} alt="" />
+                                <img
+                                    className="notes"
+                                    src={EighthNotes}
+                                    alt=""
+                                />
+                            </Col>
+                        </Row>
+                    </div>
                 </div>
 
                 <div className="decaf-companies__filterbar">
-                    <FilterBar
-                        data={this.state.dropdownValues}
-                        handleFieldChange={this.handleFieldChange}
-                        handlePositionChange={this.handlePositionChange}
-                        handleWorkAuthChange={this.handleWorkAuthChange}
-                        handleSearchChange={this.handleSearchChange}
-                        searchValue={this.state.filters.search}
-                    />
-
-                    <div className="row mb-4 decaf-companies__key">
-                        {this.renderKey()}
+                    <div className="decaf-companies__container">
+                        <FilterBar
+                            data={this.state.dropdownValues}
+                            handleFieldChange={this.handleFieldChange}
+                            handlePositionChange={this.handlePositionChange}
+                            handleWorkAuthChange={this.handleWorkAuthChange}
+                            handleSearchChange={this.handleSearchChange}
+                            searchValue={this.state.filters.search}
+                        />
                     </div>
                 </div>
 
