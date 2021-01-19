@@ -86,7 +86,9 @@ class DecafPage extends React.Component {
                                     </span>
                                 </h1>
                                 {!this.props.isCompany && (
-                                    <Button>View Attending Companies</Button>
+                                    <Button href="/decaf/attending">
+                                        View Attending Companies
+                                    </Button>
                                 )}
                             </Col>
                             <Col>

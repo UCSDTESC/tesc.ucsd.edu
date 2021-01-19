@@ -50,7 +50,7 @@ const Hero = ({ isCompany }) => {
                                 : 'Sign Up for Decaf'}
                         </Button>
                         {!isCompany && (
-                            <Button className="btn-2">
+                            <Button className="btn-2" href="/decaf/attending">
                                 Attending Companies
                             </Button>
                         )}
