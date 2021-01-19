@@ -1,0 +1,70 @@
+{
+    "companies": [
+        {
+            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering",
+            "Position Types": "",
+            "Organization": "San Diego Gas and Electric",
+            "Link": "https://www.sdge.com/"
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Veeva",
+            "Link": "https://www.veeva.com"
+        },
+        {
+            "Industry Field": "Electrical Engineering,Civil/Structural Engineering",
+            "Position Types": "Full Time",
+            "Organization": "Los Angeles Department of Water and Power",
+            "Link": "https://www.ladwp.com"
+        },
+        {
+            "Industry Field": "Software Engineering",
+            "Position Types": "Full Time  Internship",
+            "Organization": "Arista Networks",
+            "Link": "https://www.arista.com/en/"
+        },
+        {
+            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering",
+            "Position Types": "",
+            "Organization": "ServiceNow",
+            "Link": "https://www.servicenow.com/"
+        },
+        {
+            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering",
+            "Position Types": "Full Time",
+            "Organization": "Hughes Network Systems",
+            "Link": "https://www.hughesnet.com/"
+        },
+        {
+            "Industry Field": "Software Engineering, Hardware Engineering",
+            "Position Types": "Full Time",
+            "Organization": "Sambanova",
+            "Link": "https://sambanova.ai"
+        },
+        {
+            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering",
+            "Position Types": "Full Time Internship",
+            "Organization": "Appfolio",
+            "Link": "https://www.appfolio.com/"
+        },
+        {
+            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering,Chemical Engineering",
+            "Position Types": "Full Time",
+            "Organization": "Varioscale",
+            "Link": "https://www.varioscale.com/"
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Quartus Engineering",
+            "Link": "https://www.quartus.com/"
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "HyperX",
+            "Link": "https://www.hyperxgaming.com/unitedstates/us"
+        }
+    ]
+}

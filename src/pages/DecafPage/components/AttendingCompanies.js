@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Row, Col, CardDeck, Button } from 'reactstrap';
 
 import { Company, Avatar } from './Company';
 import FilterBar from './FilterBar';
-import updatedDECAForders from '../data/updatedDECAForders.json';
+import updatedDECAForders from '../data/AttendingCompanies.json';
 
 import CoffeCup from '../assets/attending/cup.svg';
 import EighthNotes from '../assets/attending/notes.svg';
@@ -41,7 +40,8 @@ class AttendingCompanies extends React.Component {
             let posArray = [];
 
             for (const wa of possibleWA) {
-                if (waString.indexOf(wa) !== -1) {
+                // added undefined check due to absence of WA data in DECAF 2021
+                if (waString !== undefined && waString.indexOf(wa) !== -1) {
                     waArray.push(wa);
                 }
             }
@@ -112,7 +112,10 @@ class AttendingCompanies extends React.Component {
                 if (fields[field] === undefined) {
                     fields[field] = {
                         value: field,
-                        label: field[0].toUpperCase() + field.substr(1),
+                        label:
+                            field[0] !== undefined
+                                ? field[0].toUpperCase() + field.substr(1)
+                                : '', // added undefined check due to absence of Industry Field data in DECAF 2021
                         count: 1,
                     };
                 } else {
@@ -347,7 +350,7 @@ class AttendingCompanies extends React.Component {
                         <Col xs="auto d-flex flex-column justify-content-center">
                             <Button href="/decaf">Back to MAIN SITE</Button>
                         </Col>
-                        {this.renderKey()}
+                        {/* {this.renderKey()} */}
                     </Row>
                 </div>
 

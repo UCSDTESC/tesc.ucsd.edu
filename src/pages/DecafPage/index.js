@@ -85,9 +85,9 @@ class DecafPage extends React.Component {
                                         Discord!
                                     </span>
                                 </h1>
-                                {/* {!this.props.isCompany && (
+                                {!this.props.isCompany && (
                                     <Button>View Attending Companies</Button>
-                                )} */}
+                                )}
                             </Col>
                             <Col>
                                 <img
