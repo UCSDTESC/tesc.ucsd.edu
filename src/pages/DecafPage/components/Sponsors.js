@@ -1,11 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import SponsorLogos from '../data/SponsorLogos';
 
 import potHead from '../assets/pot-head.svg';
 import buford from '../assets/buford.svg';
 import shadow from '../assets/pot-head-shadow.svg';
-import Veeva from '../assets/sponsors/veeva.svg';
-import Ladwp from '../assets/sponsors/ladwp.png';
 
 const Sponsors = () => {
     return (
@@ -31,13 +30,18 @@ const Sponsors = () => {
                     </Col>
                     <Col xs={8}>
                         <div className="decaf-sponsors__logo-container">
-                            <img
-                                src={Veeva}
-                                alt=""
-                                width="100%"
-                                className="mb-5"
-                            />
-                            <img src={Ladwp} alt="" width="100%" />
+                            <Row>
+                                {SponsorLogos.map((src, i) => (
+                                    <Col key={i} xs={12} md={6}>
+                                        <img
+                                            src={src}
+                                            alt=""
+                                            width="100%"
+                                            className="mb-5"
+                                        />
+                                    </Col>
+                                ))}
+                            </Row>
                         </div>
                     </Col>
                     <Col>
