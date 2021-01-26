@@ -18,7 +18,7 @@ const Faq = () => {
                     <FaqItem {...d} key={i} />
                 ))}
 
-                <img src={Jelly} alt="" />
+                <img src={Jelly} alt="" width="40%" />
             </Container>
         </div>
     );
