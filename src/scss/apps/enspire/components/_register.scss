@@ -11,18 +11,18 @@
 
     &__title {
         .sup {
-            font-size: clamp(1rem, 10vw, 3rem);
+            font-size: clamp(1rem, 2vw, 2rem);
             color: $enspire-cyan;
             text-align: left;
             margin-bottom: 0;
         }
 
         .main {
-            font-size: clamp(2rem, 20vw, 6.25rem);
+            font-size: clamp(2rem, 6vw, 6rem);
         }
 
         .sub {
-            font-size: clamp(2rem, 15vw, 3.25rem);
+            font-size: clamp(2rem, 2vw, 2rem);
             text-align: right;
         }
     }
