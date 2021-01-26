@@ -1,5 +1,6 @@
 .enspire-about {
     min-height: 70vh;
+    position: relative;
 
     .container {
         margin-top: 3rem;
@@ -10,5 +11,19 @@
             text-align: center;
             margin-bottom: 3rem;
         }
+    }
+
+    .jelly-left {
+        width: 20%;
+        position: absolute;
+        left: 0;
+        bottom: -20%;
+    }
+
+    .jelly-right {
+        width: 30%;
+        position: absolute;
+        right: 0;
+        top: -30%;
     }
 }
