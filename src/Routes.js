@@ -13,6 +13,7 @@ import HomePage from './pages/HomePage';
 const OrgPage = lazy(() => import('./pages/HomePage/OrgPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const MembershipPage = lazy(() => import('./pages/MembershipPage'));
+const FAQPage = lazy(() => import('./pages/FAQPage'));
 const SpacesPage = lazy(() => import('./pages/SpacesPage'));
 const FinancePage = lazy(() => import('./pages/FinancePage'));
 const MembersPage = lazy(() => import('./pages/MembersPage'));
@@ -65,6 +66,11 @@ function Routes() {
                     exact
                     path="/orgs/membership"
                     component={withLayout(MembershipPage, true)}
+                />
+                <Route
+                    exact
+                    path="/orgs/faqs"
+                    component={withLayout(FAQPage, true)}
                 />
                 <Route
                     exact
