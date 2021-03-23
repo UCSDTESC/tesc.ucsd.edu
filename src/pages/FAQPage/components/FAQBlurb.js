@@ -2,20 +2,20 @@ import React from 'react';
 
 function FAQBlurb() {
     return (
-        <section className="about">
-            <div className="text-center about__header-red">
+        <section className="faq">
+            <div className="text-center faq__header-red">
                 Council FAQs
             </div>
-            <div className="text-center about__header">
+            <div className="text-center faq__header">
                 For New Orgs
             </div>
-            <div className="about__text mt-4 text-left">
+            <div className="faq__question mt-4 mb-2 text-left">
                 <b>What is the TESC?</b>
             </div>
-            <div className="about__text text-left">
+            <div className="faq__text text-left">
                 TESC, or Triton Engineering Student Council, is a UCSD org that advocates opportunities for undergrad engineering students. We are made of several different engineering clubs, from organizations that specialize in different areas of engineering, to project and building teams, and more! We also host large scale events such as SDHacks, Engineers on the Green, and more to provide collaboration and networking opportunities to engineering students.
             </div>
-            <div className="about__text mt-4 text-left">
+            <div className="faq__text mt-4 text-left">
                 <b>Why join the TESC council?</b>
             </div>
             <div className="about__text text-left">
