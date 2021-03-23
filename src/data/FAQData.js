@@ -6,23 +6,21 @@ const FAQData = [
         content: [
             {
                 question: "What is the TESC?",
-                answer: [
+                answer:
                     <div>
                         TESC, or Triton Engineering Student Council, is a UCSD org that advocates opportunities for undergrad engineering students. We are made of several different engineering clubs, from organizations that specialize in different areas of engineering, to project and building teams, and more! We also host large scale events such as SDHacks, Engineers on the Green, and more to provide collaboration and networking opportunities to engineering students.
                     </div>
-                ]
             },
             {
                 question: "Why join the TESC council?",
-                answer: [
+                answer:
                     <div>
                         TESC provides a number of opportunities to engineering clubs and organizations. Active TESC orgs are given funding to host engineering events, access to event planning software, and the ability to collaborate with other TESC orgs and outside businesses. Overall, TESC provides social networking and financial support to orgs that may be hard to gain as a stand-alone org.
                     </div>
-                ]
             },
             {
                 question: "Who is currently in the TESC Council?",
-                answer: [
+                answer:
                     <div>
                         Currently, we have over 23 active orgs in the TESC Council! To view the full list of members, please visit:{' '}
                         <a
@@ -33,19 +31,17 @@ const FAQData = [
                             https://tesc.ucsd.edu/members
                         </a>.
                     </div>
-                ]
             },
             {
                 question: "What is the overall process/requirements for joining TESC?",
-                answer: [
+                answer:
                     <div>
                         An org is admitted into TESC after undergoing two stages of the application process. Before becoming a full member of TESC, orgs must apply to be a probationary member.
                     </div>
-                ]
             },
             {
                 question: "How does an org apply to be a probationary member?",
-                answer: [
+                answer:
                     <div>
                         An org can apply to be a probationary member of TESC after completing these requirements:
                         <ul>
@@ -79,12 +75,11 @@ const FAQData = [
                             </li>
                             <li>After the org’s presentation, TESC members will vote on whether or not to allow the org into TESC. If 75% of members vote yes, the org will be admitted into TESC as a probationary member.</li>
                         </ul>
-                    </div>
-                ]            
+                    </div>       
             },
             {
                 question: "How does an org apply to be a full member?",
-                answer: [
+                answer:
                     <div>
                         Once the org has been admitted into TESC as a probationary member, they can complete these requirements to become a full member:
                         <ul>
@@ -95,19 +90,17 @@ const FAQData = [
                             <li>After the org’s presentation, TESC members will vote on whether or not to allow the org to be a full member. If 75% of members vote yes, the org will be admitted into TESC as a full member.</li>
                         </ul>
                     </div>
-                ]
             },
             {
                 question: "What does being a full member of TESC mean?",
-                answer: [
+                answer:
                     <div>
                         A full member of TESC has full access to every service TESC provides, such as funding, voting representation, and event support. After becoming a full member, an org must continue to attend council meetings, host at least one engineering activity per academic year, co-host an event with another TESC org, and volunteer at least at half the number of TESC events.
                     </div>
-                ]
             },
             {
                 question: "What are some of the events TESC holds?",
-                answer: [
+                answer:
                     <div>
                         <ul>
                             <li>
@@ -145,7 +138,6 @@ const FAQData = [
                             </li>
                         </ul>
                     </div>
-                ]
             }
         ]
     },
@@ -154,7 +146,7 @@ const FAQData = [
         content: [
             {
                 question: "What happens if I miss a meeting?",
-                answer: [
+                answer:
                     <div>
                         An org is allowed to miss council meetings so long as they contact the Council Lead or the VP Internal at{' '}
                         <a
@@ -165,11 +157,10 @@ const FAQData = [
                             council@tesc.ucsd.edu
                         </a>{' '}before the meeting. If your org attends at least 75% of the council meetings, the org will still be listed as active. If not, the org will be listed as inactive, where the org will undergo another probationary period and will not be able to access funding.
                     </div>
-                ]
             },
             {
                 question: "What TESC resources do I have access to?",
-                answer: [
+                answer:
                     <div>
                         <ul>
                             <li>
@@ -204,7 +195,6 @@ const FAQData = [
                             </li>
                         </ul>
                     </div>
-                ]
             }
         ]
     },
@@ -213,15 +203,14 @@ const FAQData = [
         content: [
             {
                 question: "I haven’t been attending TESC events or council meetings for 1 quarter/2 quarters/a year. Am I still affiliated with TESC/can I still access TESC resources?",
-                answer: [
+                answer:
                     <div>
                         If you’ve been inactive for over two quarters, you’ll be relegated to probationary status. This means you will have to present at the next TESC council meeting to gain full status. While probationary, you do not have access to TESC funding.
                     </div>
-                ]
             },
             {
                 question: "Who can I contact to make sure I am no longer considered an inactive org?",
-                answer: [
+                answer:
                     <div>
                         Please email{' '}
                         <a
@@ -232,7 +221,6 @@ const FAQData = [
                             council@tesc.ucsd.edu
                         </a>.
                     </div>
-                ]
             }
         ]
     },
@@ -241,7 +229,7 @@ const FAQData = [
         content: [
             {
                 question: "Who can I contact if I have a question?",
-                answer: [
+                answer:
                     <div>
                         Please email{' '}
                         <a
@@ -252,11 +240,10 @@ const FAQData = [
                             council@tesc.ucsd.edu
                         </a>.
                     </div>
-                ]
             },
             {
                 question: "How to join the TESC email list?",
-                answer: [
+                answer:
                     <div>
                         To join the TESC email list, please fill out our form here:{' '}
                         <a
@@ -267,11 +254,10 @@ const FAQData = [
                             https://forms.gle/tV3SD6aFxwJHVvid7
                         </a>.
                     </div>
-                ]
             },
             {
                 question: "Does TESC have social media?",
-                answer: [
+                answer:
                     <div>
                         Yes! Here is our Linktree:{' '}
                         <a
@@ -282,11 +268,10 @@ const FAQData = [
                             https://linktr.ee/tescucsd
                         </a>.
                     </div>
-                ]
             },
             {
                 question: "Are you interested in joining TESC itself?",
-                answer: [
+                answer:
                     <div>
                         Apply here!{' '}
                         <a
@@ -297,7 +282,6 @@ const FAQData = [
                             https://tesc.typeform.com/to/bAqdgm
                         </a>.
                     </div>
-                ]
             }
         ]
     }
