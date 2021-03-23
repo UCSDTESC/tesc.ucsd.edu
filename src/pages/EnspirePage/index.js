@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Register from './components/Register';
 import Faq from './components/Faq';
+import Timeline from './components/Timeline';
 
 const EnspirePage = () => {
     useEffect(() => {
@@ -23,6 +24,7 @@ const EnspirePage = () => {
             <About />
             <Register />
             <Faq />
+            <Timeline />
         </>
     );
 };

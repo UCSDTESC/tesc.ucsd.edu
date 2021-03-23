@@ -4,6 +4,8 @@ import enspireFaq from '../data/EnspireFaq';
 import Divider from './Divider';
 import FaqItem from '../components/FaqItem';
 
+import Jelly from '../static/jelly-faq.svg';
+
 const Faq = () => {
     const data = enspireFaq;
 
@@ -15,6 +17,8 @@ const Faq = () => {
                 {data.map((d, i) => (
                     <FaqItem {...d} key={i} />
                 ))}
+
+                <img src={Jelly} alt="" width="40%" />
             </Container>
         </div>
     );

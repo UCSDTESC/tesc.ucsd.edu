@@ -86,8 +86,16 @@ const oldReqs = [
                 <img src="/tesc-itemized-budget-example.png" alt="" />
             </div>,
             <div>
-                Submit a funding request through Typeform. This Typeform will be
-                opened once allocations have been distributed.
+                Submit a funding request through{' '}
+                <a
+                    href="https://tesc.typeform.com/to/oco7hH4j"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Typeform
+                </a>
+                . This Typeform will be opened once allocations have been
+                distributed.
             </div>,
             <div>
                 You will receive an email from the{' '}
@@ -116,9 +124,16 @@ const oldReqs = [
                 materials.
             </div>,
             <div>
-                Submit a reimbursement request on Typeform with a
-                scan/photo/screenshot of your receipt. This Typeform will be
-                opened once allocations have been distributed.
+                Submit a reimbursement request on{' '}
+                <a
+                    href="https://tesc.typeform.com/to/hbcRPIPu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Typeform
+                </a>{' '}
+                with a scan/photo/screenshot of your receipt. This Typeform will
+                be opened once allocations have been distributed.
             </div>,
             <div>
                 You will receive an email from TESC within two weeks of

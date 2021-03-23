@@ -45,6 +45,11 @@ function Nav(props) {
                 </NavLink>
             </li>
             <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/orgs/faqs">
+                    COUNCIL FAQS
+                </NavLink>
+            </li>
+            <li className="nav-item nav__item text-center">
                 <NavLink className="nav-link" to="/orgs/finance">
                     FINANCE
                 </NavLink>

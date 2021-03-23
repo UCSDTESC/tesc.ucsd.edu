@@ -36,6 +36,6 @@ export default [
         question:
             'What is the appropriate attire for students to wear to the event?',
         answer:
-            'Casual top is acceptable. Feel free to wear your pajama bottom. 🙂',
+            'Casual top is acceptable. Feel free to wear your pajama bottom.',
     },
 ];
