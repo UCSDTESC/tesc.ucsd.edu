@@ -12,7 +12,7 @@ class FAQSets extends React.Component {
                     return (
                         <>
                             <div className="faq__question mt-4 mb-2 text-left">
-                                <b>{c.question}</b>
+                                <b key={i}>{c.question}</b>
                             </div>
                             <div className="faq__text text-left">
                                 {c.answer}
