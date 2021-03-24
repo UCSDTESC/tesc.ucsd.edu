@@ -1,10 +1,12 @@
 name: Deploy
 
 # Deploy on every push to the repository on master
+# Or whenever we manually run it
 on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   build:
