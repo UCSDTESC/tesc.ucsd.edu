@@ -20,14 +20,14 @@ const board = [
         link: 'https://www.linkedin.com/in/jeremiahalindogan/',
     },
     {
-        name: 'Lisa Luo',
+        name: 'Kenneth Chen',
         role: 'VP Internal',
         img:
-            'https://tesc-website.s3.us-east-2.amazonaws.com/board/vp-internal-2020.jpg',
-        email: 'lisa@tesc.ucsd.edu',
+            'https://tesc-website.s3.us-east-2.amazonaws.com/board/vp-internal-2021.jpg',
+        email: 'kenneth@tesc.ucsd.edu',
         bio:
-            "I am a fourth-year computer science major and psychology minor. As VP Internal, my job is to maintain TESC's internal health and to provide our board members with the resources they need to be successful. When I'm not obsessing over Marvel, musicals, and video games, I'm buying Lego sets, drinking coffee, and playing with jigsaw puzzles.",
-        link: 'https://www.linkedin.com/in/lisa--luo/',
+            "I'm a second-year studying computer science. Last year, I was a member of the Technical Committee and worked on projects like tesc.events and expo. I want to become a ramen connoisseur.",
+        link: 'https://www.linkedin.com/in/efeichen/',
     },
     {
         name: 'Robert Tatum',
@@ -110,14 +110,14 @@ const board = [
         link: 'https://www.linkedin.com/in/ankurduggal/',
     },
     {
-        name: 'Kenneth Chen',
+        name: 'Elias Fang',
         role: 'Technical Lead',
         img:
-            'https://tesc-website.s3.us-east-2.amazonaws.com/board/tech-lead-2020.jpg',
+            'https://tesc-website.s3.us-east-2.amazonaws.com/board/tech-lead-2021.jpg',
         bio:
-            "I'm a second-year studying computer science. Last year, I was a member of the Technical Committee and worked on projects like tesc.events and expo. I want to become a ramen connoisseur.",
-        link: 'https://www.linkedin.com/in/efeichen/',
-        email: 'kenneth@tesc.ucsd.edu',
+            "Hello! I'm a second-year computer engineering major in Warren. This is my first year in TESC and I'm super excited to be serving the engineering community through this role. I'm also a member of Kairos Christian Fellowship and Duly Noted, a marketing director for ACM, and a developer at TSE. I love Jesus, food, sunsets, and hanging out with friends!",
+        link: 'https://www.linkedin.com/in/elias-fang/',
+        email: 'elias@tesc.ucsd.edu',
     },
     {
         name: 'Vincent Santos',
