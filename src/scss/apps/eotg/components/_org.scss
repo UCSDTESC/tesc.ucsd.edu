@@ -1,5 +1,5 @@
 .eotg-attending-orgs {
-    background: $eotg-frozen-ocean;
+    background: $eotg-green;
 
     &__header {
         margin-bottom: 2rem;
@@ -29,7 +29,7 @@
         }
 
         li {
-            border: solid $eotg-ice-pack;
+            border: solid $eotg-blue;
             border-radius: 1rem;
             margin: 0 0.5rem;
         }

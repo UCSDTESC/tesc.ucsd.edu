@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import $ from 'jquery';
 
-import BearIsland from '../svg/bear-island-wi20.svg';
+import BearIsland from '../svg/bear-island.svg';
 
 class Hero extends React.Component {
     scrollAnimation() {
