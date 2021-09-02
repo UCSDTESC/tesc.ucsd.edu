@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import $ from 'jquery';
 
-import BearIsland from '../svg/bear-island.svg';
+import BearIsland from '../svg/bear-island-wi20.svg';
 
 class Hero extends React.Component {
     scrollAnimation() {
@@ -35,9 +35,10 @@ class Hero extends React.Component {
                                     <b> Engineers on the Green </b>
                                 </div>
                                 <div className="eotg-hero__detail">
-                                    January 11 - 12 // 2-6 PM each day
+                                    September 29th // 12-5 pm at the UCSD Bear Courtyard <br></br>
+                                    September 30th // 12-5 pm on Discord
                                 </div>
-                                <div className="eotg-hero__button_div mb-5">
+                                {/* <div className="eotg-hero__button_div mb-5">
                                     <a
                                         className="eotg-hero__button"
                                         href="https://fb.me/e/3z3trhAN8"
@@ -56,7 +57,7 @@ class Hero extends React.Component {
                                     >
                                         Discord
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </Col>
                     </Row>
