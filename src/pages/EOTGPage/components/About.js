@@ -13,17 +13,16 @@ class About extends React.Component {
                             About Engineers on the Green
                         </h1>
                         <p className="mt-5">
-                            Engineers on the Green is traditionally an
-                            engineering org fair where students can network with
-                            the various engineering orgs on campus. Although
-                            this event typically takes place in-person, TESC has
-                            organized this online event to provide the
-                            opportunity for org involvement.
+                            Engineers on the Green is an annual event held in 
+                            Fall and Winter quarter where students can network 
+                            with the various engineering orgs on campus. This event 
+                            will take place in-person at the Bear Courtyard on 
+                            September 29th, and online via Discord on September 30th.
                         </p>
                         <p>
-                            This website displays information about the
-                            attending orgs, and the Discord server is a platform
-                            for communication between orgs and students.
+                            This website displays information including: Attending 
+                            Orgs, Bear Courtyard Location, and FAQ’s about the 
+                            event and how to use Discord.
                         </p>
                     </div>
                 </div>

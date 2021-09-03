@@ -1,6 +1,7 @@
 .eotg-hero {
-    background-image: url(../../../../pages/EOTGPage/svg/bg-hero.svg);
-    background-size: cover;
+    // background-image: url(../../../../pages/EOTGPage/svg/bg-hero.svg);
+    // background-size: cover;
+    background: $eotg-blue;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -48,7 +49,7 @@
 
         &:hover {
             background: white;
-            color: $eotg-ice-pack;
+            color: $eotg-blue;
             text-decoration: none;
         }
     }

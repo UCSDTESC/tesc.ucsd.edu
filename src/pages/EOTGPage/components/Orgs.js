@@ -25,12 +25,12 @@ const Orgs = () => {
             </h1>
             <div className="container">
                 <div className="row justify-content-center eotg-attending-orgs__blurb">
-                    Check out the orgs that will be attending each day!
+                    TBA
                 </div>
 
-                <div className="row justify-content-center">
+                {/* <div className="row justify-content-center"> */}
                     {/* The nav bar tabs that display days */}
-                    <ul className="nav nav-tabs eotg-attending-orgs__tabs justify-content-center align-items-end mt-4">
+                    {/* <ul className="nav nav-tabs eotg-attending-orgs__tabs justify-content-center align-items-end mt-4">
                         <li className="active">
                             <a data-toggle="tab" href="#monday">
                                 Monday, Jan. 11th
@@ -41,10 +41,10 @@ const Orgs = () => {
                                 Tuesday, Jan. 12th
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
 
                     {/* The info that appears when you click each tab */}
-                    <div className="tab-content w-100">
+                    {/* <div className="tab-content w-100">
                         <div id="monday" className="tab-pane fade show active">
                             <div className="eotg-attending-orgs__day">
                                 Monday, Jan. 11th
@@ -58,7 +58,7 @@ const Orgs = () => {
                             {renderDay('tue')}
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );
