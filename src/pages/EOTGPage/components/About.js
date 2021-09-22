@@ -20,7 +20,7 @@ class About extends React.Component {
                         </p>
                         <p>
                             This website displays information including: Attending 
-                            Orgs and FAQ’s about the event.
+                            Orgs and FAQ’s about the event.                            
                         </p>
                     </div>
                 </div>
