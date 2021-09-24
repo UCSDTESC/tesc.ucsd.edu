@@ -13,15 +13,17 @@ class About extends React.Component {
                             About Engineers on the Green
                         </h1>
                         <p className="mt-5">
-                        Engineers on the Green is an annual event held in Fall and Winter quarter where 
-                        students can network with the various engineering orgs on campus. This event will 
-                        take place online via Discord on September 29th and September 30th, from 12pm - 5pm 
-                        each day.
+                            Engineers on the Green is an annual event held in Fall and Winter quarter where 
+                            students can network with the various engineering orgs on campus. This event will 
+                            take place online via <a target="_blank" href="https://discord.gg/p43mZkva">
+                            Discord</a> on September 29th and September 30th, from 12pm - 5pm 
+                            each day.
                         </p>
                         <p>
                             This website displays information including: Attending 
                             Orgs and FAQ’s about the event.                            
                         </p>
+                        
                     </div>
                 </div>
             </section>
