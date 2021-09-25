@@ -47,17 +47,17 @@ class Hero extends React.Component {
                                     >
                                         Facebook Event Page
                                     </a>
-                                </div>
+                                </div>*/
                                 <div className="eotg-hero__button_div">
                                     <a
                                         className="eotg-hero__button"
-                                        href="https://discord.gg/CmQU2x9bSF"
+                                        href="https://discord.gg/p43mZkva"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
                                         Discord
                                     </a>
-                                </div> */}
+                                </div>}
                             </div>
                         </Col>
                     </Row>
