@@ -19,7 +19,7 @@ class About extends React.Component {
                             <a 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
-                                href="https://discord.gg/p43mZkva"
+                                href="https://discord.gg/gRcekSrk"
                             >
                             Discord
                             </a> 
