@@ -55,7 +55,7 @@ class Hero extends React.Component {
                                 <div className="eotg-hero__button_div">
                                     <a
                                         className="eotg-hero__button"
-                                        href="https://discord.gg/p43mZkva"
+                                        href="https://discord.gg/gRcekSrk"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
