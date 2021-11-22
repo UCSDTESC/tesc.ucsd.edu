@@ -25,7 +25,8 @@ const Orgs = () => {
             </h1>
             <div className="container">
                 <div className="row justify-content-center eotg-attending-orgs__blurb">
-                    TBA
+                    Engineers on the Green will be in person at Marshall Field this winter, 
+                    and we have the following organizations on the roster!
                 </div>
 
                 {/* <div className="row justify-content-center"> */}
