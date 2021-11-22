@@ -1,8 +1,11 @@
 .eotg-about {
-    // background-image: url(../../../../pages/EOTGPage/svg/bg-about.svg);
-    // background-size: cover;
-    background: $eotg-green;
-
+    background-image: url(../../../../pages/EOTGPage/svg/bg-about.svg);
+    background-size: cover;
+    //background: $eotg-green;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
     h1 {
         padding-top: 5rem;
         color: white;

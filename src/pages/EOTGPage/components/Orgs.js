@@ -24,9 +24,11 @@ const Orgs = () => {
                 Attending Organizations
             </h1>
             <div className="container">
-                {/* <div className="row justify-content-center eotg-attending-orgs__blurb">
-                    TBA
-                </div> */}
+            
+                <div className="row justify-content-center eotg-attending-orgs__blurb">
+                    Engineers on the Green will be in person at Marshall Field this winter, 
+                    and we have the following organizations on the roster!
+                </div>
 
                 <div className="row justify-content-center">
                     {/* The nav bar tabs that display days */}

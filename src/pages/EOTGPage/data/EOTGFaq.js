@@ -1,6 +1,7 @@
 import React from 'react';
 
 const studentFaq = [
+/* FOR DISCORD INQUIRIES:
     {
         question: 'How does the EOTG Discord server function?',
         answer: (
@@ -38,6 +39,12 @@ const studentFaq = [
         answer:
             'During the event, feel free to hop onto the “Help Desk” voice channel on the Discord server and we can help you out. Or you can contact us with your questions as well.',
     },
+*/
+    {
+        question: 'How do I find the Marshall Field?',
+        answer:
+            'The Marshall Field is located at the intersection of OVT and the Marshall Upper Apartments. Please reference the map below to better understand where the Marshall Field is.',
+    },
     {
         question: 'Is this event limited to engineering majors?',
         answer:
@@ -55,7 +62,7 @@ const studentFaq = [
     },
     {
         question:
-            'What can I do if I’m not able to come on a day that a particular org is coming?',
+            'What can I do if I’m not able to come to the event in person?',
         answer:
             'Feel free to reach out to orgs using their email or links to their website/social media.',
     },

@@ -35,10 +35,12 @@ class Hero extends React.Component {
                                     <b> Engineers on the Green </b>
                                 </div>
                                 <div className="eotg-hero__detail">
-                                    September 29th // 12-5 pm <br></br>
-                                    September 30th // 12-5 pm 
+                                    January 4th <br></br> 
+                                    11 AM - 3 PM <br></br>
+                                    Marshall College Field
                                 </div>
-                                {/* <div className="eotg-hero__button_div mb-5">
+                                {/* FOR FACEBOOK BUTTON:
+                                <div className="eotg-hero__button_div mb-5">
                                     <a
                                         className="eotg-hero__button"
                                         href="https://fb.me/e/3z3trhAN8"
@@ -47,7 +49,9 @@ class Hero extends React.Component {
                                     >
                                         Facebook Event Page
                                     </a>
-                                </div>*/
+                                </div>
+                                */}
+                                {/* FOR DISCORD BUTTON:
                                 <div className="eotg-hero__button_div">
                                     <a
                                         className="eotg-hero__button"
@@ -57,7 +61,8 @@ class Hero extends React.Component {
                                     >
                                         Discord
                                     </a>
-                                </div>}
+                                </div>
+                                */}
                             </div>
                         </Col>
                     </Row>
