@@ -24,42 +24,43 @@ const Orgs = () => {
                 Attending Organizations
             </h1>
             <div className="container">
+            
                 <div className="row justify-content-center eotg-attending-orgs__blurb">
                     Engineers on the Green will be in person at Marshall Field this winter, 
                     and we have the following organizations on the roster!
                 </div>
 
-                {/* <div className="row justify-content-center"> */}
+                <div className="row justify-content-center">
                     {/* The nav bar tabs that display days */}
-                    {/* <ul className="nav nav-tabs eotg-attending-orgs__tabs justify-content-center align-items-end mt-4">
+                    <ul className="nav nav-tabs eotg-attending-orgs__tabs justify-content-center align-items-end mt-4">
                         <li className="active">
-                            <a data-toggle="tab" href="#monday">
-                                Monday, Jan. 11th
+                            <a data-toggle="tab" href="#wednesday">
+                                Wednesday, Sep. 29th
                             </a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#tuesday">
-                                Tuesday, Jan. 12th
+                            <a data-toggle="tab" href="#thursday">
+                                Thursday, Sep. 30th
                             </a>
                         </li>
-                    </ul> */}
+                    </ul>
 
                     {/* The info that appears when you click each tab */}
-                    {/* <div className="tab-content w-100">
-                        <div id="monday" className="tab-pane fade show active">
+                    <div className="tab-content w-100">
+                        <div id="wednesday" className="tab-pane fade show active">
                             <div className="eotg-attending-orgs__day">
-                                Monday, Jan. 11th
+                                Wednesday, Sep. 29th
                             </div>
-                            {renderDay('mon')}
+                            {renderDay('wed')}
                         </div>
-                        <div id="tuesday" className="tab-pane fade">
+                        <div id="thursday" className="tab-pane fade">
                             <div className="eotg-attending-orgs__day">
-                                Tuesday, Jan. 12th
+                                Thursday, Sep. 30th
                             </div>
-                            {renderDay('tue')}
+                            {renderDay('thu')}
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
         </section>
     );
