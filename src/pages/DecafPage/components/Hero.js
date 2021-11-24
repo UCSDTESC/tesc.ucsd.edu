@@ -33,7 +33,7 @@ const Hero = ({ isCompany }) => {
                         <p>
                             Disciplines of Engineering Career Fair
                             <br />
-                            On Discord, January 19-21, 2021
+                            January 18-19, 2022
                         </p>
                         <Button
                             className="btn-1"
