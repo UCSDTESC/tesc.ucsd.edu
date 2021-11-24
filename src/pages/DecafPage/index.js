@@ -14,7 +14,7 @@ import BobbyBassStudent from './assets/student/bobby-bass.svg';
 
 class DecafPage extends React.Component {
     componentDidMount() {
-        document.title = 'Decaf 2021 | UCSD TESC';
+	document.title = 'Decaf 2022 | UCSD TESC';
 
         //TODO: remove jQuery here
         $("link[rel='shortcut icon']").attr(
@@ -78,12 +78,7 @@ class DecafPage extends React.Component {
                                 }}
                             >
                                 <h1 style={desStyle}>
-                                    Decaf 21 will be hosted virtually this year.
-                                    The primary platform for the event will be
-                                    <span style={{ color: '#29193E' }}>
-                                        {' '}
-                                        Discord!
-                                    </span>
+                                    Decaf 22 will be hosted from January 18-19, 2022
                                 </h1>
                                 {!this.props.isCompany && (
                                     <Button href="/decaf/attending">
