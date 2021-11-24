@@ -15,6 +15,8 @@ const Sponsors = () => {
                     <br />
                     <span>SPONSORS</span>
                 </h1>
+
+		{/*
                 <Row>
                     <Col>
                         <img
@@ -28,11 +30,12 @@ const Sponsors = () => {
                             alt=""
                         />
                     </Col>
+
                     <Col xs={8}>
-                        <div className="decaf-sponsors__logo-container">
+                         <div className="decaf-sponsors__logo-container">
                             <Row>
                                 {SponsorLogos.map((src, i) => (
-                                    <Col key={i} xs={12} md={6}>
+                                    <Col key={i} xs={12} md={6}> 
                                         <img
                                             src={src}
                                             alt=""
@@ -44,7 +47,7 @@ const Sponsors = () => {
                             </Row>
                         </div>
                     </Col>
-                    <Col>
+                     <Col>
                         <img
                             src={buford}
                             className="decaf-sponsors__buford"
@@ -52,6 +55,7 @@ const Sponsors = () => {
                         />
                     </Col>
                 </Row>
+		*/}
                 <Row>
                     <p className="decaf-sponsors__contact">
                         Contact us at{' '}

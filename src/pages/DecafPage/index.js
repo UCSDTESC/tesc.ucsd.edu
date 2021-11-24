@@ -78,7 +78,7 @@ class DecafPage extends React.Component {
                                 }}
                             >
                                 <h1 style={desStyle}>
-                                    Decaf 22 will be hosted from January 18-19, 2022
+                                    Decaf 22 will be hosted from January 18-19, 2022.
                                 </h1>
                                 {!this.props.isCompany && (
                                     <Button href="/decaf/attending">

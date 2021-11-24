@@ -370,7 +370,7 @@ class AttendingCompanies extends React.Component {
                                         <h1 className="year">
                                             20
                                             <br />
-                                            21
+                                            22
                                         </h1>
                                     </Col>
                                 </Row>
@@ -387,6 +387,8 @@ class AttendingCompanies extends React.Component {
                     </div>
                 </div>
 
+		{/*
+
                 <div className="decaf-companies__filterbar">
                     <div className="decaf-companies__container">
                         <FilterBar
@@ -401,6 +403,8 @@ class AttendingCompanies extends React.Component {
                 </div>
 
                 {this.createCompanyRows(filteredCompanies, displayRows)}
+
+		*/}
             </div>
         );
     }
