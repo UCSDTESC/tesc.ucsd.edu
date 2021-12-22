@@ -15,10 +15,11 @@ class About extends React.Component {
                         <p className="mt-5">
                             Engineers on the Green is an annual event held in Fall and Winter quarter 
                             where students can network with the various engineering orgs on campus. 
-                            This event will take place in person at the Marshall College Field 
-                            on January 4th, 2022, from 11 AM to 3 PM.
+                            This event is TBA{/*will take place in person at the Marshall College Field 
+                            on January 4th, 2022, from 11 AM to 3 PM.*/}
                         </p>
                         <p className="w-100">
+                            
                             This website displays information including: Attending 
                             Orgs and FAQ’s about the event.                            
                         </p>
