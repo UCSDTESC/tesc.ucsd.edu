@@ -1,70 +1,119 @@
 {
     "companies": [
         {
-            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering",
+            "Industry Field": "",
             "Position Types": "",
-            "Organization": "San Diego Gas and Electric",
-            "Link": "https://www.sdge.com/"
+            "Organization": "ZS Associates",
+            "Link": ""
         },
         {
             "Industry Field": "",
             "Position Types": "",
-            "Organization": "Veeva",
-            "Link": "https://www.veeva.com"
+            "Organization": "TrellisWare Technologies",
+            "Link": ""
         },
         {
-            "Industry Field": "Electrical Engineering,Civil/Structural Engineering",
-            "Position Types": "Full Time",
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Seismic Software",
+            "Link": ""
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "NIWC Pacific",
+            "Link": ""
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Accel Robotics",
+            "Link": ""
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
             "Organization": "Los Angeles Department of Water and Power",
-            "Link": "https://www.ladwp.com"
-        },
-        {
-            "Industry Field": "Software Engineering",
-            "Position Types": "Full Time  Internship",
-            "Organization": "Arista Networks",
-            "Link": "https://www.arista.com/en/"
-        },
-        {
-            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering",
-            "Position Types": "",
-            "Organization": "ServiceNow",
-            "Link": "https://www.servicenow.com/"
-        },
-        {
-            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering",
-            "Position Types": "Full Time",
-            "Organization": "Hughes Network Systems",
-            "Link": "https://www.hughesnet.com/"
-        },
-        {
-            "Industry Field": "Software Engineering, Hardware Engineering",
-            "Position Types": "Full Time",
-            "Organization": "Sambanova",
-            "Link": "https://sambanova.ai"
-        },
-        {
-            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering",
-            "Position Types": "Full Time Internship",
-            "Organization": "Appfolio",
-            "Link": "https://www.appfolio.com/"
-        },
-        {
-            "Industry Field": "Computer Science,Mathematics-Computer Science,Computer Engineering,Electrical Engineering,Chemical Engineering",
-            "Position Types": "Full Time",
-            "Organization": "Varioscale",
-            "Link": "https://www.varioscale.com/"
+            "Link": ""
         },
         {
             "Industry Field": "",
             "Position Types": "",
-            "Organization": "Quartus Engineering",
-            "Link": "https://www.quartus.com/"
+            "Organization": "Verint Systems",
+            "Link": ""
         },
         {
             "Industry Field": "",
             "Position Types": "",
-            "Organization": "HyperX",
-            "Link": "https://www.hyperxgaming.com/unitedstates/us"
+            "Organization": "Los Alamos National Laboratory",
+            "Link": ""
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "AppFolio, Inc.",
+            "Link": ""
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "L3Harris",
+            "Link": ""
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Teradata Corp",
+            "Link": ""
+        },
+	{
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Applied Medical",
+            "Link": ""
+        },
+	{
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "D&K Engineering",
+            "Link": ""
+        },
+	{	
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Danaher",
+            "Link": ""
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "HRL Laboratories",
+            "Link": ""
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Viasat",
+            "Link": ""
+        },
+
+	{
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "U.S. Navy (Navy Talent Acquisition Group Southwest)",
+            "Link": ""
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Lockheed Martin",
+            "Link": ""
+        },
+	{
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "US Navy Nuclear Power Programs",
+            "Link": ""
         }
     ]
 }

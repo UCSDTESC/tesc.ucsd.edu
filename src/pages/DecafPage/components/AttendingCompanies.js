@@ -225,7 +225,7 @@ class AttendingCompanies extends React.Component {
                                             company['Work Authorizations']
                                         }
                                         description=""
-                                        link={company['Link']}
+                                        // link={company['Link']}
                                         key={i}
                                     />
                                 ))}
@@ -387,8 +387,6 @@ class AttendingCompanies extends React.Component {
                     </div>
                 </div>
 
-		{/*
-
                 <div className="decaf-companies__filterbar">
                     <div className="decaf-companies__container">
                         <FilterBar
@@ -404,7 +402,6 @@ class AttendingCompanies extends React.Component {
 
                 {this.createCompanyRows(filteredCompanies, displayRows)}
 
-		*/}
             </div>
         );
     }
