@@ -15,8 +15,6 @@ const Sponsors = () => {
                     <br />
                     <span>SPONSORS</span>
                 </h1>
-
-		{/*
                 <Row>
                     <Col>
                         <img
@@ -55,7 +53,6 @@ const Sponsors = () => {
                         />
                     </Col>
                 </Row>
-		*/}
                 <Row>
                     <p className="decaf-sponsors__contact">
                         Contact us at{' '}
