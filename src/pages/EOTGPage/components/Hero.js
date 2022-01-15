@@ -35,7 +35,6 @@ class Hero extends React.Component {
                                     <b> Engineers on the Green </b>
                                 </div>
                                 <div className="eotg-hero__detail">
-                                    TBA
                                     {/*January 4th <br></br> 
                                     11 AM - 3 PM <br></br>
                                     Marshall College Field
