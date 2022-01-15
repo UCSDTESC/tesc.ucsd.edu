@@ -18,11 +18,6 @@ class About extends React.Component {
                             This event is TBA{/*will take place in person at the Marshall College Field 
                             on January 4th, 2022, from 11 AM to 3 PM.*/}
                         </p>
-                        <p className="w-100">
-                            
-                            This website displays information including: Attending 
-                            Orgs and FAQ’s about the event.                            
-                        </p>
                         
                     </div>
                 </div>
