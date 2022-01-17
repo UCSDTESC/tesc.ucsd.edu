@@ -225,7 +225,7 @@ class AttendingCompanies extends React.Component {
                                             company['Work Authorizations']
                                         }
                                         description=""
-                                        // link={company['Link']}
+                                        link={company['Link']}
                                         key={i}
                                     />
                                 ))}

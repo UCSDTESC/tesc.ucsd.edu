@@ -1,113 +1,106 @@
 {
     "companies": [
         {
-            "Industry Field": "",
-            "Position Types": "",
+            "Industry Field": "Business Consulting",
+            "Position Types": "Internship",
             "Organization": "ZS Associates",
-            "Link": ""
+            "Link": "https://www.zs.com/"
         },
         {
-            "Industry Field": "",
-            "Position Types": "",
+            "Industry Field": "Computer Science,Computer Engineering,Electrical Engineering",
+            "Position Types": "Full-Time",
             "Organization": "TrellisWare Technologies",
-            "Link": ""
+            "Link": "https://www.trellisware.com/"
         },
         {
             "Industry Field": "",
             "Position Types": "",
             "Organization": "Seismic Software",
-            "Link": ""
+            "Link": "https://seismic.com/"
         },
         {
             "Industry Field": "",
             "Position Types": "",
             "Organization": "NIWC Pacific",
-            "Link": ""
+            "Link": "https://www.niwcpacific.navy.mil/"
         },
         {
-            "Industry Field": "",
-            "Position Types": "",
+            "Industry Field": "Computer Science,Computer Engineering,Electrical Engineering",
+            "Position Types": "Full-Time Internship",
             "Organization": "Accel Robotics",
-            "Link": ""
+            "Link": "https://www.accelrobotics.com/"
         },
         {
-            "Industry Field": "",
-            "Position Types": "",
+            "Industry Field": "Civil Engineering,Electrical Engineering",
+            "Position Types": "Full-Time",
             "Organization": "Los Angeles Department of Water and Power",
-            "Link": ""
-        },
-        {
-            "Industry Field": "",
-            "Position Types": "",
-            "Organization": "Verint Systems",
-            "Link": ""
+            "Link": "https://www.ladwp.com/ladwp/faces/ladwp?_afrLoop=237090919286682&_afrWindowMode=0&_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D237090919286682%26_afrWindowMode%3D0%26_adf.ctrl-state%3Dne3wkkpyj_38"
         },
         {
             "Industry Field": "",
             "Position Types": "",
             "Organization": "Los Alamos National Laboratory",
-            "Link": ""
+            "Link": "https://www.lanl.gov/"
         },
         {
-            "Industry Field": "",
-            "Position Types": "",
+            "Industry Field": "Computer Science,Computer Engineering",
+            "Position Types": "Full-Time",
             "Organization": "AppFolio, Inc.",
-            "Link": ""
+            "Link": "https://www.appfolioinc.com/"
         },
         {
             "Industry Field": "",
             "Position Types": "",
             "Organization": "L3Harris",
-            "Link": ""
+            "Link": "https://www.l3harris.com/"
         },
         {
-            "Industry Field": "",
-            "Position Types": "",
+            "Industry Field": "Computer Science,Computer Engineering,Marketing",
+            "Position Types": "Internship",
             "Organization": "Teradata Corp",
-            "Link": ""
+            "Link": "https://www.teradata.com/"
         },
 	{
-            "Industry Field": "",
-            "Position Types": "",
+            "Industry Field": "Biomedical,Computer Science,Computer Engineering,Electrical Engineering",
+            "Position Types": "Full-Time",
             "Organization": "Applied Medical",
-            "Link": ""
+            "Link": "https://www.appliedmedical.com/"
         },
 	{
             "Industry Field": "",
             "Position Types": "",
             "Organization": "D&K Engineering",
-            "Link": ""
+            "Link": "https://www.dkengineering.com/"
         },
 	{	
             "Industry Field": "",
             "Position Types": "",
             "Organization": "Danaher",
-            "Link": ""
+            "Link": "https://www.danaher.com/"
         },
         {
             "Industry Field": "",
             "Position Types": "",
             "Organization": "HRL Laboratories",
-            "Link": ""
+            "Link": "https://www.hrl.com/"
         },
         {
             "Industry Field": "",
             "Position Types": "",
             "Organization": "Viasat",
-            "Link": ""
+            "Link": "https://www.viasat.com/"
         },
-
 	{
             "Industry Field": "",
             "Position Types": "",
             "Organization": "U.S. Navy (Navy Talent Acquisition Group Southwest)",
-            "Link": ""
+            "Link": "https://www.navy.mil/"
         },
         {
             "Industry Field": "",
             "Position Types": "",
             "Organization": "Lockheed Martin",
-            "Link": ""
+            "Link": "https://www.lockheedmartin.com/en-us/index.html"
         },
 	{
             "Industry Field": "",
