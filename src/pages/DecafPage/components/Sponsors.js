@@ -34,12 +34,14 @@ const Sponsors = () => {
                             <Row>
                                 {SponsorLogos.map((src, i) => (
                                     <Col key={i} xs={12} md={6}> 
-                                        <img
+                                        {/* <img
                                             src={src}
                                             alt=""
                                             width="100%"
                                             className="mb-5"
                                         />
+					*/}
+					<h3 className="mb-5">{src}</h3>
                                     </Col>
                                 ))}
                             </Row>
