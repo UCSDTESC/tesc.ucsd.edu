@@ -9,7 +9,6 @@ export default [
    "NIWC Pacific",
    "Accel Robotics",
    "Los Angeles Department of Water and Power",
-   "Verint",
    "Los Alamos National Laboratory",
    "AppFolio, Inc.",
    "L3Harris",
