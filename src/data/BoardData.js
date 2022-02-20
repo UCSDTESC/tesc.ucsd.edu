@@ -1,5 +1,110 @@
 const board = [
     {
+	name: 'Warren Chang',
+	role: 'Co-President',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/WarrenChang-CoPrez-2022.jpg',
+	email: 'warren@tesc.ucsd.edu',
+	link: 'https://www.linkedin.com/in/warren-chang-051213158/',
+	bio: "I am a third-year mechanical engineering major from San Diego. As one of TESC’s Co-Presidents, it is my responsibility to support and lead our organization to be one of the best resources for Jacobs School of Engineering students. Together with Kenneth Chen, I will ensure that students returning to campus are welcomed with the in-person experience they deserve. In my free time, you can catch me servicing mechanical watches or reading a book.",
+    },
+
+
+    {
+	name: 'Kenneth Chen',
+	role: 'Co-President',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/Kenneth-CoPrez-2022.jpg',
+	email: 'kenneth@tesc.ucsd.edu',
+	link: 'https://www.linkedin.com/in/efeichen/',
+	bio: "I'm a third-year studying computer science. Last year, I was the VP Internal. I want to become a ramen connoisseur.",
+    },
+
+
+    {
+	name: 'Ahmed Cheruvattam',
+	role: 'Vice President of External Committees',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/VP-Ex-Committees2022.jpg',
+	email: 'ahmed@tesc.ucsd.edu',
+	link: 'https://www.linkedin.com/in/ahmed-cheruvattam',
+	bio: "Hi! I am a third year mechanical engineering student at UCSD and I love to sell stuff as much as to build it. At the External Vertical, it is no different!  I love to play soccer.",	
+    },
+
+
+    {
+	name: 'Rosey Bugayong',
+	role: 'Vice President of Events',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/VP-Events2022.jpeg',
+	email: 'rosey@tesc.ucsd.edu',
+	link: 'https://www.linkedin.com/in/rosey-bugayong/',
+	bio: "Hi! My name is Rosey Bugayong and I am the vp of events. I help to coordinate the amazing events that TESC puts on throughout the year. I am a third year computer science major with a minor in cognitive science. Some things I enjoy doing on my free time are running, going to the gym, and hanging out with friends.",
+    },
+
+    {
+	name: 'Tien Nguyen',
+	role: 'Townhall Director',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/TownhallDirector2022.PNG',
+	email: 'tienguyen213@gmail.com',
+	link: '',
+	bio: "Hey! I am the Town Hall director for TESC and a third-year aerospace engineering major with a passion for physical activities. During the weekdays, I can be spotted at the gym. When the weekends are here, I am usually out with friends or on a hike.",
+    },
+
+
+
+    {
+        name: 'Ryan Wang',
+        role: 'Tech Lead',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/TechLead2022.jpg',
+        email: 'ryan@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/ryanwang01/',
+        bio: "Hello!  I am a second-year majoring in computer science.  I have just started working with TESC this year, and I am looking forward to making our engineering community the best it can be!  In my free time, I love to play video games, tennis, and the violin.",
+    },
+
+
+
+    {
+	name: 'William Hu',
+	role: 'Sponsorship Lead',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/SponsorLead2022.jpg',
+	email: 'william@tesc.ucsd.edu',
+	link: 'https://www.linkedin.com/in/william-hu-2165b5173/',
+	bio: "Hi! I'm a second-year math-cs major. I'll be serving as the TESC Sponsorship Lead this year, where I'll be working together with my committee to reach out to sponsoring companies and create meaningful partnerships with them. I'm usually pretty swamped with school work, but whenever I have time, I like to play the piano, read, and go on boba runs with friends.",
+    },
+
+    {
+	name: 'Wendy Alaniz',
+	role: 'ProDev Lead',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/ProvDevLead-2022.jpeg',
+	email: 'wendy@tesc.ucsd.edu',
+	link: 'https://www.linkedin.com/in/wendy-alaniz-57972b17b',
+	bio: "As my role of ProDev, I work very closely with Decaf and other events to make sure they are able to run smoothly. I am currently a third year aerospace engineering major. On my free time, I enjoy exploring different restaurants and small coffee or ice cream shops.",
+    },
+
+    {
+	name: 'Elise Bushnell',
+	role: 'Design Lead',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/DesignLead-2022.JPG',
+	email: 'ebushnel@ucsd.edu',
+	link: '',
+	bio: "Hi, I'm the Design Lead which means I am responsible for ensuring that all of the graphics for TESC are created! I am a second-year computer science major. In my free time, I love hiking and just getting outside in general.",
+    },
+
+    {
+	name: 'Nigam Vadecha',
+	role: 'Social Lead',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/SocialLead-2022.jpg',
+	email: 'nvadecha@ucsd.edu',
+	link: '',
+	bio: "Hi! My name is Nigam Vadecha and I am currently a second-year structural engineer. My position is TESC Social Lead and this means that I will do my best to plan and make social events, such as EOTG. In my free time I like to play Valorant, hike, and play basketball.",
+    },
+];
+
+
+
+
+    
+
+{/*
+
+    {
         name: 'Summer Joyce Batasin',
         role: 'President',
         img:
@@ -200,4 +305,5 @@ const board = [
     },
 ];
 
+*/}
 export default board;
