@@ -4,7 +4,7 @@ function Hero() {
     return (
         <section className="join" id="join">
             <div className="text-center join__header pt-5">Join TESC</div>
-            <div className="join__container mt-5">
+            <div className="join__container">
                 <div className="text-center"></div>
                 <div className="join__btns row">
                     <div className="col-md text-center">
