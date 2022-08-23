@@ -4,6 +4,8 @@ import '../../../scss/components/_signup.scss';
 import InputField from "./Input";
 import '../../../scss/components/_signup.scss'
 
+// VISIT TUTORIAL FOR DEBUGGING https://dev.to/gedalyakrycer/create-an-email-list-with-react-mailchimp-965#step6
+
 const CustomForm = ({status, message, onValidated}) => {
 
     const [email,setEmail] = useState('');
