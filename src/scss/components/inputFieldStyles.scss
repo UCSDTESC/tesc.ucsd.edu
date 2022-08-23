@@ -1,0 +1,69 @@
+.inputField{
+  &__label {
+    display: grid;
+    grid-row-gap: 10px;
+    color: #004E74;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+  &__field {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 16px 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+input[disabled] {
+  background-color: #a3aeb9;
+  cursor: default;
+  font-weight: bold;
+  font-size: 25px;
+  border: false;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  max-width: 400px;
+  color: white;
+
+  &:active {
+    transform: scale(1.01);
+  }
+  /*
+  &:hover {
+    background-color: #ff0000;
+    transform: scale(1);
+  }
+  */
+}
+input {
+  background-color: #00488E;
+  cursor: default;
+  font-weight: bold;
+  font-size: 25px;
+  border: false;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  max-width: 400px;
+  color: white;
+
+  &:active {
+    transform: scale(1.01);
+  }
+  /*
+  &:hover {
+    background-color: #002a53;
+    transform: scale(1);
+  }
+  */
+}

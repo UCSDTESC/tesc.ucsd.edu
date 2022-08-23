@@ -29,6 +29,11 @@ function Nav(props) {
                     CONTACT
                 </NavLink>
             </li>
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/signup">
+                    NEWSLETTER
+                </NavLink>
+            </li>
             <li className="nav-item text-center">
                 <NavLink className="nav-link btn nav__toggle-active" to="/orgs">
                     FOR TESC ORGS

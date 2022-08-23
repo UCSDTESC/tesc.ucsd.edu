@@ -12,6 +12,7 @@ import HomePage from './pages/HomePage';
 
 const OrgPage = lazy(() => import('./pages/HomePage/OrgPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
+const Newsletter = lazy(() => import('./pages/Newsletter'));
 const MembershipPage = lazy(() => import('./pages/MembershipPage'));
 const FAQPage = lazy(() => import('./pages/FAQPage'));
 const SpacesPage = lazy(() => import('./pages/SpacesPage'));
@@ -57,6 +58,7 @@ function Routes() {
                     component={withLayout(OrgPage, true)}
                 />
                 <Route exact path="/about" component={() => <AboutPage />} />
+                <Route exact path="/signup" component={() => <Newsletter />} />
                 <Route
                     exact
                     path="/members"

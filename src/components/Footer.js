@@ -3,9 +3,10 @@ import React from 'react';
 function Footer() {
     return (
         <div id="footer">
+            <footer className="footer" id="footer">
             <section className="contact" id="contact">
                 <div className="container-fluid d-flex align-items-center h-100">
-                    <h1 className="contact__header m-auto">
+                    <h1 className="contact__footer">
                         Talk to us at{' '}
                         <a
                             className="contact__link"
@@ -17,7 +18,6 @@ function Footer() {
                     </h1>
                 </div>
             </section>
-            <footer className="footer" id="footer">
                 <div className="container-fluid">
                     <ul className="footer__links flex-column ml-md-auto d-flex flex-md-row justify-content-between text-center align-items-center text-md-left">
                         <li className="footer__link-item">
