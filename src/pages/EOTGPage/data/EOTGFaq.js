@@ -41,9 +41,9 @@ const studentFaq = [
     },
 */
     {
-        question: 'How do I find the Marshall Field?',
+        question: 'How do I find the Warren Bear Courtyard?',
         answer:
-            'The Marshall Field is located at the intersection of OVT and the Marshall Upper Apartments. Please reference the map below to better understand where the Marshall Field is.',
+            'The Warren Bear Courtyard is located close to the Warren Computer Science and Engineering building and north of the Warren Mall. Please refer to the map below.',
     },
     {
         question: 'Is this event limited to engineering majors?',

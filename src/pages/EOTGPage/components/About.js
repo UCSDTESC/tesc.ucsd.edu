@@ -9,14 +9,14 @@ class About extends React.Component {
             >
                 <div className="container">
                     <div className="row text-center">
-                        <h1 className="text-center w-100">
+                        <h1 className="floating text-center w-100">
                             About Engineers on the Green
                         </h1>
                         <p className="mt-5">
                             Engineers on the Green is an annual event held in Fall and Winter quarter 
                             where students can network with the various engineering orgs on campus. 
-                            This event is TBA{/*will take place in person at the Marshall College Field 
-                            on January 4th, 2022, from 11 AM to 3 PM.*/}
+                            This event will take place in person at the Warren Bear Courtyard 
+                            on September 29th, 2022, from 11 AM to 2 PM.
                         </p>
                         
                     </div>

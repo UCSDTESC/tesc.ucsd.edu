@@ -1,7 +1,7 @@
 .eotg-about {
-    background-image: url(../../../../pages/EOTGPage/svg/bg-about.svg);
-    background-size: cover;
-    //background: $eotg-green;
+    //background-image: url(../../../../pages/EOTGPage/svg/bg-about-winter.svg); //CHANGE THIS TO CHANGE THE SEASONS
+    background-size: contain;
+    background: $eotg-blue;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -26,5 +26,19 @@
 
     @include media-breakpoint-down(sm) {
         padding-top: 1rem;
+    }
+}
+//https://www.geeksforgeeks.org/css-floating-animation/ FOR BOBBING ANIM
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }   
     }
 }

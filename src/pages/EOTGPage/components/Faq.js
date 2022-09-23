@@ -1,13 +1,14 @@
 import React from 'react';
 import studentFaq from '../data/EOTGFaq';
 import FaqItem from './FaqItem';
+import BearMap from '../svg/warren-bear-map.png'
 
 class Faq extends React.Component {
     render() {
         const data = studentFaq;
         return (
             <div className="eotg-faq" id="faq">
-                <div className="eotg-faq__head mb-5">
+                <div className="floating eotg-faq__head mb-5">
                     Frequently Asked Questions
                 </div>
                 <div className="container">
@@ -17,6 +18,11 @@ class Faq extends React.Component {
                                 {data.map((d, i) => (
                                     <FaqItem {...d} key={i} idx={i} />
                                 ))}
+                                <img
+                                src={BearMap}
+                                alt=""
+                                className="center"
+                            />
                             </div>
                         </div>
                     </div>
