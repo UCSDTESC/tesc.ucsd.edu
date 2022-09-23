@@ -5,7 +5,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    position: relative;
+    position: relative;E
 
     &__container {
         width: 100%;
@@ -33,6 +33,7 @@
     &__graphic {
         width: 100%;
         margin: 0 auto;
+        margin-top: 5rem;
     }
 
     &__logo {
@@ -72,4 +73,20 @@
         -webkit-user-drag: none;
         user-select: none;
     }
+}
+
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-bottom: 5rem;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
