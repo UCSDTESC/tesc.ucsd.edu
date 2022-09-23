@@ -20,8 +20,8 @@ class EOTGPage extends Component {
             <>       
                 <Hero />         
                 <About />
-                {/* <Orgs />
-                <Faq /> */}
+                <Orgs />
+                <Faq />
                 <Footer />
             </>
         )

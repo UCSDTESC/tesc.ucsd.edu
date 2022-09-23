@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import $ from 'jquery';
 
-import BearIsland from '../svg/bear-island.svg';
+import BearIsland from '../svg/bear-island-fall.svg';
 
 class Hero extends React.Component {
     scrollAnimation() {
@@ -35,10 +35,9 @@ class Hero extends React.Component {
                                     <b> Engineers on the Green </b>
                                 </div>
                                 <div className="eotg-hero__detail">
-                                    {/*January 4th <br></br> 
-                                    11 AM - 3 PM <br></br>
-                                    Marshall College Field
-                                    */}
+                                    September 29th <br></br> 
+                                    11 AM - 2 PM <br></br>
+                                    Warren Bear Courtyard
                                 </div>
                                 {/* FOR FACEBOOK BUTTON:
                                 <div className="eotg-hero__button_div mb-5">

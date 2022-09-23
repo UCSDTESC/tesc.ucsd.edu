@@ -1,6 +1,8 @@
 import React from 'react';
 import '../../../scss/components/inputFieldStyles.scss';
 
+// VISIT TUTORIAL FOR DEBUGGING https://dev.to/gedalyakrycer/let-s-build-a-3-in-1-form-field-component-3416
+
 const InputField = props => {
 
     const validateInput = values => {
