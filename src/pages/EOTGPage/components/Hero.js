@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import $ from 'jquery';
 
 import BearIsland from '../svg/bear-island-fall.svg';
+import BottomLeftCloud from '../svg/cloud-bottom-left.svg';
+import BottomRightCloud from '../svg/cloud-bottom-right.svg';
 
 class Hero extends React.Component {
     scrollAnimation() {
@@ -64,6 +66,22 @@ class Hero extends React.Component {
                                 </div>
                                 */}
                             </div>
+                        </Col>
+                    </Row>
+                    <Row className="floating justify-content-center">
+                        <Col>
+                        <img
+                                src={BottomLeftCloud}
+                                alt=""
+                                className="eotg-hero__graphic"
+                            />
+                        </Col>
+                        <Col>
+                        <img 
+                                src={BottomRightCloud}
+                                alt=""
+                                className="eotg-hero__graphic"
+                            />
                         </Col>
                     </Row>
                 </Container>

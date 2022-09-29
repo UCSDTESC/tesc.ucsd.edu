@@ -32,35 +32,35 @@ const Orgs = () => {
                 <div className="row justify-content-center">
                     {/* The nav bar tabs that display days */}
                     <ul className="nav nav-tabs eotg-attending-orgs__tabs justify-content-center align-items-end mt-4">
+                        {/*
                         <li className="active">
                             <a data-toggle="tab" href="#wednesday">
-                                Thursday, Sep. 29th
-                            </a>
-                        </li>
-                        {/*
-                        <li>
-                            <a data-toggle="tab" href="#thursday">
-                                Thursday, Sep. 30th
+                                Wednesday, Sep. 29th
                             </a>
                         </li>
                         */}
+                        <li className="active">
+                            <a data-toggle="tab" href="#thursday">
+                                Thursday, Sep. 29th
+                            </a>
+                        </li>
                     </ul>
                     {/* The info that appears when you click each tab */}
                     <div className="tab-content w-100">
+                        {/*
                         <div id="wednesday" className="tab-pane fade show active">
                             <div className="eotg-attending-orgs__day">
-                                Thursday, Sep. 29th
+                                Wednesday, Sep. 29th
                             </div>
                             {renderDay('wed')}
                         </div>
-                        {/*
-                        <div id="thursday" className="tab-pane fade">
+                        */}
+                        <div id="thursday" className="tab-pane fade show active">
                             <div className="eotg-attending-orgs__day">
-                                Thursday, Sep. 30th
+                                Thursday, Sep. 29th
                             </div>
                             {renderDay('thu')}
                         </div>
-                        */}
                     </div>
                 </div>
             </div>
