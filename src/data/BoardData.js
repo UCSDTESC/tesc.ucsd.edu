@@ -20,12 +20,12 @@ const board = [
 
 
     {
-	name: 'Ahmed Cheruvattam',
-	role: 'Vice President of External Committees',
-	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/VP-Ex-Committees2022.jpg',
-	email: 'ahmed@tesc.ucsd.edu',
-	link: 'https://www.linkedin.com/in/ahmed-cheruvattam',
-	bio: "Hi! I am a third year mechanical engineering student at UCSD and I love to sell stuff as much as to build it. At the External Vertical, it is no different!  I love to play soccer.",	
+	name: 'Shane Kim',
+	role: 'Interim VP Internal',
+	img: 'https://drive.google.com/uc?export=view&id=1kL525KWS4qYifsHEJN2lxyELvDYrLNN9',
+	email: 'shane@tesc.ucsd.edu',
+	link: 'https://www.linkedin.com/in/shane-kim-0bb4371b0/',
+	bio: "Hi! My name is Shane Kim and I'm the interim VP Internal. I'm a third-year studying computer science. I love to skate, ",	
     },
 
 
