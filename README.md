@@ -27,4 +27,3 @@ Build with `npm run build` for deployment
 For more details, visit the [project Notion page](https://www.notion.so/tesc/tesc-ucsd-edu-7975664847334f6082ef9600374d425d)
 
 Contact hello@tesc.ucsd.edu for any questions.
-
