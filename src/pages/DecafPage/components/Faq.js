@@ -35,13 +35,6 @@ const Faq = ({ isCompany }) => {
                             ))}
                         </div>
                     </Col>
-                    <Col>
-                        <img
-                            src={StickersAll}
-                            alt="sticker set"
-                            className="decaf-faq__sticker-set"
-                        />
-                    </Col>
                 </Row>
             </Container>
             <img

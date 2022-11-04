@@ -11,16 +11,9 @@ const companyFaq = [
         question: 'When and where is the career fair?',
         answer: (
             <>
-                This year Decaf is on January 19th-21st and it will run from
-                9am-5pm. Decaf will be virtual and recruiters will have 1:1
-                sessions with students over Discord.{' '}
-                <a
-                    href="http://tesc.link/decafDC"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Join our discord server
-                </a>
+                This year Decaf is on January 11th and it will run from
+                10am-2pm. Decaf will be held at the Price Center Ballroom and recruiters will be able to have close networking
+                sessions with engineering students.{' '}
                 .
             </>
         ),
@@ -32,12 +25,12 @@ const companyFaq = [
         answer:
             'Students at the undergraduate and graduate level, in a variety of majors primarily affiliated with the Jacobs School of Engineering (such as Mechanical Engineering, Computer Science, etc.)',
         bgColor: '#64CD6E',
-        img: Drum,
+	img: RunWithIt,
     },
     {
         question: 'How do I register my company?',
         answer:
-            'Please click ‘Register’ at the top of the page to go to our registration website where you will complete a form and make a payment.',
+            'Please click ‘Register Your Company’ at the top of the page to go to our registration website where you will complete a form and make a payment.',
         bgColor: '#FA7B5A',
         img: Violin,
     },
@@ -50,16 +43,9 @@ const companyFaq = [
         img: Sax,
     },
     {
-        question: 'Can I reserve a private interview room?',
-        answer:
-            'We will provide private interview rooms for all Corporate Sponsors who request them. These rooms will be set up over Discord.',
-        bgColor: '#8C74B7',
-        img: RunWithIt,
-    },
-    {
         question: 'How can I check in on the day of the event?',
         answer:
-            'Company representatives can check in on the Decaf Discord server with TESC before their event starts.',
+            'To Be Announced!',
         bgColor: '#FFF',
         img: Jazz,
     },
