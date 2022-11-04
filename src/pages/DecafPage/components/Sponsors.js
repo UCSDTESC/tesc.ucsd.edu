@@ -40,8 +40,8 @@ const Sponsors = () => {
                                             width="100%"
                                             className="mb-5"
                                         />
-					*/}
-					<h3 className="mb-5">{src}</h3>
+		    			*/}
+		    		<h3 className="mb-5">{src}</h3>
                                     </Col>
                                 ))}
                             </Row>

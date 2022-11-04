@@ -9,27 +9,6 @@ import Violin from '../assets/sticker-violin.svg';
 
 const studentFaq = [
     {
-        question: 'How’s Decaf going to work online?',
-        answer: (
-            <>
-                TESC will be using{' '}
-                <a
-                    href="http://tesc.link/decafDC"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Discord
-                </a>{' '}
-                to facilitate the event and UCSD students will be able to attend
-                events, as well as, talk with recruiters through Zoom. Students
-                will be able to sign up for specific time slots to meet with
-                recruiters.
-            </>
-        ),
-        bgColor: '#FFF',
-        img: EighthNote,
-    },
-    {
         question: 'How can I get the most up to date information above Decaf?',
         answer: (
             <>
