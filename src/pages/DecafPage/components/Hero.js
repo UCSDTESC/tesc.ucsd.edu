@@ -39,8 +39,8 @@ const Hero = ({ isCompany }) => {
                             className="btn-1"
                             href={
                                 isCompany
-                                    ? 'http://www.tesc.link/registerDecaf'
-                                    : 'http://www.tesc.link/decafReg'
+                                    ? 'https://events.eventzilla.net/e/decaf-2023-2138571703'
+                                    : 'http://www.tesc.link/decafRegi'
                             }
                             target="_blank"
                             rel="noopener noreferrer"
