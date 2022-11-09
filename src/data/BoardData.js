@@ -47,8 +47,15 @@ const board = [
 	bio: "Hey! I am the Town Hall director for TESC and a third-year aerospace engineering major with a passion for physical activities. During the weekdays, I can be spotted at the gym. When the weekends are here, I am usually out with friends or on a hike.",
     },
 
-
-
+    {
+    name: 'John Zhou',
+    role: 'Tech Lead',
+    img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/NewTechLead2022.jpeg',
+    email: 'jozo20020410@gmail.com',
+    link: 'https://www.linkedin.com/in/jjzee/',
+    bio: "TO BE UPDATED",
+    },
+/*
     {
         name: 'Ryan Wang',
         role: 'Tech Lead',
@@ -57,7 +64,7 @@ const board = [
         link: 'https://www.linkedin.com/in/ryanwang01/',
         bio: "Hello!  I am a second-year majoring in computer science.  I have just started working with TESC this year, and I am looking forward to making our engineering community the best it can be!  In my free time, I love to play video games, tennis, and the violin.",
     },
-
+*/
 
 
     {
