@@ -1,31 +1,20 @@
 const board = [
     {
-	name: 'Warren Chang',
+	name: 'Shane Kim',
 	role: 'Co-President',
 	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/WarrenChang-CoPrez-2022.jpg',
-	email: 'warren@tesc.ucsd.edu',
-	link: 'https://www.linkedin.com/in/warren-chang-051213158/',
-	bio: "I am a third-year mechanical engineering major from San Diego. As one of TESC’s Co-Presidents, it is my responsibility to support and lead our organization to be one of the best resources for Jacobs School of Engineering students. Together with Kenneth Chen, I will ensure that students returning to campus are welcomed with the in-person experience they deserve. In my free time, you can catch me servicing mechanical watches or reading a book.",
-    },
-
-
-    {
-	name: 'Kenneth Chen',
-	role: 'Co-President',
-	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/Kenneth-CoPrez-2022.jpg',
-	email: 'kenneth@tesc.ucsd.edu',
-	link: 'https://www.linkedin.com/in/efeichen/',
-	bio: "I'm a third-year studying computer science. Last year, I was the VP Internal. I want to become a ramen connoisseur.",
-    },
-
-
-    {
-	name: 'Shane Kim',
-	role: 'Interim VP Internal',
-	img: 'https://drive.google.com/uc?export=view&id=1kL525KWS4qYifsHEJN2lxyELvDYrLNN9',
-	email: 'shane@tesc.ucsd.edu',
+	email: 'shanekim28@gmail.com',
 	link: 'https://www.linkedin.com/in/shane-kim-0bb4371b0/',
-	bio: "Hi! My name is Shane Kim and I'm the interim VP Internal. I'm a third-year studying computer science. I love to skate, ",	
+	bio: "Hi! My name is Shane Kim and I'm the interim VP Internal. I'm a third-year studying computer science. I love to skate, ",
+    },
+    
+    {
+    name: 'Ryan Wang',
+    role: 'Tech Lead',
+    img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/TechLead2022.jpg',
+    email: 'ryan@tesc.ucsd.edu',
+    link: 'https://www.linkedin.com/in/ryanwang01/',
+    bio: "Hello!  I am a second-year majoring in computer science.  I have just started working with TESC this year, and I am looking forward to making our engineering community the best it can be!  In my free time, I love to play video games, tennis, and the violin.",
     },
 
 
@@ -103,6 +92,23 @@ const board = [
     
 
 {/*
+
+    {
+	name: 'Shane Kim',
+	role: 'Interim VP Internal',
+	img: 'https://drive.google.com/uc?export=view&id=1kL525KWS4qYifsHEJN2lxyELvDYrLNN9',
+	email: 'shane@tesc.ucsd.edu',
+	link: 'https://www.linkedin.com/in/shane-kim-0bb4371b0/',
+	bio: "Hi! My name is Shane Kim and I'm the interim VP Internal. I'm a third-year studying computer science. I love to skate, ",	
+    },
+    {
+	name: 'Kenneth Chen',
+	role: 'Co-President',
+	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/Kenneth-CoPrez-2022.jpg',
+	email: 'kenneth@tesc.ucsd.edu',
+	link: 'https://www.linkedin.com/in/efeichen/',
+	bio: "I'm a third-year studying computer science. Last year, I was the VP Internal. I want to become a ramen connoisseur.",
+    },
 
     {
         name: 'Summer Joyce Batasin',
