@@ -1,5 +1,61 @@
 const board = [
     {
+        name: 'Shane Kim',
+        role: 'Co-President',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/SHANE-COPREZ_2022.JPG',
+        email: 'shane@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/shane-kim-0bb4371b0/',
+        bio: "",	
+    },
+
+    {
+       name: 'Ryan Wang',
+       role: 'Co-President',
+       img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/RYAN-COPREZ_2022.jpg',
+       email: 'ryan@tesc.ucsd.edu',
+       link: 'https://www.linkedin.com/in/ryanwang01/',
+       bio: "",
+    },
+
+    {
+        name: 'Divyam Rana',
+        role: 'VP Internal',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/DIVYAM-VPINT_2022.jpg',
+        email: 'divyam@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/divyamrana/',
+        bio: "",
+    },
+    
+    {
+        name: 'Jingxiu Huang',
+        role: 'VP finance',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/JINGXIU-VPFIN_2022.jpeg',
+        email: 'jingxiu@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/jingxiuhuang/',
+        bio: "",
+    },
+
+    {
+        name: 'John Zhou',
+        role: 'Tech Lead',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/JOHN-TECH_2022.jpeg',
+        email: 'jozhou@ucsd.edu',
+        link: 'https://www.linkedin.com/in/jjzee/',
+        bio: "",
+    },
+
+    {
+        name: 'Lele Zhao',
+        role: 'ProDev Lead',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/LELE-PRODEV_2022.jpg',
+        email: 'l5zhao@ucsd.edu',
+        link: '',
+        bio: "",
+    },
+    
+    //2022 Edit: Past year old people  
+    /*
+    {
 	name: 'Warren Chang',
 	role: 'Co-President',
 	img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/WarrenChang-CoPrez-2022.jpg',
@@ -17,17 +73,6 @@ const board = [
 	link: 'https://www.linkedin.com/in/efeichen/',
 	bio: "I'm a third-year studying computer science. Last year, I was the VP Internal. I want to become a ramen connoisseur.",
     },
-
-
-    {
-	name: 'Shane Kim',
-	role: 'Interim VP Internal',
-	img: 'https://drive.google.com/uc?export=view&id=1kL525KWS4qYifsHEJN2lxyELvDYrLNN9',
-	email: 'shane@tesc.ucsd.edu',
-	link: 'https://www.linkedin.com/in/shane-kim-0bb4371b0/',
-	bio: "Hi! My name is Shane Kim and I'm the interim VP Internal. I'm a third-year studying computer science. I love to skate, ",	
-    },
-
 
     {
 	name: 'Rosey Bugayong',
@@ -47,19 +92,6 @@ const board = [
 	bio: "Hey! I am the Town Hall director for TESC and a third-year aerospace engineering major with a passion for physical activities. During the weekdays, I can be spotted at the gym. When the weekends are here, I am usually out with friends or on a hike.",
     },
 
-
-
-    {
-        name: 'Ryan Wang',
-        role: 'Tech Lead',
-        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/TechLead2022.jpg',
-        email: 'ryan@tesc.ucsd.edu',
-        link: 'https://www.linkedin.com/in/ryanwang01/',
-        bio: "Hello!  I am a second-year majoring in computer science.  I have just started working with TESC this year, and I am looking forward to making our engineering community the best it can be!  In my free time, I love to play video games, tennis, and the violin.",
-    },
-
-
-
     {
 	name: 'William Hu',
 	role: 'Sponsorship Lead',
@@ -68,7 +100,7 @@ const board = [
 	link: 'https://www.linkedin.com/in/william-hu-2165b5173/',
 	bio: "Hi! I'm a second-year math-cs major. I'll be serving as the TESC Sponsorship Lead this year, where I'll be working together with my committee to reach out to sponsoring companies and create meaningful partnerships with them. I'm usually pretty swamped with school work, but whenever I have time, I like to play the piano, read, and go on boba runs with friends.",
     },
-
+    
     {
 	name: 'Wendy Alaniz',
 	role: 'ProDev Lead',
@@ -95,24 +127,7 @@ const board = [
 	link: '',
 	bio: "Hi! My name is Nigam Vadecha and I am currently a second-year structural engineer. My position is TESC Social Lead and this means that I will do my best to plan and make social events, such as EOTG. In my free time I like to play Valorant, hike, and play basketball.",
     },
-
-    {
-        name: 'Divyam Rana',
-        role: 'VP internal',
-        img: 'https://drive.google.com/file/d/1HFtg9mB-tHH381xLjiKyYq1nvl4G4daX/view',
-        email: 'dirana@ucsd.edu',
-        link: '',
-        bio: "",
-    },
-
-    {
-        name: 'Jingxiu Huang',
-        role: 'VP finance',
-        img: 'https://drive.google.com/file/d/1soeKU6XLrHT7qOVn8kMaQ-cMvzo-73XL/view',
-        email: 'jih075@ucsd.edu',
-        link: '',
-        bio: "Hi! My name is Nigam Vadecha and I am currently a second-year structural engineer. My position is TESC Social Lead and this means that I will do my best to plan and make social events, such as EOTG. In my free time I like to play Valorant, hike, and play basketball.",
-    },
+    */
 ];
 
 
