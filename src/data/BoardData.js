@@ -95,6 +95,24 @@ const board = [
 	link: '',
 	bio: "Hi! My name is Nigam Vadecha and I am currently a second-year structural engineer. My position is TESC Social Lead and this means that I will do my best to plan and make social events, such as EOTG. In my free time I like to play Valorant, hike, and play basketball.",
     },
+
+    {
+        name: 'Divyam Rana',
+        role: 'VP internal',
+        img: 'https://drive.google.com/file/d/1HFtg9mB-tHH381xLjiKyYq1nvl4G4daX/view',
+        email: 'dirana@ucsd.edu',
+        link: '',
+        bio: "",
+    },
+
+    {
+        name: 'Jingxiu Huang',
+        role: 'VP finance',
+        img: 'https://drive.google.com/file/d/1soeKU6XLrHT7qOVn8kMaQ-cMvzo-73XL/view',
+        email: 'jih075@ucsd.edu',
+        link: '',
+        bio: "Hi! My name is Nigam Vadecha and I am currently a second-year structural engineer. My position is TESC Social Lead and this means that I will do my best to plan and make social events, such as EOTG. In my free time I like to play Valorant, hike, and play basketball.",
+    },
 ];
 
 
