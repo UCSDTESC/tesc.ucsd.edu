@@ -10,7 +10,7 @@ function Hero() {
                     <div className="col-md text-center">
                         <a
                             className="btn join__cta"
-                            href="http://tesc.link/join"
+                            href="https://tesc.typeform.com/to/bAqdgm"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
