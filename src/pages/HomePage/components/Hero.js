@@ -14,7 +14,7 @@ function Hero() {
                             <div className="hero__cta">
                                 <a
                                     className="btn hero__cta-btn text-white"
-                                    href="http://tesc.link/join"
+                                    href="https://tesc.typeform.com/to/bAqdgm"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
