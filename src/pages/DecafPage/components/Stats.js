@@ -12,7 +12,7 @@ const Stats = () => {
                 <h1 className="section-title mx-auto text-center">
                     statistics from
                     <br />
-                    <em>DECAF2020</em>
+                    <em>DECAF2022</em>
                 </h1>
                 {[
                     {
