@@ -40,7 +40,7 @@ const Hero = ({ isCompany }) => {
                             href={
                                 isCompany
                                     ? 'https://events.eventzilla.net/e/decaf-2023-2138571703'
-                                    : 'http://www.tesc.link/decafRegi'
+                                    : 'https://www.eventbrite.com/e/decaf-2023-tickets-475639569757'
                             }
                             target="_blank"
                             rel="noopener noreferrer"
