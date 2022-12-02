@@ -31,7 +31,22 @@ const Sponsors = () => {
 
                     <Col xs={8}>
                          <div className="decaf-sponsors__logo-container">
-                            <Row>
+                            <Row style={{ padding: 20 }}>
+                                <Col key={2} xs={12} md={6}>
+                                    <h1 width="100%">Applied Medical</h1>
+                                </Col>
+                                <Col key={1} xs={12} md={6}>
+                                    <h1>Dynovas</h1>
+                                </Col>
+                                <Col key={3} xs={12} md={6}>
+                                    <h1>Seismic Software</h1>
+                                </Col>
+                                <Col key={4} xs={12} md={6}>
+                                    <h1>Viasat</h1>
+                                </Col>
+                                <Col key={5} xs={12} md={6}>
+                                    <h1>...more TBA!</h1>
+                                </Col>
                                 {SponsorLogos.map((src, i) => (
                                     <Col key={i} xs={12} md={6}> 
                                         {/* <img
@@ -40,7 +55,8 @@ const Sponsors = () => {
                                             width="100%"
                                             className="mb-5"
                                         />
-		    			*/}
+		    			*/
+                                        <p>Dynovas</p>}
 		    		<h3 className="mb-5">{src}</h3>
                                     </Col>
                                 ))}
