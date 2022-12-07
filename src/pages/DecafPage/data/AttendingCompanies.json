@@ -7,27 +7,33 @@
             "Link": "https://www.viasat.com/"
         },
         	{
-            "Industry Field": "Biomedical,Computer Science,Computer Engineering,Electrical Engineering",
-            "Position Types": "Full-Time",
+            "Industry Field": "",
+            "Position Types": "",
             "Organization": "Applied Medical",
             "Link": "https://www.appliedmedical.com/"
         },
                 {
-            "Industry Field": "Computer Science",
-            "Position Types": "Full-Time",
+            "Industry Field": "",
+            "Position Types": "",
             "Organization": "Seismic Software",
             "Link": "https://seismic.com/"
         },	
         {
-            "Industry Field": "Aerospace",
-            "Position Types": "Full-Time",
+            "Industry Field": "",
+            "Position Types": "",
             "Organization": "Dynovas",
             "Link": "https://www.dynovas.com/"
+        },
+        {
+            "Industry Field": "",
+            "Position Types": "",
+            "Organization": "Hughes Network Systems",
+            "Link": "https://www.hughes.com/"
         },
         	{
             "Industry Field": "",
             "Position Types": "",
-            "Organization": "More to be announced!",
+            "Organization": "...more TBA!",
             "Link": "#"
         }
     ]

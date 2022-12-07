@@ -6,6 +6,8 @@ import potHead from '../assets/pot-head.svg';
 import buford from '../assets/buford.svg';
 import shadow from '../assets/pot-head-shadow.svg';
 
+import Seismic from '../assets/sponsors/seismic.svg';
+
 const Sponsors = () => {
     return (
         <section className="decaf-sponsors">
@@ -39,12 +41,15 @@ const Sponsors = () => {
                                     <h1>Dynovas</h1>
                                 </Col>
                                 <Col key={3} xs={12} md={6}>
-                                    <h1>Seismic Software</h1>
+                                    <img src={ Seismic } alt="Seismic Software" width="100%" className='mb-5' />
                                 </Col>
                                 <Col key={4} xs={12} md={6}>
                                     <h1>Viasat</h1>
                                 </Col>
                                 <Col key={5} xs={12} md={6}>
+                                    <h1>Hughes Network Systems</h1>
+                                </Col>
+                                <Col key={6} xs={12} md={6}>
                                     <h1>...more TBA!</h1>
                                 </Col>
                                 {SponsorLogos.map((src, i) => (

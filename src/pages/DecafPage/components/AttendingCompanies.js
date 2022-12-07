@@ -370,7 +370,7 @@ class AttendingCompanies extends React.Component {
                                         <h1 className="year">
                                             20
                                             <br />
-                                            22
+                                            23
                                         </h1>
                                     </Col>
                                 </Row>
