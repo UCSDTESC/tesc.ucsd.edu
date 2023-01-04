@@ -13,7 +13,7 @@ import Viasat from '../assets/sponsors/viasat.svg';
 import HughesNetworkSystem from '../assets/sponsors/hughes_network_system.svg';
 import L3Harris from '../assets/sponsors/l3harris.svg';
 import GeneralAtomics from '../assets/sponsors/general_atomics.svg';
-import Leidos from '../assets/sponsors/leidos.svg';
+import Leidos from '../assets/sponsors/leidoslogo.png';
 
 const Sponsors = () => {
     return (
