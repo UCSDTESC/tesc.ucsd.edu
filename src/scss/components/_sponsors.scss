@@ -1,0 +1,39 @@
+.sponsors {
+    width: 80%;
+    margin-left: 10%;
+    display: block;
+    
+    &__red {
+        font-size: 1.3rem;
+        color: $tesc-red;
+    }
+
+    &__header {
+        font-size: 2.5rem;
+        color: $tesc-blue;
+        font-weight: bold;
+    }
+
+    &__none {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    &__container{
+        width: 80%;
+    }
+
+    &__card {
+        height: 100%;
+        max-width: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    &__cards {
+        margin-top: 3rem;
+    }
+
+    &__section {
+        margin-bottom: 10rem;
+    }
+}
