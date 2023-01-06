@@ -71,6 +71,9 @@ const Sponsors = () => {
                                 <Col key={6} xs={12} md={6}>
                                     <h1>412th Test Engineering Group</h1>
                                 </Col>
+                                <Col key={6} xs={12} md={6}>
+                                    <h1>Keller North America</h1>
+                                </Col>
                                 {SponsorLogos.map((src, i) => (
                                     <Col key={i} xs={12} md={6}> 
                                         {/* <img
