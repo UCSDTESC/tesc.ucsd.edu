@@ -39,7 +39,7 @@ class FilterBar extends Component {
                         className="decaf-companies__filter-select"
                     />
                 </Col>
-                <Col md="3" className="my-2">
+                {/* <Col md="3" className="my-2">
                     <Select
                         isMulti
                         options={this.props.data.positions}
@@ -56,7 +56,7 @@ class FilterBar extends Component {
                         placeholder="Work Auth"
                         className="decaf-companies__filter-select"
                     />
-                </Col>
+                </Col> */}
             </Row>
         );
     }
