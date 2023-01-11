@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../data/decaf/SponsorLogos/SeismicLogo.jpeg'
+import logo from '../../../data/decaf/SponsorLogos/SeismicLogo.svg'
 
 function Sponsors() {
     return (
