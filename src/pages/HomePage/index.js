@@ -2,7 +2,7 @@ import React from 'react';
 import {withRouter} from 'react-router-dom';
 import $ from 'jquery';
 
-
+import Sponsors from './components/Sponsors';
 import Hero from './components/Hero';
 import Events from './components/Events';
 import Join from './components/Join';
@@ -26,6 +26,7 @@ class HomePage extends React.Component {
                 <Hero />
                 <Events />
                 <Join />
+                <Sponsors />
             </>
         );
     }
