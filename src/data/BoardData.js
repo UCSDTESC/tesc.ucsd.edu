@@ -18,6 +18,62 @@ const board = [
     },
 
     {
+        name: 'Sithu Soe',
+        role: 'VP Internal',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/DIVYAM-VPINT_2022.jpg',
+        email: 'sithu@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/sithu-soe-86ba34219/',
+        bio: "",
+    },
+    
+    {
+        name: 'Lele Zhao',
+        role: 'VP External',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/LELE-PRODEV_2022.jpg',
+        email: 'l5zhao@ucsd.edu',
+        link: '',
+        bio: "",
+    },
+
+    {
+        name: 'James Shen',
+        role: 'VP Finance',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/JINGXIU-VPFIN_2022.jpeg',
+        email: 'jjshen@ucsd.edu',
+        link: 'https://www.linkedin.com/in/jingxiuhuang/',
+        bio: "",
+    },
+
+    {
+        name: 'John Zhou',
+        role: 'Tech Lead',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/JOHN-TECH_2022.jpeg',
+        email: 'jozhou@ucsd.edu',
+        link: 'https://www.linkedin.com/in/jjzee/',
+        bio: "",
+    },
+
+    //2022 Edit: Past year old people  
+    /*
+    {
+        name: 'Shane Kim',
+        role: 'Co-President',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/SHANE-COPREZ_2022.JPG',
+        email: 'shane@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/shane-kim-0bb4371b0/',
+        bio: "",	
+    },
+
+    {
+       name: 'Ryan Wang',
+       role: 'Co-President',
+       img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/RYAN-COPREZ_2022.jpg',
+       email: 'ryan@tesc.ucsd.edu',
+       link: 'https://www.linkedin.com/in/ryanwang01/',
+       bio: "",
+    },
+
+    {
         name: 'Divyam Rana',
         role: 'VP Internal',
         img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2022/DIVYAM-VPINT_2022.jpg',
@@ -53,8 +109,6 @@ const board = [
         bio: "",
     },
     
-    //2022 Edit: Past year old people  
-    /*
     {
 	name: 'Warren Chang',
 	role: 'Co-President',

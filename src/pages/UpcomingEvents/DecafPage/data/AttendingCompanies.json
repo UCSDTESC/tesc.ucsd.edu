@@ -1,0 +1,70 @@
+{
+    "companies": [
+        {
+            "Industry Field": "Electrical Engineering,Computer Science,Computer Engineering,Mechanical Engineering",
+            "Position Types": "",
+            "Organization": "Leidos",
+            "Link": "https://www.leidos.com/"
+        },
+        {
+            "Industry Field": "Computer Science",
+            "Position Types": "",
+            "Organization": "Seismic Software",
+            "Link": "https://seismic.com/"
+        },
+        {
+            "Industry Field": "Computer Science,Computer Engineering,Electrical Engineering,Mechanical Engineering,Structural Engineering",
+            "Position Types": "",
+            "Organization": "General Atomics",
+            "Link": "https://www.ga.com/"
+        },
+        {
+            "Industry Field": "Computer Engineering,Computer Science,Electrical Engineering",
+            "Position Types": "",
+            "Organization": "Viasat",
+            "Link": "https://www.viasat.com/"
+        },
+        {
+            "Industry Field": "Computer Engineering,Computer Science,Electrical Engineering,Mechanical Engineering",
+            "Position Types": "",
+            "Organization": "Hughes Network Systems",
+            "Link": "https://www.hughes.com/"
+        },
+        {
+            "Industry Field": "Aerospace Engineering,Computer Science,Computer Engineering,Electrical Engineering,Mechanical Engineering,Structural Engineering",
+            "Position Types": "",
+            "Organization": "Dynovas",
+            "Link": "https://www.dynovas.com/"
+        },
+        {
+            "Industry Field": "Aerospace Engineering,Computer Engineering,Computer Science,Electrical Engineering,Mechanical Engineering",
+            "Position Types": "",
+            "Organization": "L3Harris",
+            "Link": "https://www.l3harris.com/"
+        },
+        {
+            "Industry Field": "Aerospace Engineering,Computer Science,Computer Engineering,Mechanical Engineering",
+            "Position Types": "",
+            "Organization": "Lockheed Martin",
+            "Link": "https://www.lockheedmartin.com/en-us/index.html"
+        },
+        {
+            "Industry Field": "Aerospace Engineering,Computer Science,Mechanical Engineering",
+            "Position Types": "",
+            "Organization": "412th Test Engineering Group",
+            "Link": "https://edwards.af.mil/"
+        },
+        {
+            "Industry Field": "Biomedical Engineering,Computer Science,Computer Engineering,Electrical Engineering",
+            "Position Types": "",
+            "Organization": "Applied Medical",
+            "Link": "https://www.appliedmedical.com/"
+        },	
+        {
+            "Industry Field": "Civil Engineering,Structural Engineering",
+            "Position Types": "",
+            "Organization": "Keller North America",
+            "Link": "https://www.keller-na.com/"
+        }
+    ]
+}
