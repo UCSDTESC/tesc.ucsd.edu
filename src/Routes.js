@@ -8,6 +8,8 @@ import DecafRoutes from './pages/DecafPage/Routes';
 import MatchaRoutes from './pages/MatchaPage/Routes';
 import EnspireRoutes from './pages/EnspirePage/Routes';
 import EOTGRoutes from './pages/EOTGPage/Routes';
+import UpcomingEOTGRoutes from './pages/UpcomingEvents/EOTGPage/Routes'
+import UpcomingDecafRoutes from './pages/UpcomingEvents/DecafPage/Routes';
 import HomePage from './pages/HomePage';
 
 const OrgPage = lazy(() => import('./pages/HomePage/OrgPage'));
@@ -89,6 +91,8 @@ function Routes() {
                 <Route path="/matcha" component={MatchaRoutes} />
                 <Route path="/enspire" component={EnspireRoutes} />
                 <Route path="/eotg" component={EOTGRoutes} />
+                <Route path="/upcomingevents/eotg" component={UpcomingEOTGRoutes} />
+                <Route path="/upcomingevents/decaf" component={UpcomingDecafRoutes} />
 
                 <Route component={withLayout(NotFoundPage)} />
             </Switch>
