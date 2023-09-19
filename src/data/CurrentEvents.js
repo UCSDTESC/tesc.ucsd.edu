@@ -6,13 +6,13 @@ const currEvents = [
         img: '/eotg-event-wi21.svg',
         date: '2023-10-03T00:00:00.000Z',
     },
-    {
-        name: 'Decaf 2023',
-        link: '/upcomingevents/decaf',
-        isInternalLink: true,
-        img: '/decaf-event-wi21.svg',
-        date: '2023-11-06T00:00:00.000Z',
-    },
+    // {
+    //     name: 'Decaf 2023',
+    //     link: '/upcomingevents/decaf',
+    //     isInternalLink: true,
+    //     img: '/decaf-event-wi21.svg',
+    //     date: '2023-11-06T00:00:00.000Z',
+    // },
     {
         name: 'Enspire 2021',
         link: '/enspire',
