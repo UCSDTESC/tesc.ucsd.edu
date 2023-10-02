@@ -3,7 +3,7 @@ const currEvents = [
         name: 'EOTG 2023',
         link: '/upcomingevents/eotg',
         isInternalLink: true,
-        img: '/eotg-event-wi21.svg',
+        img: '/eotgposter.png',
         date: '2023-10-03T00:00:00.000Z',
     },
     // {
