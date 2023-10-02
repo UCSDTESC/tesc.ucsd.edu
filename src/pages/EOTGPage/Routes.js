@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 
 import EOTGLayout from '../../layouts/EOTGLayout';
 
-const EOTGPage = lazy(() => import('./index'));
+const EOTGPage = lazy(() => import('../UpcomingEvents/EOTGPage/index'));
 
 class EOTGRoutes extends React.Component {
 
