@@ -14,7 +14,7 @@ import BobbyBassStudent from './assets/student/bobby-bass.svg';
 
 class DecafPage extends React.Component {
     componentDidMount() {
-	document.title = 'Decaf 2023 | UCSD TESC';
+	document.title = 'DECaF Fall 2023 | UCSD TESC';
 
         //TODO: remove jQuery here
         $("link[rel='shortcut icon']").attr(
@@ -78,7 +78,7 @@ class DecafPage extends React.Component {
                                 }}
                             >
                                 <h1 style={desStyle}>
-                                    Decaf 23 will be hosted from January 11, 2023.
+                                    DECaF Fall 2023 will be hosted on November 6, 2023.
                                 </h1>
                                 {!this.props.isCompany && (
                                     <Button href="/decaf/attending">
