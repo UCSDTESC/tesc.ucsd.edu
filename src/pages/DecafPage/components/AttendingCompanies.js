@@ -368,9 +368,9 @@ class AttendingCompanies extends React.Component {
                                     </Col>
                                     <Col>
                                         <h1 className="year">
-                                            20
+                                            FALL
                                             <br />
-                                            23
+                                            2023
                                         </h1>
                                     </Col>
                                 </Row>

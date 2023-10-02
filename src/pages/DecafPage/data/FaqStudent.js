@@ -44,15 +44,7 @@ const studentFaq = [
         question: 'How can I register for the event?',
         answer: (
             <>
-                You can register for the event by going to our{' '}
-                <a
-                    href="https://www.eventbrite.com/e/decaf-2023-tickets-475639569757"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    registration page.
-                </a>{' '}
-                .
+                Registration details coming soon!
             </>
         ),
         bgColor: '#8C74B7',

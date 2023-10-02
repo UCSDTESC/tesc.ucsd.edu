@@ -11,7 +11,7 @@ const companyFaq = [
         question: 'When and where is the career fair?',
         answer: (
             <>
-                This year Decaf is on January 11th and it will run from
+                This year, DECaF will be held on November 6, 2023, and it will run from
                 10am-2pm. Decaf will be held at the Price Center Ballroom and recruiters will be able to have close networking
                 sessions with engineering students.{' '}
                 .

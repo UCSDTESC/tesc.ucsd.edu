@@ -33,14 +33,14 @@ const Hero = ({ isCompany }) => {
                         <p>
                             Disciplines of Engineering Career Fair
                             <br />
-                            January 11, 2023
+                            November 6, 2023
                         </p>
                         <Button
                             className="btn-1"
                             href={
                                 isCompany
-                                    ? 'https://events.eventzilla.net/e/decaf-2023-2138571703'
-                                    : 'https://www.eventbrite.com/e/decaf-2023-tickets-475639569757'
+                                    ? 'https://events.eventzilla.net/e/disciplines-of-engineering-career-fair-fa23-2138589575'
+                                    : ''
                             }
                             target="_blank"
                             rel="noopener noreferrer"
