@@ -10,6 +10,7 @@ import Seismic from '../assets/sponsors/seismic.svg';
 import AppliedMedical from '../assets/sponsors/appliedmedical.svg';
 import Dynovas from '../assets/sponsors/dynovas.svg';
 import Viasat from '../assets/sponsors/viasat.svg';
+import Keller from '../assets/sponsors/keller.png';
 import HughesNetworkSystem from '../assets/sponsors/hughes_network_system.svg';
 import L3Harris from '../assets/sponsors/l3harris.svg';
 import GeneralAtomics from '../assets/sponsors/general_atomics.svg';
@@ -42,24 +43,30 @@ const Sponsors = () => {
                          <div className="decaf-sponsors__logo-container">
                             <Row style={{ padding: 20 }}>
                                 <Col key={1} xs={12} md={6}>
-                                    <h1>To be announced...</h1>
-                                </Col>
-                                { /*
-                                <Col key={2} xs={12} md={6}>
-                                    <img src={ AppliedMedical } alt="Applied Medical" width="100%" className='mb-5' />
-                                </Col>
-                                
-                                <Col key={1} xs={12} md={6}>
                                     <img src={ Dynovas } alt="Dynovas" width="100%" className='mb-5' />
                                 </Col>
+                                <Col key={4} xs={12} md={6}>
+                                    <img src={ Viasat } alt="Viasat" width="100%" className='mb-5' />
+                                </Col>
+                                <Col key={6} xs={12} md={6}>
+                                    <h1>412th Test Engineering Group</h1>
+                                </Col>
+                                <Col key={6} xs={12} md={6}>
+                                    <img src={ Keller } alt="" width="100%" className='mb-5' />
+                                </Col>
+                                <Col key={2} xs={12} md={6}>
+                                    <h1>Applied Medical</h1>
+                                </Col>
+                                <Col key={1} xs={12} md={6}>
+                                    <h1>DRS Daylight Solutions</h1>
+                                </Col>
+                                { /*
+                                
                                 <Col key={3} xs={12} md={6}>
                                     <img src={ Seismic } alt="Seismic Software" width="100%" className='mb-5' />
                                 </Col>
                                 <Col key={6} xs={12} md={6}>
                                     <img src={ GeneralAtomics } alt="General Atomics" width="100%" className='mb-5' />
-                                </Col>
-                                <Col key={4} xs={12} md={6}>
-                                    <img src={ Viasat } alt="Viasat" width="100%" className='mb-5' />
                                 </Col>
                                 <Col key={6} xs={12} md={6}>
                                     <img src={ Leidos } alt="Leidos" width="100%" className='mb-5' />
@@ -72,12 +79,6 @@ const Sponsors = () => {
                                 </Col>
                                 <Col key={6} xs={12} md={6}>
                                     <h1>Lockheed Martin</h1>
-                                </Col>
-                                <Col key={6} xs={12} md={6}>
-                                    <h1>412th Test Engineering Group</h1>
-                                </Col>
-                                <Col key={6} xs={12} md={6}>
-                                    <h1>Keller North America</h1>
                                 </Col>
                                 */}
                                 {SponsorLogos.map((src, i) => (
