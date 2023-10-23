@@ -40,7 +40,7 @@ const Hero = ({ isCompany }) => {
                             href={
                                 isCompany
                                     ? 'https://events.eventzilla.net/e/disciplines-of-engineering-career-fair-fa23-2138589575'
-                                    : ''
+                                    : 'https://forms.gle/DEAekjXFoidJKtw76'
                             }
                             target="_blank"
                             rel="noopener noreferrer"

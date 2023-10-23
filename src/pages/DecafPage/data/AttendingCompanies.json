@@ -1,9 +1,41 @@
 {
     "companies": [
         {
-            "Industry Field": "",
+            "Industry Field": "Computer Engineering,Computer Science,Electrical Engineering",
             "Position Types": "",
-            "Organization": "To be announced"
-        }
+            "Organization": "Viasat",
+            "Link": "https://www.viasat.com/"
+        },
+        {
+            "Industry Field": "Aerospace Engineering,Computer Science,Computer Engineering,Electrical Engineering,Mechanical Engineering,Structural Engineering",
+            "Position Types": "",
+            "Organization": "Dynovas",
+            "Link": "https://www.dynovas.com/"
+        },
+        {
+
+            "Industry Field": "Aerospace Engineering,Computer Science,Mechanical Engineering",
+            "Position Types": "",
+            "Organization": "412th Test Engineering Group",
+            "Link": "https://edwards.af.mil/"
+        },
+       {
+            "Industry Field": "Biomedical Engineering,Computer Science,Computer Engineering,Electrical Engineering",
+            "Position Types": "",
+            "Organization": "Applied Medical",
+            "Link": "https://www.appliedmedical.com/"
+       },
+       {
+            "Industry Field": "Civil Engineering,Structural Engineering",
+            "Position Types": "",
+            "Organization": "Keller North America",
+            "Link": "https://www.keller-na.com/"
+       },
+       {
+        "Industry Field": "Mechanical Engineering,Computer Engineering,Computer Science,Electrical Engineering",
+        "Position Types": "",
+        "Organization": "DRS Daylight Solutions",
+        "Link": "https://daylightsolutions.com/"
+       }
     ]
 }
