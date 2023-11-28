@@ -59,11 +59,11 @@ function Nav(props) {
                     FINANCE
                 </NavLink>
             </li>
-            <li className="nav-item nav__item text-center">
+            {/*<li className="nav-item nav__item text-center">
                 <NavLink className="nav-link" to="/orgs/spaces">
                     PROJECT SPACES
                 </NavLink>
-            </li>
+    </li>*/}
             {/*<li class="nav-item nav__item text-center">
                     <a class="nav-link" href="">BRANDING</a>
                     </li>*/}
