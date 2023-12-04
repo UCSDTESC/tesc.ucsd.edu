@@ -76,11 +76,11 @@ function Routes() {
                     path="/orgs/faqs"
                     component={withLayout(FAQPage, true)}
                 />
-                <Route
+                {/* <Route
                     exact
                     path="/orgs/spaces"
                     component={withLayout(SpacesPage, true)}
-                />
+                /> */}
                 <Route
                     exact
                     path="/orgs/finance"
