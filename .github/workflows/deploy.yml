@@ -30,7 +30,7 @@ jobs:
           SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
         run: |
           sudo apt-get install expect
-          sudo chmod +x ./scripts/ping-test-website
+          sudo chmod +x ./scripts/lookup-test-website
           sudo chmod +x ./scripts/rsync-website.except
-          ./scripts/ping-test-website
+          ./scripts/lookup-test-website
           ./scripts/rsync-website.except $SSH_PASSWORD

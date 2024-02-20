@@ -1,0 +1,20 @@
+#!/bin/bash
+
+nslookup 8.8.8.8
+nslookup_exit_code=$?
+
+if [ $nslookup_exit_code -eq 0 ]; then
+    echo "Lookup to Google DNS is confirmed."
+else
+    echo "Lookup to Google DNS failed."
+fi
+
+
+nslookup 132.239.8.114
+nslookup_exit_code=$?
+
+if [ $nslookup_exit_code -eq 0 ]; then
+    echo "Lookup to tesc.uscd.edu is confirmed."
+else
+    echo "Lookup to tesc.uscd.edu failed."
+fi
