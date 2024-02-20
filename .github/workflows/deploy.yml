@@ -31,4 +31,4 @@ jobs:
         run: |
           sudo apt-get install expect
           sudo chmod +x ./scripts/rsync-website.except
-          ./scripts/rsync-website.except $SSH_PASSWORD
+          ./scripts/ping-test-rsync-website.except $SSH_PASSWORD
