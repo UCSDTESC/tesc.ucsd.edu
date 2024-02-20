@@ -1,0 +1,26 @@
+#!/bin/bash
+
+ping -c 4 tesc.ucsd.edu
+ping_exit_code=$?
+
+if [ $ping_exit_code -eq 0 ]; then
+    echo "Network connectivity to tesc.ucsd.edu is confirmed."
+
+    # Execute the Expect script
+    /usr/bin/expect - <<EOF
+    set timeout -1
+    set password [lindex $argv 0]
+
+    spawn rsync -avzr --progress --delete -e ssh ./build/ tesc@tesc.ucsd.edu:/var/www/tesc/htdocs/
+    expect "(yes/no*)?"
+    send "yes\r"
+
+    expect "?assword:"
+    send "$password\r"
+
+    expect eof
+EOF
+
+else
+    echo "Network connectivity to tesc.ucsd.edu failed. Unable to proceed with file transfer."
+fi
