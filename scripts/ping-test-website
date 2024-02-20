@@ -1,5 +1,14 @@
 #!/bin/bash
 
+ping -c 4 8.8.8.8
+ping_exit_code=$?
+
+if [ $ping_exit_code -eq 0 ]; then
+    echo "Network connectivity to Google DNS is confirmed."
+else
+    echo "Network connectivity to Google DNS failed."
+fi
+
 ping -c 4 tesc.ucsd.edu
 ping_exit_code=$?
 
