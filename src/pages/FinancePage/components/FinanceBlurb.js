@@ -145,6 +145,10 @@ class FinanceBlurb extends React.Component {
         );
     }
 
+    buttonClick() {
+        
+    }
+
     render() {
         const { leftActive } = this.state;
 
@@ -154,32 +158,9 @@ class FinanceBlurb extends React.Component {
                 <div className="text-center about__header mb-5">
                     TESC Funding Cycle Information
                 </div>
-                <section className="req pt-1">
-                    <div className="text-center pb-5">
-                        <span
-                            className={`finance__pill finance__pill-l ${
-                                leftActive ? 'finance__pill-active' : ''
-                            }`}
-                            onClick={() => this.togglePill(true)}
-                        >
-                            Funding Eligibility
-                        </span>
-                        <span
-                            className={`finance__pill finance__pill-r ${
-                                !leftActive ? 'finance__pill-active' : ''
-                            }`}
-                            onClick={() => this.togglePill(false)}
-                        >
-                            Funding Cycle Process
-                        </span>
-                    </div>
-                    <div>
-                        <div className="container">
-                            {leftActive && this.showOldRequirements()}
-                            {!leftActive && this.showNewRequirements()}
-                        </div>
-                    </div>
-                </section>
+                <div className="button">
+                    <a href='https://docs.google.com/document/d/1leQFiSATp0BVYnK3mgn7DlMdogLTwtSJSN8qwT0lp84/edit' target="_blank" rel="noopener noreferrer">Click Here</a>
+                </div>
             </section>
         );
     }
