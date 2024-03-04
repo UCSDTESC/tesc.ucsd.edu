@@ -1,7 +1,5 @@
 name: Deploy
 
-# Deploy on every push to the repository on master
-# Or whenever we manually run it
 on:
   push:
     branches:
@@ -13,7 +11,7 @@ jobs:
     name: Builds tesc.ucsd.edu for deployment
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: '11.x'
@@ -25,12 +23,8 @@ jobs:
       - name: Build tesc.ucsd.edu
         run: npm install && CI=false npm run build
         shell: bash
-      - name: Move files with rsync
-        env:
-          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
-        run: |
-          sudo apt-get install expect
-          sudo chmod +x ./scripts/lookup-test-website
-          sudo chmod +x ./scripts/rsync-website.except
-          ./scripts/lookup-test-website
-          ./scripts/rsync-website.except $SSH_PASSWORD
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: build # or specify the directory where your build files are located
