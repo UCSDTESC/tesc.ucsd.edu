@@ -1,5 +1,52 @@
 const board = [
     {
+        name: 'Shree Venkatesh',
+        role: 'Co-President',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2024/SHREE-COPREZ_2024.jpg',
+        email: 'shree@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/shree-venkatesh/',
+        bio: "",
+    },
+
+    {
+       name: 'Jasper Huang',
+       role: 'Co-President',
+       img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2024/JASPER-COPREZ_2024.jpg',
+       email: 'jasper@tesc.ucsd.edu',
+       link: 'https://www.linkedin.com/in/yj-huang/',
+       bio: "",
+    },
+
+    {
+        name: 'Rohan Sachdeva',
+        role: 'VP Internal',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2024/ROHAN-VPI_2024.jpg',
+        email: 'rohan@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/rohanvsachdeva/',
+        bio: "",
+    },
+
+    {
+        name: 'Christine Nguyen',
+        role: 'VP External',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2024/CHRISTINE-VPE_2024.png',
+        email: 'christine@tesc.ucsd.edu',
+        link: 'https://www.linkedin.com/in/christine-nguyen-79538a1b8',
+        bio: "",
+    },
+
+    {
+        name: 'Pearl Wen',
+        role: 'VP Finance',
+        img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2024/PEARL-VPF_2024.png',
+        email: 'pearl@tesc.ucsd.edu',
+        link: 'http://www.linkedin.com/in/pearl-wen-3a66a8263',
+        bio: "",
+    },
+
+    //2024 Edit: Past year old people  
+    /*
+    {
         name: 'Shane Kim',
         role: 'Co-President',
         img: 'https://tesc-website.s3.us-east-2.amazonaws.com/board/TESC-Pictures-2023/SHANE-COPREZ_2023.jpeg',
@@ -53,8 +100,6 @@ const board = [
         bio: "",
     },
 
-    //2022 Edit: Past year old people  
-    /*
     {
         name: 'Shane Kim',
         role: 'Co-President',
