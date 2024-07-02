@@ -8,16 +8,16 @@ function Board(props) {
 
     const renderMembers = (board) => {
 
-        const chunks = board.reduce((a,b,i,g) => !(i % 4) ? a.concat([g.slice(i,i+4)]) : a, []);        
+        const chunks = board.reduce((a,b,i,g) => !(i % 5) ? a.concat([g.slice(i,i+5)]) : a, []);        
 
         return chunks.map((chunk, j) => {
             return (
                 <div className="row board__row">
                     {chunk.map((m, i) => <BoardMember 
                         onActive={setCurrActive} 
-                        isActive={((j * 4) + i) === currActive} 
+                        isActive={((j * 5) + i) === currActive} 
                         data={m}
-                        val={j * 4 + i}
+                        val={j * 5 + i}
                         idx={i}
                     />)}
                 </div>
