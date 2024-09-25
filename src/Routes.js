@@ -4,7 +4,7 @@ import { Spinner } from 'reactstrap';
 
 import Layout from './layouts/Layout';
 
-import DecafRoutes from './pages/DecafPage/Routes';
+//import DecafRoutes from './pages/DecafPage/Routes';
 import MatchaRoutes from './pages/MatchaPage/Routes';
 import EnspireRoutes from './pages/EnspirePage/Routes';
 import EOTGRoutes from './pages/EOTGPage/Routes';
@@ -87,7 +87,15 @@ function Routes() {
                     component={withLayout(FinancePage, true)}
                 />
 
-                <Route path="/decaf" component={DecafRoutes} />
+                // <Route path="/decaf" component={DecafRoutes} />
+                <Route
+                    exact
+                    path="/decaf"
+                    component={() => {
+                        window.location.href = "https://decafucsd.com";
+                        return null;
+                    }}
+                />
                 <Route path="/matcha" component={MatchaRoutes} />
                 <Route path="/enspire" component={EnspireRoutes} />
                 <Route path="/eotg" component={EOTGRoutes} />
