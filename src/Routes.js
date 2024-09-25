@@ -96,6 +96,25 @@ function Routes() {
                         return null;
                     }}
                 />
+
+                <Route
+                    exact
+                    path="/upcomingevents/decaf"
+                    component={() => {
+                        window.location.href = "https://decafucsd.com";
+                        return null;
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/upcomingEvents/decaf"
+                    component={() => {
+                        window.location.href = "https://decafucsd.com";
+                        return null;
+                    }}
+                />
+                        
                 <Route path="/matcha" component={MatchaRoutes} />
                 <Route path="/enspire" component={EnspireRoutes} />
 
@@ -108,10 +127,28 @@ function Routes() {
                         return null;
                     }}
                 />
+
+                <Route
+                    exact
+                    path="/upcomingevents/eotg"
+                    component={() => {
+                        window.location.href = "https://eotgucsd.com";
+                        return null;
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/upcomingEvents/eotg"
+                    component={() => {
+                        window.location.href = "https://eotgucsd.com";
+                        return null;
+                    }}
+                />
                         
                 
-                <Route path="/upcomingevents/eotg" component={UpcomingEOTGRoutes} />
-                <Route path="/upcomingevents/decaf" component={UpcomingDecafRoutes} />
+                {/* <Route path="/upcomingevents/eotg" component={UpcomingEOTGRoutes} /> */}
+                {/* <Route path="/upcomingevents/decaf" component={UpcomingDecafRoutes} /> */}
 
                 <Route component={withLayout(NotFoundPage)} />
             </Switch>
