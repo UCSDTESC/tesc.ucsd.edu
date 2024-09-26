@@ -4,10 +4,10 @@ import { Spinner } from 'reactstrap';
 
 import Layout from './layouts/Layout';
 
-import DecafRoutes from './pages/DecafPage/Routes';
+//import DecafRoutes from './pages/DecafPage/Routes';
 import MatchaRoutes from './pages/MatchaPage/Routes';
 import EnspireRoutes from './pages/EnspirePage/Routes';
-import EOTGRoutes from './pages/EOTGPage/Routes';
+//import EOTGRoutes from './pages/EOTGPage/Routes';
 import UpcomingEOTGRoutes from './pages/UpcomingEvents/EOTGPage/Routes'
 import UpcomingDecafRoutes from './pages/UpcomingEvents/DecafPage/Routes';
 import HomePage from './pages/HomePage';
@@ -87,12 +87,68 @@ function Routes() {
                     component={withLayout(FinancePage, true)}
                 />
 
-                <Route path="/decaf" component={DecafRoutes} />
+                {/* <Route path="/decaf" component={DecafRoutes} /> */}
+                <Route
+                    exact
+                    path="/decaf"
+                    component={() => {
+                        window.location.href = "https://decafucsd.com";
+                        return null;
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/upcomingevents/decaf"
+                    component={() => {
+                        window.location.href = "https://decafucsd.com";
+                        return null;
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/upcomingEvents/decaf"
+                    component={() => {
+                        window.location.href = "https://decafucsd.com";
+                        return null;
+                    }}
+                />
+                        
                 <Route path="/matcha" component={MatchaRoutes} />
                 <Route path="/enspire" component={EnspireRoutes} />
-                <Route path="/eotg" component={EOTGRoutes} />
-                <Route path="/upcomingevents/eotg" component={UpcomingEOTGRoutes} />
-                <Route path="/upcomingevents/decaf" component={UpcomingDecafRoutes} />
+
+                {/* <Route path="/eotg" component={EOTGRoutes} /> */}
+                <Route
+                    exact
+                    path="/eotg"
+                    component={() => {
+                        window.location.href = "https://eotgucsd.com";
+                        return null;
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/upcomingevents/eotg"
+                    component={() => {
+                        window.location.href = "https://eotgucsd.com";
+                        return null;
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/upcomingEvents/eotg"
+                    component={() => {
+                        window.location.href = "https://eotgucsd.com";
+                        return null;
+                    }}
+                />
+                        
+                
+                {/* <Route path="/upcomingevents/eotg" component={UpcomingEOTGRoutes} /> */}
+                {/* <Route path="/upcomingevents/decaf" component={UpcomingDecafRoutes} /> */}
 
                 <Route component={withLayout(NotFoundPage)} />
             </Switch>
