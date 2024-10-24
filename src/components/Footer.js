@@ -10,9 +10,9 @@ function Footer() {
                         Talk to us at{' '}
                         <a
                             className="contact__link"
-                            href="mailto:hello@tesc.ucsd.edu"
+                            href="mailto:contact@tesc.ucsd.edu"
                         >
-                            hello@tesc.ucsd.edu
+                            contact@tesc.ucsd.edu
                         </a>{' '}
                         if you have any questions.
                     </h1>
