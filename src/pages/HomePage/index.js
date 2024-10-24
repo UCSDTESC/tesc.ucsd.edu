@@ -26,7 +26,6 @@ class HomePage extends React.Component {
                 <Hero />
                 <Events />
                 <Join />
-                <Sponsors />
             </>
         );
     }
