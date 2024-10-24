@@ -60,7 +60,7 @@ function Footer() {
                             <a
                                 className="footer__link"
                                 target="_new"
-                                href="mailto:hello@tesc.ucsd.edu"
+                                href="mailto:contact@tesc.ucsd.edu"
                             >
                                 <i className="fas fa-envelope-square"></i>
                             </a>
