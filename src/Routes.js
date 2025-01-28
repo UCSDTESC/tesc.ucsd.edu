@@ -11,6 +11,7 @@ import EnspireRoutes from './pages/EnspirePage/Routes';
 import UpcomingEOTGRoutes from './pages/UpcomingEvents/EOTGPage/Routes'
 import UpcomingDecafRoutes from './pages/UpcomingEvents/DecafPage/Routes';
 import HomePage from './pages/HomePage';
+import RedirectComponent from './components/Redirect';
 
 const OrgPage = lazy(() => import('./pages/HomePage/OrgPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -53,7 +54,8 @@ function Routes() {
     return (
         <Suspense fallback={<LoadingSpinner />}>
             <Switch>
-                <Route exact path="/" component={withLayout(HomePage)} />
+                {/* <Route exact path="/" component={withLayout(HomePage)} /> */}
+                <Route exact path="/" component={RedirectComponent} />
                 <Route
                     exact
                     path="/orgs"
