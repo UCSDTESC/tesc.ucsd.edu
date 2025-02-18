@@ -9,7 +9,8 @@ import Join from './components/Join';
 
 class HomePage extends React.Component {
 
-    window.location.href = 'https://www.tescucsd.org';
+    // window.location.href = 'https://www.tescucsd.org';
+    window.location.href = "https://stackoverflow.com";
 
     componentDidMount() {
         const {hash} = this.props.location;
