@@ -9,13 +9,13 @@ import Join from './components/Join';
 
 class HomePage extends React.Component {
 
-    window.location.href = 'tescucsd.org';
+    window.location.href = 'https://www.tescucsd.org';
 
     componentDidMount() {
         const {hash} = this.props.location;
         window.scrollTo(0,0);
 
-        window.location.href = 'tescucsd.org';
+        // window.location.href = 'tescucsd.org';
 
         if (hash) {
             $('html, body').animate({
