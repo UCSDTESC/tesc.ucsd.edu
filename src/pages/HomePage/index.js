@@ -13,6 +13,8 @@ class HomePage extends React.Component {
         const {hash} = this.props.location;
         window.scrollTo(0,0);
 
+        window.location.href = 'tescucsd.org';
+
         if (hash) {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
