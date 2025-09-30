@@ -1,16 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-function RedirectComponent() {
-  const externalUrl = 'https://tescucsd.org';
+function RedirectComponent () {
+  const externalUrl = 'https://tescatucsd.org'
 
   React.useEffect(() => {
     // Redirect to external URL
-    window.location.href = externalUrl;
-  }, []); 
+    window.location.href = externalUrl
+  }, [])
 
-  return (
-    <div>Redirecting to new website...</div> 
-  );
+  return <div>Redirecting to new website...</div>
 }
 
-export default RedirectComponent;
+export default RedirectComponent
