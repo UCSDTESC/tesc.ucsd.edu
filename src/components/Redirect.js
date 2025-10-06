@@ -1,7 +1,7 @@
 import React from 'react';
 
 function RedirectComponent() {
-  const externalUrl = 'https://tescucsd.org';
+  const externalUrl = 'https://tescatucsd.org';
 
   React.useEffect(() => {
     // Redirect to external URL
